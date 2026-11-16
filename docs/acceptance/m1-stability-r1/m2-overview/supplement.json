@@ -1,0 +1,490 @@
+{
+  "scope": "Final-build independent-viewer and compact-layout quick checks; no performance measurement",
+  "checks": [
+    {
+      "name": "independent clarifier",
+      "passed": true,
+      "detail": {
+        "before": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 600.5999999642372,
+          "firstRenderMs": 887,
+          "triangles": 125010,
+          "assetTriangles": 63274,
+          "calls": 135,
+          "textures": 15,
+          "frameMs": -7.480000011920879,
+          "renderMode": "interactive",
+          "viewMode": "unit",
+          "loadedIds": [
+            "SW_CLR_TANK_001"
+          ],
+          "deviceStates": {
+            "SW_CLR_TANK_001": {
+              "status": "ready",
+              "error": "",
+              "loadMs": 593.5999999642372,
+              "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+            }
+          },
+          "waterStates": {
+            "SW_CLR_TANK_001": true
+          },
+          "deviceId": "SW_CLR_TANK_001",
+          "camera": [
+            18.620608134458468,
+            31.13304261437144,
+            42.65069885539886
+          ],
+          "target": [
+            -0.8616321560138601,
+            -4.83417022957746,
+            5.184852142952078
+          ],
+          "defaultCamera": [
+            18.62060813445846,
+            31.13304261437144,
+            42.65069885539884
+          ],
+          "defaultTarget": [
+            -0.86163215601386,
+            -4.834170229577459,
+            5.184852142952077
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 3,
+          "cameraBusy": false,
+          "visible": "visible",
+          "activeRenderLoops": 0,
+          "loadGeneration": 1,
+          "assetRequests": {
+            "/models/clarifier-tank.glb": 1
+          },
+          "rendererDpr": 1,
+          "nativeDpr": 2,
+          "drawingBuffer": {
+            "width": 1379,
+            "height": 552
+          },
+          "canvas": {
+            "width": 1379,
+            "height": 552
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+          "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 68,
+          "siteFraming": {
+            "left": -0.5353829086605155,
+            "right": 0.535382730556778,
+            "bottom": -0.8700000000000006,
+            "top": 0.869999306605638
+          },
+          "assetStage": "m2-clarifier-r1",
+          "bounds": {
+            "min": [
+              -17.5,
+              -5.400000095367432,
+              -13.930000305175781
+            ],
+            "max": [
+              17,
+              2.705000162124634,
+              13.930000305175781
+            ]
+          }
+        },
+        "focus": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_CLR_TANK_001"
+          },
+          "source": "USER",
+          "trigger": "独立资产查看器",
+          "action_id": "f7fe7b8f-897f-4c01-96a2-512ade532556",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-16T06:59:38.812Z",
+          "finished_at": "2026-11-16T06:59:39.730Z",
+          "result": {
+            "camera": {
+              "position": [
+                2.751172524739376,
+                27.48721925416167,
+                32.15452364344979
+              ],
+              "target": [
+                -0.8653007837062476,
+                -3.252803867626138,
+                2.017246073069584
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_CLR_TANK_001",
+            "rendered_frame": 48,
+            "arrival_verified": true
+          }
+        },
+        "reset": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "USER",
+          "trigger": "独立资产查看器",
+          "action_id": "91a90ffa-c0c5-4d53-bbbf-31f426bec2ce",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-16T06:59:39.731Z",
+          "finished_at": "2026-11-16T06:59:40.658Z",
+          "result": {
+            "camera": {
+              "position": [
+                18.620608134458465,
+                31.13304261437144,
+                42.65069885539886
+              ],
+              "target": [
+                -0.8616321560138601,
+                -4.83417022957746,
+                5.184852142952078
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 102,
+            "arrival_verified": true
+          }
+        }
+      }
+    },
+    {
+      "name": "independent aeration",
+      "passed": true,
+      "detail": {
+        "before": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 550.5,
+          "firstRenderMs": 828.8000000119209,
+          "triangles": 212082,
+          "assetTriangles": 106042,
+          "calls": 99,
+          "textures": 0,
+          "frameMs": 0,
+          "renderMode": "interactive",
+          "viewMode": "unit",
+          "loadedIds": [
+            "SW_BIO_AERATION_001"
+          ],
+          "deviceStates": {
+            "SW_BIO_AERATION_001": {
+              "status": "ready",
+              "error": "",
+              "loadMs": 545.8999999761581,
+              "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+            }
+          },
+          "waterStates": {
+            "SW_BIO_AERATION_001": true
+          },
+          "deviceId": "SW_BIO_AERATION_001",
+          "camera": [
+            25.085525841611084,
+            38.626098005791725,
+            50.97692550717599
+          ],
+          "target": [
+            1.1867687375622427,
+            -5.494684340144586,
+            5.017777230158991
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.626098005791725,
+            50.97692550717599
+          ],
+          "defaultTarget": [
+            1.1867687375622427,
+            -5.494684340144586,
+            5.017777230158991
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 3,
+          "cameraBusy": false,
+          "visible": "visible",
+          "activeRenderLoops": 0,
+          "loadGeneration": 1,
+          "assetRequests": {
+            "/models/aeration-tank.glb": 1
+          },
+          "rendererDpr": 1,
+          "nativeDpr": 2,
+          "drawingBuffer": {
+            "width": 1379,
+            "height": 552
+          },
+          "canvas": {
+            "width": 1379,
+            "height": 552
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.6115965030207835,
+            "right": 0.6115964551209183,
+            "bottom": -0.8699999999999997,
+            "top": 0.8699994543202864
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "focus": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "USER",
+          "trigger": "独立资产查看器",
+          "action_id": "c3e634ae-1068-4e42-8704-8e77e2a270fd",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-16T06:59:41.583Z",
+          "finished_at": "2026-11-16T06:59:42.498Z",
+          "result": {
+            "camera": {
+              "position": [
+                2.62251356186459,
+                25.627460454859936,
+                31.11275350704797
+              ],
+              "target": [
+                -0.7525987077211587,
+                -3.060993836618943,
+                2.9868179271667152
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 58,
+            "arrival_verified": true
+          }
+        },
+        "reset": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "USER",
+          "trigger": "独立资产查看器",
+          "action_id": "8a0d94f0-b5d2-464b-b77c-220ba450329c",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-16T06:59:42.499Z",
+          "finished_at": "2026-11-16T06:59:43.412Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611084,
+                38.626098005791725,
+                50.97692550717599
+              ],
+              "target": [
+                1.1867687375622427,
+                -5.494684340144586,
+                5.017777230158991
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 111,
+            "arrival_verified": true
+          }
+        }
+      }
+    },
+    {
+      "name": "1366 compact keeps mode controls, scene and Agent input visible without whole-page scaling",
+      "passed": true,
+      "detail": {
+        "width": 1366,
+        "height": 768,
+        "toolbar": {
+          "width": 996,
+          "scrollWidth": 996
+        },
+        "actions": {
+          "right": 1005
+        },
+        "input": {
+          "bottom": 727,
+          "right": 1347,
+          "width": 318
+        },
+        "stage": {
+          "width": 996,
+          "height": 357
+        },
+        "scene": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 374.60000002384186,
+          "firstRenderMs": 17,
+          "triangles": 332408,
+          "assetTriangles": 167624,
+          "calls": 227,
+          "textures": 15,
+          "frameMs": -12.667999964237197,
+          "renderMode": "interactive",
+          "viewMode": "plant",
+          "loadedIds": [
+            "SW_BIO_AERATION_001",
+            "SW_CLR_TANK_001"
+          ],
+          "deviceStates": {
+            "SW_BIO_AERATION_001": {
+              "status": "ready",
+              "error": "",
+              "loadMs": 480.4000000357628,
+              "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+            },
+            "SW_CLR_TANK_001": {
+              "status": "ready",
+              "error": "",
+              "loadMs": 368.60000002384186,
+              "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+            }
+          },
+          "waterStates": {
+            "SW_BIO_AERATION_001": true,
+            "SW_CLR_TANK_001": true
+          },
+          "deviceId": "SW_BIO_AERATION_001",
+          "camera": [
+            22.646561330347073,
+            48.01771538382447,
+            59.57300096889509
+          ],
+          "target": [
+            4.111684203714059,
+            -6.496629106272631,
+            5.0586564787979915
+          ],
+          "defaultCamera": [
+            22.646561330347073,
+            48.017715383824466,
+            59.57300096889509
+          ],
+          "defaultTarget": [
+            4.111684203714059,
+            -6.496629106272632,
+            5.0586564787979915
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 6,
+          "cameraBusy": false,
+          "visible": "visible",
+          "activeRenderLoops": 0,
+          "loadGeneration": 2,
+          "assetRequests": {
+            "/models/aeration-tank.glb": 1,
+            "/models/clarifier-tank.glb": 1
+          },
+          "rendererDpr": 1,
+          "nativeDpr": 2,
+          "drawingBuffer": {
+            "width": 996,
+            "height": 357
+          },
+          "canvas": {
+            "width": 996,
+            "height": 357
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+          "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 134,
+          "siteFraming": {
+            "left": -0.7572107537351349,
+            "right": 0.7572105456920558,
+            "bottom": -0.9000000000000008,
+            "top": 0.8999996021128174
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -47.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              0.9750003814697266,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

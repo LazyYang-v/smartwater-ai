@@ -1,0 +1,163 @@
+{
+  "at": "2026-11-16T07:29:18.257Z",
+  "focus": {
+    "tool_name": "scene.focus_device",
+    "arguments": {
+      "device_id": "SW_AIR_BLOWER_001"
+    },
+    "source": "USER",
+    "trigger": "独立资产查看器",
+    "action_id": "2484cd66-feae-48e5-95ed-c88e2acd67d3",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-16T07:29:17.024Z",
+    "finished_at": "2026-11-16T07:29:17.973Z",
+    "result": {
+      "camera": {
+        "position": [
+          0.5337490581856947,
+          6.409168309888058,
+          4.887992685330164
+        ],
+        "target": [
+          -0.03518772901462962,
+          1.5732056186852985,
+          0.1468527919941256
+        ],
+        "zoom": 1
+      },
+      "selected_id": "SW_AIR_BLOWER_001",
+      "rendered_frame": 60,
+      "arrival_verified": true
+    }
+  },
+  "scene": {
+    "status": "ready",
+    "error": "",
+    "selectedId": "SW_AIR_BLOWER_001",
+    "waterVisible": true,
+    "loadMs": 520.1999999880791,
+    "firstRenderMs": 643,
+    "triangles": 14108,
+    "assetTriangles": 16512,
+    "calls": 52,
+    "textures": 11,
+    "frameMs": 17.09999999999991,
+    "renderMode": "interactive",
+    "viewMode": "unit",
+    "loadedIds": [
+      "SW_AIR_BLOWER_001"
+    ],
+    "deviceStates": {
+      "SW_AIR_BLOWER_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 203.89999997615814,
+        "sha256": "6ff248cdb5d7bb1a2f71d0eaa07eb77d10a8ab97a3a8d5b4a713fa89831633ee"
+      }
+    },
+    "waterStates": {},
+    "roofStates": {
+      "SW_AIR_BLOWER_001": false
+    },
+    "deviceId": "SW_AIR_BLOWER_001",
+    "camera": [
+      0.5337490581856947,
+      6.409168309888058,
+      4.887992685330164
+    ],
+    "target": [
+      -0.03518772901462962,
+      1.5732056186852985,
+      0.1468527919941256
+    ],
+    "defaultCamera": [
+      6.409707331336429,
+      10.23042510117342,
+      13.915249177479838
+    ],
+    "defaultTarget": [
+      -0.025554824858300577,
+      -1.6500588794937694,
+      1.5397450309515153
+    ],
+    "zoom": 1,
+    "fov": 40,
+    "frame": 60,
+    "cameraBusy": false,
+    "visible": "visible",
+    "activeRenderLoops": 0,
+    "loadGeneration": 1,
+    "assetRequests": {
+      "/models/blower-unit.glb": 1
+    },
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "drawingBuffer": {
+      "width": 1736,
+      "height": 713
+    },
+    "canvas": {
+      "width": 1736,
+      "height": 713
+    },
+    "loadedModelUrl": "http://127.0.0.1:4173/models/blower-unit.glb",
+    "loadedModelSha256": "6ff248cdb5d7bb1a2f71d0eaa07eb77d10a8ab97a3a8d5b4a713fa89831633ee",
+    "waterPhaseMs": null,
+    "roofPresentation": {
+      "inspectionDevice": "SW_AIR_BLOWER_001",
+      "manual": {}
+    },
+    "registrations": [
+      {
+        "id": "SW_AIR_BLOWER_001",
+        "unitId": "SW_UNIT_BLOWER_ROOM_001",
+        "name": "一号鼓风机",
+        "url": "/models/blower-unit.glb",
+        "dimensions": "12 × 9 m 机房 · 设备独立选择",
+        "assetRootNode": "SW_BLOWER_UNIT",
+        "mechanicalNode": "SW_AIR_BLOWER_001",
+        "metrics": [
+          "blower_power"
+        ],
+        "water": false,
+        "roof": true,
+        "modelKey": "blower",
+        "modelState": "ready"
+      }
+    ],
+    "lighting": {
+      "exposure": 1.05,
+      "sunIntensity": 2.6,
+      "sunPosition": [
+        -28,
+        50,
+        20
+      ],
+      "environmentIntensity": 0.48,
+      "shadowMapSize": [
+        2048,
+        2048
+      ]
+    },
+    "selectionEffects": 1,
+    "sceneGeometryCount": 56,
+    "siteFraming": {
+      "left": -2.079453607824514,
+      "right": 2.4343855547534377,
+      "bottom": -5.087660137451477,
+      "top": 0.8446615304551849
+    },
+    "bounds": {
+      "min": [
+        -2.700000047683716,
+        0.17999999225139618,
+        -1.2999999523162842
+      ],
+      "max": [
+        2.700000047683716,
+        3.049999952316284,
+        1.5
+      ]
+    }
+  }
+}

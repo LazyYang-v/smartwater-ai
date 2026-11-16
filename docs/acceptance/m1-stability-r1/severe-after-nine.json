@@ -1,0 +1,3523 @@
+{
+  "kind": "Added-overhead diagnosis immediately after nine unchanged-page trials, not a formal score or GPU timing",
+  "before": {
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5364.400000035763,
+      "firstRenderMs": 5822.600000023842,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 50,
+      "camera": [
+        25.08552584161109,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "target": [
+        1.1867687375622504,
+        -5.4946843401445875,
+        5.017777230158989
+      ],
+      "defaultCamera": [
+        25.08552584161109,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622504,
+        -5.4946843401445875,
+        5.017777230158989
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 14040,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5968294112783492,
+        "right": 0.5968293645350332,
+        "bottom": -0.8699999999999997,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "diagnostics": {
+      "at": 855456.7000000477,
+      "wallTime": "2026-11-15T20:33:03.641Z",
+      "pageAgeMs": 855456.8000000119,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 14040,
+      "callbackCount": 14040,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 0,
+        "totalMs": 0,
+        "maxMs": 0,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:34",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    }
+  },
+  "afterTrace": {
+    "at": 866153.9000000358,
+    "wallTime": "2026-11-15T20:33:14.338Z",
+    "pageAgeMs": 866153.9000000358,
+    "visible": "visible",
+    "cameraBusy": true,
+    "frame": 14190,
+    "callbackCount": 14190,
+    "renderCpuDiagnostics": {
+      "enabled": true,
+      "calls": 150,
+      "totalMs": 5467.5,
+      "maxMs": 256.69999998807907,
+      "meaning": "CPU wall duration of renderer.render, not GPU time"
+    },
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "renderer": {
+      "renderers": 1,
+      "rendererCreated": 1,
+      "rendererDisposed": 0,
+      "observers": 3,
+      "listeners": 7,
+      "dataTimers": 1,
+      "dataTimerStarts": 1,
+      "dataTimerStops": 0,
+      "trendMounts": 2,
+      "trendUnmounts": 0
+    },
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "calls": 50,
+    "triangles": 106042,
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "canvas": {
+      "width": 1088,
+      "height": 425
+    },
+    "drawingBuffer": {
+      "width": 1088,
+      "height": 425
+    },
+    "loadGeneration": 1,
+    "scenario": "NORMAL",
+    "snapshotId": "smartwater-m1.2:NORMAL:36",
+    "task": "SUCCEEDED",
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 452,
+      "resizes": 0,
+      "active": 2
+    },
+    "ownership": {
+      "renderers": 1,
+      "rendererCreated": 1,
+      "rendererDisposed": 0,
+      "observers": 3,
+      "listeners": 7,
+      "dataTimers": 1,
+      "dataTimerStarts": 1,
+      "dataTimerStops": 0,
+      "trendMounts": 2,
+      "trendUnmounts": 0
+    },
+    "toolRecords": 155,
+    "history": {
+      "do": 1441,
+      "blower_power": 1441
+    },
+    "domNodes": 639,
+    "unavailable": {
+      "browserInternalListeners": null,
+      "gpuMemoryBytes": null,
+      "vueInternalSubscriptions": null
+    }
+  },
+  "metricDeltas": {
+    "Timestamp": 10.408164999971632,
+    "AudioHandlers": 0,
+    "AudioWorkletProcessors": 0,
+    "Documents": 0,
+    "Frames": 0,
+    "JSEventListeners": 0,
+    "LayoutObjects": 14,
+    "MediaKeySessions": 0,
+    "MediaKeys": 0,
+    "Nodes": 156,
+    "Resources": 0,
+    "ContextLifecycleStateObservers": 0,
+    "V8PerContextDatas": 0,
+    "WorkerGlobalScopes": 0,
+    "UACSSResources": 0,
+    "RTCPeerConnections": 0,
+    "ResourceFetchers": 0,
+    "AdSubframes": 0,
+    "DetachedScriptStates": 0,
+    "ArrayBufferContents": 0,
+    "LayoutCount": 10,
+    "RecalcStyleCount": 10,
+    "LayoutDuration": 0.148399,
+    "RecalcStyleDuration": 0.0199,
+    "DevToolsCommandDuration": 0.18057800000000002,
+    "ScriptDuration": 6.515907,
+    "V8CompileDuration": 0,
+    "TaskDuration": 9.398983,
+    "TaskOtherDuration": 2.5341989999999996,
+    "ThreadTime": 0.508852,
+    "ProcessTime": 0.7806350000000748,
+    "JSHeapUsedSize": 1273220,
+    "JSHeapTotalSize": 262144,
+    "FirstMeaningfulPaint": 0,
+    "DomContentLoaded": 0,
+    "NavigationStart": 0
+  },
+  "top": [
+    {
+      "function": "(program)",
+      "url": "",
+      "sampled_ms": 2385.426
+    },
+    {
+      "function": "(idle)",
+      "url": "",
+      "sampled_ms": 817.959
+    },
+    {
+      "function": "eu",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 648.362
+    },
+    {
+      "function": "ht",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 452.129
+    },
+    {
+      "function": "renderBufferDirect",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 410.643
+    },
+    {
+      "function": "bindVertexArray",
+      "url": "",
+      "sampled_ms": 389.35
+    },
+    {
+      "function": "s",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 351.451
+    },
+    {
+      "function": "drawElements",
+      "url": "",
+      "sampled_ms": 295.339
+    },
+    {
+      "function": "xe",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 255.061
+    },
+    {
+      "function": "applyMatrix4",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 233.122
+    },
+    {
+      "function": "",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 188.581
+    },
+    {
+      "function": "at",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 184.388
+    },
+    {
+      "function": "p",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 181.149
+    },
+    {
+      "function": "setFromProjectionMatrix",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 133.048
+    },
+    {
+      "function": "c",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 127.519
+    },
+    {
+      "function": "multiplyMatrices",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 122.611
+    },
+    {
+      "function": "d",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 121.468
+    },
+    {
+      "function": "y1",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 118.463
+    },
+    {
+      "function": "O1",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 118.099
+    },
+    {
+      "function": "p",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 101.332
+    },
+    {
+      "function": "",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 98.625
+    },
+    {
+      "function": "(garbage collector)",
+      "url": "",
+      "sampled_ms": 94.713
+    },
+    {
+      "function": "at",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 91.312
+    },
+    {
+      "function": "E0.getAttributes",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 87.627
+    },
+    {
+      "function": "s1",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 82.226
+    },
+    {
+      "function": "lt",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 72.63
+    },
+    {
+      "function": "t",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 72.466
+    },
+    {
+      "function": "uniformMatrix4fv",
+      "url": "",
+      "sampled_ms": 68.979
+    },
+    {
+      "function": "f",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 68.546
+    },
+    {
+      "function": "uniform2f",
+      "url": "",
+      "sampled_ms": 66.509
+    },
+    {
+      "function": "o",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 66.411
+    },
+    {
+      "function": "expandByObject",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 65.964
+    },
+    {
+      "function": "applyMatrix4",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 65.503
+    },
+    {
+      "function": "updateMatrixWorld",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 64.26
+    },
+    {
+      "function": "bindTexture",
+      "url": "",
+      "sampled_ms": 62.85
+    },
+    {
+      "function": "ct",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 58.288
+    },
+    {
+      "function": "L1",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 57.869
+    },
+    {
+      "function": "trace",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 53.907
+    },
+    {
+      "function": "valid",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 51.28
+    },
+    {
+      "function": "eu",
+      "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+      "sampled_ms": 48.596
+    }
+  ],
+  "trial": {
+    "done": true,
+    "measurement": {
+      "measured_at": "2026-11-15T20:33:27.823Z",
+      "total_duration_ms": 21032.19999998808,
+      "sampled_duration_ms": 21032.19999998808,
+      "sample_count": 347,
+      "raf_callbacks": 348,
+      "scene_submissions": 348,
+      "average_fps": 16.546057949249114,
+      "raf_callback_hz": 16.546057949249114,
+      "p95_frame_ms": 183,
+      "p99_frame_ms": 266.5,
+      "median_frame_ms": 34.5,
+      "frames_over_50_ms": 138,
+      "frames_over_100_ms": 56,
+      "frame_times_ms": [
+        150,
+        65.5,
+        17.800000000046566,
+        14.900000000023283,
+        17,
+        83.5,
+        118,
+        183.39999999990687,
+        183.20000000006985,
+        50.09999999997672,
+        266.5999999999767,
+        66.70000000006985,
+        148.09999999997672,
+        83.29999999993015,
+        151.90000000002328,
+        49.800000000046566,
+        16.79999999993015,
+        15.600000000093132,
+        16.199999999953434,
+        17.099999999976717,
+        15.900000000023283,
+        34.300000000046566,
+        65.59999999997672,
+        118.69999999995343,
+        83.30000000004657,
+        33.40000000002328,
+        14.899999999906868,
+        16.800000000046566,
+        17.099999999976717,
+        16,
+        18.20000000006985,
+        16.899999999906868,
+        16,
+        15.400000000023283,
+        17.400000000023283,
+        34.5,
+        16,
+        15.900000000023283,
+        34.90000000002328,
+        16.599999999976717,
+        33.29999999993015,
+        32.90000000002328,
+        83.80000000004657,
+        50,
+        16.599999999976717,
+        15,
+        16.800000000046566,
+        34.89999999990687,
+        15.5,
+        17.900000000023283,
+        16.599999999976717,
+        150.10000000009313,
+        16.199999999953434,
+        15.300000000046566,
+        50.59999999997672,
+        17.900000000023283,
+        66.59999999997672,
+        99.90000000002328,
+        83.5,
+        49.89999999990687,
+        115,
+        68.10000000009313,
+        33.59999999997672,
+        16.400000000023283,
+        15.29999999993015,
+        16.5,
+        18.5,
+        49.70000000006985,
+        332.89999999990687,
+        34,
+        16.100000000093132,
+        17.199999999953434,
+        15.599999999976717,
+        17.800000000046566,
+        132.29999999993015,
+        33.800000000046566,
+        17.199999999953434,
+        33,
+        83.60000000009313,
+        50.09999999997672,
+        49.90000000002328,
+        66.79999999993015,
+        66.59999999997672,
+        99,
+        116.80000000004657,
+        17.5,
+        15.5,
+        17,
+        17.099999999976717,
+        15.800000000046566,
+        17.900000000023283,
+        66.69999999995343,
+        98.5,
+        233,
+        217.19999999995343,
+        49.90000000002328,
+        34.800000000046566,
+        16,
+        33.59999999997672,
+        50.300000000046566,
+        33.39999999990687,
+        14.800000000046566,
+        18.099999999976717,
+        15.20000000006985,
+        16.899999999906868,
+        18.300000000046566,
+        148.5,
+        18.300000000046566,
+        16.599999999976717,
+        66.59999999997672,
+        50,
+        116.5,
+        216.80000000004657,
+        133.29999999993015,
+        166.70000000006985,
+        48.29999999993015,
+        118.40000000002328,
+        100,
+        83.30000000004657,
+        83.29999999993015,
+        132.59999999997672,
+        34.10000000009313,
+        15.199999999953434,
+        51,
+        33.300000000046566,
+        33.79999999993015,
+        16.70000000006985,
+        31.399999999906868,
+        85.30000000004657,
+        83.19999999995343,
+        100.20000000006985,
+        166.59999999997672,
+        33.300000000046566,
+        48.39999999990687,
+        34.300000000046566,
+        34,
+        66.69999999995343,
+        32.800000000046566,
+        50.5,
+        33.40000000002328,
+        48.59999999997672,
+        34.699999999953434,
+        48.5,
+        118.10000000009313,
+        99.59999999997672,
+        166.5,
+        17.29999999993015,
+        16.600000000093132,
+        16.5,
+        115.29999999993015,
+        66.80000000004657,
+        34.79999999993015,
+        49.10000000009313,
+        17.5,
+        16.699999999953434,
+        16.599999999976717,
+        16.70000000006985,
+        14.79999999993015,
+        17.400000000023283,
+        17.300000000046566,
+        15.79999999993015,
+        84.40000000002328,
+        32.5,
+        16.199999999953434,
+        17.900000000023283,
+        17.099999999976717,
+        16.600000000093132,
+        16.699999999953434,
+        16.699999999953434,
+        14.70000000006985,
+        18.199999999953434,
+        15.900000000023283,
+        17.800000000046566,
+        50,
+        83.29999999993015,
+        150,
+        50.09999999997672,
+        31.800000000046566,
+        18.199999999953434,
+        31.600000000093132,
+        18.29999999993015,
+        66.20000000006985,
+        49.699999999953434,
+        34,
+        16.800000000046566,
+        49.09999999997672,
+        17.599999999976717,
+        16.699999999953434,
+        16.100000000093132,
+        17.199999999953434,
+        16.300000000046566,
+        15.599999999976717,
+        16.599999999976717,
+        16.800000000046566,
+        17.399999999906868,
+        15.900000000023283,
+        17.800000000046566,
+        82.09999999997672,
+        66.59999999997672,
+        51.59999999997672,
+        16.600000000093132,
+        16.699999999953434,
+        16.599999999976717,
+        15.20000000006985,
+        18,
+        16.79999999993015,
+        16.20000000006985,
+        17.099999999976717,
+        16.699999999953434,
+        15.20000000006985,
+        17.899999999906868,
+        16.900000000023283,
+        15,
+        18.300000000046566,
+        16.699999999953434,
+        15.900000000023283,
+        17.199999999953434,
+        16.900000000023283,
+        15.900000000023283,
+        32.40000000002328,
+        17.400000000023283,
+        17.599999999976717,
+        33.09999999997672,
+        16.900000000023283,
+        81.5,
+        17.099999999976717,
+        68.19999999995343,
+        66.60000000009313,
+        65,
+        18.29999999993015,
+        15.900000000023283,
+        16.199999999953434,
+        17.900000000023283,
+        16.599999999976717,
+        33.40000000002328,
+        81.80000000004657,
+        34.79999999993015,
+        33.40000000002328,
+        16.20000000006985,
+        115.39999999990687,
+        185.10000000009313,
+        149.89999999990687,
+        48.40000000002328,
+        183,
+        84.09999999997672,
+        34.10000000009313,
+        99.29999999993015,
+        34.5,
+        33.300000000046566,
+        31.400000000023283,
+        51.199999999953434,
+        49.90000000002328,
+        67.59999999997672,
+        33.300000000046566,
+        49.89999999990687,
+        49.300000000046566,
+        150.80000000004657,
+        47.89999999990687,
+        52,
+        49.800000000046566,
+        81.80000000004657,
+        216.69999999995343,
+        51.59999999997672,
+        66.80000000004657,
+        32.90000000002328,
+        100.39999999990687,
+        116.60000000009313,
+        33.39999999990687,
+        83.40000000002328,
+        115.59999999997672,
+        51.10000000009313,
+        233.19999999995343,
+        33.40000000002328,
+        83.19999999995343,
+        66.80000000004657,
+        48.5,
+        634.7999999999302,
+        166.70000000006985,
+        16.699999999953434,
+        66.5,
+        81.90000000002328,
+        18.199999999953434,
+        49.90000000002328,
+        50.09999999997672,
+        33.300000000046566,
+        33.300000000046566,
+        50,
+        66.79999999993015,
+        114.80000000004657,
+        68.5,
+        149.90000000002328,
+        81.69999999995343,
+        68.30000000004657,
+        233.29999999993015,
+        100.20000000006985,
+        266.5,
+        83.39999999990687,
+        66.60000000009313,
+        65,
+        35,
+        66.69999999995343,
+        215.40000000002328,
+        150.79999999993015,
+        17.20000000006985,
+        14.699999999953434,
+        118.59999999997672,
+        233.20000000006985,
+        83.40000000002328,
+        65.59999999997672,
+        17.79999999993015,
+        83.30000000004657,
+        148.5,
+        68.09999999997672,
+        16.800000000046566,
+        33.199999999953434,
+        100,
+        64.80000000004657,
+        16.599999999976717,
+        83.30000000004657,
+        68.59999999997672,
+        66.79999999993015,
+        83.30000000004657,
+        133.30000000004657,
+        33.29999999993015,
+        15.300000000046566,
+        18,
+        16.699999999953434,
+        16.70000000006985,
+        16,
+        17.29999999993015,
+        14.800000000046566,
+        17.699999999953434,
+        217.40000000002328,
+        116.80000000004657,
+        65.79999999993015,
+        249.90000000002328,
+        66.69999999995343,
+        84.30000000004657,
+        50,
+        15.900000000023283,
+        117.29999999993015,
+        100,
+        48.10000000009313,
+        52,
+        49,
+        34.29999999993015,
+        115.90000000002328
+      ],
+      "raf_timestamps_ms": [
+        858771.1,
+        858921.1,
+        858986.6,
+        859004.4,
+        859019.3,
+        859036.3,
+        859119.8,
+        859237.8,
+        859421.2,
+        859604.4,
+        859654.5,
+        859921.1,
+        859987.8,
+        860135.9,
+        860219.2,
+        860371.1,
+        860420.9,
+        860437.7,
+        860453.3,
+        860469.5,
+        860486.6,
+        860502.5,
+        860536.8,
+        860602.4,
+        860721.1,
+        860804.4,
+        860837.8,
+        860852.7,
+        860869.5,
+        860886.6,
+        860902.6,
+        860920.8,
+        860937.7,
+        860953.7,
+        860969.1,
+        860986.5,
+        861021,
+        861037,
+        861052.9,
+        861087.8,
+        861104.4,
+        861137.7,
+        861170.6,
+        861254.4,
+        861304.4,
+        861321,
+        861336,
+        861352.8,
+        861387.7,
+        861403.2,
+        861421.1,
+        861437.7,
+        861587.8,
+        861604,
+        861619.3,
+        861669.9,
+        861687.8,
+        861754.4,
+        861854.3,
+        861937.8,
+        861987.7,
+        862102.7,
+        862170.8,
+        862204.4,
+        862220.8,
+        862236.1,
+        862252.6,
+        862271.1,
+        862320.8,
+        862653.7,
+        862687.7,
+        862703.8,
+        862721,
+        862736.6,
+        862754.4,
+        862886.7,
+        862920.5,
+        862937.7,
+        862970.7,
+        863054.3,
+        863104.4,
+        863154.3,
+        863221.1,
+        863287.7,
+        863386.7,
+        863503.5,
+        863521,
+        863536.5,
+        863553.5,
+        863570.6,
+        863586.4,
+        863604.3,
+        863671,
+        863769.5,
+        864002.5,
+        864219.7,
+        864269.6,
+        864304.4,
+        864320.4,
+        864354,
+        864404.3,
+        864437.7,
+        864452.5,
+        864470.6,
+        864485.8,
+        864502.7,
+        864521,
+        864669.5,
+        864687.8,
+        864704.4,
+        864771,
+        864821,
+        864937.5,
+        865154.3,
+        865287.6,
+        865454.3,
+        865502.6,
+        865621,
+        865721,
+        865804.3,
+        865887.6,
+        866020.2,
+        866054.3,
+        866069.5,
+        866120.5,
+        866153.8,
+        866187.6,
+        866204.3,
+        866235.7,
+        866321,
+        866404.2,
+        866504.4,
+        866671,
+        866704.3,
+        866752.7,
+        866787,
+        866821,
+        866887.7,
+        866920.5,
+        866971,
+        867004.4,
+        867053,
+        867087.7,
+        867136.2,
+        867254.3,
+        867353.9,
+        867520.4,
+        867537.7,
+        867554.3,
+        867570.8,
+        867686.1,
+        867752.9,
+        867787.7,
+        867836.8,
+        867854.3,
+        867871,
+        867887.6,
+        867904.3,
+        867919.1,
+        867936.5,
+        867953.8,
+        867969.6,
+        868054,
+        868086.5,
+        868102.7,
+        868120.6,
+        868137.7,
+        868154.3,
+        868171,
+        868187.7,
+        868202.4,
+        868220.6,
+        868236.5,
+        868254.3,
+        868304.3,
+        868387.6,
+        868537.6,
+        868587.7,
+        868619.5,
+        868637.7,
+        868669.3,
+        868687.6,
+        868753.8,
+        868803.5,
+        868837.5,
+        868854.3,
+        868903.4,
+        868921,
+        868937.7,
+        868953.8,
+        868971,
+        868987.3,
+        869002.9,
+        869019.5,
+        869036.3,
+        869053.7,
+        869069.6,
+        869087.4,
+        869169.5,
+        869236.1,
+        869287.7,
+        869304.3,
+        869321,
+        869337.6,
+        869352.8,
+        869370.8,
+        869387.6,
+        869403.8,
+        869420.9,
+        869437.6,
+        869452.8,
+        869470.7,
+        869487.6,
+        869502.6,
+        869520.9,
+        869537.6,
+        869553.5,
+        869570.7,
+        869587.6,
+        869603.5,
+        869635.9,
+        869653.3,
+        869670.9,
+        869704,
+        869720.9,
+        869802.4,
+        869819.5,
+        869887.7,
+        869954.3,
+        870019.3,
+        870037.6,
+        870053.5,
+        870069.7,
+        870087.6,
+        870104.2,
+        870137.6,
+        870219.4,
+        870254.2,
+        870287.6,
+        870303.8,
+        870419.2,
+        870604.3,
+        870754.2,
+        870802.6,
+        870985.6,
+        871069.7,
+        871103.8,
+        871203.1,
+        871237.6,
+        871270.9,
+        871302.3,
+        871353.5,
+        871403.4,
+        871471,
+        871504.3,
+        871554.2,
+        871603.5,
+        871754.3,
+        871802.2,
+        871854.2,
+        871904,
+        871985.8,
+        872202.5,
+        872254.1,
+        872320.9,
+        872353.8,
+        872454.2,
+        872570.8,
+        872604.2,
+        872687.6,
+        872803.2,
+        872854.3,
+        873087.5,
+        873120.9,
+        873204.1,
+        873270.9,
+        873319.4,
+        873954.2,
+        874120.9,
+        874137.6,
+        874204.1,
+        874286,
+        874304.2,
+        874354.1,
+        874404.2,
+        874437.5,
+        874470.8,
+        874520.8,
+        874587.6,
+        874702.4,
+        874770.9,
+        874920.8,
+        875002.5,
+        875070.8,
+        875304.1,
+        875404.3,
+        875670.8,
+        875754.2,
+        875820.8,
+        875885.8,
+        875920.8,
+        875987.5,
+        876202.9,
+        876353.7,
+        876370.9,
+        876385.6,
+        876504.2,
+        876737.4,
+        876820.8,
+        876886.4,
+        876904.2,
+        876987.5,
+        877136,
+        877204.1,
+        877220.9,
+        877254.1,
+        877354.1,
+        877418.9,
+        877435.5,
+        877518.8,
+        877587.4,
+        877654.2,
+        877737.5,
+        877870.8,
+        877904.1,
+        877919.4,
+        877937.4,
+        877954.1,
+        877970.8,
+        877986.8,
+        878004.1,
+        878018.9,
+        878036.6,
+        878254,
+        878370.8,
+        878436.6,
+        878686.5,
+        878753.2,
+        878837.5,
+        878887.5,
+        878903.4,
+        879020.7,
+        879120.7,
+        879168.8,
+        879220.8,
+        879269.8,
+        879304.1,
+        879420
+      ],
+      "draw_calls_min": 50,
+      "draw_calls_max": 50,
+      "page_visible_throughout": true,
+      "visibility_events": [],
+      "interpretation": "Scene submissions per elapsed sample time; rAF intervals are raw and unclamped. Neither is a measurement of presented frames or GPU time.",
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5364.400000035763,
+      "firstRenderMs": 5822.600000023842,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 117.29999999993015,
+      "camera": [
+        51.634033058564846,
+        36,
+        34.32093574055103
+      ],
+      "target": [
+        1.1867687375622504,
+        -5.4946843401445875,
+        5.017777230158989
+      ],
+      "defaultCamera": [
+        25.08552584161109,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622504,
+        -5.4946843401445875,
+        5.017777230158989
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 14413,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.3736649317709453,
+        "right": 0.7066519520894216,
+        "bottom": -1.047827986522615,
+        "top": 0.7907367788453974
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      },
+      "total_duration_with_warmup_ms": 24068.80000001192,
+      "warmup_moves": 2,
+      "camera_moving": true,
+      "camera_owner": "CameraController"
+    }
+  },
+  "samples": [
+    {
+      "at": 857289.5,
+      "wallTime": "2026-11-15T20:33:05.474Z",
+      "pageAgeMs": 857289.5,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14052,
+      "callbackCount": 14052,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 12,
+        "totalMs": 742.7000000476837,
+        "maxMs": 227.39999997615814,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 857519.9000000358,
+      "wallTime": "2026-11-15T20:33:05.704Z",
+      "pageAgeMs": 857520,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14054,
+      "callbackCount": 14054,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 14,
+        "totalMs": 804.5000000596046,
+        "maxMs": 227.39999997615814,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 858788.1000000238,
+      "wallTime": "2026-11-15T20:33:06.972Z",
+      "pageAgeMs": 858788.1000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14065,
+      "callbackCount": 14065,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 25,
+        "totalMs": 1319.7999999523163,
+        "maxMs": 227.39999997615814,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 859638.1000000238,
+      "wallTime": "2026-11-15T20:33:07.822Z",
+      "pageAgeMs": 859638.1000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14074,
+      "callbackCount": 14074,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 34,
+        "totalMs": 1734.7999998927116,
+        "maxMs": 227.39999997615814,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 860461.9000000358,
+      "wallTime": "2026-11-15T20:33:08.646Z",
+      "pageAgeMs": 860461.9000000358,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14083,
+      "callbackCount": 14083,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 43,
+        "totalMs": 2335.2999998927116,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 861589,
+      "wallTime": "2026-11-15T20:33:09.773Z",
+      "pageAgeMs": 861589,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14117,
+      "callbackCount": 14117,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 77,
+        "totalMs": 2917.0999999046326,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:35",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 862663,
+      "wallTime": "2026-11-15T20:33:10.847Z",
+      "pageAgeMs": 862663.1000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14134,
+      "callbackCount": 14134,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 94,
+        "totalMs": 3412.399999856949,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:36",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 863516.4000000358,
+      "wallTime": "2026-11-15T20:33:11.701Z",
+      "pageAgeMs": 863516.5,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14150,
+      "callbackCount": 14150,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 110,
+        "totalMs": 3856.4999998807907,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:36",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 864452.6000000238,
+      "wallTime": "2026-11-15T20:33:12.637Z",
+      "pageAgeMs": 864452.6000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14167,
+      "callbackCount": 14167,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 127,
+        "totalMs": 4427.299999952316,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:36",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 865523.6000000238,
+      "wallTime": "2026-11-15T20:33:13.708Z",
+      "pageAgeMs": 865523.6000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14181,
+      "callbackCount": 14181,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 141,
+        "totalMs": 4944.500000119209,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:36",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 866505,
+      "wallTime": "2026-11-15T20:33:14.689Z",
+      "pageAgeMs": 866505.1000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14196,
+      "callbackCount": 14196,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 156,
+        "totalMs": 5714.100000023842,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:36",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 867537.8000000119,
+      "wallTime": "2026-11-15T20:33:15.722Z",
+      "pageAgeMs": 867537.8000000119,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14211,
+      "callbackCount": 14211,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 171,
+        "totalMs": 6103.200000047684,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 868558.4000000358,
+      "wallTime": "2026-11-15T20:33:16.743Z",
+      "pageAgeMs": 868558.9000000358,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14241,
+      "callbackCount": 14241,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 201,
+        "totalMs": 6474.8000002503395,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 869461,
+      "wallTime": "2026-11-15T20:33:17.645Z",
+      "pageAgeMs": 869463.6000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14275,
+      "callbackCount": 14275,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 235,
+        "totalMs": 6786.700000345707,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 870620.7000000477,
+      "wallTime": "2026-11-15T20:33:18.805Z",
+      "pageAgeMs": 870620.7000000477,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14306,
+      "callbackCount": 14306,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 266,
+        "totalMs": 7350.100000321865,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 871490.3000000119,
+      "wallTime": "2026-11-15T20:33:19.675Z",
+      "pageAgeMs": 871490.3000000119,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14318,
+      "callbackCount": 14318,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 278,
+        "totalMs": 7887.800000309944,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 872489.2000000477,
+      "wallTime": "2026-11-15T20:33:20.674Z",
+      "pageAgeMs": 872489.3000000119,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14331,
+      "callbackCount": 14331,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 291,
+        "totalMs": 8519.80000025034,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:37",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 873970.5,
+      "wallTime": "2026-11-15T20:33:22.155Z",
+      "pageAgeMs": 873988,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14342,
+      "callbackCount": 14342,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 302,
+        "totalMs": 8996.30000025034,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:38",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 874471.1000000238,
+      "wallTime": "2026-11-15T20:33:22.656Z",
+      "pageAgeMs": 874471.2000000477,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14351,
+      "callbackCount": 14351,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 311,
+        "totalMs": 9267.800000369549,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:38",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 875687.7000000477,
+      "wallTime": "2026-11-15T20:33:23.872Z",
+      "pageAgeMs": 875687.7000000477,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14361,
+      "callbackCount": 14361,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 321,
+        "totalMs": 9812.000000476837,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:38",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 876538.3000000119,
+      "wallTime": "2026-11-15T20:33:24.723Z",
+      "pageAgeMs": 876538.3000000119,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14371,
+      "callbackCount": 14371,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 331,
+        "totalMs": 10263.700000464916,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:38",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 877454.1000000238,
+      "wallTime": "2026-11-15T20:33:25.639Z",
+      "pageAgeMs": 877454.1000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14383,
+      "callbackCount": 14383,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 343,
+        "totalMs": 10803.200000464916,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:38",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 878678.1000000238,
+      "wallTime": "2026-11-15T20:33:26.863Z",
+      "pageAgeMs": 878686.6000000238,
+      "visible": "visible",
+      "cameraBusy": true,
+      "frame": 14401,
+      "callbackCount": 14401,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 361,
+        "totalMs": 11329.100000441074,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:39",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 880006.6000000238,
+      "wallTime": "2026-11-15T20:33:28.191Z",
+      "pageAgeMs": 880006.6000000238,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 14413,
+      "callbackCount": 14413,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 373,
+        "totalMs": 12007.100000500679,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:39",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 880451.2000000477,
+      "wallTime": "2026-11-15T20:33:28.636Z",
+      "pageAgeMs": 880451.2000000477,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 14425,
+      "callbackCount": 14425,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 385,
+        "totalMs": 12310.500000476837,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:39",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    {
+      "at": 881471.8000000119,
+      "wallTime": "2026-11-15T20:33:29.656Z",
+      "pageAgeMs": 881471.8000000119,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 14457,
+      "callbackCount": 14457,
+      "renderCpuDiagnostics": {
+        "enabled": true,
+        "calls": 417,
+        "totalMs": 12853.40000039339,
+        "maxMs": 256.69999998807907,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1088,
+        "height": 425
+      },
+      "drawingBuffer": {
+        "width": 1088,
+        "height": 425
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:39",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 452,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    }
+  ],
+  "after": {
+    "at": 881479.6000000238,
+    "wallTime": "2026-11-15T20:33:29.664Z",
+    "pageAgeMs": 881479.6000000238,
+    "visible": "visible",
+    "cameraBusy": false,
+    "frame": 14458,
+    "callbackCount": 14458,
+    "renderCpuDiagnostics": {
+      "enabled": true,
+      "calls": 418,
+      "totalMs": 12853.90000039339,
+      "maxMs": 256.69999998807907,
+      "meaning": "CPU wall duration of renderer.render, not GPU time"
+    },
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "renderer": {
+      "renderers": 1,
+      "rendererCreated": 1,
+      "rendererDisposed": 0,
+      "observers": 3,
+      "listeners": 7,
+      "dataTimers": 1,
+      "dataTimerStarts": 1,
+      "dataTimerStops": 0,
+      "trendMounts": 2,
+      "trendUnmounts": 0
+    },
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "calls": 50,
+    "triangles": 106042,
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "canvas": {
+      "width": 1088,
+      "height": 425
+    },
+    "drawingBuffer": {
+      "width": 1088,
+      "height": 425
+    },
+    "loadGeneration": 1,
+    "scenario": "NORMAL",
+    "snapshotId": "smartwater-m1.2:NORMAL:39",
+    "task": "SUCCEEDED",
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 452,
+      "resizes": 0,
+      "active": 2
+    },
+    "ownership": {
+      "renderers": 1,
+      "rendererCreated": 1,
+      "rendererDisposed": 0,
+      "observers": 3,
+      "listeners": 7,
+      "dataTimers": 1,
+      "dataTimerStarts": 1,
+      "dataTimerStops": 0,
+      "trendMounts": 2,
+      "trendUnmounts": 0
+    },
+    "toolRecords": 155,
+    "history": {
+      "do": 1441,
+      "blower_power": 1441
+    },
+    "domNodes": 639,
+    "unavailable": {
+      "browserInternalListeners": null,
+      "gpuMemoryBytes": null,
+      "vueInternalSubscriptions": null
+    }
+  }
+}

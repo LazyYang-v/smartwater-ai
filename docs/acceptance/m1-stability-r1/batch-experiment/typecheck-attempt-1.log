@@ -1,0 +1,4 @@
+$ vue-tsc --noEmit
+src/scene/staticBatches.ts(14,80): error TS18046: 'v' is of type 'unknown'.
+src/scene/staticBatches.ts(14,94): error TS18046: 'v' is of type 'unknown'.
+[ELIFECYCLE] Command failed with exit code 2.

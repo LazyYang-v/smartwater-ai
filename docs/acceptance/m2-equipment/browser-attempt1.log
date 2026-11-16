@@ -1,0 +1,6 @@
+ElementResolutionError: page.click timed out after 3003ms: Selector [data-device-label=SW_PRE_PUMP_001] matched 1 elements, but none can receive input; <p> intercepts pointer events
+    at #retryElementAction (file:////[eval1]:20580:27)
+    at async #withPage.sessionTimeoutMs.sessionTimeoutMs (file:////[eval1]:20672:29)
+    at async file:////[eval1]:17798:28
+
+ego's nodejs process exited with code 1.

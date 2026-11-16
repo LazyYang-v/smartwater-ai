@@ -1,0 +1,34 @@
+$ node --experimental-strip-types --test tests/*.test.ts
+✔ a late animation callback cannot succeed ahead of its delayed deadline timer (8.81125ms)
+✔ a hidden page cancels before another camera mutation or success (24.089083ms)
+✔ abort after arrival but before render cannot produce a success receipt (5.809084ms)
+✔ deadline is checked again between camera arrival and render acknowledgement (8.055583ms)
+✔ only the two demonstration commands resolve to allowed calls (9.828958ms)
+✔ a repeated action id executes once and returns the same promise (48.539417ms)
+✔ a superseded operation cannot report success even if its handler resolves late (0.531542ms)
+✔ failure is terminal, timestamped, and replaying its id does not retry (0.345083ms)
+✔ user-origin metadata is retained without changing idempotency or tool semantics (7.988875ms)
+✔ perspective site fits and centers in 1440x659 actual viewport (6.216292ms)
+✔ perspective site fits and centers in 989x434 actual viewport (5.30075ms)
+✔ NORMAL has one coherent snapshot, fixed 4.8m depth and no calculated alarms (36.67075ms)
+✔ LOW_DO alarm refers to an actually low GOOD reading and its event time sample (14.0755ms)
+✔ MISSING_DATA leaves actual null gaps and does not clear existing low DO event (51.508584ms)
+✔ scenario switches publish atomically and reproduce data without accumulating prior alarms (209.146375ms)
+✔ NORMAL: KPI/device raw readings equal trend endpoints in every time window (22.410625ms)
+✔ LOW_DO: KPI/device raw readings equal trend endpoints in every time window (14.247417ms)
+✔ MISSING_DATA: KPI/device raw readings equal trend endpoints in every time window (23.833792ms)
+✔ advancing demo changes time by five seconds, preserves depth and event occurrence (51.316083ms)
+✔ central clock pauses hidden time and never catches up with a publication storm (1.878125ms)
+✔ stale power never predates newer GOOD history and retains the value at its actual observedAt (55.6935ms)
+✔ repeated visibility/resume signals never duplicate the owned Three loop (2.475708ms)
+✔ FPS uses submissions and elapsed wall time; raw long intervals remain in P95 (10.167791ms)
+✔ a foreground sample retains hidden intervals and becomes explicitly ineligible (0.899458ms)
+✔ PAGE_HIDDEN keeps its reason and produces exactly one CANCELLED terminal record (27.593ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1996.090208

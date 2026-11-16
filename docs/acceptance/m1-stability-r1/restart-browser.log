@@ -1,0 +1,2 @@
+{ restartPassed: true, normal: { url: 'http://127.0.0.1:4173/', title: 'SmartWater · M1 模拟运营大屏', qaExposed: false, snapshotId: 'smartwater-m1.2:NORMAL:0', charts: 2 }, focusStatus: 'SUCCEEDED', resetStatus: 'SUCCEEDED' }
+

@@ -1,0 +1,23 @@
+{
+  "build": "candidate-build.json",
+  "raw": "final-visibility.json",
+  "method": "Trusted actual hidden\u2192visible events; no visibility property changes or synthetic events. The optional five-second timer was deferred by the browser until resume, so the original overly strict timer assertion failed; original raw record retained. Native event interval itself proves the actual hidden duration.",
+  "pairs": [
+    {
+      "hidden_ms": 5609.599999964237,
+      "trusted": true,
+      "hidden_snapshot": "smartwater-m1.2:NORMAL:53",
+      "resume_snapshot": "smartwater-m1.2:NORMAL:53",
+      "hidden_clock_running": false,
+      "hidden_render_loops": 0,
+      "task_cancelled": true,
+      "reason": [
+        {
+          "code": "PAGE_HIDDEN",
+          "message": "\u9875\u9762\u9690\u85cf\uff0c\u955c\u5934\u52a8\u4f5c\u5df2\u53d6\u6d88"
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

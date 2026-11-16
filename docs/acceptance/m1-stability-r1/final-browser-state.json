@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-15T21:14:47.071Z",
+  "url": "http://127.0.0.1:4173/",
+  "build": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "scenario": "NORMAL",
+  "qaExposed": false,
+  "charts": 2,
+  "selectedLabels": 0,
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "nativeDpr": 2
+  },
+  "canvasAttributes": {
+    "width": 1218,
+    "height": 427
+  },
+  "actualWebGLDrawingBuffer": {
+    "width": 1218,
+    "height": 427
+  },
+  "contextLost": false,
+  "visibility": "visible",
+  "status": "SMARTWATER M1 · 单池样板GLB 资产 · 1.81 s 加载 · 50 DRAW CALLS演示规则 / 演示尺寸 · 非工程校核"
+}

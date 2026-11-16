@@ -1,0 +1,18 @@
+{
+  "pixels": [
+    2436,
+    854
+  ],
+  "same_camera": true,
+  "same_lighting": true,
+  "same_triangles": true,
+  "rms_rgb": [
+    0.006004309278027559,
+    0.004951280272436748,
+    0.0065773912676265036
+  ],
+  "max_channel_delta": 4,
+  "pixels_any_channel_over_2": 5,
+  "ratio_over_2": 2.4034486604138544e-06,
+  "visual_acceptance": "Not claimed. Geometric/camera equivalence is not user visual acceptance."
+}

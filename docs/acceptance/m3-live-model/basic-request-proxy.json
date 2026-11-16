@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-16T10:28:45.709Z",
+  "kind": "REAL_UPSTREAM_BASIC",
+  "provider": "OpenAI",
+  "model": "gpt-6-luna",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "route": "Existing environment HTTPS proxy enabled for this Node process only",
+  "reasoning_effort": "none",
+  "http": 200,
+  "request_id": "req_2eef273eade64cd8809f2dec42def6e5",
+  "elapsed_ms": 2701,
+  "response_id": "chatcmpl-EkoF6XmiHXCzC6wunN7b4CHP71x9G",
+  "returned_model": "gpt-6-luna",
+  "content": "OK",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 10,
+    "completion_tokens": 4,
+    "total_tokens": 14,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "passed": true
+}

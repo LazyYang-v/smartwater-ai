@@ -1,0 +1,6 @@
+{
+  "old_pid": 39449,
+  "command": "node /Users/leizhenyang/projects/smartwater-ai/node_modules/.bin/../vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strictPort",
+  "stopped_at_utc": "2026-11-15T17:25:00.023421+00:00",
+  "fixed_build_unchanged": true
+}

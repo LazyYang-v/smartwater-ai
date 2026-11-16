@@ -1,0 +1,211 @@
+{
+  "recorded_at_utc": "2026-11-15T16:48:15.711398+00:00",
+  "git_status_porcelain": "?? .gitignore\n?? AGENTS.md\n?? README.md\n?? assets/\n?? config/\n?? docs/\n?? index.html\n?? package.json\n?? pnpm-lock.yaml\n?? public/\n?? scripts/\n?? src/\n?? tests/\n?? tsconfig.json\n?? vite.config.ts\n",
+  "git_head": null,
+  "files": {
+    "src/App.vue": {
+      "sha256": "33d3445de447bd0daee6b6de3026a7082e7028c7468800d7f13db9b1c1b0d724",
+      "bytes": 10500
+    },
+    "src/main.ts": {
+      "sha256": "e6989f43be872be95a6bcf4185151038b63e88fc2ff7b4a776b654b909804598",
+      "bytes": 112
+    },
+    "src/styles.css": {
+      "sha256": "54874af3364187c6a1572dcd5db2e65f4872f9312999ae63b553dc23a1fd4034",
+      "bytes": 12273
+    },
+    "src/env.d.ts": {
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "bytes": 38
+    },
+    "src/agent/demoParser.ts": {
+      "sha256": "232bed03f02b43bc44972f0db12ea58da6cd57256c615c53671cfa5f66161f19",
+      "bytes": 418
+    },
+    "src/agent/actionDispatcher.ts": {
+      "sha256": "391adb72241f4398dc1730fea9e6014737a3cc4c378f952db9f1ef3cac585433",
+      "bytes": 2636
+    },
+    "src/agent/types.ts": {
+      "sha256": "ee629e3eb507e17ed57f377fb395d26e3837ae984bc8e891d5432081d63e4723",
+      "bytes": 489
+    },
+    "src/scene/cameraController.ts": {
+      "sha256": "1acb800aa1c0d389c17771ca2fe4cd1420e4d23e300928d83001af1fcd404a9e",
+      "bytes": 3265
+    },
+    "src/scene/runtime.ts": {
+      "sha256": "ae5abaa2c8583605c9c3e3ddaea800326eead6d32192117996ae57f2dcff545f",
+      "bytes": 13501
+    },
+    "src/scene/deviceRegistry.ts": {
+      "sha256": "d4acfd2dc00a4eae4cd1d39ecd94265bb1a6310114036ae92cffb8d69009502c",
+      "bytes": 1150
+    },
+    "config/aeration.json": {
+      "sha256": "7e00575a8036718ac4ccd711c77ef44680a5bf3e9854a6db26a5212f5aa7ab57",
+      "bytes": 1296
+    },
+    "scripts/browser-performance.mjs": {
+      "sha256": "bd930eb007e8dfb5f58905c126d193de24c5894e58a919ad39b867fd471359ad",
+      "bytes": 2855
+    },
+    "scripts/download_assets.py": {
+      "sha256": "2fd792d79e0000dcc7cd9e870082f0c622eb67db646eafe35d1b4cec73ef580d",
+      "bytes": 2847
+    },
+    "scripts/browser-restart-check.mjs": {
+      "sha256": "0b3887a08202f6e3ceef672558595c7c10b4558054c9abb9c43ce35e721ecd71",
+      "bytes": 2878
+    },
+    "scripts/browser-acceptance.mjs": {
+      "sha256": "7babd07aec5eb4ea2ab41dbbe9ce80dd8d62ada5abf163e47d134b63a324a9a0",
+      "bytes": 11474
+    },
+    "scripts/blender/validate_asset.py": {
+      "sha256": "3feaddc3250d804c0de0e000437f1f43dca329ab4776ba5f5df6d20cab5fc19f",
+      "bytes": 3383
+    },
+    "scripts/blender/build_aeration.py": {
+      "sha256": "7bbc44e7d8f3247aaa86a86bb9e16661924833addaa6113db186b26001593c17",
+      "bytes": 23087
+    },
+    "public/favicon.svg": {
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+      "bytes": 302
+    },
+    "public/environments/daylight_2k.hdr": {
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "public/models/aeration-tank.glb": {
+      "sha256": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857",
+      "bytes": 24080432
+    },
+    "assets/source/aeration-tank.blend": {
+      "sha256": "c13a6ef4cb1f6393329030aaea31a85271a1400fa8618f9926828bfc1d46f222",
+      "bytes": 20178053
+    },
+    "assets/source/textures/worn_asphalt_rough_2k.jpg": {
+      "sha256": "71572c4d7f3b4f33bd45f2b25368b853101e58c85c826a7109bab851eb847a6a",
+      "bytes": 1823718
+    },
+    "assets/source/textures/concrete_nor_gl_2k.jpg": {
+      "sha256": "74bd74e02c00565c84d89f6a73fe672ba4fe254c5b43d83eaca0eb7be5159265",
+      "bytes": 589619
+    },
+    "assets/source/textures/water_normal_generated.png": {
+      "sha256": "d7dbf53a61f75bbe04ee954cd12e03973949d10c1b7b1baef44f72ac4997e447",
+      "bytes": 88799
+    },
+    "assets/source/textures/worn_asphalt_nor_gl_2k.jpg": {
+      "sha256": "114db3391e7d74c03758b06c8af2901a2c9392cf4cb37e7a8a3254a3235ce63e",
+      "bytes": 5863366
+    },
+    "assets/source/textures/concrete_rough_2k.jpg": {
+      "sha256": "d58060aa195ffd5fc90fc2468491f9e6fd8a8d374362605d8cfe7ddeabcdc84c",
+      "bytes": 961406
+    },
+    "assets/source/textures/concrete_diff_2k.jpg": {
+      "sha256": "92a0b37c2f64630ba776b514f3276ecbb98cd59a23dea2c7b83b3c63bc3e4f7a",
+      "bytes": 2265804
+    },
+    "assets/source/textures/worn_asphalt_diff_2k.jpg": {
+      "sha256": "8313d3f8d25515d6ef0be59d461cdeb0feb484694eae385711ecf688c0afa4de",
+      "bytes": 3573942
+    },
+    "dist/index.html": {
+      "sha256": "252a74ebdd0f2d369fd8f0ddb875fb4379355b0a02baaf33a098871e775dd926",
+      "bytes": 483
+    },
+    "dist/favicon.svg": {
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+      "bytes": 302
+    },
+    "dist/environments/daylight_2k.hdr": {
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "dist/models/aeration-tank.glb": {
+      "sha256": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857",
+      "bytes": 24080432
+    },
+    "dist/assets/index-CRYPafbZ.css": {
+      "sha256": "8e59d61f3e2b4e1aec298db9b1374c263a799ab67c22378462cfaa4132b9b45a",
+      "bytes": 12222
+    },
+    "dist/assets/index-BVclSLk7.js": {
+      "sha256": "94577ec2a6ecf485cb955dd3867c208900e928cfb49645973634bdd1a94bc9ca",
+      "bytes": 769141
+    },
+    "package.json": {
+      "sha256": "3d517833f3f44775c501fc899a10d3abbced5c7a5921bc4c0ce63811f6fa9373",
+      "bytes": 1164
+    },
+    "pnpm-lock.yaml": {
+      "sha256": "614f88fa59f420fdb04e8a9cd6b13a84b0b5adfed839a02fb8ae5aa35d5c867d",
+      "bytes": 28666
+    },
+    "vite.config.ts": {
+      "sha256": "913dc05edd5a69a4be0426717fbd0e967c5379689dd5384453549f2d25e274b6",
+      "bytes": 124
+    },
+    "tsconfig.json": {
+      "sha256": "c9b1ad66c406800ad56641799cb21d48a6357ffb5fdb71241bf00b650ca5ceee",
+      "bytes": 377
+    },
+    "index.html": {
+      "sha256": "f7b018e4a802c20f1b9b40ef65b57f8c69ee14c88fc201c359dc2cd8d46f126f",
+      "bytes": 383
+    },
+    "AGENTS.md": {
+      "sha256": "514eaef2642ee0889ee8209fbfcb0816ba817a7b04e360af4df8cfdbe97c78d2",
+      "bytes": 1596
+    },
+    "README.md": {
+      "sha256": "da40d7a00acfacc33318c9989d9436e799a2a7b6421eb5725ab1582e18381ccb",
+      "bytes": 2784
+    },
+    ".gitignore": {
+      "sha256": "9cf6f026ad5790e1b3ecd8631ddaed56fbf7a7b8278ccb10e5e2f7be2559fe91",
+      "bytes": 119
+    },
+    "docs/asset-register.json": {
+      "sha256": "ced24eb9124ba406dd5dae09be707c50c505671450f18723b61240b707dc78c3",
+      "bytes": 6544
+    }
+  },
+  "protected_old_evidence": {
+    "docs/acceptance/model-validation.log": "6ffa5ba4baf8e7405c25533cd13986144b84ecf07b65997aa5126dd6d8ff90a0",
+    "docs/acceptance/summary.json": "7777394b4ea2626c9637ad0b70ca1f99be17103a040bdd6e1b14395206aaa87f",
+    "docs/acceptance/screenshots.json": "687f9ae93391fc82bb442d7fb229c34459177576ca4d09374a3d356d3494516c",
+    "docs/acceptance/restart-process.json": "1ab843e06c179da1bd40bf3908b57c8fd697698f60df04f29a5a89dacf027624",
+    "docs/acceptance/restart-normal-production.png": "f3077d2afc7c3240db19616601b188aa7c1145f17a364e5113808867427ae078",
+    "docs/acceptance/stage-b-first-web.png": "9987ba7fbc303e88b9925b270beeecc3791d7e0adedb7320fc9a5604bcbb1c25",
+    "docs/acceptance/agent-reset-overview.png": "f9f14549fc0ecfd10f86ea777cda2a3cf67ee9ae6abf852d3320c5692a2c4590",
+    "docs/acceptance/restart-browser.json": "dc5256a62675b3bc34fd89acbe15c30e64fec879794eeee5af6dc5ff6bf0d5af",
+    "docs/acceptance/browser-tests.json": "e7d8ea7f1084353dcd9cd85d7e4c4397bcdc30351bc3f2d7c01499c66777c57b",
+    "docs/acceptance/model-final.json": "a1c72200ecc7d3d1341347ac7833c355f156ea18b339b83b3978119c9db81d7b",
+    "docs/acceptance/unit-tests.log": "9cab80490c157ffc8a1899567b85a43b96828c2c198b6132880e0b8dc7b5df1c",
+    "docs/acceptance/build-final.log": "0cf1a9485603661c8b047aeee5072eca6f0de69067844476d8c757320228836e",
+    "docs/acceptance/stage-a-missing-asset.png": "4b7abb53689fe8faa244576ad1e8888536e7a89dc63e7b9468350ba1b468c689",
+    "docs/acceptance/agent-focused.png": "8da76f4fbebf27cc44e57c9cc9ebd2de046443dd939c10e8a72b918da275a0c8",
+    "docs/acceptance/load-failure.png": "6596a5f6bf37f803ac0733dcdeb36c8610500fd25fff06750cf528249069ac84",
+    "docs/acceptance/build-first.log": "23ec8ead55a13dc38c77f1e075424c84b8f4a3000f4cc46c92e6dd09c9ff55e0",
+    "docs/acceptance/connections-closeup.png": "025303ae4dc4f8d764d5c5b878ae3eb2fac2cb195a9da226e81abb0aaf4a9603",
+    "docs/acceptance/performance.json": "825f4de4fadf34f02e35a7c9580a876c8592e5093b59cd1f95ab285ab540f4ac",
+    "docs/acceptance/model-first.json": "d9fed87e813e8c64c55a16d3f0d8e88d3eb7807fa982ebac48e9233a815a90f0",
+    "docs/acceptance/layout-and-visible-tools.json": "b7b4d8ffb4cc22efea88eb8c1cf153cb1b65327f3e641afe2dd25c169fa4a24f",
+    "docs/acceptance/performance-baseline.json": "9d756f1a84a1667cfbb6e451de8786f226a870d5e97b6185b227cf5a21dd8720",
+    "docs/acceptance/performance-no-polling.json": "cbab977666bedbc56d6b7c9108268190c7b2a2d39083aba4d1eb07a192cb8b41",
+    "docs/acceptance/aerators-water-hidden.png": "781ea52120ff75d63a42aa9017419e891e9e3a0b0c5c900aee727a069feb47b0",
+    "docs/acceptance/overview-1920.png": "04dfef7196e0a4b2142d9eadec4c3ae60fbf102b1fcb764be5528cea3cbe2ba5",
+    "docs/acceptance/layout-1366.png": "40d4bca8380c766239b1d7d1e8bc43ef01587f5a984dbca10152352d4f61686f",
+    "docs/acceptance/stage-c-overview.png": "99e6df4604e5af1d4a2ad91429dffd5d9dad766f880a5bd8cd3c14ad2e770372",
+    "docs/acceptance/stage-c-aerators.png": "96fc11f77ed8d88f805455866af6b0297a65a31e8882f80f8c9afcd178376be9",
+    "docs/acceptance/model-validation.json": "990c647d8145e1687fb6010351822afb79290521a21bf6667fb95bebe45bdbf5",
+    "docs/acceptance/build.log": "2d7885a45f7026902809e850a1b94aecb321d38c730e2e08a8c68b2ba63d7f1a",
+    "docs/references/dashboard-target.png": "b59b4d090c143b86ba82217249e20afa19c161ce083722e83da288cf8a2d683c"
+  }
+}

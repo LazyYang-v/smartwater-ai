@@ -1,0 +1,229 @@
+{
+  "recorded_at_utc": "2026-11-15T17:34:23.228118+00:00",
+  "basis": "Recorded baseline file hashes; explicit list of this round new implementation and asset files. Existing tests/dispatcher.test.ts is not listed as newly created. Evidence directory and generated dist manifest listed separately.",
+  "changes": [
+    {
+      "file": "src/App.vue",
+      "state": "modified",
+      "before_sha256": "33d3445de447bd0daee6b6de3026a7082e7028c7468800d7f13db9b1c1b0d724",
+      "after_sha256": "a0f3645a8a912560af95f86357c5addcb6d8612fb1f65f7d8c3b308c13dfc79f",
+      "bytes": 10674
+    },
+    {
+      "file": "src/styles.css",
+      "state": "modified",
+      "before_sha256": "54874af3364187c6a1572dcd5db2e65f4872f9312999ae63b553dc23a1fd4034",
+      "after_sha256": "4739c724bb2503521e40f6a4d8c22a0994b8b815eb61d1aa9f2e6eec3461c145",
+      "bytes": 14198
+    },
+    {
+      "file": "src/scene/runtime.ts",
+      "state": "modified",
+      "before_sha256": "ae5abaa2c8583605c9c3e3ddaea800326eead6d32192117996ae57f2dcff545f",
+      "after_sha256": "e9a68924e72c4d8975df281b1426c60e4329b210803c95419d058c7d99cacb74",
+      "bytes": 16019
+    },
+    {
+      "file": "config/aeration.json",
+      "state": "modified",
+      "before_sha256": "7e00575a8036718ac4ccd711c77ef44680a5bf3e9854a6db26a5212f5aa7ab57",
+      "after_sha256": "c541f955a7776ab01ff3862082f8fa8c4b861a5c8ff29d912299603a9a7a2718",
+      "bytes": 1934
+    },
+    {
+      "file": "scripts/browser-performance.mjs",
+      "state": "modified",
+      "before_sha256": "bd930eb007e8dfb5f58905c126d193de24c5894e58a919ad39b867fd471359ad",
+      "after_sha256": "d6dfeff918d32ed728eac8630012d581b56b8973c30d1c669a6f1e470414dd01",
+      "bytes": 3775
+    },
+    {
+      "file": "scripts/browser-restart-check.mjs",
+      "state": "modified",
+      "before_sha256": "0b3887a08202f6e3ceef672558595c7c10b4558054c9abb9c43ce35e721ecd71",
+      "after_sha256": "e4b940b4600e50185909f4bee7b893d02e1db4fc7c5cfad823f7bb08930c7ce6",
+      "bytes": 3284
+    },
+    {
+      "file": "scripts/browser-acceptance.mjs",
+      "state": "modified",
+      "before_sha256": "7babd07aec5eb4ea2ab41dbbe9ce80dd8d62ada5abf163e47d134b63a324a9a0",
+      "after_sha256": "99e8d053f70c43c64e59dc9acf11c8f2bc6e7f25d1f5a140a45b3b8accda0d89",
+      "bytes": 16206
+    },
+    {
+      "file": "scripts/blender/validate_asset.py",
+      "state": "modified",
+      "before_sha256": "3feaddc3250d804c0de0e000437f1f43dca329ab4776ba5f5df6d20cab5fc19f",
+      "after_sha256": "3469ad253b4ffc7a65fc515ef72910326b4123b52ea6696c2b528e588c69038c",
+      "bytes": 4641
+    },
+    {
+      "file": "scripts/blender/build_aeration.py",
+      "state": "modified",
+      "before_sha256": "7bbc44e7d8f3247aaa86a86bb9e16661924833addaa6113db186b26001593c17",
+      "after_sha256": "24f6a99bde9d53ada467a4011ce28c02bc09b549cef1774ec3ea9ba0467aa8da",
+      "bytes": 23340
+    },
+    {
+      "file": "public/models/aeration-tank.glb",
+      "state": "modified",
+      "before_sha256": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857",
+      "after_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "bytes": 31254844
+    },
+    {
+      "file": "assets/source/aeration-tank.blend",
+      "state": "modified",
+      "before_sha256": "c13a6ef4cb1f6393329030aaea31a85271a1400fa8618f9926828bfc1d46f222",
+      "after_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+      "bytes": 29154960
+    },
+    {
+      "file": "dist/index.html",
+      "state": "modified",
+      "before_sha256": "252a74ebdd0f2d369fd8f0ddb875fb4379355b0a02baaf33a098871e775dd926",
+      "after_sha256": "29d8c941ad7b70e79962af9d1585ee587a27919e3035460f694c173fa7c060ce",
+      "bytes": 483
+    },
+    {
+      "file": "dist/models/aeration-tank.glb",
+      "state": "modified",
+      "before_sha256": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857",
+      "after_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "bytes": 31254844
+    },
+    {
+      "file": "dist/assets/index-CRYPafbZ.css",
+      "state": "replaced production bundle; original in baseline archive",
+      "before_sha256": "8e59d61f3e2b4e1aec298db9b1374c263a799ab67c22378462cfaa4132b9b45a"
+    },
+    {
+      "file": "dist/assets/index-BVclSLk7.js",
+      "state": "replaced production bundle; original in baseline archive",
+      "before_sha256": "94577ec2a6ecf485cb955dd3867c208900e928cfb49645973634bdd1a94bc9ca"
+    },
+    {
+      "file": "README.md",
+      "state": "modified",
+      "before_sha256": "da40d7a00acfacc33318c9989d9436e799a2a7b6421eb5725ab1582e18381ccb",
+      "after_sha256": "17296b8b71e9aae5ddcef644fddd5b019ea82aeb63182c8245c6b8f9aa411054",
+      "bytes": 2923
+    },
+    {
+      "file": "docs/asset-register.json",
+      "state": "modified",
+      "before_sha256": "ced24eb9124ba406dd5dae09be707c50c505671450f18723b61240b707dc78c3",
+      "after_sha256": "420050c1626fb3e3cdb5e34de50e3ce1f8e9f9740e0a69a5e9a6a3dbce7cfad9",
+      "bytes": 13568
+    },
+    {
+      "file": "src/scene/framing.ts",
+      "state": "created",
+      "after_sha256": "f42ce96429bbf5f2117b4dbafb8eb0d794e5b5d9450653c0bc37dda21e51facf",
+      "bytes": 2066
+    },
+    {
+      "file": "tests/framing.test.ts",
+      "state": "created",
+      "after_sha256": "45601d1ed61695fcd1cd5f19be344a8b4095e12feb6d972eb4ce7089fc4ab09b",
+      "bytes": 964
+    },
+    {
+      "file": "scripts/blender/visual_materials.py",
+      "state": "created",
+      "after_sha256": "d1b3b7dc06dc40c455359c02810453e22af7d22b03b49df78e3bdb2955d4becb",
+      "bytes": 4843
+    },
+    {
+      "file": "scripts/blender/inspect_visual_materials.py",
+      "state": "created",
+      "after_sha256": "f581765395a79e2a29ec160ba8db737f35cbb63ac0fce55b42f91fff8842df66",
+      "bytes": 2093
+    },
+    {
+      "file": "scripts/download_visual_r1.py",
+      "state": "created",
+      "after_sha256": "b5a5c0fea34875792c1f4477435c5bab6e427939367d5fc6ec5b3ea147bb1952",
+      "bytes": 2009
+    },
+    {
+      "file": "scripts/freeze_visual_r1.py",
+      "state": "created",
+      "after_sha256": "5b2049ba80c17c3cc094c5d79fa11e2a431495ddfd08c7948d83530292281d3e",
+      "bytes": 2001
+    },
+    {
+      "file": "scripts/browser-visual-evidence.mjs",
+      "state": "created",
+      "after_sha256": "d8d2862198042307e2a8e31df55b7f8217b53162352b802c661257b19ca320e5",
+      "bytes": 5866
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_01_diff_2k.jpg",
+      "state": "created",
+      "after_sha256": "ca24c52dabae67ef49093f91d8f9b9e5328a3b9fcb1327742ff6181ee542e017",
+      "bytes": 2967720
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_01_nor_gl_2k.jpg",
+      "state": "created",
+      "after_sha256": "796b010208e346bbeec4c468f286c3892852a454f77cb516d6f4a6e7c240de01",
+      "bytes": 3261423
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_01_rough_2k.jpg",
+      "state": "created",
+      "after_sha256": "e66fa941d6daa33ba334c853bf126c85f1d77e7b72778073237e4ef8c7c97774",
+      "bytes": 1488360
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_diff.png",
+      "state": "created",
+      "after_sha256": "edd112f70015b34856033cfc9bd724e1fc3a655dab3ed7cc3d0cddfad04b6333",
+      "bytes": 2900076
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_nor_gl.png",
+      "state": "created",
+      "after_sha256": "5a81a71862820c29e5c12cbe5c40a64d96f2702a89807048cb31b2de59d2f399",
+      "bytes": 2096782
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_rough.png",
+      "state": "created",
+      "after_sha256": "b998598d2c2d1955b2f821d3c505f7ff72c1f035df6f762eac965685487ba6ee",
+      "bytes": 491507
+    },
+    {
+      "file": "assets/source/textures/concrete_walkway_r1_diff.png",
+      "state": "created",
+      "after_sha256": "8874ed25a87536695116718fa8ad076c81b75a412afb3abf48c1973b4ce86d46",
+      "bytes": 2432615
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_diff.png",
+      "state": "created",
+      "after_sha256": "d308430cca9f351ba299bd0a21336eaca1498e8030f63257990129783433e32c",
+      "bytes": 2644708
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_nor_gl.png",
+      "state": "created",
+      "after_sha256": "03622c7d20d1e63eb93c62d0254adb6218d4d7f08c77cda8c875b55d9642fb55",
+      "bytes": 1735377
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_rough.png",
+      "state": "created",
+      "after_sha256": "a97e823a4c77a249aad20f4cd0d30ad75eaddf258d384daa385dd8f45b67d3e3",
+      "bytes": 270861
+    },
+    {
+      "file": "assets/source/textures/water_normal_r1.png",
+      "state": "created",
+      "after_sha256": "42996dd77ad322b071803309a61beac669a8c4913e25430914c81b544135dd57",
+      "bytes": 306028
+    }
+  ]
+}

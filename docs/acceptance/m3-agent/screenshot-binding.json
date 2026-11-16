@@ -1,0 +1,265 @@
+{
+  "build_id": "5115195d29016c0c6ed96f6ba703c57ff3e1ab89cc0d24fea3ad4874afe51755",
+  "screenshots": [
+    {
+      "file": "final-task-a.png",
+      "sha256": "8c8df9f58e408a95fe3951bd65330b944d1fafcc79e3aa28ff9d8034c4511fcd",
+      "capture_file_mtime_utc": "2026-11-16T09:38:09.958278+00:00",
+      "state_observed_at": "2026-11-16T09:38:09.771Z",
+      "css_viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "task_id": "d706245f-b48e-4f07-b648-b8b655eb4a29",
+      "snapshot_id": "smartwater-m1.2:NORMAL:0",
+      "build_id": "5115195d29016c0c6ed96f6ba703c57ff3e1ab89cc0d24fea3ad4874afe51755",
+      "browser_loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 475.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 539.5999999642372,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 202.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 209.19999998807907,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      }
+    },
+    {
+      "file": "final-task-b.png",
+      "sha256": "a11584d981614c3a90d9a2545c455993bc32f01c2d6dc97a020f42bb83a62eb5",
+      "capture_file_mtime_utc": "2026-11-16T09:38:10.257483+00:00",
+      "state_observed_at": "2026-11-16T09:38:10.069Z",
+      "css_viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "task_id": "b07b039f-043a-4566-b032-37069508c347",
+      "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+      "build_id": "5115195d29016c0c6ed96f6ba703c57ff3e1ab89cc0d24fea3ad4874afe51755",
+      "browser_loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 475.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 539.5999999642372,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 202.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 209.19999998807907,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      }
+    },
+    {
+      "file": "final-task-c.png",
+      "sha256": "189d594c64f3e045178e927fbc9f7e1e8aa95285bceed92af333fb9ca45844f7",
+      "capture_file_mtime_utc": "2026-11-16T09:38:10.534945+00:00",
+      "state_observed_at": "2026-11-16T09:38:10.349Z",
+      "css_viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "task_id": "f0d58659-d6ed-420d-b1ab-d3b017f384db",
+      "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+      "build_id": "5115195d29016c0c6ed96f6ba703c57ff3e1ab89cc0d24fea3ad4874afe51755",
+      "browser_loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 475.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 539.5999999642372,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 202.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 209.19999998807907,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      }
+    },
+    {
+      "file": "final-task-d.png",
+      "sha256": "b736db279c3045dc2321d04b0ad9f5d83eab56e52ed1e8e2508c9f9c3c3353b2",
+      "capture_file_mtime_utc": "2026-11-16T09:38:10.766568+00:00",
+      "state_observed_at": "2026-11-16T09:38:10.598Z",
+      "css_viewport": {
+        "width": 1920,
+        "height": 1080,
+        "dpr": 2
+      },
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "task_id": "63513ca0-06f3-4307-a23a-8e031edb7f20",
+      "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+      "build_id": "5115195d29016c0c6ed96f6ba703c57ff3e1ab89cc0d24fea3ad4874afe51755",
+      "browser_loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 475.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 539.5999999642372,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 202.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 209.19999998807907,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      }
+    }
+  ],
+  "script_checks": [
+    {
+      "url": "http://127.0.0.1:4173/assets/dashboard-Dnw4aJ4k.js",
+      "browser_sha256": "58acde1581f19266b04bc0cc643a0c32763582cfc31b57cacde4e2b7e0bba2db",
+      "dist_sha256": "58acde1581f19266b04bc0cc643a0c32763582cfc31b57cacde4e2b7e0bba2db",
+      "match": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/useSceneWorkspace-ClULg4Xq.js",
+      "browser_sha256": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+      "dist_sha256": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+      "match": true
+    }
+  ],
+  "model_checks": [
+    {
+      "device_id": "SW_BIO_AERATION_001",
+      "resource": "public/models/aeration-tank.glb",
+      "browser_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "match": true
+    },
+    {
+      "device_id": "SW_CLR_TANK_001",
+      "resource": "public/models/clarifier-tank.glb",
+      "browser_sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+      "match": true
+    },
+    {
+      "device_id": "SW_AIR_BLOWER_001",
+      "resource": "public/models/blower-unit.glb",
+      "browser_sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+      "match": true
+    },
+    {
+      "device_id": "SW_PRE_PUMP_001",
+      "resource": "public/models/pump-unit.glb",
+      "browser_sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e",
+      "match": true
+    }
+  ]
+}

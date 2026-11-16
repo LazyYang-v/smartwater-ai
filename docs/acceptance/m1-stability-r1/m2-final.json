@@ -1,0 +1,96 @@
+{
+  "build_id": "123a396904b6a753998cf5cfe8ac60fede7ab648e35d948d3a56650b92b11e94",
+  "at_utc": "2026-11-15T22:15:36.027776+00:00",
+  "files": {
+    "assets/dashboard-92AUn1nG.js": {
+      "bytes": 612500,
+      "sha256": "7f2624c7914a73439ec7a1550da381a5c169e682c81184265b6cab18d8e7a232"
+    },
+    "assets/dashboard-LZPFe-gO.css": {
+      "bytes": 20560,
+      "sha256": "3fd74e078723b3f97d95b3da6ff0047dfd616a32fda51627371c93df4f4b64fe"
+    },
+    "assets/useSceneWorkspace-C4-NkU4G.js": {
+      "bytes": 733551,
+      "sha256": "c837b534f99e28a380ef263e91be03c5cc1680f06337937357024fb5f873f677"
+    },
+    "assets/viewer-ChjgcI4j.js": {
+      "bytes": 3675,
+      "sha256": "4be37c7a0c54b090ff78ea900e9bfb2fc701359d34a7f826f08baa870ea08460"
+    },
+    "assets/viewer-CwsYaPmr.css": {
+      "bytes": 1635,
+      "sha256": "d464612a01afae81847613842c6dbc6d14872b236e9ddec89b6a7920eea9cede"
+    },
+    "environments/daylight_2k.hdr": {
+      "bytes": 5451493,
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198"
+    },
+    "favicon.svg": {
+      "bytes": 302,
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226"
+    },
+    "index.html": {
+      "bytes": 580,
+      "sha256": "e6623e067e42b8cf5474f1ec4957c2c719bdb8e8d2c71651a40c0ebd8865edfd"
+    },
+    "models/aeration-tank.glb": {
+      "bytes": 31254844,
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+    },
+    "models/clarifier-tank.glb": {
+      "bytes": 29034200,
+      "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+    },
+    "viewer.html": {
+      "bytes": 465,
+      "sha256": "aa909d770925005ffc43adb8a6121da1fabf3051025724a100b5d84799cb7a41"
+    }
+  },
+  "source_files": {
+    "src/App.vue": "0dc605b3dd9856034b81444a337312eedacde2130f36c6442328d696079a2bc5",
+    "src/agent/actionDispatcher.ts": "08c537947149566a2af1ee4d02153c40203630b27da2b10c8768f316a34ee136",
+    "src/agent/demoParser.ts": "bcb74fc5746f83087de7075ab8423a24afc3351e85254f661ac3eeb04900c192",
+    "src/agent/types.ts": "d7544be72a27c68891d20c0a709c1e97e17eba500833b783620504a6aeba4a41",
+    "src/charts/runtime.ts": "a073cbcf4ee143cc1ae4ac2c7ebf8fb6d375a55ca97376b6fa1d1fcc6dc64897",
+    "src/components/AssetViewer.vue": "d0275849d681bc572a7f4da3d22662a064a6c7a01f7ebe4b044fe5a4f676c0f7",
+    "src/components/dashboard/AgentWorkspace.vue": "d787e7f4d923a997d8efa43ee22690257e6426f77f554d4c85c2a2bf336bf5d1",
+    "src/components/dashboard/AlarmPanel.vue": "b12e931a6feae5a4ff6b47d28fea2756002e7dd18bbc50242cb6c3b2db8adeec",
+    "src/components/dashboard/DashboardHeader.vue": "4a48c2942db3bd6ae1d4f9e238134feba0155746b35c7eb7e09345e81cfb46b2",
+    "src/components/dashboard/DashboardShell.vue": "69f85aa9ffcc1ee3afffdfbc33ef4e88e930f1c696993f746b467a3454a168fd",
+    "src/components/dashboard/DeviceSummary.vue": "99b73656557cd4f9f7ed5ecd0828fe6f5533e8de0e299504c126ccd6f88ad639",
+    "src/components/dashboard/KpiOverview.vue": "c2b671e1a624c23192634a3142bce6746d85b2e74349b2992adba7be35eaee02",
+    "src/components/dashboard/ProcessFlowPanel.vue": "4df50d7d43c9fbca3df081ba3baaf375ab05abb1de90d82cb94f8c0a1cdf0a72",
+    "src/components/dashboard/SceneViewport.vue": "619c9c3b2311b2768e41626242e943c833f978b5105693272d75e9e6e5d44d42",
+    "src/components/dashboard/TrendPanel.vue": "f4003fdcef451fbcd62c194c39f8340b91363466c6b28b4a80e0a5957b62070c",
+    "src/composables/useDashboardContext.ts": "a1f2c764193073949fe3ec8f8fc20d6b0f3bf3bcd6a2713a3125c1a08d6b2aaa",
+    "src/composables/useMockData.ts": "f0e478caf3600df7fb6adf34401f3c65f0f037f70e32da3fb0456346199464b6",
+    "src/composables/useSceneWorkspace.ts": "8e7db8d1cdd632154ea7bf5f86856d26ce4f7b2c57ea3cf10d2841dcb2a828f5",
+    "src/data/mockDataProvider.ts": "5281cd2b39c0a3895a25d2bffd11e13458a356f60b01eb1df733184b770ed1c2",
+    "src/diagnostics/stability.ts": "7339106d8d2dd2211be2db111497905e25f2d56fb2fe89f30a2725c5befb5834",
+    "src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "src/main.ts": "61635ec69905e576f0a29b401cb4f02a6d5df2483d759403f6db436d2daaf67a",
+    "src/qa/exposeDashboardQA.ts": "707c26ba52028d442df2687ce47b9ea9789f84801b94e8930e649d4a35188f80",
+    "src/scene/cameraController.ts": "3dc5c9df20e9e0529df3a74aced8f995d94d0581ab0879a3350d9f06bc789b86",
+    "src/scene/deviceRegistry.ts": "eb849421b6ed0a6b44c99364ba45455666e50ee640f3070374365c3d0a6fa3bf",
+    "src/scene/frameSample.ts": "acebdc835734bbccb52097dde889563ef820b714278f4031cced6693aeaa4905",
+    "src/scene/framing.ts": "f42ce96429bbf5f2117b4dbafb8eb0d794e5b5d9450653c0bc37dda21e51facf",
+    "src/scene/loopLifecycle.ts": "58382324eae7c2b3e20218c657a9e52eb5a1b6a48b00e55dd3a5ce4c1edb0adb",
+    "src/scene/renderPolicy.ts": "2edda15396b52e15cc831f5c907743fbb6a51a8a9e9344319432d9236817b173",
+    "src/scene/runtime.ts": "9cc6d69d51ec8167a5ed9f082f22bf2d3ee39f3b67d91ed48574610da92fb682",
+    "src/scene/units.ts": "08735dc6bf855a98057b715654a215fc1afb59bfb739070764eb0731be6d70ca",
+    "src/styles.css": "4837e6b2cd4e07257cacfc866119feacd9dc84f3f020bb4403cae9d00d4cee07",
+    "src/viewer.ts": "e35fc15eb84448a540c21f5085a190a863e37f2f3acaa4db096078fa926f0035",
+    "tests/cameraDeadline.test.ts": "3814e2e17239ad04e861d4d9c00c13f1cae2f2a3349457b9535590c0472e6fab",
+    "tests/dispatcher.test.ts": "ecacfc6dcd54968dc9ce3824bba6cb7ec41d3276aab45bc5dbb7939c29fb5ee7",
+    "tests/framing.test.ts": "45601d1ed61695fcd1cd5f19be344a8b4095e12feb6d972eb4ce7089fc4ab09b",
+    "tests/mockData.test.ts": "27e55a77b2221f97cd8f353fc1b72d5ed8b84eabbb73475dab33e6e293cb3e35",
+    "tests/registryUnits.test.ts": "10cfb10a51b99403a7e3a32de5179b4ddf2182898aa86c0f41c53c7e113e6902",
+    "tests/renderPolicy.test.ts": "e194eb11402b801d3b36243c6d2b6519d6db8120b78b5a2b2b9691b755636398",
+    "tests/stability.test.ts": "fbbb0ec981129db9c66ac91d17fa770883b79cb244d8c38f0d9af9f8afd1a044"
+  },
+  "mode": "interaction priority default; original full effects optional and not certified stable",
+  "protected_unchanged": true,
+  "protected_files": 233,
+  "continuous_test_scope": "m2-candidate.json build b777, before final single-unit selector; final integration is short checks only"
+}

@@ -1,0 +1,53 @@
+{
+  "build_id": "b777e574c5450d96e166e3c6f66309f7ce459336aa7e1a0f4f4ae5099b0f230e",
+  "at_utc": "2026-11-15T22:02:49.327731+00:00",
+  "files": {
+    "assets/dashboard-DfyThyVt.css": {
+      "bytes": 20149,
+      "sha256": "4f3fb6fa3e15720a97e59791c52a66dcee54364f2bf478d05eab7d56d2c529c0"
+    },
+    "assets/dashboard-Du7fysH1.js": {
+      "bytes": 610674,
+      "sha256": "537991b1a867eaef23936e19930bb21ce6ebff1645f1316c4379d5e6270dfd26"
+    },
+    "assets/useSceneWorkspace-RwALetQF.js": {
+      "bytes": 732542,
+      "sha256": "71c7bf2eaf87968cc5a5eadc3402c8072f35c1a521f64faaf56fc0051e17a2d4"
+    },
+    "assets/viewer-BeBgaXDf.js": {
+      "bytes": 3680,
+      "sha256": "ee7371c0b34a3a12781db9a18302e5ef73e56e102a56d8ee2d62463840c7451e"
+    },
+    "assets/viewer-CwsYaPmr.css": {
+      "bytes": 1635,
+      "sha256": "d464612a01afae81847613842c6dbc6d14872b236e9ddec89b6a7920eea9cede"
+    },
+    "environments/daylight_2k.hdr": {
+      "bytes": 5451493,
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198"
+    },
+    "favicon.svg": {
+      "bytes": 302,
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226"
+    },
+    "index.html": {
+      "bytes": 580,
+      "sha256": "b89ca8402ec840f4f0b6a553330cffbbe8b300d65805cfcb5b94b1fc9429d3c4"
+    },
+    "models/aeration-tank.glb": {
+      "bytes": 31254844,
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+    },
+    "models/clarifier-tank.glb": {
+      "bytes": 29034200,
+      "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+    },
+    "viewer.html": {
+      "bytes": 465,
+      "sha256": "98a52a6e87377b0b21c590a8fefa3ee0e5602e8f1f9a7f11cbf020c2fc86351e"
+    }
+  },
+  "mode": "interactive default / original full effects optional",
+  "aeration_glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "clarifier_glb_sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+}

@@ -1,0 +1,47 @@
+{
+  "at": "2026-11-16T08:03:33.395547+00:00",
+  "build_id": "33e1733a5ff84653cc5c8f87a597a86abae9ab53014461492012a0d0b1c0ecb4",
+  "protected_unchanged": 447,
+  "build_and_source_unchanged": true,
+  "browser_glb_bytes_match": true,
+  "browser_js_css_match": true,
+  "changed": [
+    "src/App.vue",
+    "src/agent/demoParser.ts",
+    "src/components/AssetViewer.vue",
+    "src/components/dashboard/AgentWorkspace.vue",
+    "src/components/dashboard/KpiOverview.vue",
+    "src/components/dashboard/ProcessFlowPanel.vue",
+    "src/components/dashboard/SceneViewport.vue",
+    "src/composables/useDashboardContext.ts",
+    "src/composables/useSceneWorkspace.ts",
+    "src/data/mockDataProvider.ts",
+    "src/qa/exposeDashboardQA.ts",
+    "src/scene/deviceRegistry.ts",
+    "src/scene/plantSite.ts",
+    "src/scene/runtime.ts",
+    "src/scene/units.ts",
+    "src/styles.css"
+  ],
+  "added": [
+    "src/scene/roofPresentation.ts",
+    "tests/equipment.test.ts",
+    "config/equipment-layout.json",
+    "config/equipment-units.json"
+  ],
+  "source_before": ".cache/m22-before.tgz",
+  "asset_pairs": {
+    "blower": {
+      "device_id": "SW_AIR_BLOWER_001",
+      "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+      "glb_sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+      "blend_sha256": "84f8c9af86c49c49325ff083b57e7f6a9680e0289e343bb1416f4bbe5fac3e0a"
+    },
+    "pump": {
+      "device_id": "SW_PRE_PUMP_001",
+      "unit_id": "SW_UNIT_PUMP_ROOM_001",
+      "glb_sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e",
+      "blend_sha256": "05c412fc4a0d364b1dcee8f1cec44d863f81eea0715859cc5113a1e9b475d207"
+    }
+  }
+}

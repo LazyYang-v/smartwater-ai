@@ -1,0 +1,5 @@
+The first post-recovery UI test started on CAMERA_DATA_CHARTS page, where tool history was empty.
+FAIL many actions keep full history with bounded automatic DOM log list
+ElementResolutionError: .action-records>.secondary-button matched 0 elements.
+Correction: prepare >=22 real parser/dispatcher calls and record their terminal results before testing pagination. No record injection or manufactured successes.
+Second attempt prepared 22 actual successful tool calls, but automatic scrolling did not bring the load-more button into the compact log viewport before the tool timeout. Live observation confirmed 22 records, 20 rendered nodes, no cancel action started. Explicitly scroll the log container to its bottom and wait for button visibility before a native click.

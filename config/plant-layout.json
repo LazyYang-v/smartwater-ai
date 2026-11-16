@@ -1,0 +1,11 @@
+{
+  "id":"smartwater-dual-unit-demo-r1",
+  "note":"Two process units on shared demonstration ground. Not an engineering plant layout; no asserted process pipe connections.",
+  "placements":[
+    {"deviceId":"SW_BIO_AERATION_001","position":[-22,0,0],"yaw":0},
+    {"deviceId":"SW_CLR_TANK_001","position":[31,0,0],"yaw":0}
+  ],
+  "site":{"length":104,"width":44,"top":0,"thickness":0.24,"roadZ":18.2,"roadWidth":4.2,"plantingZ":-20.3},
+  "overviewDirection":[0.34,1.0,1.0],
+  "overviewFill":0.9
+}

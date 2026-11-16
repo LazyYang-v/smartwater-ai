@@ -1,0 +1,1886 @@
+[
+  {
+    "condition": "NORMAL",
+    "method": "Target.activateTarget to real blank tab with actual target IDs; focus emulation cleared per target; no spoofed property/events",
+    "hideIssued": "2026-11-15T20:03:40.038Z",
+    "before": {
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "4f7edd3c-43dd-451d-9580-a419e0b9a3f8",
+        "status": "RUNNING",
+        "started_at": "2026-11-15T20:03:39.895Z",
+        "finished_at": null
+      },
+      "d": {
+        "at": 18003.30000001192,
+        "wallTime": "2026-11-15T20:03:39.971Z",
+        "pageAgeMs": 18003.30000001192,
+        "visible": "visible",
+        "cameraBusy": true,
+        "frame": 408,
+        "callbackCount": 408,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 264,
+          "totalMs": 3421.5999999046326,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 3,
+          "stops": 2
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 3,
+          "dataTimerStops": 2,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 51,
+        "textureCount": 15,
+        "programCount": 5,
+        "calls": 51,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:2",
+        "task": "RUNNING",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 8,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 3,
+          "dataTimerStops": 2,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 7,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 462,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      }
+    },
+    "resumed": {
+      "at": 26128.400000035763,
+      "events": [
+        {
+          "at": 18087.5,
+          "wall": "2026-11-15T20:03:40.055Z",
+          "state": "hidden",
+          "trusted": true,
+          "diagnostics": {
+            "at": 18087.5,
+            "wallTime": "2026-11-15T20:03:40.055Z",
+            "pageAgeMs": 18087.5,
+            "visible": "hidden",
+            "cameraBusy": false,
+            "frame": 410,
+            "callbackCount": 410,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 266,
+              "totalMs": 3469.6999999284744,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": false,
+              "starts": 3,
+              "stops": 3
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 3,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:2",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 8,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 3,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 7,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 459,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        },
+        {
+          "at": 26112.400000035763,
+          "wall": "2026-11-15T20:03:48.080Z",
+          "state": "visible",
+          "trusted": true,
+          "diagnostics": {
+            "at": 26112.400000035763,
+            "wallTime": "2026-11-15T20:03:48.080Z",
+            "pageAgeMs": 26112.400000035763,
+            "visible": "visible",
+            "cameraBusy": false,
+            "frame": 410,
+            "callbackCount": 410,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 266,
+              "totalMs": 3469.6999999284744,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": true,
+              "starts": 4,
+              "stops": 3
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:2",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 10,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 7,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 459,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        }
+      ],
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "4f7edd3c-43dd-451d-9580-a419e0b9a3f8",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:03:39.895Z",
+        "finished_at": "2026-11-15T20:03:40.053Z",
+        "error": {
+          "code": "PAGE_HIDDEN",
+          "message": "页面隐藏，镜头动作已取消"
+        }
+      },
+      "d": {
+        "at": 26128.5,
+        "wallTime": "2026-11-15T20:03:48.096Z",
+        "pageAgeMs": 26128.5,
+        "visible": "visible",
+        "cameraBusy": false,
+        "frame": 412,
+        "callbackCount": 412,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 268,
+          "totalMs": 3471.0999999046326,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 4,
+          "stops": 3
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 50,
+        "textureCount": 15,
+        "programCount": 4,
+        "calls": 50,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:2",
+        "task": "CANCELLED",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 10,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 7,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 459,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      }
+    },
+    "later": {
+      "events": [
+        {
+          "at": 18087.5,
+          "wall": "2026-11-15T20:03:40.055Z",
+          "state": "hidden",
+          "trusted": true,
+          "diagnostics": {
+            "at": 18087.5,
+            "wallTime": "2026-11-15T20:03:40.055Z",
+            "pageAgeMs": 18087.5,
+            "visible": "hidden",
+            "cameraBusy": false,
+            "frame": 410,
+            "callbackCount": 410,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 266,
+              "totalMs": 3469.6999999284744,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": false,
+              "starts": 3,
+              "stops": 3
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 3,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:2",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 8,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 3,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 7,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 459,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        },
+        {
+          "at": 26112.400000035763,
+          "wall": "2026-11-15T20:03:48.080Z",
+          "state": "visible",
+          "trusted": true,
+          "diagnostics": {
+            "at": 26112.400000035763,
+            "wallTime": "2026-11-15T20:03:48.080Z",
+            "pageAgeMs": 26112.400000035763,
+            "visible": "visible",
+            "cameraBusy": false,
+            "frame": 410,
+            "callbackCount": 410,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 266,
+              "totalMs": 3469.6999999284744,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": true,
+              "starts": 4,
+              "stops": 3
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:2",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 10,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 3,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 7,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 459,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        }
+      ],
+      "d": {
+        "at": 32150.80000001192,
+        "wallTime": "2026-11-15T20:03:54.118Z",
+        "pageAgeMs": 32150.80000001192,
+        "visible": "visible",
+        "cameraBusy": false,
+        "frame": 648,
+        "callbackCount": 648,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 504,
+          "totalMs": 5207.200000047684,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 4,
+          "stops": 3
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 50,
+        "textureCount": 15,
+        "programCount": 4,
+        "calls": 50,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:3",
+        "task": "CANCELLED",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 12,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 7,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 459,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 18.5,
+        "camera": [
+          24.74482821610553,
+          38.42653057178619,
+          50.673568954372236
+        ],
+        "target": [
+          1.157561057970024,
+          -5.4579275805229095,
+          4.9871063088718355
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 648,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5400166602040348,
+          "right": 0.5383842113300672,
+          "bottom": -0.8804902565488405,
+          "top": 0.8730688016802775
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "dc9758d7-4dce-41b6-a74e-d3e595a7a683",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:28.106Z",
+          "finished_at": "2026-11-15T20:03:29.026Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 205,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:29.336Z",
+          "finished_at": "2026-11-15T20:03:29.826Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e16ce694-b621-4873-a534-8f72ee23e069",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:31.576Z",
+          "finished_at": "2026-11-15T20:03:32.667Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.08552584161109,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 289,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:32.699Z",
+          "finished_at": "2026-11-15T20:03:35.104Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 307,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "6ebb6307-4579-4332-87f8-13e4cb496e14",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:35.402Z",
+          "finished_at": "2026-11-15T20:03:35.597Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "77b02a57-165a-4e94-b950-5de927aa7b95",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:37.563Z",
+          "finished_at": "2026-11-15T20:03:38.528Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.08552584161109,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 399,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "4f7edd3c-43dd-451d-9580-a419e0b9a3f8",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:39.895Z",
+          "finished_at": "2026-11-15T20:03:40.053Z",
+          "error": {
+            "code": "PAGE_HIDDEN",
+            "message": "页面隐藏，镜头动作已取消"
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "ad551e99-718e-4f39-9320-d81628260a78",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:03:54.156Z",
+      "finished_at": "2026-11-15T20:03:55.109Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.085525841611087,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 692,
+        "arrival_verified": true
+      }
+    },
+    "passed": true
+  },
+  {
+    "condition": "CONTROLLED_PRESSURE",
+    "method": "Target.activateTarget to real blank tab with actual target IDs; focus emulation cleared per target; no spoofed property/events",
+    "hideIssued": "2026-11-15T20:03:55.486Z",
+    "before": {
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "c09e5a0c-f214-4f57-8ec6-554c7f41cf3e",
+        "status": "RUNNING",
+        "started_at": "2026-11-15T20:03:55.273Z",
+        "finished_at": null
+      },
+      "d": {
+        "at": 33508.30000001192,
+        "wallTime": "2026-11-15T20:03:55.476Z",
+        "pageAgeMs": 33508.30000001192,
+        "visible": "visible",
+        "cameraBusy": true,
+        "frame": 702,
+        "callbackCount": 702,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 558,
+          "totalMs": 5587.800000011921,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 4,
+          "stops": 3
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 51,
+        "textureCount": 15,
+        "programCount": 5,
+        "calls": 51,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:3",
+        "task": "RUNNING",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 12,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 4,
+          "dataTimerStops": 3,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 9,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 484,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      }
+    },
+    "resumed": {
+      "at": 41617,
+      "events": [
+        {
+          "at": 33534.40000003576,
+          "wall": "2026-11-15T20:03:55.502Z",
+          "state": "hidden",
+          "trusted": true,
+          "diagnostics": {
+            "at": 33534.40000003576,
+            "wallTime": "2026-11-15T20:03:55.502Z",
+            "pageAgeMs": 33534.40000003576,
+            "visible": "hidden",
+            "cameraBusy": false,
+            "frame": 703,
+            "callbackCount": 703,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 559,
+              "totalMs": 5588.699999988079,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": false,
+              "starts": 4,
+              "stops": 4
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:3",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 12,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 9,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 481,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        },
+        {
+          "at": 41560.80000001192,
+          "wall": "2026-11-15T20:04:03.529Z",
+          "state": "visible",
+          "trusted": true,
+          "diagnostics": {
+            "at": 41560.90000003576,
+            "wallTime": "2026-11-15T20:04:03.529Z",
+            "pageAgeMs": 41560.90000003576,
+            "visible": "visible",
+            "cameraBusy": false,
+            "frame": 703,
+            "callbackCount": 703,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 559,
+              "totalMs": 5588.699999988079,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": true,
+              "starts": 5,
+              "stops": 4
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 5,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:3",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 14,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 5,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 9,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 481,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        }
+      ],
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "c09e5a0c-f214-4f57-8ec6-554c7f41cf3e",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:03:55.273Z",
+        "finished_at": "2026-11-15T20:03:55.498Z",
+        "error": {
+          "code": "PAGE_HIDDEN",
+          "message": "页面隐藏，镜头动作已取消"
+        }
+      },
+      "d": {
+        "at": 41617.10000002384,
+        "wallTime": "2026-11-15T20:04:03.585Z",
+        "pageAgeMs": 41617.10000002384,
+        "visible": "visible",
+        "cameraBusy": false,
+        "frame": 707,
+        "callbackCount": 707,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 563,
+          "totalMs": 5592.800000011921,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 5,
+          "stops": 4
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 5,
+          "dataTimerStops": 4,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 50,
+        "textureCount": 15,
+        "programCount": 4,
+        "calls": 50,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:3",
+        "task": "CANCELLED",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 14,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 5,
+          "dataTimerStops": 4,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 9,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 481,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      }
+    },
+    "later": {
+      "events": [
+        {
+          "at": 33534.40000003576,
+          "wall": "2026-11-15T20:03:55.502Z",
+          "state": "hidden",
+          "trusted": true,
+          "diagnostics": {
+            "at": 33534.40000003576,
+            "wallTime": "2026-11-15T20:03:55.502Z",
+            "pageAgeMs": 33534.40000003576,
+            "visible": "hidden",
+            "cameraBusy": false,
+            "frame": 703,
+            "callbackCount": 703,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 559,
+              "totalMs": 5588.699999988079,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": false,
+              "starts": 4,
+              "stops": 4
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:3",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 12,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 0,
+              "dataTimerStarts": 4,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 9,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 481,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        },
+        {
+          "at": 41560.80000001192,
+          "wall": "2026-11-15T20:04:03.529Z",
+          "state": "visible",
+          "trusted": true,
+          "diagnostics": {
+            "at": 41560.90000003576,
+            "wallTime": "2026-11-15T20:04:03.529Z",
+            "pageAgeMs": 41560.90000003576,
+            "visible": "visible",
+            "cameraBusy": false,
+            "frame": 703,
+            "callbackCount": 703,
+            "renderCpuDiagnostics": {
+              "enabled": true,
+              "calls": 559,
+              "totalMs": 5588.699999988079,
+              "maxMs": 169,
+              "meaning": "CPU wall duration of renderer.render, not GPU time"
+            },
+            "loop": {
+              "active": true,
+              "starts": 5,
+              "stops": 4
+            },
+            "renderer": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 5,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "geometryCount": 50,
+            "textureCount": 15,
+            "programCount": 4,
+            "calls": 51,
+            "triangles": 106042,
+            "rendererDpr": 1,
+            "nativeDpr": 2,
+            "canvas": {
+              "width": 1218,
+              "height": 427
+            },
+            "drawingBuffer": {
+              "width": 1218,
+              "height": 427
+            },
+            "loadGeneration": 1,
+            "scenario": "NORMAL",
+            "snapshotId": "smartwater-m1.2:NORMAL:3",
+            "task": "CANCELLED",
+            "charts": {
+              "created": 2,
+              "disposed": 0,
+              "updates": 14,
+              "resizes": 0,
+              "active": 2
+            },
+            "ownership": {
+              "renderers": 1,
+              "rendererCreated": 1,
+              "rendererDisposed": 0,
+              "observers": 3,
+              "listeners": 7,
+              "dataTimers": 1,
+              "dataTimerStarts": 5,
+              "dataTimerStops": 4,
+              "trendMounts": 2,
+              "trendUnmounts": 0
+            },
+            "toolRecords": 9,
+            "history": {
+              "do": 1441,
+              "blower_power": 1441
+            },
+            "domNodes": 481,
+            "unavailable": {
+              "browserInternalListeners": null,
+              "gpuMemoryBytes": null,
+              "vueInternalSubscriptions": null
+            }
+          }
+        }
+      ],
+      "d": {
+        "at": 47639.80000001192,
+        "wallTime": "2026-11-15T20:04:09.608Z",
+        "pageAgeMs": 47639.80000001192,
+        "visible": "visible",
+        "cameraBusy": false,
+        "frame": 920,
+        "callbackCount": 920,
+        "renderCpuDiagnostics": {
+          "enabled": true,
+          "calls": 776,
+          "totalMs": 8065.300000190735,
+          "maxMs": 169,
+          "meaning": "CPU wall duration of renderer.render, not GPU time"
+        },
+        "loop": {
+          "active": true,
+          "starts": 5,
+          "stops": 4
+        },
+        "renderer": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 5,
+          "dataTimerStops": 4,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "geometryCount": 50,
+        "textureCount": 15,
+        "programCount": 4,
+        "calls": 50,
+        "triangles": 106042,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadGeneration": 1,
+        "scenario": "NORMAL",
+        "snapshotId": "smartwater-m1.2:NORMAL:4",
+        "task": "CANCELLED",
+        "charts": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 16,
+          "resizes": 0,
+          "active": 2
+        },
+        "ownership": {
+          "renderers": 1,
+          "rendererCreated": 1,
+          "rendererDisposed": 0,
+          "observers": 3,
+          "listeners": 7,
+          "dataTimers": 1,
+          "dataTimerStarts": 5,
+          "dataTimerStops": 4,
+          "trendMounts": 2,
+          "trendUnmounts": 0
+        },
+        "toolRecords": 9,
+        "history": {
+          "do": 1441,
+          "blower_power": 1441
+        },
+        "domNodes": 481,
+        "unavailable": {
+          "browserInternalListeners": null,
+          "gpuMemoryBytes": null,
+          "vueInternalSubscriptions": null
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 18.5,
+        "camera": [
+          24.769687645453875,
+          38.441092259788945,
+          50.69570374553962
+        ],
+        "target": [
+          1.1596922329266282,
+          -5.460609583567496,
+          4.989344251093051
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 920,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5396947166149322,
+          "right": 0.538183384729155,
+          "bottom": -0.8797208042543404,
+          "top": 0.8728440813754162
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "dc9758d7-4dce-41b6-a74e-d3e595a7a683",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:28.106Z",
+          "finished_at": "2026-11-15T20:03:29.026Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 205,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:29.336Z",
+          "finished_at": "2026-11-15T20:03:29.826Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e16ce694-b621-4873-a534-8f72ee23e069",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:31.576Z",
+          "finished_at": "2026-11-15T20:03:32.667Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.08552584161109,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 289,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:32.699Z",
+          "finished_at": "2026-11-15T20:03:35.104Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 307,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "6ebb6307-4579-4332-87f8-13e4cb496e14",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:35.402Z",
+          "finished_at": "2026-11-15T20:03:35.597Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "77b02a57-165a-4e94-b950-5de927aa7b95",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:37.563Z",
+          "finished_at": "2026-11-15T20:03:38.528Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.08552584161109,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 399,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "4f7edd3c-43dd-451d-9580-a419e0b9a3f8",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:39.895Z",
+          "finished_at": "2026-11-15T20:03:40.053Z",
+          "error": {
+            "code": "PAGE_HIDDEN",
+            "message": "页面隐藏，镜头动作已取消"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "ad551e99-718e-4f39-9320-d81628260a78",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:54.156Z",
+          "finished_at": "2026-11-15T20:03:55.109Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 692,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "c09e5a0c-f214-4f57-8ec6-554c7f41cf3e",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:55.273Z",
+          "finished_at": "2026-11-15T20:03:55.498Z",
+          "error": {
+            "code": "PAGE_HIDDEN",
+            "message": "页面隐藏，镜头动作已取消"
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "3baeff64-e915-4d57-9be6-a7aa7e7ce5a4",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:04:09.656Z",
+      "finished_at": "2026-11-15T20:04:10.577Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.085525841611087,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 959,
+        "arrival_verified": true
+      }
+    },
+    "passed": true
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "decision": "REJECTED_NOT_SHIPPED",
+  "reason": "Draw calls50\u219220 with106042 triangles unchanged, but reverse controlled sequence did not separate effect from host variation. No consistent gain or target attainment; retain minimal proven lifecycle/deadline fixes and all experimental evidence."
+}

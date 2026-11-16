@@ -1,0 +1,99 @@
+[
+  {
+    "file": "history-list-confirmed.png",
+    "captured_at": "2026-11-16T12:27:08.012214+00:00",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "native_dpr": 2,
+    "renderer_dpr": 1,
+    "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "selected_device": null,
+    "view_mode": "plant4",
+    "camera": [
+      22.947070901413234,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "association": "same fixed candidate; browser resources verified after reload; camera/scene not modified by history view",
+    "viewport_method": "Chromium CDP 1920x1080 device metrics override, browser DPR=2; Three DPR=1"
+  },
+  {
+    "file": "history-list.png",
+    "captured_at": "2026-11-16T12:25:40.558189+00:00",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "native_dpr": 2,
+    "renderer_dpr": 1,
+    "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "selected_device": null,
+    "view_mode": "plant4",
+    "camera": null,
+    "association": "First export attempt on same fixed build; exact capture camera not retained, so camera association unverified. Confirmed screenshots have separate records.",
+    "viewport_method": "Chromium CDP 1920x1080 device metrics override, browser DPR=2; Three DPR=1"
+  },
+  {
+    "file": "report-detail.png",
+    "captured_at": "2026-11-16T12:25:43.204654+00:00",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "native_dpr": 2,
+    "renderer_dpr": 1,
+    "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "selected_device": null,
+    "view_mode": "plant4",
+    "camera": null,
+    "association": "First export attempt on same fixed build; exact capture camera not retained, so camera association unverified. Confirmed screenshots have separate records.",
+    "viewport_method": "Chromium CDP 1920x1080 device metrics override, browser DPR=2; Three DPR=1"
+  },
+  {
+    "file": "report-detail-confirmed.png",
+    "captured_at": "2026-11-16T12:27:08.934959+00:00",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "native_dpr": 2,
+    "renderer_dpr": 1,
+    "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "selected_device": null,
+    "view_mode": "plant4",
+    "camera": [
+      22.947070901413234,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "association": "same fixed candidate; browser resources verified after reload; camera/scene not modified by history view",
+    "viewport_method": "Chromium CDP 1920x1080 device metrics override, browser DPR=2; Three DPR=1"
+  },
+  {
+    "file": "report-findings.png",
+    "captured_at": "2026-11-16T12:33:41.695Z",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "browser_dpr": 2,
+    "renderer_dpr": 1,
+    "camera": [
+      25.085525841611087,
+      38.62609800579173,
+      50.976925507175984
+    ],
+    "selected_device": null,
+    "view_mode": "unit",
+    "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "report_id": "SWR_20261116122414720_8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "source": "Actual persisted report after independent reload; zero current tasks/tool replay"
+  }
+]

@@ -1,0 +1,2 @@
+{"done":true,"average_fps":59.998580561450545,"top":[{"function":"(idle)","url":"","sampled_ms":8583.021},{"function":"p","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":728.447},{"function":"(program)","url":"","sampled_ms":472.829},{"function":"s","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":83.785},{"function":"renderBufferDirect","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":59.413},{"function":"at","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":52.447}]}
+

@@ -1,0 +1,212 @@
+{
+  "attempts": [
+    {
+      "file": "task-a-real.json",
+      "task_id": "0b7f22d7-6e0b-45c8-ae76-80a3b9ab80ec",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "status": "SUCCEEDED",
+      "requests": 4,
+      "tools": 3,
+      "errors": []
+    },
+    {
+      "file": "task-b-accepted-real.json",
+      "task_id": "bac35388-f19d-4981-b2b5-d0f7bca7d04e",
+      "input": "查看一号曝气池的低溶解氧告警，告诉我触发依据。",
+      "status": "PARTIAL",
+      "requests": 3,
+      "tools": 4,
+      "errors": [
+        "INCOMPLETE_TASK"
+      ]
+    },
+    {
+      "file": "task-b-corrected-real.json",
+      "task_id": "f7fefeb4-3dcf-4f0f-9dec-9e302b15da8a",
+      "input": "查看一号曝气池的低溶解氧告警，告诉我触发依据。",
+      "status": "SUCCEEDED",
+      "requests": 4,
+      "tools": 5,
+      "errors": []
+    },
+    {
+      "file": "task-b-real.json",
+      "task_id": "5e32815c-0328-49df-9c15-3b869e0895f2",
+      "input": "查看一号曝气池的低溶解氧告警，告诉我触发依据。",
+      "status": "PARTIAL",
+      "requests": 3,
+      "tools": 5,
+      "errors": [
+        "UNSUPPORTED_MODEL_CLAIM"
+      ]
+    },
+    {
+      "file": "task-b-release-real.json",
+      "task_id": "5a87e64c-2b37-4605-a202-4a8ce1f0472a",
+      "input": "查看一号曝气池的低溶解氧告警，告诉我触发依据。",
+      "status": "SUCCEEDED",
+      "requests": 4,
+      "tools": 5,
+      "errors": []
+    },
+    {
+      "file": "task-c-accepted-real.json",
+      "task_id": "561555a8-d9c5-4d37-abd4-48e309351b0c",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "PARTIAL",
+      "requests": 4,
+      "tools": 11,
+      "errors": [
+        "EVIDENCE_MISMATCH",
+        "MODEL_TIMEOUT"
+      ]
+    },
+    {
+      "file": "task-c-corrected-real.json",
+      "task_id": "82ba9786-5ba6-4acb-943c-f35d935ec578",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "PARTIAL",
+      "requests": 5,
+      "tools": 12,
+      "errors": [
+        "HISTORY_NOT_AVAILABLE",
+        "HISTORY_NOT_AVAILABLE",
+        "UNSUPPORTED_MODEL_CLAIM"
+      ]
+    },
+    {
+      "file": "task-c-final-real.json",
+      "task_id": "926253e0-5806-4831-8568-b5459235fb27",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "PARTIAL",
+      "requests": 2,
+      "tools": 12,
+      "errors": [
+        "UNSUPPORTED_MODEL_CLAIM"
+      ]
+    },
+    {
+      "file": "task-c-protocol-trace.json",
+      "task_id": "e9fa7500-2f40-458c-9898-c3f2a4d03a38",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "FAILED",
+      "requests": 1,
+      "tools": 0,
+      "errors": [
+        "MODEL_PROTOCOL_ERROR"
+      ]
+    },
+    {
+      "file": "task-c-real.json",
+      "task_id": "502625dc-31b2-440d-a506-f72f762f5c50",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "FAILED",
+      "requests": 1,
+      "tools": 0,
+      "errors": [
+        "MODEL_PROTOCOL_ERROR"
+      ]
+    },
+    {
+      "file": "task-c-release-real.json",
+      "task_id": "10118f88-2fb5-4d6a-b2d7-627e621ee60b",
+      "input": "巡检当前四个单元，列出异常和缺少的数据。",
+      "status": "SUCCEEDED",
+      "requests": 4,
+      "tools": 14,
+      "errors": []
+    },
+    {
+      "file": "task-d-accepted-real.json",
+      "task_id": "7f7f9c9d-457b-41f6-8acf-e0676c09b49e",
+      "input": "检查提升泵运行是否正常。",
+      "status": "SUCCEEDED",
+      "requests": 2,
+      "tools": 3,
+      "errors": []
+    },
+    {
+      "file": "task-d-final-real.json",
+      "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+      "input": "检查提升泵运行是否正常。",
+      "status": "SUCCEEDED",
+      "requests": 2,
+      "tools": 3,
+      "errors": []
+    },
+    {
+      "file": "task-d-release-real.json",
+      "task_id": "99841823-a0b7-435a-ab2b-db4edd930938",
+      "input": "检查提升泵运行是否正常。",
+      "status": "PARTIAL",
+      "requests": 2,
+      "tools": 3,
+      "errors": [
+        "UNSUPPORTED_MODEL_CLAIM"
+      ]
+    },
+    {
+      "file": "task-paraphrase-a-final-real.json",
+      "task_id": "b3393f10-d05f-4c27-b261-7619e154e06d",
+      "input": "请把画面带到那台一号鼓风机，并调出过去六小时的功率曲线。",
+      "status": "SUCCEEDED",
+      "requests": 3,
+      "tools": 4,
+      "errors": []
+    },
+    {
+      "file": "task-paraphrase-a-release-real.json",
+      "task_id": "25613f5d-d009-4c19-b9de-6863b4943560",
+      "input": "请把画面带到那台一号鼓风机，并调出过去六小时的功率曲线。",
+      "status": "SUCCEEDED",
+      "requests": 3,
+      "tools": 4,
+      "errors": []
+    },
+    {
+      "file": "task-paraphrase-c-final-real.json",
+      "task_id": "53a90d50-883c-4f3d-9c4c-bfa2df977118",
+      "input": "帮我把这四个工艺单元查一遍：哪些读数异常，哪些信息缺失而不能下结论？",
+      "status": "PARTIAL",
+      "requests": 4,
+      "tools": 15,
+      "errors": [
+        "EVIDENCE_MISMATCH"
+      ]
+    },
+    {
+      "file": "task-paraphrase-c-release-real.json",
+      "task_id": "bac6ae93-13cc-4d9a-b92e-92f57306f1b1",
+      "input": "帮我把这四个工艺单元查一遍：哪些读数异常，哪些信息缺失而不能下结论？",
+      "status": "SUCCEEDED",
+      "requests": 4,
+      "tools": 11,
+      "errors": []
+    }
+  ],
+  "known_response_receipts": 60,
+  "known_usage_sum": {
+    "prompt_tokens": 197550,
+    "completion_tokens": 6714,
+    "total_tokens": 204264
+  },
+  "unknown_usage_attempts": [
+    {
+      "file": "task-c-accepted-real.json",
+      "task_id": "561555a8-d9c5-4d37-abd4-48e309351b0c",
+      "missing_receipts": 1
+    },
+    {
+      "file": "task-c-real.json",
+      "task_id": "502625dc-31b2-440d-a506-f72f762f5c50",
+      "missing_receipts": 1
+    },
+    {
+      "file": "real-network-cancel.json",
+      "reason": "Cancelled request; upstream token usage and billing are unknown",
+      "missing_receipts": 1
+    }
+  ],
+  "failed_connection": "basic-request.json: no HTTP response; upstream receipt/billing unknown",
+  "note": "Known returned token counts only, not a complete billing total. All failures retained; not a majority-vote acceptance."
+}

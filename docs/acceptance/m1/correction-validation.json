@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-15T18:37:44.991094+00:00",
+  "build_id": "6b9d43cf1d05489dc64954ab53c5841dd5a1768b4104e7d85ea1ef726bb52d78",
+  "dataset_version": "smartwater-m1.2",
+  "snapshot_id": "smartwater-m1.2:MISSING_DATA:0",
+  "latest_good_history_sample": "2026-01-15T07:47:00.000Z",
+  "current_stale_observed_at": "2026-01-15T07:47:00.000Z",
+  "last_good_raw_value": 80.84614851322337,
+  "current_retained_raw_value": 80.84614851322337,
+  "same_raw_value": true,
+  "no_newer_good_sample": true,
+  "source": "Actual production browser feature-test snapshot"
+}

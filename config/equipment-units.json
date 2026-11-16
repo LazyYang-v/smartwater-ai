@@ -1,0 +1,68 @@
+{
+  "engineering_validated": false,
+  "units": "metres",
+  "material_source": "assets/source/aeration-tank.blend",
+  "license_reference": "docs/asset-register.json",
+  "quality": {
+    "pipe_sides": 20,
+    "bevel_segments": 2
+  },
+  "materials": {
+    "asphalt_tile_m": 2,
+    "floor_tile_m": 2,
+    "walkway_tile_m": 2,
+    "concrete_tile_m": 4
+  },
+  "blower": {
+    "device_id": "SW_AIR_BLOWER_001",
+    "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+    "root": "SW_BLOWER_UNIT",
+    "name": "一号鼓风机",
+    "file": "blower-unit",
+    "room": {
+      "length": 12,
+      "width": 9,
+      "height": 4.8,
+      "wall": 0.24,
+      "slab": 0.18
+    },
+    "machine": {
+      "base_length": 5.4,
+      "base_width": 2.6,
+      "foundation_height": 0.45,
+      "shaft_height": 1.65,
+      "motor_length": 1.6,
+      "motor_radius": 0.52,
+      "blower_radius": 0.85,
+      "pipe_radius": 0.19
+    },
+    "metrics": [
+      "blower_power"
+    ]
+  },
+  "pump": {
+    "device_id": "SW_PRE_PUMP_001",
+    "unit_id": "SW_UNIT_PUMP_ROOM_001",
+    "root": "SW_PUMP_UNIT",
+    "name": "一号提升泵",
+    "file": "pump-unit",
+    "room": {
+      "length": 10,
+      "width": 8,
+      "height": 4.6,
+      "wall": 0.24,
+      "slab": 0.18
+    },
+    "machine": {
+      "base_length": 4.8,
+      "base_width": 2.5,
+      "foundation_height": 0.45,
+      "shaft_height": 1.65,
+      "motor_length": 1.5,
+      "motor_radius": 0.48,
+      "pump_radius": 0.75,
+      "pipe_radius": 0.24
+    },
+    "metrics": []
+  }
+}

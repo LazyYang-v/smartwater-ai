@@ -1,0 +1,266 @@
+{
+  "round": 3,
+  "mode": "CAMERA_DATA_CHARTS",
+  "build_id": "6b9d43cf1d05489dc64954ab53c5841dd5a1768b4104e7d85ea1ef726bb52d78",
+  "nativeDprBeforeTest": 2,
+  "conditions": {
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "measured_at": "2026-11-15T18:45:49.617Z",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "nativeDpr": 2,
+    "rendererDpr": 1,
+    "cssCanvas": {
+      "width": 1218,
+      "height": 427
+    },
+    "drawingBuffer": {
+      "width": 1218,
+      "height": 427
+    },
+    "documentVisible": "visible",
+    "documentHasFocus": true,
+    "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "initialScene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 7328.100000023842,
+      "firstRenderMs": 7770,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 66.20000000000073,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 274,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "initialDashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 10,
+        "resizes": 4,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.2:NORMAL:0"
+    },
+    "initialData": {
+      "snapshotId": "smartwater-m1.2:NORMAL:0",
+      "tick": 0
+    },
+    "initialToolCount": 0
+  },
+  "result": {
+    "done": false,
+    "result": null,
+    "error": null
+  },
+  "final": {
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 36,
+        "resizes": 4,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.2:NORMAL:13"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.2:NORMAL:13",
+      "tick": 13
+    },
+    "toolCount": 0,
+    "records": [],
+    "renderedRecordNodes": 0,
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 7328.100000023842,
+      "firstRenderMs": 7770,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 3251,
+      "camera": [
+        -15.579082735629438,
+        36,
+        60.010767209863374
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 1115,
+      "cameraBusy": true,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5534855653504364,
+        "right": 0.5192917822612118,
+        "bottom": -0.5562172849813916,
+        "top": 0.7182858058468765
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    }
+  },
+  "dataClockCorrect": true,
+  "actionReceiptsCorrect": true,
+  "valid": false,
+  "target": {
+    "average_fps": 45,
+    "p95_frame_ms": 40,
+    "passed": false
+  },
+  "interpretation": "Full M1 page, fixed 1920x1080 CSS viewport and renderer DPR1. Native DOM/SVG DPR retained. Document visibility tracked; OS occlusion cannot be inferred. No screenshot or page polling during sample. Camera-only pauses mock updates; second mode runs five-second snapshots; third adds actual commands and process/range switches."
+}

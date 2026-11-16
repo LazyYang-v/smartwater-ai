@@ -1,0 +1,12 @@
+PASS three scenarios atomically bind KPI, details, chart endpoints and alarms
+PASS range switch uses same history and never moves camera or reloads GLB
+PASS alarm detail chooses DO context; explicit locate dispatches USER action and actual render
+PASS DATA_ONLY and schematic nodes cannot locate or fabricate tools
+PASS manual model selection and both parser shortcuts share context and records
+PASS scenario switch preserves tool history and camera
+PASS pause holds demo time while system clock advances; resume publishes once
+PASS repeated panels and 1366 layout reuse charts, scene and correct drawing buffer
+PASS model load failure leaves data, charts and demo controls available
+PASS component unmount disposes chart instances and the single 3D render loop
+{"pass":10,"fail":[]}
+

@@ -1,0 +1,125 @@
+{
+  "at": "2026-11-16T12:21:16.414Z",
+  "test_database": "smartwater-m4-test-chain",
+  "checks": [
+    {
+      "name": "Demo patrol is complete with immutable report",
+      "passed": true,
+      "detail": {
+        "requested_devices": 4,
+        "details_completed": 4,
+        "metrics_completed": 4,
+        "devices_with_good_metrics": 2,
+        "alarms_completed": true,
+        "steps_completed": 9,
+        "steps_total": 9
+      }
+    },
+    {
+      "name": "scenario switch leaves old report bytes unchanged",
+      "passed": true
+    },
+    {
+      "name": "quota injection preserves successful execution and explicit save failure",
+      "passed": true,
+      "detail": {
+        "status": "ERROR",
+        "message": "存储配额不足；当前结果仍在内存中，请导出。"
+      }
+    },
+    {
+      "name": "save failure retains exportable in-memory report",
+      "passed": true
+    },
+    {
+      "name": "failed task retained",
+      "passed": true
+    },
+    {
+      "name": "visible cancel is hit-testable during RUNNING",
+      "passed": true,
+      "detail": {
+        "x": 1858,
+        "y": 547.796875,
+        "enabled": true,
+        "hit": true,
+        "id": "2e7653a9-de77-43fe-8936-155e0b164d35"
+      }
+    },
+    {
+      "name": "native cancel persists CANCELLED without old success",
+      "passed": true
+    },
+    {
+      "name": "explicit rerun has new id, parent and new snapshot",
+      "passed": true,
+      "detail": {
+        "id": "a1ea52f6-5cf6-49c0-8e77-04f5bbe2ce70",
+        "parent": "0b24435e-9d62-440d-88a3-47dc93e94148",
+        "snapshot": "smartwater-m1.2:MISSING_DATA:1"
+      }
+    },
+    {
+      "name": "completed failed cancelled records survive reload",
+      "passed": true,
+      "detail": [
+        {
+          "id": "a1ea52f6-5cf6-49c0-8e77-04f5bbe2ce70",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "2b67724a-cf3f-40b8-b490-4d85f95686f6",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "2e7653a9-de77-43fe-8936-155e0b164d35",
+          "status": "CANCELLED"
+        },
+        {
+          "id": "ca32030e-77d7-4423-9043-28deb585a94e",
+          "status": "FAILED"
+        },
+        {
+          "id": "0b24435e-9d62-440d-88a3-47dc93e94148",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "a53c6752-a926-4a5c-8f16-0ff80f2bba00",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "467782f1-20b7-4fcd-869b-09f0fd5b7ef9",
+          "status": "CANCELLED"
+        },
+        {
+          "id": "b0c7fb21-91d1-4cc1-b977-7b372765297c",
+          "status": "CANCELLED"
+        },
+        {
+          "id": "5c3aa919-7f6e-4b2a-afa2-f7965318b9d8",
+          "status": "FAILED"
+        },
+        {
+          "id": "bcbb49e6-0f21-4a40-ad27-6179372ec26e",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "c68826f1-6e2d-4b2b-92d4-dd6b2be41f0d",
+          "status": "SUCCEEDED"
+        },
+        {
+          "id": "1b367594-738d-4d78-9d85-f8c568fe00c7",
+          "status": "SUCCEEDED"
+        }
+      ]
+    },
+    {
+      "name": "refresh preserves exact frozen report",
+      "passed": true
+    },
+    {
+      "name": "history open does not replay tools or tasks",
+      "passed": true
+    }
+  ]
+}

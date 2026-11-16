@@ -1,0 +1,90 @@
+{
+  "before": {
+    "visibility": "visible",
+    "data": "smartwater-m1.1:NORMAL:0",
+    "diag": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 0,
+        "disposed": 0,
+        "updates": 0,
+        "resizes": 0,
+        "active": 0
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    }
+  },
+  "hidden": {
+    "visibility": "visible",
+    "data": "smartwater-m1.1:NORMAL:0",
+    "diag": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 0,
+        "disposed": 0,
+        "updates": 0,
+        "resizes": 0,
+        "active": 0
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    }
+  },
+  "afterWait": {
+    "visibility": "visible",
+    "data": "smartwater-m1.1:NORMAL:1",
+    "diag": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 0,
+        "disposed": 0,
+        "updates": 0,
+        "resizes": 0,
+        "active": 0
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.1:NORMAL:1"
+    }
+  },
+  "resumed": {
+    "visibility": "visible",
+    "data": "smartwater-m1.1:NORMAL:1",
+    "diag": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 0,
+        "disposed": 0,
+        "updates": 0,
+        "resizes": 0,
+        "active": 0
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.1:NORMAL:1"
+    }
+  }
+}

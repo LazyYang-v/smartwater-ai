@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-16T10:26:54.493Z",
+  "kind": "REAL_UPSTREAM_BASIC",
+  "provider": "OpenAI",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "model": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "upstream_requests": 1,
+  "error": {
+    "name": "TypeError",
+    "code": "UND_ERR_CONNECT_TIMEOUT"
+  },
+  "elapsed_ms": 10545,
+  "passed": false
+}

@@ -1,0 +1,1934 @@
+{
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "details": {
+      "architecture": "arm",
+      "bitness": "64",
+      "brands": [
+        {
+          "brand": "Not:A-Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Chromium",
+          "version": "156"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "156"
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "Not:A-Brand",
+          "version": "8.0.0.0"
+        },
+        {
+          "brand": "Chromium",
+          "version": "156.0.8078.96"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "156.0.8078.96"
+        }
+      ],
+      "mobile": false,
+      "platform": "macOS",
+      "platformVersion": "26.0.1"
+    },
+    "source": "Browser-reported navigator values; Browser.getVersion unavailable"
+  },
+  "initial": {
+    "snapshot": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 2562,
+      "firstRenderMs": 2816.899999976158,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 11,
+      "frameMs": 34.30000000000018,
+      "camera": [
+        42,
+        39.00000000000001,
+        53.00000000000001
+      ],
+      "target": [
+        0,
+        -0.5,
+        0
+      ],
+      "zoom": 1,
+      "frame": 107,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1,
+      "canvas": {
+        "width": 1440,
+        "height": 659
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "assets": [
+      {
+        "name": "SmartWater_M0",
+        "parent": "",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SW_BIO_AERATION_001",
+        "parent": "SmartWater_M0",
+        "device_id": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_BridgeBeams",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_BridgeGrating",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_ConcreteSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_PerimeterDeck",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairNosings",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairStringers",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairTreads",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscBodies",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscConnections",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscMembranes",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_Laterals",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_PipeSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_01",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_02",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_03",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_04",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_05",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_06",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_BranchFlanges",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_DropAnchors",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_DropSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_FlangeBolts",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Main",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainEndCaps",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainFlanges",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveBodies",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveHandwheels",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveStems",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_AnchorBolts",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_Baseplates",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_BridgeRailing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_Railing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_StairRailing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_BaseSlab",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Coping",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_DeckJoints",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_ExpansionJoints",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Wall_End",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Wall_Long",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "WATER_Surface",
+        "parent": "SW_BIO_AERATION_001",
+        "part_id": "WATER_SURFACE",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SW_SITE_CONTEXT",
+        "parent": "SmartWater_M0",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Hardscape",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PavingJoints",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PlantingBeds",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PlantingBeds001",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Road",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_RoadCurbs",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_RoadMarkings",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Shrubs",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Shrubs001",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      }
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 312.19999998807907,
+        "transferSize": 24080732,
+        "decodedBodySize": 24080432
+      },
+      {
+        "url": "http://127.0.0.1:4173/environments/daylight_2k.hdr",
+        "duration": 509.2000000476837,
+        "transferSize": 3586486,
+        "decodedBodySize": 5451493
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "GLB / HDR loaded with unique device and independent water",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2562,
+          "firstRenderMs": 2816.899999976158,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 11,
+          "frameMs": 34.30000000000018,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 107,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "assets": [
+          {
+            "name": "SmartWater_M0",
+            "parent": "",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SW_BIO_AERATION_001",
+            "parent": "SmartWater_M0",
+            "device_id": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_BridgeBeams",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_BridgeGrating",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_ConcreteSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_PerimeterDeck",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairNosings",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairStringers",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairTreads",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscBodies",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscConnections",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscMembranes",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_Laterals",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_PipeSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_01",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_02",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_03",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_04",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_05",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_06",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_BranchFlanges",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_DropAnchors",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_DropSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_FlangeBolts",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Main",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainEndCaps",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainFlanges",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveBodies",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveHandwheels",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveStems",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_AnchorBolts",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_Baseplates",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_BridgeRailing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_Railing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_StairRailing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_BaseSlab",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Coping",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_DeckJoints",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_ExpansionJoints",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Wall_End",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Wall_Long",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "WATER_Surface",
+            "parent": "SW_BIO_AERATION_001",
+            "part_id": "WATER_SURFACE",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SW_SITE_CONTEXT",
+            "parent": "SmartWater_M0",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Hardscape",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PavingJoints",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PlantingBeds",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PlantingBeds001",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Road",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_RoadCurbs",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_RoadMarkings",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Shrubs",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Shrubs001",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "resources": [
+          {
+            "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "duration": 312.19999998807907,
+            "transferSize": 24080732,
+            "decodedBodySize": 24080432
+          },
+          {
+            "url": "http://127.0.0.1:4173/environments/daylight_2k.hdr",
+            "duration": 509.2000000476837,
+            "transferSize": 3586486,
+            "decodedBodySize": 5451493
+          }
+        ]
+      }
+    },
+    {
+      "name": "unknown command creates no tool record",
+      "status": "PASS",
+      "evidence": {
+        "before": 0,
+        "after": 0,
+        "result": null
+      }
+    },
+    {
+      "name": "focus and reset verify camera, selection and actual render",
+      "status": "PASS",
+      "evidence": {
+        "before": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2562,
+          "firstRenderMs": 2816.899999976158,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 11,
+          "frameMs": 34.30000000000018,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 108,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "focus": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "fcef8e58-247c-422f-92cf-db0634c896fa",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T16:19:59.291Z",
+          "finished_at": "2026-11-15T16:20:00.226Z",
+          "result": {
+            "camera": {
+              "position": [
+                5.080612935563679,
+                33.73647539781425,
+                37.99259976511352
+              ],
+              "target": [
+                -1.1778879165649414,
+                -1.2374999523162842,
+                1.1778888702392576
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 127,
+            "arrival_verified": true
+          }
+        },
+        "focused": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 2562,
+          "firstRenderMs": 2816.899999976158,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 11,
+          "frameMs": 34.30000000000018,
+          "camera": [
+            5.080612935563679,
+            33.73647539781425,
+            37.99259976511352
+          ],
+          "target": [
+            -1.1778879165649414,
+            -1.2374999523162842,
+            1.1778888702392576
+          ],
+          "zoom": 1,
+          "frame": 127,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "reset": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "4cc35134-8b10-4fb7-a9a3-82ae1fa2f792",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T16:20:00.244Z",
+          "finished_at": "2026-11-15T16:20:01.157Z",
+          "result": {
+            "camera": {
+              "position": [
+                42,
+                39.00000000000001,
+                53.00000000000001
+              ],
+              "target": [
+                0,
+                -0.5,
+                0
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 174,
+            "arrival_verified": true
+          }
+        },
+        "after": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2562,
+          "firstRenderMs": 2816.899999976158,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 11,
+          "frameMs": 15.699999999999818,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 174,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "duplicate action id has no second side effect",
+      "status": "PASS",
+      "evidence": {
+        "before": 2,
+        "after": 3,
+        "first": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "browser-repeat",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T16:20:01.176Z",
+          "finished_at": "2026-11-15T16:20:02.122Z",
+          "result": {
+            "camera": {
+              "position": [
+                5.080612935563679,
+                33.73647539781425,
+                37.99259976511352
+              ],
+              "target": [
+                -1.1778879165649414,
+                -1.2374999523162842,
+                1.1778888702392576
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 228,
+            "arrival_verified": true
+          }
+        },
+        "second": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "browser-repeat",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T16:20:01.176Z",
+          "finished_at": "2026-11-15T16:20:02.122Z",
+          "result": {
+            "camera": {
+              "position": [
+                5.080612935563679,
+                33.73647539781425,
+                37.99259976511352
+              ],
+              "target": [
+                -1.1778879165649414,
+                -1.2374999523162842,
+                1.1778888702392576
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 228,
+            "arrival_verified": true
+          }
+        }
+      }
+    },
+    {
+      "name": "missing device explicitly fails",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_MISSING"
+        },
+        "action_id": "missing-device",
+        "status": "FAILED",
+        "started_at": "2026-11-15T16:20:02.173Z",
+        "finished_at": "2026-11-15T16:20:02.174Z",
+        "error": {
+          "code": "DEVICE_NOT_FOUND",
+          "message": "DEVICE_NOT_FOUND: 未找到设备 SW_MISSING"
+        }
+      }
+    },
+    {
+      "name": "real in-progress reload rejects commands",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "e6db020c-36d4-45f4-8dde-f2ff16b0b64f",
+        "status": "FAILED",
+        "started_at": "2026-11-15T16:20:02.196Z",
+        "finished_at": "2026-11-15T16:20:02.198Z",
+        "error": {
+          "code": "SCENE_NOT_READY",
+          "message": "三维场景尚未就绪"
+        }
+      }
+    },
+    {
+      "name": "missing GLB fails and ordinary retry recovers",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "missing",
+          "error": "资产尚未生成",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 404.89999997615814,
+          "firstRenderMs": 0,
+          "triangles": 0,
+          "calls": 0,
+          "textures": 4,
+          "frameMs": 16.5,
+          "camera": [
+            5.080612935563679,
+            33.73647539781425,
+            37.99259976511352
+          ],
+          "target": [
+            -1.1778879165649414,
+            -1.2374999523162842,
+            1.1778888702392576
+          ],
+          "zoom": 1,
+          "frame": 253,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "bounds": null
+        },
+        "action": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "c7af2c5f-a65a-4979-bcb6-24f92d5ac6c2",
+          "status": "FAILED",
+          "started_at": "2026-11-15T16:20:02.905Z",
+          "finished_at": "2026-11-15T16:20:02.962Z",
+          "error": {
+            "code": "LOAD_FAILED",
+            "message": "资产尚未生成"
+          }
+        }
+      }
+    },
+    {
+      "name": "invalid GLB enters load failure and blocks tools",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "error",
+          "error": "响应不是有效的 GLB 文件",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 324.60000002384186,
+          "firstRenderMs": 0,
+          "triangles": 0,
+          "calls": 0,
+          "textures": 4,
+          "frameMs": 117.5,
+          "camera": [
+            5.080612935563679,
+            33.73647539781425,
+            37.99259976511352
+          ],
+          "target": [
+            -1.1778879165649414,
+            -1.2374999523162842,
+            1.1778888702392576
+          ],
+          "zoom": 1,
+          "frame": 281,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "bounds": null
+        },
+        "action": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "c57aaf6a-9f69-4159-8812-f717957efe25",
+          "status": "FAILED",
+          "started_at": "2026-11-15T16:20:03.613Z",
+          "finished_at": "2026-11-15T16:20:03.617Z",
+          "error": {
+            "code": "LOAD_FAILED",
+            "message": "响应不是有效的 GLB 文件"
+          }
+        }
+      }
+    },
+    {
+      "name": "rapid commands cancel the old action",
+      "status": "PASS",
+      "evidence": [
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "03497206-0d96-4054-9dd2-47eec940244f",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T16:20:04.753Z",
+          "finished_at": "2026-11-15T16:20:04.782Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "新命令已接管相机"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "4fd124b7-c693-4d55-81ba-4f5d5a295159",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T16:20:04.781Z",
+          "finished_at": "2026-11-15T16:20:05.695Z",
+          "result": {
+            "camera": {
+              "position": [
+                42,
+                39.00000000000001,
+                53.00000000000001
+              ],
+              "target": [
+                0,
+                -0.5,
+                0
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 377,
+            "arrival_verified": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "manual camera drag cancels the running action",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "3e3e3a31-a592-4916-9c1c-f63f154a906d",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T16:20:05.707Z",
+        "finished_at": "2026-11-15T16:20:05.905Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户正在手动操作相机"
+        }
+      }
+    },
+    {
+      "name": "timeout cannot return success",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "7726745d-fb90-4834-b4d2-9df07dea538f",
+        "status": "FAILED",
+        "started_at": "2026-11-15T16:20:06.098Z",
+        "finished_at": "2026-11-15T16:20:06.115Z",
+        "error": {
+          "code": "TIMEOUT",
+          "message": "相机未在限定时间内完成渲染"
+        }
+      }
+    },
+    {
+      "name": "ordinary device click shares selection with tools",
+      "status": "PASS",
+      "evidence": {
+        "point": {
+          "x": 671.6941004000765,
+          "y": 557.0054245754975
+        },
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 705.5,
+          "firstRenderMs": 858.1999999880791,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 11,
+          "frameMs": 17.5,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 437,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "ordinary water toggle changes independent mesh state",
+      "status": "PASS",
+      "evidence": {
+        "hidden": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": false,
+          "loadMs": 705.5,
+          "firstRenderMs": 858.1999999880791,
+          "triangles": 212080,
+          "calls": 99,
+          "textures": 11,
+          "frameMs": 17.5,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 443,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "shown": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 705.5,
+          "firstRenderMs": 858.1999999880791,
+          "triangles": 106040,
+          "calls": 50,
+          "textures": 11,
+          "frameMs": 17.5,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 449,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "foreground road occludes the buried device when clicking",
+      "status": "PASS",
+      "evidence": {
+        "point": {
+          "x": 668.7138725570985,
+          "y": 707.3240046624567
+        },
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 705.5,
+          "firstRenderMs": 858.1999999880791,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 11,
+          "frameMs": 17.200000000000728,
+          "camera": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1,
+          "frame": 452,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

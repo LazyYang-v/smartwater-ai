@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-16T12:30:23.823959+00:00",
+  "baseline": ".cache/m4-before.tgz",
+  "comparison": "source archive comparison; entire existing Git tree was untracked",
+  "files": [
+    "README.md",
+    "index.html",
+    "scripts/m4-browser-check.mjs",
+    "scripts/m4-candidate-check.mjs",
+    "scripts/m4-live-delivery.mjs",
+    "scripts/m4-storage-browser-check.mjs",
+    "src/App.vue",
+    "src/agent/actionDispatcher.ts",
+    "src/agent/taskRunner.ts",
+    "src/components/dashboard/AgentWorkspace.vue",
+    "src/components/dashboard/DashboardHeader.vue",
+    "src/components/dashboard/TaskHistoryPanel.vue",
+    "src/composables/useBusinessAgent.ts",
+    "src/composables/useTaskHistory.ts",
+    "src/history/records.ts",
+    "src/history/report.ts",
+    "src/history/repository.ts",
+    "tests/taskHistory.test.ts"
+  ],
+  "server_unchanged": true,
+  "package_and_lock_unchanged": true,
+  "assets": "No writes to assets/, public/models/, model scripts or reference image during M4"
+}

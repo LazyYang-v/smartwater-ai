@@ -1,0 +1,65 @@
+{
+  "build_id": "6b9d43cf1d05489dc64954ab53c5841dd5a1768b4104e7d85ea1ef726bb52d78",
+  "frozen_at_utc": "2026-11-15T18:33:18.120434+00:00",
+  "files": {
+    "assets/index-DH3KKlOn.css": {
+      "sha256": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e",
+      "bytes": 19634
+    },
+    "assets/index-qtB-IJjd.js": {
+      "sha256": "4de6b0cdb1c31d6c8828effa092055ee7902d2b15e3fa6d0ed1288e24e2ac448",
+      "bytes": 1337137
+    },
+    "environments/daylight_2k.hdr": {
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "favicon.svg": {
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+      "bytes": 302
+    },
+    "index.html": {
+      "sha256": "95190eb471cd8d93584a9447ccdb5bc94f19d6e917804487a89ac3d0a74bc176",
+      "bytes": 486
+    },
+    "models/aeration-tank.glb": {
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "bytes": 31254844
+    }
+  },
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "source_files": {
+    "src/App.vue": "012d9158ec726d02ad144456787f39d8603b3d75a2ade5d74764ee4c0c2ddfbc",
+    "src/agent/actionDispatcher.ts": "14b829f2aeaa9b2e1f877157ebdaa814428d4234edd10c34aa8f718f4b457141",
+    "src/agent/demoParser.ts": "232bed03f02b43bc44972f0db12ea58da6cd57256c615c53671cfa5f66161f19",
+    "src/agent/types.ts": "d7544be72a27c68891d20c0a709c1e97e17eba500833b783620504a6aeba4a41",
+    "src/charts/runtime.ts": "a073cbcf4ee143cc1ae4ac2c7ebf8fb6d375a55ca97376b6fa1d1fcc6dc64897",
+    "src/components/dashboard/AgentWorkspace.vue": "ded8f886611a81fd78e804cc5ac0b76541ce9b99d0e0edc72ac04fde989198ae",
+    "src/components/dashboard/AlarmPanel.vue": "b12e931a6feae5a4ff6b47d28fea2756002e7dd18bbc50242cb6c3b2db8adeec",
+    "src/components/dashboard/DashboardHeader.vue": "4a48c2942db3bd6ae1d4f9e238134feba0155746b35c7eb7e09345e81cfb46b2",
+    "src/components/dashboard/DashboardShell.vue": "69f85aa9ffcc1ee3afffdfbc33ef4e88e930f1c696993f746b467a3454a168fd",
+    "src/components/dashboard/DeviceSummary.vue": "24e3d4429ec998ffa4fc57e2db59a492fd54cb9e7e8e78402ed0b9360c7f515a",
+    "src/components/dashboard/KpiOverview.vue": "c2b671e1a624c23192634a3142bce6746d85b2e74349b2992adba7be35eaee02",
+    "src/components/dashboard/ProcessFlowPanel.vue": "84435f81b2865e53d62d080a9473c9a747ec3ab6144e47c304f3ea7c35bf2595",
+    "src/components/dashboard/SceneViewport.vue": "14b270a5e6aaf382581d637edded931d5ea9900b8e8a719dacf4b84807f5f7fd",
+    "src/components/dashboard/TrendPanel.vue": "0e6668b2fc7590f3e51e7b9b81a65662d0c5746a977c8ace82e095d75e8cd9dc",
+    "src/composables/useDashboardContext.ts": "f52255eb3b556da7db0567091e92a70c524cb2f5c0fe29b15e262f034bb3458d",
+    "src/composables/useMockData.ts": "bfec626ec609e6ffb6aacf8c19d4e035951135b64f915c426230eaacf3b71430",
+    "src/composables/useSceneWorkspace.ts": "b414e739317f997ec3180e3ef9cefec5de75e451411e1a22d146e60b78c8f8cc",
+    "src/data/mockDataProvider.ts": "a0f612d00fbdd5cd41a4c11f45bab88eb68ed0942db472ba5a50b00b309d6ff3",
+    "src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "src/main.ts": "61635ec69905e576f0a29b401cb4f02a6d5df2483d759403f6db436d2daaf67a",
+    "src/qa/exposeDashboardQA.ts": "7caf3b3fd9d71c4d3b136dccfef60dbcf8a384afa8fceb78bcdda065c0bf5a65",
+    "src/scene/cameraController.ts": "1acb800aa1c0d389c17771ca2fe4cd1420e4d23e300928d83001af1fcd404a9e",
+    "src/scene/deviceRegistry.ts": "d4acfd2dc00a4eae4cd1d39ecd94265bb1a6310114036ae92cffb8d69009502c",
+    "src/scene/framing.ts": "f42ce96429bbf5f2117b4dbafb8eb0d794e5b5d9450653c0bc37dda21e51facf",
+    "src/scene/runtime.ts": "3f12a35813be8168cd2952011b761125e213407e561a636d8edcc1484cd348cd",
+    "src/styles.css": "f7bbf6cc9a8de4daffab67fe41604b07a3ad48270d0cec5298f12c8b9c6220b8",
+    "tests/dispatcher.test.ts": "aef09436e1527b2d1bd6c61b7799243f5cb36e72972a6f1c1734de9a7d339d52",
+    "tests/framing.test.ts": "45601d1ed61695fcd1cd5f19be344a8b4095e12feb6d972eb4ce7089fc4ab09b",
+    "tests/mockData.test.ts": "27e55a77b2221f97cd8f353fc1b72d5ed8b84eabbb73475dab33e6e293cb3e35"
+  },
+  "protected_assets_unchanged": true,
+  "policy": "Do not modify dist during production regressions, captures, restart and performance tests."
+}

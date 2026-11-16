@@ -1,0 +1,140 @@
+{
+  "layout": {
+    "width": 1366,
+    "height": 768,
+    "dpr": 1,
+    "documentWidth": 1366,
+    "documentHeight": 768,
+    "input": {
+      "left": 1027,
+      "right": 1345,
+      "bottom": 732
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 1166.199999988079,
+      "firstRenderMs": 1395.7999999523163,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 11,
+      "frameMs": 15.699999999999818,
+      "camera": [
+        42,
+        39.00000000000001,
+        53.00000000000001
+      ],
+      "target": [
+        0,
+        -0.5,
+        0
+      ],
+      "zoom": 1,
+      "frame": 247,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1,
+      "canvas": {
+        "width": 989,
+        "height": 433
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    }
+  },
+  "records": [
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "action_id": "9f387a5d-4d7f-416e-8490-fa9ca664bce2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T16:20:10.174Z",
+      "finished_at": "2026-11-15T16:20:11.156Z",
+      "result": {
+        "camera": {
+          "position": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 103,
+        "arrival_verified": true
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "action_id": "5224fce6-fcab-49a4-94b1-a2cceb1b0c53",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T16:20:11.451Z",
+      "finished_at": "2026-11-15T16:20:12.420Z",
+      "result": {
+        "camera": {
+          "position": [
+            5.080612935563679,
+            33.73647539781425,
+            37.99259976511352
+          ],
+          "target": [
+            -1.1778879165649414,
+            -1.2374999523162842,
+            1.1778888702392576
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_BIO_AERATION_001",
+        "rendered_frame": 161,
+        "arrival_verified": true
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "action_id": "9427165e-4774-4562-8d9e-c31328341a55",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T16:20:12.814Z",
+      "finished_at": "2026-11-15T16:20:13.771Z",
+      "result": {
+        "camera": {
+          "position": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 223,
+        "arrival_verified": true
+      }
+    }
+  ]
+}

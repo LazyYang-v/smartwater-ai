@@ -1,0 +1,1984 @@
+{
+  "before": {
+    "at": 12761.400000035763,
+    "wall": "2026-11-16T11:20:14.639Z",
+    "task": {
+      "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+      "scenario_id": "NORMAL",
+      "snapshot_id": "smartwater-m1.2:NORMAL:1",
+      "as_of": "2026-01-15T08:00:05.000Z",
+      "started_at": "2026-11-16T11:20:10.253Z",
+      "finished_at": null,
+      "mode": "LLM",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "status": "RUNNING",
+      "tool_count": 3,
+      "model_requests": 2,
+      "evidence": [
+        {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 64,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001",
+          "evidence_id": "EV_1dcc466d101e_1",
+          "tool_name": "scene.focus_device",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_APPLICABLE",
+          "data": {
+            "camera": {
+              "position": [
+                -22.450788842413413,
+                6.745421765080366,
+                -17.94500954777791
+              ],
+              "target": [
+                -23.04217054355862,
+                1.7186773053461186,
+                -22.873190390654628
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_AIR_BLOWER_001",
+            "rendered_frame": 64,
+            "arrival_verified": true,
+            "roof_presentation": {
+              "SW_AIR_BLOWER_001": false,
+              "SW_PRE_PUMP_001": true
+            },
+            "inspection_device": "SW_AIR_BLOWER_001"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据",
+          "evidence_id": "EV_1dcc466d101e_2",
+          "tool_name": "device.get_details",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_AIR_BLOWER_001",
+            "name": "一号鼓风机 B-01",
+            "modelStatus": "MODELLED",
+            "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+            "metrics": [
+              "blower_power"
+            ],
+            "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+            "asset_root_node": "SW_BLOWER_UNIT",
+            "mechanical_node": "SW_AIR_BLOWER_001",
+            "available_metrics": [
+              "blower_power"
+            ],
+            "model_load_state": "ready",
+            "operating_state": "NOT_OBSERVED",
+            "limitation": "模型和加载状态不是实时运行或健康证据"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92895501523823,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:05.000Z",
+                "sampleAt": "2026-01-15T08:00:05.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:NORMAL:1"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 76.44763393929483,
+                "max": 87.40701960623699,
+                "mean": 81.98751340466201,
+                "start": "2026-01-15T02:00:05.000Z",
+                "end": "2026-01-15T08:00:05.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "evidence_id": "EV_1dcc466d101e_3",
+          "tool_name": "device.get_metrics",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "GOOD",
+          "data": {
+            "outcome": "DATA_AVAILABLE",
+            "device_name": "一号鼓风机 B-01",
+            "metrics": [
+              {
+                "metric_key": "blower_power",
+                "label": "关联鼓风机功率",
+                "unit": "kW",
+                "latest": {
+                  "scopeType": "DEVICE",
+                  "scopeId": "SW_AIR_BLOWER_001",
+                  "metricKey": "blower_power",
+                  "value": 81.92895501523823,
+                  "unit": "kW",
+                  "observedAt": "2026-01-15T08:00:05.000Z",
+                  "sampleAt": "2026-01-15T08:00:05.000Z",
+                  "quality": "GOOD",
+                  "source": "SIMULATED",
+                  "snapshotId": "smartwater-m1.2:NORMAL:1"
+                },
+                "history": {
+                  "hours": 6,
+                  "total_samples": 361,
+                  "valid_samples": 361,
+                  "missing_samples": 0,
+                  "stale_samples": 0,
+                  "invalid_samples": 0,
+                  "expected_samples": 361,
+                  "coverage": 1,
+                  "min": 76.44763393929483,
+                  "max": 87.40701960623699,
+                  "mean": 81.98751340466201,
+                  "start": "2026-01-15T02:00:05.000Z",
+                  "end": "2026-01-15T08:00:05.000Z",
+                  "cadence_ms": 60000
+                }
+              }
+            ]
+          },
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_key": "blower_power",
+          "unit": "kW"
+        }
+      ],
+      "action_ids": [
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      ],
+      "errors": [],
+      "model_receipts": [
+        {
+          "provider": "OpenAI",
+          "model": "gpt-6-luna",
+          "request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+          "response_id": "chatcmpl-Ekp2pOoIUxGOLruUvUlvqsc1WwurZ",
+          "http_status": 200,
+          "elapsed_ms": 3358,
+          "usage": {
+            "prompt_tokens": 1157,
+            "completion_tokens": 99,
+            "total_tokens": 1256,
+            "cached_tokens": 0,
+            "reasoning_tokens": 0
+          }
+        }
+      ],
+      "model_feedback": [],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ]
+    },
+    "network": [
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 8382.400000035763,
+        "wall": "2026-11-16T11:20:10.261Z"
+      },
+      {
+        "phase": "RESPONSE",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 11756.300000011921,
+        "http": 200
+      },
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 2,
+        "at": 12726.200000047684,
+        "wall": "2026-11-16T11:20:14.604Z"
+      }
+    ],
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_AIR_BLOWER_001",
+      "waterVisible": true,
+      "loadMs": 866.8000000119209,
+      "firstRenderMs": 22.399999976158142,
+      "triangles": 109330,
+      "assetTriangles": 201408,
+      "calls": 89,
+      "textures": 37,
+      "frameMs": 16.600000000000364,
+      "renderMode": "interactive",
+      "viewMode": "plant4",
+      "loadedIds": [
+        "SW_BIO_AERATION_001",
+        "SW_AIR_BLOWER_001",
+        "SW_PRE_PUMP_001",
+        "SW_CLR_TANK_001"
+      ],
+      "deviceStates": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 288.69999998807907,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 856.4000000357628,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 267.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 377.7999999523163,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      },
+      "waterStates": {
+        "SW_BIO_AERATION_001": true,
+        "SW_CLR_TANK_001": true
+      },
+      "roofStates": {
+        "SW_AIR_BLOWER_001": false,
+        "SW_PRE_PUMP_001": true
+      },
+      "deviceId": "SW_BIO_AERATION_001",
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "defaultCamera": [
+        22.947070901413227,
+        73.01503931616995,
+        69.06825672793661
+      ],
+      "defaultTarget": [
+        0.13738284572602621,
+        -4.806249344409889,
+        1.9809389170919145
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 64,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 0,
+      "loadGeneration": 2,
+      "assetRequests": {
+        "/models/aeration-tank.glb": 1,
+        "/models/clarifier-tank.glb": 1,
+        "/models/blower-unit.glb": 1,
+        "/models/pump-unit.glb": 1
+      },
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+      "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+      "waterPhaseMs": null,
+      "roofPresentation": {
+        "inspectionDevice": "SW_AIR_BLOWER_001",
+        "manual": {}
+      },
+      "registrations": [
+        {
+          "id": "SW_BIO_AERATION_001",
+          "unitId": "SW_UNIT_BIO_001",
+          "name": "一号曝气池",
+          "url": "/models/aeration-tank.glb",
+          "dimensions": "42 × 18 m · 水深 4.8 m",
+          "assetRootNode": "SW_BIO_AERATION_001",
+          "mechanicalNode": "SW_BIO_AERATION_001",
+          "metrics": [
+            "do",
+            "ph",
+            "depth"
+          ],
+          "water": true,
+          "roof": false,
+          "modelKey": "aeration",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "unitId": "SW_UNIT_BLOWER_ROOM_001",
+          "name": "一号鼓风机",
+          "url": "/models/blower-unit.glb",
+          "dimensions": "12 × 9 m 机房 · 设备独立选择",
+          "assetRootNode": "SW_BLOWER_UNIT",
+          "mechanicalNode": "SW_AIR_BLOWER_001",
+          "metrics": [
+            "blower_power"
+          ],
+          "water": false,
+          "roof": true,
+          "modelKey": "blower",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_PRE_PUMP_001",
+          "unitId": "SW_UNIT_PUMP_ROOM_001",
+          "name": "一号提升泵",
+          "url": "/models/pump-unit.glb",
+          "dimensions": "10 × 8 m 泵房 · 演示设备",
+          "assetRootNode": "SW_PUMP_UNIT",
+          "mechanicalNode": "SW_PRE_PUMP_001",
+          "metrics": [],
+          "water": false,
+          "roof": true,
+          "modelKey": "pump",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_CLR_TANK_001",
+          "unitId": "SW_UNIT_CLR_001",
+          "name": "一号二沉池",
+          "url": "/models/clarifier-tank.glb",
+          "dimensions": "Ø24 m · 二沉池样板",
+          "assetRootNode": "SW_CLR_TANK_001",
+          "mechanicalNode": "SW_CLR_TANK_001",
+          "metrics": [],
+          "water": true,
+          "roof": false,
+          "modelKey": "clarifier",
+          "modelState": "ready"
+        }
+      ],
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 246,
+      "siteFraming": {
+        "left": -2.286989884153614,
+        "right": 10.575812421414355,
+        "bottom": -1.0390561528458884,
+        "top": 4.120014805131532
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.700000047683716,
+          0.17999999225139618,
+          -24.299999952316284
+        ],
+        "max": [
+          -20.299999952316284,
+          3.299999952316284,
+          -21.5
+        ]
+      }
+    },
+    "chart": null,
+    "record_count": 6,
+    "x": 1858,
+    "y": 547.796875,
+    "disabled": false,
+    "hit": true
+  },
+  "stopped": {
+    "at": 12797.900000035763,
+    "task": {
+      "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+      "scenario_id": "NORMAL",
+      "snapshot_id": "smartwater-m1.2:NORMAL:1",
+      "as_of": "2026-01-15T08:00:05.000Z",
+      "started_at": "2026-11-16T11:20:10.253Z",
+      "finished_at": "2026-11-16T11:20:14.656Z",
+      "mode": "LLM",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "status": "CANCELLED",
+      "tool_count": 3,
+      "model_requests": 2,
+      "evidence": [
+        {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 64,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001",
+          "evidence_id": "EV_1dcc466d101e_1",
+          "tool_name": "scene.focus_device",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_APPLICABLE",
+          "data": {
+            "camera": {
+              "position": [
+                -22.450788842413413,
+                6.745421765080366,
+                -17.94500954777791
+              ],
+              "target": [
+                -23.04217054355862,
+                1.7186773053461186,
+                -22.873190390654628
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_AIR_BLOWER_001",
+            "rendered_frame": 64,
+            "arrival_verified": true,
+            "roof_presentation": {
+              "SW_AIR_BLOWER_001": false,
+              "SW_PRE_PUMP_001": true
+            },
+            "inspection_device": "SW_AIR_BLOWER_001"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据",
+          "evidence_id": "EV_1dcc466d101e_2",
+          "tool_name": "device.get_details",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_AIR_BLOWER_001",
+            "name": "一号鼓风机 B-01",
+            "modelStatus": "MODELLED",
+            "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+            "metrics": [
+              "blower_power"
+            ],
+            "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+            "asset_root_node": "SW_BLOWER_UNIT",
+            "mechanical_node": "SW_AIR_BLOWER_001",
+            "available_metrics": [
+              "blower_power"
+            ],
+            "model_load_state": "ready",
+            "operating_state": "NOT_OBSERVED",
+            "limitation": "模型和加载状态不是实时运行或健康证据"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92895501523823,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:05.000Z",
+                "sampleAt": "2026-01-15T08:00:05.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:NORMAL:1"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 76.44763393929483,
+                "max": 87.40701960623699,
+                "mean": 81.98751340466201,
+                "start": "2026-01-15T02:00:05.000Z",
+                "end": "2026-01-15T08:00:05.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "evidence_id": "EV_1dcc466d101e_3",
+          "tool_name": "device.get_metrics",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "GOOD",
+          "data": {
+            "outcome": "DATA_AVAILABLE",
+            "device_name": "一号鼓风机 B-01",
+            "metrics": [
+              {
+                "metric_key": "blower_power",
+                "label": "关联鼓风机功率",
+                "unit": "kW",
+                "latest": {
+                  "scopeType": "DEVICE",
+                  "scopeId": "SW_AIR_BLOWER_001",
+                  "metricKey": "blower_power",
+                  "value": 81.92895501523823,
+                  "unit": "kW",
+                  "observedAt": "2026-01-15T08:00:05.000Z",
+                  "sampleAt": "2026-01-15T08:00:05.000Z",
+                  "quality": "GOOD",
+                  "source": "SIMULATED",
+                  "snapshotId": "smartwater-m1.2:NORMAL:1"
+                },
+                "history": {
+                  "hours": 6,
+                  "total_samples": 361,
+                  "valid_samples": 361,
+                  "missing_samples": 0,
+                  "stale_samples": 0,
+                  "invalid_samples": 0,
+                  "expected_samples": 361,
+                  "coverage": 1,
+                  "min": 76.44763393929483,
+                  "max": 87.40701960623699,
+                  "mean": 81.98751340466201,
+                  "start": "2026-01-15T02:00:05.000Z",
+                  "end": "2026-01-15T08:00:05.000Z",
+                  "cadence_ms": 60000
+                }
+              }
+            ]
+          },
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_key": "blower_power",
+          "unit": "kW"
+        }
+      ],
+      "action_ids": [
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      ],
+      "errors": [
+        {
+          "code": "CANCELLED",
+          "message": "用户取消任务"
+        }
+      ],
+      "model_receipts": [
+        {
+          "provider": "OpenAI",
+          "model": "gpt-6-luna",
+          "request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+          "response_id": "chatcmpl-Ekp2pOoIUxGOLruUvUlvqsc1WwurZ",
+          "http_status": 200,
+          "elapsed_ms": 3358,
+          "usage": {
+            "prompt_tokens": 1157,
+            "completion_tokens": 99,
+            "total_tokens": 1256,
+            "cached_tokens": 0,
+            "reasoning_tokens": 0
+          }
+        }
+      ],
+      "model_feedback": [],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ]
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_AIR_BLOWER_001",
+      "waterVisible": true,
+      "loadMs": 866.8000000119209,
+      "firstRenderMs": 22.399999976158142,
+      "triangles": 109330,
+      "assetTriangles": 201408,
+      "calls": 89,
+      "textures": 37,
+      "frameMs": 16.600000000000364,
+      "renderMode": "interactive",
+      "viewMode": "plant4",
+      "loadedIds": [
+        "SW_BIO_AERATION_001",
+        "SW_AIR_BLOWER_001",
+        "SW_PRE_PUMP_001",
+        "SW_CLR_TANK_001"
+      ],
+      "deviceStates": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 288.69999998807907,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 856.4000000357628,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 267.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 377.7999999523163,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      },
+      "waterStates": {
+        "SW_BIO_AERATION_001": true,
+        "SW_CLR_TANK_001": true
+      },
+      "roofStates": {
+        "SW_AIR_BLOWER_001": false,
+        "SW_PRE_PUMP_001": true
+      },
+      "deviceId": "SW_BIO_AERATION_001",
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "defaultCamera": [
+        22.947070901413227,
+        73.01503931616995,
+        69.06825672793661
+      ],
+      "defaultTarget": [
+        0.13738284572602621,
+        -4.806249344409889,
+        1.9809389170919145
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 64,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 0,
+      "loadGeneration": 2,
+      "assetRequests": {
+        "/models/aeration-tank.glb": 1,
+        "/models/clarifier-tank.glb": 1,
+        "/models/blower-unit.glb": 1,
+        "/models/pump-unit.glb": 1
+      },
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+      "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+      "waterPhaseMs": null,
+      "roofPresentation": {
+        "inspectionDevice": "SW_AIR_BLOWER_001",
+        "manual": {}
+      },
+      "registrations": [
+        {
+          "id": "SW_BIO_AERATION_001",
+          "unitId": "SW_UNIT_BIO_001",
+          "name": "一号曝气池",
+          "url": "/models/aeration-tank.glb",
+          "dimensions": "42 × 18 m · 水深 4.8 m",
+          "assetRootNode": "SW_BIO_AERATION_001",
+          "mechanicalNode": "SW_BIO_AERATION_001",
+          "metrics": [
+            "do",
+            "ph",
+            "depth"
+          ],
+          "water": true,
+          "roof": false,
+          "modelKey": "aeration",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "unitId": "SW_UNIT_BLOWER_ROOM_001",
+          "name": "一号鼓风机",
+          "url": "/models/blower-unit.glb",
+          "dimensions": "12 × 9 m 机房 · 设备独立选择",
+          "assetRootNode": "SW_BLOWER_UNIT",
+          "mechanicalNode": "SW_AIR_BLOWER_001",
+          "metrics": [
+            "blower_power"
+          ],
+          "water": false,
+          "roof": true,
+          "modelKey": "blower",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_PRE_PUMP_001",
+          "unitId": "SW_UNIT_PUMP_ROOM_001",
+          "name": "一号提升泵",
+          "url": "/models/pump-unit.glb",
+          "dimensions": "10 × 8 m 泵房 · 演示设备",
+          "assetRootNode": "SW_PUMP_UNIT",
+          "mechanicalNode": "SW_PRE_PUMP_001",
+          "metrics": [],
+          "water": false,
+          "roof": true,
+          "modelKey": "pump",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_CLR_TANK_001",
+          "unitId": "SW_UNIT_CLR_001",
+          "name": "一号二沉池",
+          "url": "/models/clarifier-tank.glb",
+          "dimensions": "Ø24 m · 二沉池样板",
+          "assetRootNode": "SW_CLR_TANK_001",
+          "mechanicalNode": "SW_CLR_TANK_001",
+          "metrics": [],
+          "water": true,
+          "roof": false,
+          "modelKey": "clarifier",
+          "modelState": "ready"
+        }
+      ],
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 246,
+      "siteFraming": {
+        "left": -2.286989884153614,
+        "right": 10.575812421414355,
+        "bottom": -1.0390561528458884,
+        "top": 4.120014805131532
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.700000047683716,
+          0.17999999225139618,
+          -24.299999952316284
+        ],
+        "max": [
+          -20.299999952316284,
+          3.299999952316284,
+          -21.5
+        ]
+      }
+    },
+    "chart": null,
+    "network": [
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 8382.400000035763,
+        "wall": "2026-11-16T11:20:10.261Z"
+      },
+      {
+        "phase": "RESPONSE",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 11756.300000011921,
+        "http": 200
+      },
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 2,
+        "at": 12726.200000047684,
+        "wall": "2026-11-16T11:20:14.604Z"
+      },
+      {
+        "phase": "REJECT",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 2,
+        "at": 12778.600000023842,
+        "signal_aborted": true,
+        "error_name": null,
+        "error_code": "CANCELLED"
+      }
+    ],
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_25UqcWxGjd1u5VCidrMdmu19",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:13.635Z",
+        "finished_at": "2026-11-16T11:20:14.575Z",
+        "result": {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 64,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001",
+          "evidence_id": "EV_1dcc466d101e_1",
+          "tool_name": "scene.focus_device",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_APPLICABLE",
+          "data": {
+            "camera": {
+              "position": [
+                -22.450788842413413,
+                6.745421765080366,
+                -17.94500954777791
+              ],
+              "target": [
+                -23.04217054355862,
+                1.7186773053461186,
+                -22.873190390654628
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_AIR_BLOWER_001",
+            "rendered_frame": 64,
+            "arrival_verified": true,
+            "roof_presentation": {
+              "SW_AIR_BLOWER_001": false,
+              "SW_PRE_PUMP_001": true
+            },
+            "inspection_device": "SW_AIR_BLOWER_001"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      },
+      {
+        "tool_name": "device.get_details",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_6SAU0q3nmNhGxbM7Lac4Crt0",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:14.578Z",
+        "finished_at": "2026-11-16T11:20:14.581Z",
+        "result": {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据",
+          "evidence_id": "EV_1dcc466d101e_2",
+          "tool_name": "device.get_details",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_AIR_BLOWER_001",
+            "name": "一号鼓风机 B-01",
+            "modelStatus": "MODELLED",
+            "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+            "metrics": [
+              "blower_power"
+            ],
+            "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+            "asset_root_node": "SW_BLOWER_UNIT",
+            "mechanical_node": "SW_AIR_BLOWER_001",
+            "available_metrics": [
+              "blower_power"
+            ],
+            "model_load_state": "ready",
+            "operating_state": "NOT_OBSERVED",
+            "limitation": "模型和加载状态不是实时运行或健康证据"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      },
+      {
+        "tool_name": "device.get_metrics",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_MP6NGzqeYj7byefrZ0ww91D5",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:14.585Z",
+        "finished_at": "2026-11-16T11:20:14.591Z",
+        "result": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92895501523823,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:05.000Z",
+                "sampleAt": "2026-01-15T08:00:05.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:NORMAL:1"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 76.44763393929483,
+                "max": 87.40701960623699,
+                "mean": 81.98751340466201,
+                "start": "2026-01-15T02:00:05.000Z",
+                "end": "2026-01-15T08:00:05.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "evidence_id": "EV_1dcc466d101e_3",
+          "tool_name": "device.get_metrics",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "GOOD",
+          "data": {
+            "outcome": "DATA_AVAILABLE",
+            "device_name": "一号鼓风机 B-01",
+            "metrics": [
+              {
+                "metric_key": "blower_power",
+                "label": "关联鼓风机功率",
+                "unit": "kW",
+                "latest": {
+                  "scopeType": "DEVICE",
+                  "scopeId": "SW_AIR_BLOWER_001",
+                  "metricKey": "blower_power",
+                  "value": 81.92895501523823,
+                  "unit": "kW",
+                  "observedAt": "2026-01-15T08:00:05.000Z",
+                  "sampleAt": "2026-01-15T08:00:05.000Z",
+                  "quality": "GOOD",
+                  "source": "SIMULATED",
+                  "snapshotId": "smartwater-m1.2:NORMAL:1"
+                },
+                "history": {
+                  "hours": 6,
+                  "total_samples": 361,
+                  "valid_samples": 361,
+                  "missing_samples": 0,
+                  "stale_samples": 0,
+                  "invalid_samples": 0,
+                  "expected_samples": 361,
+                  "coverage": 1,
+                  "min": 76.44763393929483,
+                  "max": 87.40701960623699,
+                  "mean": 81.98751340466201,
+                  "start": "2026-01-15T02:00:05.000Z",
+                  "end": "2026-01-15T08:00:05.000Z",
+                  "cadence_ms": 60000
+                }
+              }
+            ]
+          },
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_key": "blower_power",
+          "unit": "kW"
+        }
+      }
+    ],
+    "input": [
+      {
+        "event": "task_PENDING",
+        "at": 11757.300000011921,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1"
+      },
+      {
+        "event": "task_RUNNING",
+        "at": 11782,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1"
+      },
+      {
+        "event": "task_SUCCEEDED",
+        "at": 12697.300000011921,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1"
+      },
+      {
+        "event": "task_PENDING",
+        "at": 12700.200000047684,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2"
+      },
+      {
+        "event": "task_RUNNING",
+        "at": 12701.600000023842,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2"
+      },
+      {
+        "event": "task_SUCCEEDED",
+        "at": 12703,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2"
+      },
+      {
+        "event": "task_PENDING",
+        "at": 12706.900000035763,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      },
+      {
+        "event": "task_RUNNING",
+        "at": 12708.900000035763,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      },
+      {
+        "event": "task_SUCCEEDED",
+        "at": 12712.5,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      },
+      {
+        "event": "cancel_control_received",
+        "at": 12778,
+        "trusted": true,
+        "eventTimestamp": 12777.5
+      },
+      {
+        "event": "cancel_dispatched",
+        "at": 12778.5,
+        "actionId": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      }
+    ]
+  },
+  "late": {
+    "at": 17802.600000023842,
+    "task": {
+      "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+      "scenario_id": "NORMAL",
+      "snapshot_id": "smartwater-m1.2:NORMAL:1",
+      "as_of": "2026-01-15T08:00:05.000Z",
+      "started_at": "2026-11-16T11:20:10.253Z",
+      "finished_at": "2026-11-16T11:20:14.656Z",
+      "mode": "LLM",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "status": "CANCELLED",
+      "tool_count": 3,
+      "model_requests": 2,
+      "evidence": [
+        {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 64,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001",
+          "evidence_id": "EV_1dcc466d101e_1",
+          "tool_name": "scene.focus_device",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_APPLICABLE",
+          "data": {
+            "camera": {
+              "position": [
+                -22.450788842413413,
+                6.745421765080366,
+                -17.94500954777791
+              ],
+              "target": [
+                -23.04217054355862,
+                1.7186773053461186,
+                -22.873190390654628
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_AIR_BLOWER_001",
+            "rendered_frame": 64,
+            "arrival_verified": true,
+            "roof_presentation": {
+              "SW_AIR_BLOWER_001": false,
+              "SW_PRE_PUMP_001": true
+            },
+            "inspection_device": "SW_AIR_BLOWER_001"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据",
+          "evidence_id": "EV_1dcc466d101e_2",
+          "tool_name": "device.get_details",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_AIR_BLOWER_001",
+            "name": "一号鼓风机 B-01",
+            "modelStatus": "MODELLED",
+            "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+            "metrics": [
+              "blower_power"
+            ],
+            "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+            "asset_root_node": "SW_BLOWER_UNIT",
+            "mechanical_node": "SW_AIR_BLOWER_001",
+            "available_metrics": [
+              "blower_power"
+            ],
+            "model_load_state": "ready",
+            "operating_state": "NOT_OBSERVED",
+            "limitation": "模型和加载状态不是实时运行或健康证据"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92895501523823,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:05.000Z",
+                "sampleAt": "2026-01-15T08:00:05.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:NORMAL:1"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 76.44763393929483,
+                "max": 87.40701960623699,
+                "mean": 81.98751340466201,
+                "start": "2026-01-15T02:00:05.000Z",
+                "end": "2026-01-15T08:00:05.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "evidence_id": "EV_1dcc466d101e_3",
+          "tool_name": "device.get_metrics",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "GOOD",
+          "data": {
+            "outcome": "DATA_AVAILABLE",
+            "device_name": "一号鼓风机 B-01",
+            "metrics": [
+              {
+                "metric_key": "blower_power",
+                "label": "关联鼓风机功率",
+                "unit": "kW",
+                "latest": {
+                  "scopeType": "DEVICE",
+                  "scopeId": "SW_AIR_BLOWER_001",
+                  "metricKey": "blower_power",
+                  "value": 81.92895501523823,
+                  "unit": "kW",
+                  "observedAt": "2026-01-15T08:00:05.000Z",
+                  "sampleAt": "2026-01-15T08:00:05.000Z",
+                  "quality": "GOOD",
+                  "source": "SIMULATED",
+                  "snapshotId": "smartwater-m1.2:NORMAL:1"
+                },
+                "history": {
+                  "hours": 6,
+                  "total_samples": 361,
+                  "valid_samples": 361,
+                  "missing_samples": 0,
+                  "stale_samples": 0,
+                  "invalid_samples": 0,
+                  "expected_samples": 361,
+                  "coverage": 1,
+                  "min": 76.44763393929483,
+                  "max": 87.40701960623699,
+                  "mean": 81.98751340466201,
+                  "start": "2026-01-15T02:00:05.000Z",
+                  "end": "2026-01-15T08:00:05.000Z",
+                  "cadence_ms": 60000
+                }
+              }
+            ]
+          },
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_key": "blower_power",
+          "unit": "kW"
+        }
+      ],
+      "action_ids": [
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2",
+        "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3"
+      ],
+      "errors": [
+        {
+          "code": "CANCELLED",
+          "message": "用户取消任务"
+        }
+      ],
+      "model_receipts": [
+        {
+          "provider": "OpenAI",
+          "model": "gpt-6-luna",
+          "request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+          "response_id": "chatcmpl-Ekp2pOoIUxGOLruUvUlvqsc1WwurZ",
+          "http_status": 200,
+          "elapsed_ms": 3358,
+          "usage": {
+            "prompt_tokens": 1157,
+            "completion_tokens": 99,
+            "total_tokens": 1256,
+            "cached_tokens": 0,
+            "reasoning_tokens": 0
+          }
+        }
+      ],
+      "model_feedback": [],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ]
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_AIR_BLOWER_001",
+      "waterVisible": true,
+      "loadMs": 866.8000000119209,
+      "firstRenderMs": 22.399999976158142,
+      "triangles": 109330,
+      "assetTriangles": 201408,
+      "calls": 89,
+      "textures": 37,
+      "frameMs": 16.600000000000364,
+      "renderMode": "interactive",
+      "viewMode": "plant4",
+      "loadedIds": [
+        "SW_BIO_AERATION_001",
+        "SW_AIR_BLOWER_001",
+        "SW_PRE_PUMP_001",
+        "SW_CLR_TANK_001"
+      ],
+      "deviceStates": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 288.69999998807907,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 856.4000000357628,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 267.5,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 377.7999999523163,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      },
+      "waterStates": {
+        "SW_BIO_AERATION_001": true,
+        "SW_CLR_TANK_001": true
+      },
+      "roofStates": {
+        "SW_AIR_BLOWER_001": false,
+        "SW_PRE_PUMP_001": true
+      },
+      "deviceId": "SW_BIO_AERATION_001",
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "defaultCamera": [
+        22.947070901413227,
+        73.01503931616995,
+        69.06825672793661
+      ],
+      "defaultTarget": [
+        0.13738284572602621,
+        -4.806249344409889,
+        1.9809389170919145
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 64,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 0,
+      "loadGeneration": 2,
+      "assetRequests": {
+        "/models/aeration-tank.glb": 1,
+        "/models/clarifier-tank.glb": 1,
+        "/models/blower-unit.glb": 1,
+        "/models/pump-unit.glb": 1
+      },
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+      "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+      "waterPhaseMs": null,
+      "roofPresentation": {
+        "inspectionDevice": "SW_AIR_BLOWER_001",
+        "manual": {}
+      },
+      "registrations": [
+        {
+          "id": "SW_BIO_AERATION_001",
+          "unitId": "SW_UNIT_BIO_001",
+          "name": "一号曝气池",
+          "url": "/models/aeration-tank.glb",
+          "dimensions": "42 × 18 m · 水深 4.8 m",
+          "assetRootNode": "SW_BIO_AERATION_001",
+          "mechanicalNode": "SW_BIO_AERATION_001",
+          "metrics": [
+            "do",
+            "ph",
+            "depth"
+          ],
+          "water": true,
+          "roof": false,
+          "modelKey": "aeration",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_AIR_BLOWER_001",
+          "unitId": "SW_UNIT_BLOWER_ROOM_001",
+          "name": "一号鼓风机",
+          "url": "/models/blower-unit.glb",
+          "dimensions": "12 × 9 m 机房 · 设备独立选择",
+          "assetRootNode": "SW_BLOWER_UNIT",
+          "mechanicalNode": "SW_AIR_BLOWER_001",
+          "metrics": [
+            "blower_power"
+          ],
+          "water": false,
+          "roof": true,
+          "modelKey": "blower",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_PRE_PUMP_001",
+          "unitId": "SW_UNIT_PUMP_ROOM_001",
+          "name": "一号提升泵",
+          "url": "/models/pump-unit.glb",
+          "dimensions": "10 × 8 m 泵房 · 演示设备",
+          "assetRootNode": "SW_PUMP_UNIT",
+          "mechanicalNode": "SW_PRE_PUMP_001",
+          "metrics": [],
+          "water": false,
+          "roof": true,
+          "modelKey": "pump",
+          "modelState": "ready"
+        },
+        {
+          "id": "SW_CLR_TANK_001",
+          "unitId": "SW_UNIT_CLR_001",
+          "name": "一号二沉池",
+          "url": "/models/clarifier-tank.glb",
+          "dimensions": "Ø24 m · 二沉池样板",
+          "assetRootNode": "SW_CLR_TANK_001",
+          "mechanicalNode": "SW_CLR_TANK_001",
+          "metrics": [],
+          "water": true,
+          "roof": false,
+          "modelKey": "clarifier",
+          "modelState": "ready"
+        }
+      ],
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 246,
+      "siteFraming": {
+        "left": -2.286989884153614,
+        "right": 10.575812421414355,
+        "bottom": -1.0390561528458884,
+        "top": 4.120014805131532
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.700000047683716,
+          0.17999999225139618,
+          -24.299999952316284
+        ],
+        "max": [
+          -20.299999952316284,
+          3.299999952316284,
+          -21.5
+        ]
+      }
+    },
+    "chart": null,
+    "network": [
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 8382.400000035763,
+        "wall": "2026-11-16T11:20:10.261Z"
+      },
+      {
+        "phase": "RESPONSE",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 1,
+        "at": 11756.300000011921,
+        "http": 200
+      },
+      {
+        "phase": "START",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 2,
+        "at": 12726.200000047684,
+        "wall": "2026-11-16T11:20:14.604Z"
+      },
+      {
+        "phase": "REJECT",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "request": 2,
+        "at": 12778.600000023842,
+        "signal_aborted": true,
+        "error_name": null,
+        "error_code": "CANCELLED"
+      }
+    ],
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_25UqcWxGjd1u5VCidrMdmu19",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:1",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:13.635Z",
+        "finished_at": "2026-11-16T11:20:14.575Z",
+        "result": {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 64,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001",
+          "evidence_id": "EV_1dcc466d101e_1",
+          "tool_name": "scene.focus_device",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_APPLICABLE",
+          "data": {
+            "camera": {
+              "position": [
+                -22.450788842413413,
+                6.745421765080366,
+                -17.94500954777791
+              ],
+              "target": [
+                -23.04217054355862,
+                1.7186773053461186,
+                -22.873190390654628
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_AIR_BLOWER_001",
+            "rendered_frame": 64,
+            "arrival_verified": true,
+            "roof_presentation": {
+              "SW_AIR_BLOWER_001": false,
+              "SW_PRE_PUMP_001": true
+            },
+            "inspection_device": "SW_AIR_BLOWER_001"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      },
+      {
+        "tool_name": "device.get_details",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001"
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_6SAU0q3nmNhGxbM7Lac4Crt0",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:14.578Z",
+        "finished_at": "2026-11-16T11:20:14.581Z",
+        "result": {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据",
+          "evidence_id": "EV_1dcc466d101e_2",
+          "tool_name": "device.get_details",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_AIR_BLOWER_001",
+            "name": "一号鼓风机 B-01",
+            "modelStatus": "MODELLED",
+            "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+            "metrics": [
+              "blower_power"
+            ],
+            "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+            "asset_root_node": "SW_BLOWER_UNIT",
+            "mechanical_node": "SW_AIR_BLOWER_001",
+            "available_metrics": [
+              "blower_power"
+            ],
+            "model_load_state": "ready",
+            "operating_state": "NOT_OBSERVED",
+            "limitation": "模型和加载状态不是实时运行或健康证据"
+          },
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      },
+      {
+        "tool_name": "device.get_metrics",
+        "arguments": {
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        "source": "LLM",
+        "trigger": "模型工具调用",
+        "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+        "snapshot_id": "smartwater-m1.2:NORMAL:1",
+        "as_of": "2026-01-15T08:00:05.000Z",
+        "model_call_id": "call_MP6NGzqeYj7byefrZ0ww91D5",
+        "model_request_id": "req_1ced38b40dcf438bbf5719a7c40afa7a",
+        "model_request_index": "1",
+        "action_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d:3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-16T11:20:14.585Z",
+        "finished_at": "2026-11-16T11:20:14.591Z",
+        "result": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92895501523823,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:05.000Z",
+                "sampleAt": "2026-01-15T08:00:05.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:NORMAL:1"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 76.44763393929483,
+                "max": 87.40701960623699,
+                "mean": 81.98751340466201,
+                "start": "2026-01-15T02:00:05.000Z",
+                "end": "2026-01-15T08:00:05.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "evidence_id": "EV_1dcc466d101e_3",
+          "tool_name": "device.get_metrics",
+          "task_id": "1dcc466d-101e-4fc0-a9e2-80e7c967f53d",
+          "snapshot_id": "smartwater-m1.2:NORMAL:1",
+          "scenario_id": "NORMAL",
+          "as_of": "2026-01-15T08:00:05.000Z",
+          "source": "SIMULATED",
+          "quality": "GOOD",
+          "data": {
+            "outcome": "DATA_AVAILABLE",
+            "device_name": "一号鼓风机 B-01",
+            "metrics": [
+              {
+                "metric_key": "blower_power",
+                "label": "关联鼓风机功率",
+                "unit": "kW",
+                "latest": {
+                  "scopeType": "DEVICE",
+                  "scopeId": "SW_AIR_BLOWER_001",
+                  "metricKey": "blower_power",
+                  "value": 81.92895501523823,
+                  "unit": "kW",
+                  "observedAt": "2026-01-15T08:00:05.000Z",
+                  "sampleAt": "2026-01-15T08:00:05.000Z",
+                  "quality": "GOOD",
+                  "source": "SIMULATED",
+                  "snapshotId": "smartwater-m1.2:NORMAL:1"
+                },
+                "history": {
+                  "hours": 6,
+                  "total_samples": 361,
+                  "valid_samples": 361,
+                  "missing_samples": 0,
+                  "stale_samples": 0,
+                  "invalid_samples": 0,
+                  "expected_samples": 361,
+                  "coverage": 1,
+                  "min": 76.44763393929483,
+                  "max": 87.40701960623699,
+                  "mean": 81.98751340466201,
+                  "start": "2026-01-15T02:00:05.000Z",
+                  "end": "2026-01-15T08:00:05.000Z",
+                  "cadence_ms": 60000
+                }
+              }
+            ]
+          },
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_key": "blower_power",
+          "unit": "kW"
+        }
+      }
+    ]
+  }
+}

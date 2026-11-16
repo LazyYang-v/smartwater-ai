@@ -1,0 +1,54 @@
+[
+  {
+    "index": 1,
+    "enabled": false,
+    "stats": {
+      "eligibleOriginals": 36,
+      "batchMeshes": 6
+    },
+    "fps": 13.052136971631947,
+    "p95": 217.70000000000073,
+    "calls": 50,
+    "triangles": 106042,
+    "done": true
+  },
+  {
+    "index": 2,
+    "enabled": true,
+    "stats": {
+      "eligibleOriginals": 36,
+      "batchMeshes": 6
+    },
+    "fps": 19.85088317614131,
+    "p95": 133.40000000000146,
+    "calls": 20,
+    "triangles": 106042,
+    "done": true
+  },
+  {
+    "index": 3,
+    "enabled": false,
+    "stats": {
+      "eligibleOriginals": 36,
+      "batchMeshes": 6
+    },
+    "fps": 22.398648488341173,
+    "p95": 133.3000000000029,
+    "calls": 50,
+    "triangles": 106042,
+    "done": true
+  },
+  {
+    "index": 4,
+    "enabled": true,
+    "stats": {
+      "eligibleOriginals": 36,
+      "batchMeshes": 6
+    },
+    "fps": 28.439422141160676,
+    "p95": 99.30000000000291,
+    "calls": 20,
+    "triangles": 106042,
+    "done": true
+  }
+]

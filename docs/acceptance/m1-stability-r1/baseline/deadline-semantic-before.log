@@ -1,0 +1,27 @@
+(node:58171) ExperimentalWarning: Transform Types is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+✖ a late animation callback cannot succeed ahead of its delayed deadline timer (9.125666ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 681.202208
+
+✖ failing tests:
+
+test at tests/cameraDeadline.test.ts:7:1
+✖ a late animation callback cannot succeed ahead of its delayed deadline timer (9.125666ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (/Users/leizhenyang/projects/smartwater-ai/tests/cameraDeadline.test.ts:12:2)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }

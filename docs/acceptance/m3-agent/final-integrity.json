@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-16T09:40:38.043442+00:00",
+  "protected_files": 491,
+  "protected_changes": [],
+  "fixed_dist_changes": [],
+  "modified_or_new_implementation_files": [
+    "src/App.vue",
+    "src/styles.css",
+    "src/composables/useSceneWorkspace.ts",
+    "src/composables/useBusinessAgent.ts",
+    "src/agent/llmProtocol.ts",
+    "src/agent/actionDispatcher.ts",
+    "src/agent/contracts.ts",
+    "src/agent/types.ts",
+    "src/agent/taskRunner.ts",
+    "src/agent/businessTools.ts",
+    "src/agent/llmClient.ts",
+    "src/components/dashboard/AgentWorkspace.vue",
+    "src/components/dashboard/TrendPanel.vue",
+    "src/components/dashboard/BusinessResultCard.vue",
+    "tests/llmProtocol.test.ts",
+    "tests/businessTools.test.ts",
+    "tests/gateway.test.ts",
+    "server/gateway.mjs",
+    "server/index.mjs",
+    "package.json",
+    "vite.config.ts",
+    ".gitignore",
+    ".env.gateway.example"
+  ],
+  "client_audit": {
+    "gateway_upstream_url_present": false,
+    "synthetic_test_credential_present": false,
+    "server_env_binding_present": false
+  },
+  "credential_presence_check": "No project .env file; no private directories searched; gateway confirms missing server configuration. No actual credential was available to compare against bundle.",
+  "server_files_sha256": {
+    "server/index.mjs": "0a4582392551840bcc9a4de07446f186c66954a79c407d4b816f407425541e85",
+    "server/gateway.mjs": "20e5e8547f3ed9b5b6d9204fa0b6503a8f23fbdaeed8951b6ebc14e902482d42",
+    "src/agent/llmProtocol.ts": "046f1927f68170235f7a41bcc20ea3dde6c104a7d3c0d285e4fdf88bbbe1afcd",
+    "src/agent/contracts.ts": "8dd93271fcd391fbcb3ee0e9f75ded37b7b51ff16743a88a9fd296354c7825e5"
+  }
+}

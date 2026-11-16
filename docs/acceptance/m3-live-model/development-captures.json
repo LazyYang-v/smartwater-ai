@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-16T11:31:08.602571+00:00",
+  "moved_not_deleted": [
+    {
+      "from": "docs/acceptance/m3-live-model/low-do-live-final.png",
+      "preserved_at": ".cache/m3.1-development-evidence/low-do-live-final.png"
+    },
+    {
+      "from": "docs/acceptance/m3-live-model/blower-power-live.png",
+      "preserved_at": ".cache/m3.1-development-evidence/blower-power-live.png"
+    },
+    {
+      "from": "docs/acceptance/m3-live-model/blower-power-accepted.png",
+      "preserved_at": ".cache/m3.1-development-evidence/blower-power-accepted.png"
+    },
+    {
+      "from": "docs/acceptance/m3-live-model/low-do-live.png",
+      "preserved_at": ".cache/m3.1-development-evidence/low-do-live.png"
+    },
+    {
+      "from": "docs/acceptance/m3-live-model/low-do-accepted.png",
+      "preserved_at": ".cache/m3.1-development-evidence/low-do-accepted.png"
+    }
+  ]
+}

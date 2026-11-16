@@ -1,0 +1,29 @@
+{
+  "at": 105754.5,
+  "task": {
+    "task_id": "313a5036-3713-4bc5-a3ab-ff8210d7f0f2",
+    "scenario_id": "NORMAL",
+    "snapshot_id": "smartwater-m1.2:NORMAL:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T09:19:53.023Z",
+    "finished_at": null,
+    "mode": "DEMO",
+    "input": "定位一号鼓风机，查看最近六小时功率。",
+    "status": "RUNNING",
+    "tool_count": 1,
+    "model_requests": 0,
+    "evidence": [],
+    "action_ids": [
+      "313a5036-3713-4bc5-a3ab-ff8210d7f0f2:1"
+    ],
+    "errors": [],
+    "explanation": "",
+    "scope": [
+      "SW_AIR_BLOWER_001"
+    ]
+  },
+  "x": 1858,
+  "y": 563.1953125,
+  "hit": true,
+  "disabled": false
+}

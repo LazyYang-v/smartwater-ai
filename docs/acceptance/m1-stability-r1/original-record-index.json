@@ -1,0 +1,403 @@
+{
+  "build_id": "6b9d43cf1d05489dc64954ab53c5841dd5a1768b4104e7d85ea1ef726bb52d78",
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "calculation": "原稿 average_fps = 1000 * interval_count / sum(raw rAF intervals); P95=sorted[floor(n*.95)]. 不是瞬时FPS平均；并非显示器呈现帧率。边界首间隔可跨越采样开始，M1.1将显式区分rAF/提交数/时长。",
+  "records": [
+    {
+      "path": "docs/acceptance/m1/performance/round-1-camera_only.json",
+      "sha256": "1ee3b6c4b9b25e1ad1b013aab3742bb1faba1c053a4aa9d79209af47bb7a68b1",
+      "round": 1,
+      "mode": "CAMERA_ONLY",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 1911,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 59.47160226983015,
+        "p95": 17.5
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-1-camera_data_charts.json",
+      "sha256": "94a309dd6ed53c5b4c74b3eaca50c86d86faacc395cc7d94fd0ec6f8f67e2a03",
+      "round": 1,
+      "mode": "CAMERA_DATA_CHARTS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 896.1000000238419,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 57.06134094151212,
+        "p95": 17.599999999998545
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-1-commands_panels.json",
+      "sha256": "07c69cbf37c69ac571caa621803941bbb9de1ccc68c1bc4095227037c5ede581",
+      "round": 1,
+      "mode": "COMMANDS_PANELS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 968.1999999880791,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 53.48490317140402,
+        "p95": 18.700000000000728
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-2-camera_only.json",
+      "sha256": "e945b612a5e5266eb4055fd5b9485654622affbad5626f110ae87b1a518414a4",
+      "round": 2,
+      "mode": "CAMERA_ONLY",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 1243.7999999523163,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 58.63453815261043,
+        "p95": 18.400000000001455
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-2-camera_data_charts.json",
+      "sha256": "70ab55de506011e44c065266192c8c178bf4901f3a73f480e072828360ef33b9",
+      "round": 2,
+      "mode": "CAMERA_DATA_CHARTS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 1563.699999988079,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 58.129668704113435,
+        "p95": 18.400000000001455
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-2-commands_panels.json",
+      "sha256": "9e1708402e467cbd8d66c59046e76beeb813826bbc979a1f55486932e15a6318",
+      "round": 2,
+      "mode": "COMMANDS_PANELS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 1137.199999988079,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 55.0255550295668,
+        "p95": 18.600000000000364
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-3-camera_only.json",
+      "sha256": "4e34cf73f74c9fd3f215cc3bb46694349c2e18b00f0a19cbe7159955d0e04aeb",
+      "round": 3,
+      "mode": "CAMERA_ONLY",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 983.7999999523163,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 28.670708265562627,
+        "p95": 116.79999999999563
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-3-camera_data_charts.json",
+      "sha256": "ab96998bd6b4543e9ab11dfc2335944be45730243e148f7a53ece9d1325ca6e1",
+      "round": 3,
+      "mode": "CAMERA_DATA_CHARTS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": null,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 7770,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": false,
+        "collection_valid": false,
+        "fps": null,
+        "p95": null
+      },
+      "failure_classification": "采集脚本固定75秒等待不足，未返回数组，不存在可评分样本"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-3-commands_panels.json",
+      "sha256": "9694425fa4a0646684b2e1479cd11e283c9c0d5c5b7a96a1213065a2ff6c1f5d",
+      "round": 3,
+      "mode": "COMMANDS_PANELS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 4989.600000023842,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 3.583784093732678,
+        "p95": 1584.2999999999956
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    },
+    {
+      "path": "docs/acceptance/m1/performance/round-3-camera_data_charts-collection-retry.json",
+      "sha256": "9859170f4451a4b0b62e2138bf274ed97effcfb054f60f98a2764bfb568e36d7",
+      "round": 3,
+      "mode": "CAMERA_DATA_CHARTS",
+      "build_matches_manifest": true,
+      "loaded_glb_matches_manifest": true,
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "native_dpr": 2,
+      "three_dpr": 1,
+      "css_canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawing_buffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "browser": "复用任务空间62，脚本未重建浏览器；user agent Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "start_visibility": "visible",
+      "visibility_throughout_reported": true,
+      "start_focus": true,
+      "page_age_before_test": "未获取",
+      "first_render_ms_not_page_age": 8168.199999988079,
+      "navigation": "每项 page.goto；并非同页连续第三轮",
+      "other_running_dashboard_tabs_then": "未获取，不能倒推当前盘点为历史状态",
+      "concurrent_profiling_in_this_script": false,
+      "external_test_interference_then": "未获取",
+      "outcome": {
+        "done": true,
+        "collection_valid": true,
+        "fps": 16.59656760522368,
+        "p95": 150
+      },
+      "failure_classification": "B类测试干扰待核实/D类证据不足；保留原失败，不因低分作废"
+    }
+  ],
+  "source_scripts": [
+    "scripts/m1-browser-performance.mjs",
+    "scripts/m1-browser-performance-recovery.mjs"
+  ],
+  "sequence": "round1 A B C -> round2 A B C -> round3 A B incomplete C -> diagnostic -> B retry; each item navigates; camera orbit 62m radius/36m height with 900ms segments, command mode alternates real focus/reset and panels",
+  "diagnostic_note": "原CPU profile在九项之后，未包含在正式测量中；CPU/wall time不能当GPU time"
+}

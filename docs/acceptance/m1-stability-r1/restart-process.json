@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-11-15T21:10:41.393091+00:00",
+  "old_pid": 29866,
+  "verified_old_command": "node /Users/leizhenyang/projects/smartwater-ai/node_modules/.bin/../.pnpm/vite@8.3.8/node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strictPort",
+  "stop_signal": "SIGTERM",
+  "command": "pnpm preview",
+  "cwd": "/Users/leizhenyang/projects/smartwater-ai",
+  "new_pnpm_pid": 92272,
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "http_ready_at_utc": "2026-11-15T21:10:50.941110+00:00",
+  "restarted": true
+}

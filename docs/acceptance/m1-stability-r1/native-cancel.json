@@ -1,0 +1,1425 @@
+[
+  {
+    "kind": "NORMAL",
+    "pressure": "none",
+    "nodeInputAt": "2026-11-15T20:03:29.047Z",
+    "nativeCancelIssuedAt": "2026-11-15T20:03:29.426Z",
+    "before": {
+      "at": 7452.700000047684,
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+        "status": "RUNNING",
+        "started_at": "2026-11-15T20:03:29.336Z",
+        "finished_at": null
+      },
+      "rect": {
+        "x": 1839,
+        "y": 435.5,
+        "width": 38,
+        "height": 28,
+        "top": 435.5,
+        "right": 1877,
+        "bottom": 463.5,
+        "left": 1839
+      },
+      "disabled": false,
+      "hit": true,
+      "visibility": "visible"
+    },
+    "dragBefore": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 183.5,
+        "camera": [
+          24.70640731310724,
+          38.40402509933928,
+          50.63935905146532
+        ],
+        "target": [
+          1.1542672709271806,
+          -5.4537824741581105,
+          4.983647510208673
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 216,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5405149804983854,
+          "right": 0.5386947123917525,
+          "bottom": -0.881680709392808,
+          "top": 0.8734163483183373
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "rect": {
+        "x": 309,
+        "y": 328,
+        "width": 1218,
+        "height": 427,
+        "top": 328,
+        "right": 1527,
+        "bottom": 755,
+        "left": 309
+      }
+    },
+    "dragAfter": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 4608.599999964237,
+      "firstRenderMs": 5051,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 183.5,
+      "camera": [
+        -20.15749406428807,
+        48.587193980288376,
+        39.451549603309815
+      ],
+      "target": [
+        1.1542672709271806,
+        -5.4537824741581105,
+        4.983647510208673
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 223,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.6155934078241597,
+        "right": 0.5100177999700267,
+        "bottom": -1.2773941473028778,
+        "top": 1.0956136354757147
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "after": {
+      "at": 9498.700000047684,
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:03:29.336Z",
+        "finished_at": "2026-11-15T20:03:29.826Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 34.099999999998545,
+        "camera": [
+          -20.15749406428807,
+          48.587193980288376,
+          39.451549603309815
+        ],
+        "target": [
+          1.1542672709271806,
+          -5.4537824741581105,
+          4.983647510208673
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 257,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.6155934078241597,
+          "right": 0.5100177999700267,
+          "bottom": -1.2773941473028778,
+          "top": 1.0956136354757147
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 6139.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 6142.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 7059.200000047684,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 7368.700000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7391.200000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 7839.100000023842,
+          "trusted": true,
+          "eventTimestamp": 7596.700000047684
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 7846.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 7859.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 8033.200000047684
+        }
+      ],
+      "cameraEvents": [
+        {
+          "event": "camera_started",
+          "at": 6143.900000035763
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 7059.100000023842
+        },
+        {
+          "event": "camera_started",
+          "at": 7420.400000035763
+        },
+        {
+          "event": "camera_stopped",
+          "at": 7846.800000011921,
+          "code": "CANCELLED"
+        }
+      ]
+    },
+    "stable": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 34.099999999998545,
+        "camera": [
+          -20.15749406428807,
+          48.587193980288376,
+          39.451549603309815
+        ],
+        "target": [
+          1.1542672709271806,
+          -5.4537824741581105,
+          4.983647510208673
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 262,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.6155934078241597,
+          "right": 0.5100177999700267,
+          "bottom": -1.2773941473028778,
+          "top": 1.0956136354757147
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 6139.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 6142.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 7059.200000047684,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 7368.700000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7391.200000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 7839.100000023842,
+          "trusted": true,
+          "eventTimestamp": 7596.700000047684
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 7846.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 7859.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 8033.200000047684
+        }
+      ],
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "dc9758d7-4dce-41b6-a74e-d3e595a7a683",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:28.106Z",
+          "finished_at": "2026-11-15T20:03:29.026Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 205,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:29.336Z",
+          "finished_at": "2026-11-15T20:03:29.826Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "e16ce694-b621-4873-a534-8f72ee23e069",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:03:31.576Z",
+      "finished_at": "2026-11-15T20:03:32.667Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.08552584161109,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 289,
+        "arrival_verified": true
+      }
+    },
+    "passed": true
+  },
+  {
+    "kind": "CONTROLLED_PRESSURE",
+    "pressure": "25ms busy wait every80ms, explicitly separate from benchmarks",
+    "nodeInputAt": "2026-11-15T20:03:35.130Z",
+    "nativeCancelIssuedAt": "2026-11-15T20:03:35.516Z",
+    "before": {
+      "at": 13519.5,
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6ebb6307-4579-4332-87f8-13e4cb496e14",
+        "status": "RUNNING",
+        "started_at": "2026-11-15T20:03:35.402Z",
+        "finished_at": null
+      },
+      "rect": {
+        "x": 1839,
+        "y": 435.5,
+        "width": 38,
+        "height": 28,
+        "top": 435.5,
+        "right": 1877,
+        "bottom": 463.5,
+        "left": 1839
+      },
+      "disabled": false,
+      "hit": true,
+      "visibility": "visible"
+    },
+    "dragBefore": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 1534,
+        "camera": [
+          24.085438422662172,
+          38.04028564597649,
+          50.086449468593266
+        ],
+        "target": [
+          1.1010322054877189,
+          -5.386788158583544,
+          4.927745482912918
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 318,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5486969998176287,
+          "right": 0.5437324472842396,
+          "bottom": -0.901130519188758,
+          "top": 0.879073031731028
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "rect": {
+        "x": 309,
+        "y": 328,
+        "width": 1218,
+        "height": 427,
+        "top": 328,
+        "right": 1527,
+        "bottom": 755,
+        "left": 309
+      }
+    },
+    "dragAfter": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 4608.599999964237,
+      "firstRenderMs": 5051,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 1534,
+      "camera": [
+        -20.085658684355035,
+        48.08038290674045,
+        38.77871240350073
+      ],
+      "target": [
+        1.1010322054877189,
+        -5.386788158583544,
+        4.927745482912918
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 323,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.623641501601818,
+        "right": 0.5162261710961529,
+        "bottom": -1.311804328278838,
+        "top": 1.1070745324241962
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "after": {
+      "at": 15378.600000023842,
+      "record": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6ebb6307-4579-4332-87f8-13e4cb496e14",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:03:35.402Z",
+        "finished_at": "2026-11-15T20:03:35.597Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 83.09999999999854,
+        "camera": [
+          -20.085658684355035,
+          48.08038290674045,
+          38.77871240350073
+        ],
+        "target": [
+          1.1010322054877189,
+          -5.386788158583544,
+          4.927745482912918
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 356,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.623641501601818,
+          "right": 0.5162261710961529,
+          "bottom": -1.311804328278838,
+          "top": 1.1070745324241962
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 6139.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 6142.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 7059.200000047684,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 7368.700000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7391.200000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 7839.100000023842,
+          "trusted": true,
+          "eventTimestamp": 7596.700000047684
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 7846.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 7859.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 8033.200000047684
+        },
+        {
+          "event": "task_PENDING",
+          "at": 9609.200000047684,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 9611.100000023842,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 10699.800000011921,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 10732,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 10734,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 13137.100000023842,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 13435.400000035763,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 13442.300000011921,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 13624.100000023842,
+          "trusted": true,
+          "eventTimestamp": 13613.300000011921
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 13624.100000023842,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 13630.300000011921,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 13730.800000011921
+        }
+      ],
+      "cameraEvents": [
+        {
+          "event": "camera_started",
+          "at": 6143.900000035763
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 7059.100000023842
+        },
+        {
+          "event": "camera_started",
+          "at": 7420.400000035763
+        },
+        {
+          "event": "camera_stopped",
+          "at": 7846.800000011921,
+          "code": "CANCELLED"
+        },
+        {
+          "event": "camera_started",
+          "at": 9612
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 10699.700000047684
+        },
+        {
+          "event": "camera_started",
+          "at": 10734.5
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 13137
+        },
+        {
+          "event": "camera_started",
+          "at": 13458.300000011921
+        },
+        {
+          "event": "camera_stopped",
+          "at": 13624.100000023842,
+          "code": "CANCELLED"
+        }
+      ]
+    },
+    "stable": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4608.599999964237,
+        "firstRenderMs": 5051,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 17.100000000000364,
+        "camera": [
+          -20.085658684355035,
+          48.08038290674045,
+          38.77871240350073
+        ],
+        "target": [
+          1.1010322054877189,
+          -5.386788158583544,
+          4.927745482912918
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 364,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.623641501601818,
+          "right": 0.5162261710961529,
+          "bottom": -1.311804328278838,
+          "top": 1.1070745324241962
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 6139.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 6142.100000023842,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 7059.200000047684,
+          "actionId": "dc9758d7-4dce-41b6-a74e-d3e595a7a683"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 7368.700000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7391.200000047684,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 7839.100000023842,
+          "trusted": true,
+          "eventTimestamp": 7596.700000047684
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 7846.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 7859.600000023842,
+          "actionId": "8fba502b-dfaf-44e9-b246-3639c7eb8fff"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 8033.200000047684
+        },
+        {
+          "event": "task_PENDING",
+          "at": 9609.200000047684,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 9611.100000023842,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 10699.800000011921,
+          "actionId": "e16ce694-b621-4873-a534-8f72ee23e069"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 10732,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 10734,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 13137.100000023842,
+          "actionId": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 13435.400000035763,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 13442.300000011921,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "cancel_control_received",
+          "at": 13624.100000023842,
+          "trusted": true,
+          "eventTimestamp": 13613.300000011921
+        },
+        {
+          "event": "cancel_dispatched",
+          "at": 13624.100000023842,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "task_CANCELLED",
+          "at": 13630.300000011921,
+          "actionId": "6ebb6307-4579-4332-87f8-13e4cb496e14"
+        },
+        {
+          "event": "user_camera_control",
+          "at": 13730.800000011921
+        }
+      ],
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "dc9758d7-4dce-41b6-a74e-d3e595a7a683",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:28.106Z",
+          "finished_at": "2026-11-15T20:03:29.026Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 205,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "8fba502b-dfaf-44e9-b246-3639c7eb8fff",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:29.336Z",
+          "finished_at": "2026-11-15T20:03:29.826Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e16ce694-b621-4873-a534-8f72ee23e069",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:31.576Z",
+          "finished_at": "2026-11-15T20:03:32.667Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.08552584161109,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 289,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "e51237a4-dd6e-4e49-b3ae-7ac3e452a44a",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:03:32.699Z",
+          "finished_at": "2026-11-15T20:03:35.104Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 307,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "6ebb6307-4579-4332-87f8-13e4cb496e14",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T20:03:35.402Z",
+          "finished_at": "2026-11-15T20:03:35.597Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "77b02a57-165a-4e94-b950-5de927aa7b95",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:03:37.563Z",
+      "finished_at": "2026-11-15T20:03:38.528Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.08552584161109,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 399,
+        "arrival_verified": true
+      }
+    },
+    "passed": true
+  }
+]

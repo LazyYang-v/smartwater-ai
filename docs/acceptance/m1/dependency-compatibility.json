@@ -1,0 +1,35 @@
+{
+  "checked_at_utc": "2026-11-15T18:02:59.895011+00:00",
+  "node": "24.21.0",
+  "pnpm": "11.25.0",
+  "vue": "3.5.45",
+  "typescript": "5.9.3",
+  "vite": "8.3.8",
+  "added": {
+    "echarts": "6.0.0",
+    "license": "Apache-2.0",
+    "dependencies": {
+      "tslib": "2.3.0",
+      "zrender": "6.0.0"
+    },
+    "engines_declared": false,
+    "peer_dependencies_declared": false
+  },
+  "verification": "pnpm view echarts@6.0.0; pnpm add --save-exact --store-dir .pnpm-store; project typecheck passed after import",
+  "store_note": "Initial add without explicit store was rejected by pnpm due to existing project-local store; rerun used the existing .pnpm-store. No global store/config changes.",
+  "references": [
+    "https://echarts.apache.org/handbook/en/basics/import/",
+    "https://echarts.apache.org/handbook/en/concepts/chart-size/"
+  ],
+  "imported_modules": [
+    "echarts/core",
+    "LineChart",
+    "GridComponent",
+    "TooltipComponent",
+    "LegendComponent",
+    "MarkLineComponent",
+    "AriaComponent",
+    "SVGRenderer"
+  ],
+  "unrelated_dependencies_upgraded": false
+}

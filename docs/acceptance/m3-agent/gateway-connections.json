@@ -1,0 +1,62 @@
+{
+  "8787": {
+    "status": 200,
+    "body": {
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ],
+      "limits": {
+        "requestBytes": 49152,
+        "responseBytes": 131072,
+        "timeoutMs": 12000,
+        "requestsPerTask": 6,
+        "toolsPerTask": 20,
+        "maxCompletionTokens": 1200,
+        "perMinute": 24
+      }
+    }
+  },
+  "5173": {
+    "status": 200,
+    "body": {
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ],
+      "limits": {
+        "requestBytes": 49152,
+        "responseBytes": 131072,
+        "timeoutMs": 12000,
+        "requestsPerTask": 6,
+        "toolsPerTask": 20,
+        "maxCompletionTokens": 1200,
+        "perMinute": 24
+      }
+    }
+  },
+  "4173": {
+    "status": 200,
+    "body": {
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ],
+      "limits": {
+        "requestBytes": 49152,
+        "responseBytes": 131072,
+        "timeoutMs": 12000,
+        "requestsPerTask": 6,
+        "toolsPerTask": 20,
+        "maxCompletionTokens": 1200,
+        "perMinute": 24
+      }
+    }
+  }
+}

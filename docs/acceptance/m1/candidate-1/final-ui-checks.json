@@ -1,0 +1,148 @@
+{
+  "tested_at_utc": "2026-11-15T18:23:57.947Z",
+  "tests": [
+    {
+      "name": "many actions keep full history with bounded automatic DOM log list",
+      "status": "PASS",
+      "evidence": {
+        "all": 67,
+        "dom": 20
+      }
+    },
+    {
+      "name": "explicit history paging exposes earlier records without deleting any",
+      "status": "PASS",
+      "evidence": {
+        "all": 67,
+        "dom": 40
+      }
+    },
+    {
+      "name": "workspace cancel button cancels action and cleans labels/corners",
+      "status": "PASS",
+      "evidence": {
+        "record": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "91a47d50-77d5-4698-b87d-db57316231dd",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T18:23:56.343Z",
+          "finished_at": "2026-11-15T18:23:56.431Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "用户取消当前任务"
+          }
+        },
+        "scene": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 1052.6000000238419,
+          "firstRenderMs": 1361.7000000476837,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 17.30000000000291,
+          "camera": [
+            2.617823355365139,
+            25.4653906878979,
+            30.97172363488917
+          ],
+          "target": [
+            -0.7393657766360286,
+            -3.0707169341120206,
+            2.995147534879441
+          ],
+          "defaultCamera": [
+            25.08552584161109,
+            38.626098005791725,
+            50.97692550717599
+          ],
+          "defaultTarget": [
+            1.1867687375622504,
+            -5.4946843401445875,
+            5.017777230158989
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 7084,
+          "cameraBusy": false,
+          "visible": "visible",
+          "activeRenderLoops": 1,
+          "loadGeneration": 1,
+          "rendererDpr": 1,
+          "nativeDpr": 2,
+          "drawingBuffer": {
+            "width": 1088,
+            "height": 425
+          },
+          "canvas": {
+            "width": 1088,
+            "height": 425
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -1.2687911021526581,
+            "right": 1.446792547868209,
+            "bottom": -1.4974980525078285,
+            "top": 1.0695085362490921
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "labels": 0
+      }
+    },
+    {
+      "name": "critical tool text remains at least 14 CSS pixels",
+      "status": "PASS",
+      "evidence": {
+        "tool": "14px",
+        "id": "14px",
+        "status": "14px",
+        "input": "14px"
+      }
+    },
+    {
+      "name": "actual pointer tooltip exposes demo time, value, unit, quality and source",
+      "status": "PASS",
+      "evidence": [
+        "16:00:00溶解氧：2.68 mg/L质量：有效 · SIMULATED"
+      ]
+    }
+  ]
+}

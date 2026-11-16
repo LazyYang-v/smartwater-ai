@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-16T11:31:08.670Z",
+  "provider": "OpenAI",
+  "model": "gpt-6-luna",
+  "endpoint": "https://api.openai.com/v1/chat/completions",
+  "reasoning_effort": "none",
+  "configuration_loaded": true,
+  "basic_request_verified": true,
+  "tool_loop_verified": true,
+  "latest_device_task": "7f7f9c9d-457b-41f6-8acf-e0676c09b49e",
+  "local_status": [
+    {
+      "port": 8787,
+      "http": 200,
+      "ready": true,
+      "missing": [],
+      "protocol": "openai-chat-completions"
+    },
+    {
+      "port": 4173,
+      "http": 200,
+      "ready": true,
+      "missing": [],
+      "protocol": "openai-chat-completions"
+    }
+  ],
+  "data_source": "SIMULATED",
+  "scope": "Successful recorded cases only; not a general reliability or industrial-health certification"
+}

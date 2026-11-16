@@ -1,0 +1,164 @@
+{
+  "focus": {
+    "tool_name": "scene.focus_device",
+    "arguments": {
+      "device_id": "SW_PRE_PUMP_001"
+    },
+    "source": "USER",
+    "trigger": "独立资产查看器",
+    "action_id": "bf330c68-abb5-412f-a8e0-abaafc402e76",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-16T07:34:34.868Z",
+    "finished_at": "2026-11-16T07:34:35.779Z",
+    "result": {
+      "camera": {
+        "position": [
+          0.6298956533111387,
+          6.10694361517549,
+          4.468689781776174
+        ],
+        "target": [
+          0.09632198668055894,
+          1.5715674488155609,
+          0.022242559854673605
+        ],
+        "zoom": 1
+      },
+      "selected_id": "SW_PRE_PUMP_001",
+      "rendered_frame": 60,
+      "arrival_verified": true,
+      "roof_presentation": {
+        "SW_PRE_PUMP_001": false
+      },
+      "inspection_device": "SW_PRE_PUMP_001"
+    }
+  },
+  "scene": {
+    "status": "ready",
+    "error": "",
+    "selectedId": "SW_PRE_PUMP_001",
+    "waterVisible": true,
+    "loadMs": 523.8999999761581,
+    "firstRenderMs": 686.6999999880791,
+    "triangles": 15024,
+    "assetTriangles": 17004,
+    "calls": 52,
+    "textures": 11,
+    "frameMs": 16.700000000000045,
+    "renderMode": "interactive",
+    "viewMode": "unit",
+    "loadedIds": [
+      "SW_PRE_PUMP_001"
+    ],
+    "deviceStates": {
+      "SW_PRE_PUMP_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 299.0999999642372,
+        "sha256": "78192e6deab99769b2a4d67b9da0a900dc3f2ba7eb33adb68b80351183839309"
+      }
+    },
+    "waterStates": {},
+    "roofStates": {
+      "SW_PRE_PUMP_001": false
+    },
+    "deviceId": "SW_PRE_PUMP_001",
+    "camera": [
+      0.6298956533111387,
+      6.10694361517549,
+      4.468689781776174
+    ],
+    "target": [
+      0.09632198668055894,
+      1.5715674488155609,
+      0.022242559854673605
+    ],
+    "defaultCamera": [
+      5.6998322867080935,
+      9.19493977985491,
+      12.534878586713967
+    ],
+    "defaultTarget": [
+      -0.08458261051402673,
+      -1.4839800304013124,
+      1.4110037843637353
+    ],
+    "zoom": 1,
+    "fov": 40,
+    "frame": 60,
+    "cameraBusy": false,
+    "visible": "visible",
+    "activeRenderLoops": 0,
+    "loadGeneration": 1,
+    "assetRequests": {
+      "/models/pump-unit.glb": 1
+    },
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "drawingBuffer": {
+      "width": 1736,
+      "height": 713
+    },
+    "canvas": {
+      "width": 1736,
+      "height": 713
+    },
+    "loadedModelUrl": "http://127.0.0.1:4173/models/pump-unit.glb",
+    "loadedModelSha256": "78192e6deab99769b2a4d67b9da0a900dc3f2ba7eb33adb68b80351183839309",
+    "waterPhaseMs": null,
+    "roofPresentation": {
+      "inspectionDevice": "SW_PRE_PUMP_001",
+      "manual": {}
+    },
+    "registrations": [
+      {
+        "id": "SW_PRE_PUMP_001",
+        "unitId": "SW_UNIT_PUMP_ROOM_001",
+        "name": "一号提升泵",
+        "url": "/models/pump-unit.glb",
+        "dimensions": "10 × 8 m 泵房 · 演示设备",
+        "assetRootNode": "SW_PUMP_UNIT",
+        "mechanicalNode": "SW_PRE_PUMP_001",
+        "metrics": [],
+        "water": false,
+        "roof": true,
+        "modelKey": "pump",
+        "modelState": "ready"
+      }
+    ],
+    "lighting": {
+      "exposure": 1.05,
+      "sunIntensity": 2.6,
+      "sunPosition": [
+        -28,
+        50,
+        20
+      ],
+      "environmentIntensity": 0.48,
+      "shadowMapSize": [
+        2048,
+        2048
+      ]
+    },
+    "selectionEffects": 1,
+    "sceneGeometryCount": 55,
+    "siteFraming": {
+      "left": -1.9507811056751891,
+      "right": 2.0918671593774665,
+      "bottom": -4.874988228480563,
+      "top": 0.791932103183799
+    },
+    "bounds": {
+      "min": [
+        -2.4000000953674316,
+        0.17999999225139618,
+        -1.25
+      ],
+      "max": [
+        2.6500000953674316,
+        3,
+        1.25
+      ]
+    }
+  }
+}

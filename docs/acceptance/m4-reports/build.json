@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-16T12:23:56.525720+00:00",
+  "build_id": "58258a7a0991b730b74d7c5cf9e8f55f056cf39e6f4b5a60da8b61cd1a808753",
+  "frontend_sha256": {
+    "dist/index.html": "64fe5501fff31183aa77568569d3eacca89fb4975f800846ca4cfb9f88e7e11c",
+    "dist/assets/dashboard-dsgDpRIT.js": "ce0a95b48126b26b02c41b9fd412c93434b359301512a5d3f9fa9c5ffec9ff44",
+    "dist/assets/dashboard-giz8jd70.css": "d4f9dbfd68c36fa24feaaf1fc83decbfc37aa6376461a7ca2885b6d3167bd17f",
+    "dist/assets/llmClient-Dx9wgSWI.js": "33c58cf1f9aa683f32b905909bb052ef1b5c75b912ef39ac4d2ff2c2095ce000",
+    "dist/assets/useSceneWorkspace-EYAlcW9e.js": "ec71e5657ccf6777554fb8b8f619615a00394c8bb46651cf83edec286366544d",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e",
+    "dist/assets/viewer-BuSJ-0Bl.js": "aa4b46a162082cb1e6e48926b3970f9a022a08e453aefaa0dd778f3974bff91a"
+  },
+  "asset_policy": "M4未修改任何模型、材质或场地；延用M2/M3资产与记录，不重新建模。",
+  "startup": [
+    "pnpm preview",
+    "pnpm agent:gateway"
+  ],
+  "address": "http://127.0.0.1:4173/",
+  "fixed_candidate": true
+}

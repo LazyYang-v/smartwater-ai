@@ -1,0 +1,61 @@
+{
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "nativeDprBeforeOverride": 2,
+  "binding": {
+    "at": "2026-11-15T20:18:56.051Z",
+    "gpu": {
+      "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+      "vendor": "Google Inc. (Apple)",
+      "contextAttributes": {
+        "alpha": true,
+        "antialias": true,
+        "depth": true,
+        "desynchronized": false,
+        "failIfMajorPerformanceCaveat": false,
+        "powerPreference": "high-performance",
+        "premultipliedAlpha": true,
+        "preserveDrawingBuffer": false,
+        "stencil": false,
+        "xrCompatible": false
+      }
+    },
+    "hashes": {
+      "/assets/index-QZyuTZ0A.js": "af328d9bfdce17639f9df2cb62f14b7e605fb36e92687ce7b8ce8ed7a9c58c04",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+    "entries": [
+      {
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "duration": 154.30000001192093,
+        "decodedBodySize": 1342103
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DH3KKlOn.css",
+        "duration": 126.89999997615814,
+        "decodedBodySize": 19634
+      },
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 376,
+        "decodedBodySize": 31254844
+      },
+      {
+        "url": "http://127.0.0.1:4173/environments/daylight_2k.hdr",
+        "duration": 100.39999997615814,
+        "decodedBodySize": 5451493
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "duration": 612,
+        "decodedBodySize": 1342103
+      },
+      {
+        "url": "http://127.0.0.1:4173/assets/index-DH3KKlOn.css",
+        "duration": 134.0999999642372,
+        "decodedBodySize": 19634
+      }
+    ],
+    "nativeDpr": 2
+  }
+}

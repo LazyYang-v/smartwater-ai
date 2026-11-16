@@ -1,0 +1,112 @@
+{
+  "completed_at_utc": "2026-11-15T16:29:49.289277+00:00",
+  "scope": "M0 only",
+  "implemented": [
+    "single aeration basin",
+    "real GLB viewer",
+    "deterministic Demo Agent",
+    "scene.focus_device",
+    "scene.reset_view"
+  ],
+  "verification": {
+    "typecheck": true,
+    "build": true,
+    "unit_tests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "browser_cases": {
+      "passed": 14,
+      "failed": 0
+    },
+    "blend_reopen": true,
+    "independent_glb_reimport": true,
+    "preview_process_restart": true,
+    "normal_production_tools": true,
+    "reference_unchanged_sha256": "b59b4d090c143b86ba82217249e20afa19c161ce083722e83da288cf8a2d683c",
+    "live_blender_scene_preserved": "Read-only final MCP check: Cube, Camera, Light; active Cube"
+  },
+  "metrics": {
+    "glb_bytes": 24080432,
+    "triangles": 106042,
+    "draw_calls_overview": 50,
+    "draw_calls_selected": 51,
+    "first_browser_load_ms": 2562,
+    "first_updated_render_ms": 2816.899999976158,
+    "performance": {
+      "sample_count": 1097,
+      "sampled_duration_ms": 18284.5,
+      "average_fps": 59.99617162077169,
+      "median_frame_ms": 16.70000000001164,
+      "p95_frame_ms": 18.400000000023283,
+      "p99_frame_ms": 18.600000000034925,
+      "frames_over_33_34_ms": 0,
+      "draw_calls_min": 50,
+      "draw_calls_max": 50,
+      "page_visible_throughout": true
+    }
+  },
+  "screenshots": [
+    {
+      "file": "overview-1920.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "04dfef7196e0a4b2142d9eadec4c3ae60fbf102b1fcb764be5528cea3cbe2ba5",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "connections-closeup.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "025303ae4dc4f8d764d5c5b878ae3eb2fac2cb195a9da226e81abb0aaf4a9603",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "aerators-water-hidden.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "781ea52120ff75d63a42aa9017419e891e9e3a0b0c5c900aee727a069feb47b0",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "agent-focused.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8da76f4fbebf27cc44e57c9cc9ebd2de046443dd939c10e8a72b918da275a0c8",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "agent-reset-overview.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f9f14549fc0ecfd10f86ea777cda2a3cf67ee9ae6abf852d3320c5692a2c4590",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "layout-1366.png",
+      "width": 1366,
+      "height": 768,
+      "sha256": "40d4bca8380c766239b1d7d1e8bc43ef01587f5a984dbca10152352d4f61686f",
+      "source": "actual production preview webpage"
+    },
+    {
+      "file": "restart-normal-production.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f3077d2afc7c3240db19616601b188aa7c1145f17a364e5113808867427ae078",
+      "source": "actual production preview webpage"
+    }
+  ],
+  "unverified": [
+    "Other browsers",
+    "native DPR 2 sustained performance",
+    "mobile interaction",
+    "long-duration endurance"
+  ],
+  "pending_user_visual_acceptance": true,
+  "known_issues": [
+    "Vite bundle-size advisory: main JS about 769kB raw / 205kB gzip; no build error",
+    "Warm-resource frame test does not include initial shader/texture upload; initial load timings are recorded separately",
+    "Only the current local browser was tested; first automated polling performance sample showed long frames and is preserved as performance-baseline.json"
+  ]
+}

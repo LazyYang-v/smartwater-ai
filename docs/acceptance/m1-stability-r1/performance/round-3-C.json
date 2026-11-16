@@ -1,0 +1,6058 @@
+{
+  "round": 3,
+  "mode": "C",
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "conditions": {
+    "at": "2026-11-15T20:29:37.833Z",
+    "pageAgeMs": 649653.3000000119,
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5364.400000035763,
+      "firstRenderMs": 5822.600000023842,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 16.900000000023283,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 12484,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "at": 649658.1000000238,
+      "wallTime": "2026-11-15T20:29:37.837Z",
+      "pageAgeMs": 649658.1000000238,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 12484,
+      "callbackCount": 12484,
+      "renderCpuDiagnostics": {
+        "enabled": false,
+        "calls": 0,
+        "totalMs": 0,
+        "maxMs": 0,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:0",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 374,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 127,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    "viewport": [
+      1920,
+      1080
+    ],
+    "visibility": "visible",
+    "policy": "All nine serial in one document; no reload or browser recreation. Native DOM DPR2, Three DPR1. A pauses demo clock only; B/C full updates. No screenshots or profiler during samples."
+  },
+  "tabs": [
+    {
+      "label": "p1",
+      "targetId": "87CCBF2BDEE8BCFC53012CD59F259ACE",
+      "url": "http://127.0.0.1:4173/?qa=1",
+      "active": true,
+      "openedBy": "agent"
+    },
+    {
+      "label": "p2",
+      "targetId": "05E241F9373E80DE68B116C2A2E452EB",
+      "url": "http://127.0.0.1:4173/",
+      "active": false,
+      "openedBy": "unknown"
+    },
+    {
+      "label": "p3",
+      "targetId": "F77B06EFA2257435E215EA730A2CF36C",
+      "url": "http://127.0.0.1:4173/",
+      "active": false,
+      "openedBy": "unknown"
+    },
+    {
+      "label": "p4",
+      "targetId": "61D939DB9A6B020B0A6D3E99AC701B22",
+      "url": "http://127.0.0.1:4173/",
+      "active": false,
+      "openedBy": "unknown"
+    }
+  ],
+  "result": {
+    "done": true,
+    "measurement": {
+      "measured_at": "2026-11-15T20:30:42.840Z",
+      "total_duration_ms": 64922.09999996424,
+      "sampled_duration_ms": 64922.09999996424,
+      "sample_count": 203,
+      "raf_callbacks": 204,
+      "scene_submissions": 204,
+      "average_fps": 3.142227377119846,
+      "raf_callback_hz": 3.142227377119846,
+      "p95_frame_ms": 2101.9000000000233,
+      "p99_frame_ms": 4364.699999999953,
+      "median_frame_ms": 50,
+      "frames_over_50_ms": 99,
+      "frames_over_100_ms": 63,
+      "frame_times_ms": [
+        68.60000000009313,
+        31.699999999953434,
+        33.300000000046566,
+        451.69999999995343,
+        31.900000000023283,
+        16.099999999976717,
+        16.900000000023283,
+        17.099999999976717,
+        16.199999999953434,
+        51.800000000046566,
+        33.40000000002328,
+        181.79999999993015,
+        16.900000000023283,
+        16.099999999976717,
+        18.5,
+        15.400000000023283,
+        15.900000000023283,
+        18.699999999953434,
+        15.5,
+        33.800000000046566,
+        17.300000000046566,
+        16.199999999953434,
+        17.199999999953434,
+        14.70000000006985,
+        51.90000000002328,
+        82,
+        16.899999999906868,
+        101.10000000009313,
+        50,
+        16.699999999953434,
+        1650,
+        32,
+        34.59999999997672,
+        16.70000000006985,
+        82.59999999997672,
+        150.69999999995343,
+        32.40000000002328,
+        17.599999999976717,
+        16.5,
+        15.900000000023283,
+        33.59999999997672,
+        15.300000000046566,
+        16.699999999953434,
+        51.5,
+        33.800000000046566,
+        14.900000000023283,
+        18.5,
+        50,
+        299.19999999995343,
+        17.5,
+        48.199999999953434,
+        51.800000000046566,
+        83.30000000004657,
+        31.699999999953434,
+        18.300000000046566,
+        65.79999999993015,
+        150.90000000002328,
+        148.30000000004657,
+        83.89999999990687,
+        17.70000000006985,
+        48,
+        18.699999999953434,
+        15.20000000006985,
+        18.099999999976717,
+        149.29999999993015,
+        366.20000000006985,
+        432.5999999999767,
+        33.300000000046566,
+        33.59999999997672,
+        34,
+        34.40000000002328,
+        33.29999999993015,
+        83.30000000004657,
+        150,
+        66.69999999995343,
+        16.300000000046566,
+        17,
+        16.699999999953434,
+        16.599999999976717,
+        15.100000000093132,
+        16.79999999993015,
+        18.099999999976717,
+        16.70000000006985,
+        14.900000000023283,
+        17.399999999906868,
+        32.70000000006985,
+        50.09999999997672,
+        18.199999999953434,
+        15.300000000046566,
+        16.400000000023283,
+        18.400000000023283,
+        14.79999999993015,
+        17.5,
+        17.400000000023283,
+        32,
+        51.5,
+        33.40000000002328,
+        16.5,
+        15.699999999953434,
+        17.800000000046566,
+        16.599999999976717,
+        16.400000000023283,
+        16.599999999976717,
+        17.099999999976717,
+        16.599999999976717,
+        16.70000000006985,
+        50,
+        216.79999999993015,
+        49.90000000002328,
+        99.90000000002328,
+        283.4000000000233,
+        33.29999999993015,
+        1150,
+        31.400000000023283,
+        866.7000000000698,
+        967.5,
+        1867.6999999999534,
+        199.90000000002328,
+        349.79999999993015,
+        1315,
+        750.2000000000698,
+        51.699999999953434,
+        216.70000000006985,
+        183.29999999993015,
+        83.30000000004657,
+        16.699999999953434,
+        83.30000000004657,
+        33.29999999993015,
+        16.70000000006985,
+        150,
+        66.79999999993015,
+        49.40000000002328,
+        4850.400000000023,
+        2083.3000000000466,
+        916.5999999999767,
+        33.40000000002328,
+        2799.899999999907,
+        366.70000000006985,
+        2383.29999999993,
+        348.10000000009313,
+        368.5,
+        50.09999999997672,
+        133.29999999993015,
+        2366.600000000093,
+        2000,
+        2266.5999999999767,
+        199.90000000002328,
+        83.39999999990687,
+        83.30000000004657,
+        150,
+        4633.300000000047,
+        3033.29999999993,
+        116.59999999997672,
+        14.800000000046566,
+        18.599999999976717,
+        100.09999999997672,
+        99.80000000004657,
+        165.40000000002328,
+        116.19999999995343,
+        85.20000000006985,
+        50,
+        64.89999999990687,
+        133.20000000006985,
+        35.09999999997672,
+        50,
+        3600.0999999999767,
+        300,
+        33.40000000002328,
+        116.59999999997672,
+        100,
+        166.70000000006985,
+        3383.1999999999534,
+        4364.699999999953,
+        251.90000000002328,
+        166.70000000006985,
+        81.29999999993015,
+        35.40000000002328,
+        232.69999999995343,
+        66.30000000004657,
+        117.5,
+        48.800000000046566,
+        201.29999999993015,
+        516.7000000000698,
+        166.29999999993015,
+        65,
+        135.30000000004657,
+        14.699999999953434,
+        17.20000000006985,
+        51.5,
+        66.59999999997672,
+        15.099999999976717,
+        34.90000000002328,
+        66.19999999995343,
+        49.20000000006985,
+        51.29999999993015,
+        48.20000000006985,
+        51.79999999993015,
+        31.300000000046566,
+        66.69999999995343,
+        2101.9000000000233,
+        133.40000000002328,
+        250,
+        99
+      ],
+      "raf_timestamps_ms": [
+        649739.2,
+        649807.8,
+        649839.5,
+        649872.8,
+        650324.5,
+        650356.4,
+        650372.5,
+        650389.4,
+        650406.5,
+        650422.7,
+        650474.5,
+        650507.9,
+        650689.7,
+        650706.6,
+        650722.7,
+        650741.2,
+        650756.6,
+        650772.5,
+        650791.2,
+        650806.7,
+        650840.5,
+        650857.8,
+        650874,
+        650891.2,
+        650905.9,
+        650957.8,
+        651039.8,
+        651056.7,
+        651157.8,
+        651207.8,
+        651224.5,
+        652874.5,
+        652906.5,
+        652941.1,
+        652957.8,
+        653040.4,
+        653191.1,
+        653223.5,
+        653241.1,
+        653257.6,
+        653273.5,
+        653307.1,
+        653322.4,
+        653339.1,
+        653390.6,
+        653424.4,
+        653439.3,
+        653457.8,
+        653507.8,
+        653807,
+        653824.5,
+        653872.7,
+        653924.5,
+        654007.8,
+        654039.5,
+        654057.8,
+        654123.6,
+        654274.5,
+        654422.8,
+        654506.7,
+        654524.4,
+        654572.4,
+        654591.1,
+        654606.3,
+        654624.4,
+        654773.7,
+        655139.9,
+        655572.5,
+        655605.8,
+        655639.4,
+        655673.4,
+        655707.8,
+        655741.1,
+        655824.4,
+        655974.4,
+        656041.1,
+        656057.4,
+        656074.4,
+        656091.1,
+        656107.7,
+        656122.8,
+        656139.6,
+        656157.7,
+        656174.4,
+        656189.3,
+        656206.7,
+        656239.4,
+        656289.5,
+        656307.7,
+        656323,
+        656339.4,
+        656357.8,
+        656372.6,
+        656390.1,
+        656407.5,
+        656439.5,
+        656491,
+        656524.4,
+        656540.9,
+        656556.6,
+        656574.4,
+        656591,
+        656607.4,
+        656624,
+        656641.1,
+        656657.7,
+        656674.4,
+        656724.4,
+        656941.2,
+        656991.1,
+        657091,
+        657374.4,
+        657407.7,
+        658557.7,
+        658589.1,
+        659455.8,
+        660423.3,
+        662291,
+        662490.9,
+        662840.7,
+        664155.7,
+        664905.9,
+        664957.6,
+        665174.3,
+        665357.6,
+        665440.9,
+        665457.6,
+        665540.9,
+        665574.2,
+        665590.9,
+        665740.9,
+        665807.7,
+        665857.1,
+        670707.5,
+        672790.8,
+        673707.4,
+        673740.8,
+        676540.7,
+        676907.4,
+        679290.7,
+        679638.8,
+        680007.3,
+        680057.4,
+        680190.7,
+        682557.3,
+        684557.3,
+        686823.9,
+        687023.8,
+        687107.2,
+        687190.5,
+        687340.5,
+        691973.8,
+        695007.1,
+        695123.7,
+        695138.5,
+        695157.1,
+        695257.2,
+        695357,
+        695522.4,
+        695638.6,
+        695723.8,
+        695773.8,
+        695838.7,
+        695971.9,
+        696007,
+        696057,
+        699657.1,
+        699957.1,
+        699990.5,
+        700107.1,
+        700207.1,
+        700373.8,
+        703757,
+        708121.7,
+        708373.6,
+        708540.3,
+        708621.6,
+        708657,
+        708889.7,
+        708956,
+        709073.5,
+        709122.3,
+        709323.6,
+        709840.3,
+        710006.6,
+        710071.6,
+        710206.9,
+        710221.6,
+        710238.8,
+        710290.3,
+        710356.9,
+        710372,
+        710406.9,
+        710473.1,
+        710522.3,
+        710573.6,
+        710621.8,
+        710673.6,
+        710704.9,
+        710771.6,
+        712873.5,
+        713006.9,
+        713256.9,
+        713355.9
+      ],
+      "draw_calls_min": 50,
+      "draw_calls_max": 51,
+      "page_visible_throughout": true,
+      "visibility_events": [],
+      "interpretation": "Scene submissions per elapsed sample time; rAF intervals are raw and unclamped. Neither is a measurement of presented frames or GPU time.",
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5364.400000035763,
+      "firstRenderMs": 5822.600000023842,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 2101.9000000000233,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 12693,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "actions": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "bf3cf472-fe65-427c-bed6-324e4e270f6c",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:37.924Z",
+        "finished_at": "2026-11-15T20:29:38.055Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "305a6eea-f5a7-48ca-8155-9fb08d2d9ff0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:38.155Z",
+        "finished_at": "2026-11-15T20:29:39.424Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12520,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "87aaee7f-8cb0-45eb-8b10-a6a96c97c7bb",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:39.440Z",
+        "finished_at": "2026-11-15T20:29:41.767Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12538,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9cb0eb12-099c-4ac9-9e83-e63507164fb8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:41.815Z",
+        "finished_at": "2026-11-15T20:29:43.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12555,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "bc549501-d2fc-4224-bc6c-870afc4d8c34",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:43.050Z",
+        "finished_at": "2026-11-15T20:29:43.353Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b00f5c25-f8bb-49bd-a197-73dc2b89bb08",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:43.380Z",
+        "finished_at": "2026-11-15T20:29:44.633Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12585,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "1c141d4f-6805-44a8-83f8-75778738ab7c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:44.638Z",
+        "finished_at": "2026-11-15T20:29:45.673Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12602,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "c417ecb8-3b97-4c8e-a9b8-ea5d09849ecc",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:45.889Z",
+        "finished_at": "2026-11-15T20:29:47.820Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12605,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9a6a489c-e808-428b-870d-fafd5663e9b1",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:47.842Z",
+        "finished_at": "2026-11-15T20:29:48.704Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7e2954e3-f744-43b9-a963-aed65d1d3838",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:48.849Z",
+        "finished_at": "2026-11-15T20:29:51.121Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12609,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b467ce3f-df81-475e-9d6a-d591a80729ce",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:51.489Z",
+        "finished_at": "2026-11-15T20:29:53.093Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12611,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b080e888-5fdc-4dd9-8cf3-51f765068e34",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:53.097Z",
+        "finished_at": "2026-11-15T20:29:54.136Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12622,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8f66f94f-a04e-4d87-be11-3b19ac5bb2d3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:54.905Z",
+        "finished_at": "2026-11-15T20:30:00.956Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12623,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b1fc19db-4b4f-4d1d-8682-ed185406d334",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:00.967Z",
+        "finished_at": "2026-11-15T20:30:02.055Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12626,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "af712f07-c741-46c0-9e4a-087e03179739",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:02.400Z",
+        "finished_at": "2026-11-15T20:30:05.189Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12628,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0b46a10e-7316-42bd-9cc7-b7e0e396bef0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:05.420Z",
+        "finished_at": "2026-11-15T20:30:08.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12630,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "5ba51ec4-fdec-4014-acbd-08488357860b",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:08.141Z",
+        "finished_at": "2026-11-15T20:30:09.123Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7412e821-c87c-4532-b6f9-c0f6953d3243",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:09.555Z",
+        "finished_at": "2026-11-15T20:30:12.951Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12635,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d301466f-dc16-45f6-86a1-7139e281c9ea",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:13.207Z",
+        "finished_at": "2026-11-15T20:30:15.721Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12640,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fd653838-c9fa-4ea4-b1ba-6926377982fd",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:16.322Z",
+        "finished_at": "2026-11-15T20:30:20.318Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12641,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "28061324-899d-4ad1-9a21-e4996fd2bc46",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:20.788Z",
+        "finished_at": "2026-11-15T20:30:23.269Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "138fe3ea-eb73-44f5-81c5-95b3328135e6",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:23.273Z",
+        "finished_at": "2026-11-15T20:30:24.288Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12655,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fa9a2efb-de8f-4ece-9c84-8476405f8b18",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:24.538Z",
+        "finished_at": "2026-11-15T20:30:28.113Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12656,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "533047f6-06aa-4bf7-8fd9-28a0257bb0d4",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:28.116Z",
+        "finished_at": "2026-11-15T20:30:32.237Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12662,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0657eb11-6940-432f-9b59-205f4684f22b",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:33.205Z",
+        "finished_at": "2026-11-15T20:30:36.496Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "36d95ea8-9ab0-422a-9c4e-b5af20fff6b0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:36.509Z",
+        "finished_at": "2026-11-15T20:30:37.704Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12672,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6c1cd64e-106b-4ee2-a0d0-7c55d02516dd",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:38.000Z",
+        "finished_at": "2026-11-15T20:30:39.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12689,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d36edd9b-6cb3-4cf8-a294-da5c2abe7d36",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:39.242Z",
+        "finished_at": "2026-11-15T20:30:42.555Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12693,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "longTasks": [
+      {
+        "at": 649762.7000000477,
+        "duration": 52
+      },
+      {
+        "at": 649868.4000000358,
+        "duration": 455
+      },
+      {
+        "at": 650428.3000000119,
+        "duration": 51
+      },
+      {
+        "at": 650508.3000000119,
+        "duration": 165
+      },
+      {
+        "at": 650969.3000000119,
+        "duration": 87
+      },
+      {
+        "at": 651092.3000000119,
+        "duration": 66
+      },
+      {
+        "at": 651238.2000000477,
+        "duration": 1642
+      },
+      {
+        "at": 652978.3000000119,
+        "duration": 79
+      },
+      {
+        "at": 653057.6000000238,
+        "duration": 130
+      },
+      {
+        "at": 653463,
+        "duration": 61
+      },
+      {
+        "at": 653542.6000000238,
+        "duration": 274
+      },
+      {
+        "at": 653924.7000000477,
+        "duration": 99
+      },
+      {
+        "at": 654074.7000000477,
+        "duration": 83
+      },
+      {
+        "at": 654191.2000000477,
+        "duration": 94
+      },
+      {
+        "at": 654322.6000000238,
+        "duration": 135
+      },
+      {
+        "at": 654631.3000000119,
+        "duration": 143
+      },
+      {
+        "at": 654792.3000000119,
+        "duration": 361
+      },
+      {
+        "at": 655156.2000000477,
+        "duration": 388
+      },
+      {
+        "at": 655741.4000000358,
+        "duration": 100
+      },
+      {
+        "at": 655858,
+        "duration": 116
+      },
+      {
+        "at": 655991.7000000477,
+        "duration": 56
+      },
+      {
+        "at": 656452,
+        "duration": 55
+      },
+      {
+        "at": 656739.1000000238,
+        "duration": 203
+      },
+      {
+        "at": 657008,
+        "duration": 117
+      },
+      {
+        "at": 657125.1000000238,
+        "duration": 266
+      },
+      {
+        "at": 657426.2000000477,
+        "duration": 57
+      },
+      {
+        "at": 657485.4000000358,
+        "duration": 1084
+      },
+      {
+        "at": 658583.1000000238,
+        "duration": 840
+      },
+      {
+        "at": 659558.6000000238,
+        "duration": 851
+      },
+      {
+        "at": 660423.7000000477,
+        "duration": 1551
+      },
+      {
+        "at": 661975.6000000238,
+        "duration": 332
+      },
+      {
+        "at": 662341.4000000358,
+        "duration": 67
+      },
+      {
+        "at": 662408.6000000238,
+        "duration": 83
+      },
+      {
+        "at": 662624.4000000358,
+        "duration": 208
+      },
+      {
+        "at": 662874.8000000119,
+        "duration": 1300
+      },
+      {
+        "at": 664175.2000000477,
+        "duration": 711
+      },
+      {
+        "at": 665223.2000000477,
+        "duration": 119
+      },
+      {
+        "at": 665375.4000000358,
+        "duration": 67
+      },
+      {
+        "at": 665476.3000000119,
+        "duration": 77
+      },
+      {
+        "at": 665596.1000000238,
+        "duration": 161
+      },
+      {
+        "at": 665758,
+        "duration": 62
+      },
+      {
+        "at": 665820.4000000358,
+        "duration": 70
+      },
+      {
+        "at": 665891.2000000477,
+        "duration": 4816
+      },
+      {
+        "at": 670708.2000000477,
+        "duration": 1932
+      },
+      {
+        "at": 672640.9000000358,
+        "duration": 145
+      },
+      {
+        "at": 672841.1000000238,
+        "duration": 867
+      },
+      {
+        "at": 673773.4000000358,
+        "duration": 2784
+      },
+      {
+        "at": 676757.7000000477,
+        "duration": 136
+      },
+      {
+        "at": 676957.9000000358,
+        "duration": 2350
+      },
+      {
+        "at": 679524.3000000119,
+        "duration": 131
+      },
+      {
+        "at": 679790.9000000358,
+        "duration": 204
+      },
+      {
+        "at": 680074.3000000119,
+        "duration": 162
+      },
+      {
+        "at": 680236.4000000358,
+        "duration": 2141
+      },
+      {
+        "at": 682377.9000000358,
+        "duration": 197
+      },
+      {
+        "at": 682658.2000000477,
+        "duration": 1684
+      },
+      {
+        "at": 684342.5,
+        "duration": 215
+      },
+      {
+        "at": 684706.5,
+        "duration": 2119
+      },
+      {
+        "at": 686840.7000000477,
+        "duration": 98
+      },
+      {
+        "at": 686939.4000000358,
+        "duration": 87
+      },
+      {
+        "at": 687040.7000000477,
+        "duration": 60
+      },
+      {
+        "at": 687119.7000000477,
+        "duration": 71
+      },
+      {
+        "at": 687191.6000000238,
+        "duration": 181
+      },
+      {
+        "at": 687450.5,
+        "duration": 4541
+      },
+      {
+        "at": 692091.1000000238,
+        "duration": 2927
+      },
+      {
+        "at": 695018.5,
+        "duration": 65
+      },
+      {
+        "at": 695170.5,
+        "duration": 98
+      },
+      {
+        "at": 695270.1000000238,
+        "duration": 87
+      },
+      {
+        "at": 695371.2000000477,
+        "duration": 151
+      },
+      {
+        "at": 695555.5,
+        "duration": 118
+      },
+      {
+        "at": 695729.1000000238,
+        "duration": 63
+      },
+      {
+        "at": 695840.7000000477,
+        "duration": 132
+      },
+      {
+        "at": 696062.7000000477,
+        "duration": 3628
+      },
+      {
+        "at": 699706.9000000358,
+        "duration": 117
+      },
+      {
+        "at": 699824.1000000238,
+        "duration": 138
+      },
+      {
+        "at": 700003.8000000119,
+        "duration": 103
+      },
+      {
+        "at": 700140.6000000238,
+        "duration": 51
+      },
+      {
+        "at": 700219.4000000358,
+        "duration": 137
+      },
+      {
+        "at": 700356.9000000358,
+        "duration": 2784
+      },
+      {
+        "at": 703141.1000000238,
+        "duration": 631
+      },
+      {
+        "at": 703940.7000000477,
+        "duration": 4196
+      },
+      {
+        "at": 708221.9000000358,
+        "duration": 134
+      },
+      {
+        "at": 708424.3000000119,
+        "duration": 116
+      },
+      {
+        "at": 708551,
+        "duration": 70
+      },
+      {
+        "at": 708690.5,
+        "duration": 192
+      },
+      {
+        "at": 708898,
+        "duration": 58
+      },
+      {
+        "at": 708960.9000000358,
+        "duration": 129
+      },
+      {
+        "at": 709155.9000000358,
+        "duration": 184
+      },
+      {
+        "at": 709341.1000000238,
+        "duration": 511
+      },
+      {
+        "at": 709924.9000000358,
+        "duration": 83
+      },
+      {
+        "at": 710085.6000000238,
+        "duration": 118
+      },
+      {
+        "at": 710307.3000000119,
+        "duration": 63
+      },
+      {
+        "at": 710721.9000000358,
+        "duration": 65
+      },
+      {
+        "at": 710787.2000000477,
+        "duration": 2121
+      },
+      {
+        "at": 712908.6000000238,
+        "duration": 116
+      },
+      {
+        "at": 713025.6000000238,
+        "duration": 81
+      },
+      {
+        "at": 713139.8000000119,
+        "duration": 150
+      },
+      {
+        "at": 713290.8000000119,
+        "duration": 83
+      }
+    ],
+    "longTaskAvailable": true,
+    "events": []
+  },
+  "final": {
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5364.400000035763,
+      "firstRenderMs": 5822.600000023842,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 283.4000000000233,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 12759,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "at": 725327.6000000238,
+      "wallTime": "2026-11-15T20:30:53.509Z",
+      "pageAgeMs": 725327.7000000477,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 12759,
+      "callbackCount": 12759,
+      "renderCpuDiagnostics": {
+        "enabled": false,
+        "calls": 0,
+        "totalMs": 0,
+        "maxMs": 0,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:11",
+      "task": "SUCCEEDED",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 450,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 155,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 639,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "a4a945c6-1a67-44e3-b51e-5e19d99ec25e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:18:56.326Z",
+        "finished_at": "2026-11-15T20:18:57.368Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 214,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "039dbd55-1e48-4243-a99a-85441dacb6f0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:18:57.766Z",
+        "finished_at": "2026-11-15T20:18:59.000Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 226,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "612644ed-e165-4660-b93c-f3fb11898cda",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:20:14.661Z",
+        "finished_at": "2026-11-15T20:20:15.637Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 1561,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b90524fc-2fb6-4381-85d4-bfdc4a226097",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:20:15.767Z",
+        "finished_at": "2026-11-15T20:20:16.885Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 1565,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7b96c640-63b4-4575-92aa-78621f554e17",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:47.966Z",
+        "finished_at": "2026-11-15T20:21:49.031Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3258,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "cf5c3571-f439-46a0-8e13-2a3d92a23c81",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:49.120Z",
+        "finished_at": "2026-11-15T20:21:50.212Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3281,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "e81affc0-07d9-47f1-b9f8-cc34fa88e910",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:21:50.420Z",
+        "finished_at": "2026-11-15T20:21:50.529Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b3011c7a-c882-465f-8756-108a48a504f5",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:50.549Z",
+        "finished_at": "2026-11-15T20:21:52.739Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3297,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b7a03ff6-c054-4064-a886-af1f1545b6da",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:52.758Z",
+        "finished_at": "2026-11-15T20:21:53.870Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3307,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "de3b44f8-6e4f-49cf-8283-e9f850532f0e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:53.887Z",
+        "finished_at": "2026-11-15T20:21:55.018Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3330,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "574660d4-2948-48a1-96d4-133cd455762d",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:21:55.123Z",
+        "finished_at": "2026-11-15T20:21:55.407Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "eafbdbec-4beb-4897-93ae-9c83416a2f46",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:55.409Z",
+        "finished_at": "2026-11-15T20:21:56.342Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3347,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "65086cf6-acf4-48f0-960d-03df1be81f66",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:56.346Z",
+        "finished_at": "2026-11-15T20:21:57.385Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3361,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8b2f7232-7fe7-49b8-9f2e-af7dcfb99184",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:57.635Z",
+        "finished_at": "2026-11-15T20:21:59.481Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3364,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "5261dec1-dae8-4ceb-9349-b59b9b67ddf8",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:21:59.495Z",
+        "finished_at": "2026-11-15T20:21:59.889Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "4399f748-a0b8-430b-9011-d9fe3ae9d02b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:21:59.891Z",
+        "finished_at": "2026-11-15T20:22:00.890Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3374,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "90321c11-a21e-48d0-bdbd-2bb8fcf7efb3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:00.906Z",
+        "finished_at": "2026-11-15T20:22:01.886Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3397,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "733c0453-e4f7-4b9b-a3c1-94ec41ec0ce8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:01.900Z",
+        "finished_at": "2026-11-15T20:22:02.951Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3421,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2e38736b-8efa-4438-8b39-d143d1bb990c",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:03.437Z",
+        "finished_at": "2026-11-15T20:22:04.575Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "157d6a6e-0e0f-40e6-8c9b-d6e70ceaee13",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:04.578Z",
+        "finished_at": "2026-11-15T20:22:05.568Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3439,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9efd7aec-49ec-405c-8d25-1fa42007666e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:05.837Z",
+        "finished_at": "2026-11-15T20:22:07.481Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3460,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "83d01f9b-382b-4a9f-9ada-8aa32bf21b74",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:07.544Z",
+        "finished_at": "2026-11-15T20:22:08.613Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3479,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b91fc280-face-4f5e-a863-4570d322a900",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:08.691Z",
+        "finished_at": "2026-11-15T20:22:09.356Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fcca238b-b4a9-40e0-81fa-7540bb5a7a23",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:09.360Z",
+        "finished_at": "2026-11-15T20:22:10.289Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3486,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6c734a34-d700-4587-af8a-f8e515aed96c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:10.298Z",
+        "finished_at": "2026-11-15T20:22:11.374Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3502,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7ed66e99-4d40-42cc-ae3b-7f5264509607",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:11.458Z",
+        "finished_at": "2026-11-15T20:22:12.633Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3528,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9b95a987-abad-4441-9776-28cc3bdf27b4",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:12.696Z",
+        "finished_at": "2026-11-15T20:22:13.491Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "63ed1565-cd07-4f24-b0c6-a3542eb7a0b6",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:13.496Z",
+        "finished_at": "2026-11-15T20:22:14.668Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3547,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "776d8fcb-c0e2-4614-ac3d-0a7d769c34fb",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:14.797Z",
+        "finished_at": "2026-11-15T20:22:16.471Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3552,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "866e96d9-cc03-4a58-ba6f-7751c5db8740",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:16.569Z",
+        "finished_at": "2026-11-15T20:22:17.996Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3557,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "63cf1eb2-f529-4959-8909-ae167f136b16",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:18.040Z",
+        "finished_at": "2026-11-15T20:22:18.228Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "22df0a96-dc47-420b-b7e7-7aff21d80539",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:18.231Z",
+        "finished_at": "2026-11-15T20:22:19.463Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3575,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "cb940608-bb98-4e34-bf0c-02e47da68b9b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:19.664Z",
+        "finished_at": "2026-11-15T20:22:21.198Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3605,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fb3d0a04-5ed4-4547-8db5-c686c1af0d55",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:21.291Z",
+        "finished_at": "2026-11-15T20:22:22.715Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3612,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "63ed1d47-80b8-4437-b080-f3acf7806b77",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:22.768Z",
+        "finished_at": "2026-11-15T20:22:23.073Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "cb9a5191-5c67-49f8-8cdc-a2d50910f014",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:23.076Z",
+        "finished_at": "2026-11-15T20:22:24.046Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3631,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "454e7bd3-950d-4da1-b3d3-af2be268d969",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:24.074Z",
+        "finished_at": "2026-11-15T20:22:25.335Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3644,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "21dc364f-ad5e-4559-8a4f-cf95be6392df",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:25.487Z",
+        "finished_at": "2026-11-15T20:22:27.369Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3668,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "901e01ff-5503-40c3-abdd-e9d10e0e5bb0",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:27.404Z",
+        "finished_at": "2026-11-15T20:22:27.513Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "62c9250f-e92d-47e8-8907-b1cc2df7feba",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:27.528Z",
+        "finished_at": "2026-11-15T20:22:28.648Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3679,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "38ad1fea-b7d2-484f-8476-db8907edebf9",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:28.724Z",
+        "finished_at": "2026-11-15T20:22:30.064Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3694,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "72376e39-2ac5-434a-a5ad-64774802d6d8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:30.089Z",
+        "finished_at": "2026-11-15T20:22:31.764Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3721,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8a6c8120-4a71-42f5-8329-d80a7cc6179f",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:31.797Z",
+        "finished_at": "2026-11-15T20:22:32.863Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d4f80e19-5712-4903-b8a0-f16222b5cc0e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:32.874Z",
+        "finished_at": "2026-11-15T20:22:34.042Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3745,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "62aaea43-3443-4835-bd19-dd3dbb0ff84d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:34.246Z",
+        "finished_at": "2026-11-15T20:22:35.218Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3772,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fadd2628-a9eb-4b8a-ac6e-e53ebb9c99df",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:35.256Z",
+        "finished_at": "2026-11-15T20:22:36.351Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3808,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "f23d61b7-f5f3-40ce-9110-e7aba5bb2c7e",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:36.448Z",
+        "finished_at": "2026-11-15T20:22:36.801Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "567f27b0-0bcb-4e42-b30a-07be2fb580f4",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:36.825Z",
+        "finished_at": "2026-11-15T20:22:38.051Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3838,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "864dc0d1-16d1-40b1-b3f7-56cbb8f88dc2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:38.138Z",
+        "finished_at": "2026-11-15T20:22:39.300Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3870,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "427bd3c6-5a1a-4c5e-9fe0-4a86bd7e9b00",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:39.589Z",
+        "finished_at": "2026-11-15T20:22:40.802Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3884,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9d2f3936-92dd-4161-9a1e-5115dcde2e1f",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:40.878Z",
+        "finished_at": "2026-11-15T20:22:41.588Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "f1b36078-0c16-4cd3-8ce1-0c4222c97a89",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:41.843Z",
+        "finished_at": "2026-11-15T20:22:43.017Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3897,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8ffefe7e-9196-4fca-be75-5df763d4ffbc",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:43.025Z",
+        "finished_at": "2026-11-15T20:22:44.291Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 3927,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "1bf17d15-9e02-4a88-b1dc-b6a23468b20c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:44.318Z",
+        "finished_at": "2026-11-15T20:22:45.584Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3945,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6323410d-1f50-4d72-b468-294884ac110d",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:45.817Z",
+        "finished_at": "2026-11-15T20:22:46.732Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2af35b53-754e-4f93-9307-fc322bec649f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:46.735Z",
+        "finished_at": "2026-11-15T20:22:47.685Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 3983,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d9d61049-dcca-4e6d-b954-a8fe8fad2cb5",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:47.955Z",
+        "finished_at": "2026-11-15T20:22:49.403Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 4013,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6a4836bd-3e76-45b7-bfbf-fdab94f6a26b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:49.630Z",
+        "finished_at": "2026-11-15T20:22:50.689Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 4030,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d92aa336-9292-4741-9ede-80b8ecbee530",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:22:50.693Z",
+        "finished_at": "2026-11-15T20:22:50.896Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "113e53e5-878c-41b2-b778-03f1a4e46872",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:22:50.918Z",
+        "finished_at": "2026-11-15T20:22:52.335Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 4065,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "ae37b4bf-8a71-4ebb-b6fa-09139770a5f2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:23:06.010Z",
+        "finished_at": "2026-11-15T20:23:06.985Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 4414,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2d65fcfc-9f3f-4398-a4a4-42263198726a",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:23:07.053Z",
+        "finished_at": "2026-11-15T20:23:08.302Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 4434,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "e4a84160-2dcf-48cb-9f51-0115bd02def8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:24:24.268Z",
+        "finished_at": "2026-11-15T20:24:25.402Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 6308,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fc306199-4636-4968-9d5a-ce1980b0a940",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:24:25.562Z",
+        "finished_at": "2026-11-15T20:24:26.636Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 6338,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "76330804-6c9a-44b9-a18c-2290b70ab0e0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:42.363Z",
+        "finished_at": "2026-11-15T20:25:43.386Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8020,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7a3cd7d8-92bc-4eb1-8e02-e0d80da1ae63",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:43.700Z",
+        "finished_at": "2026-11-15T20:25:44.776Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8034,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "49206aab-6b1c-4999-8c22-bda152fef7c6",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:25:44.837Z",
+        "finished_at": "2026-11-15T20:25:45.095Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "26234885-9b63-46ae-bf32-2a388b10afde",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:45.275Z",
+        "finished_at": "2026-11-15T20:25:46.419Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8064,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6de7ca1c-ba61-45e2-a2b8-06461779335c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:46.474Z",
+        "finished_at": "2026-11-15T20:25:48.467Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8078,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2c15a636-ef32-48de-b71c-ccf9c81b3f93",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:48.709Z",
+        "finished_at": "2026-11-15T20:25:49.807Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8098,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "80ef443b-28fc-4b41-8113-c3196b717b37",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:25:49.821Z",
+        "finished_at": "2026-11-15T20:25:50.736Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "50dbed7f-b802-40f3-98f4-94f5ce0c1272",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:50.878Z",
+        "finished_at": "2026-11-15T20:25:51.968Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8127,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "a872143c-07a3-4cf7-a8fd-00d2c9e2779f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:52.073Z",
+        "finished_at": "2026-11-15T20:25:53.569Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8140,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "de619e26-81f7-4e47-90d1-509018d0c254",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:53.817Z",
+        "finished_at": "2026-11-15T20:25:55.242Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8149,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "f3ea3831-eadb-4b25-aed5-5906da2ab9c4",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:25:55.452Z",
+        "finished_at": "2026-11-15T20:25:56.091Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "3b94645f-fca8-4b50-92fd-db7ebf9c28d5",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:56.094Z",
+        "finished_at": "2026-11-15T20:25:57.081Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8162,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "27a6b1a1-ee95-49bb-b397-1a1cf620cfbd",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:57.327Z",
+        "finished_at": "2026-11-15T20:25:58.868Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8191,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "05a1263a-4ca9-4761-ac75-a0d65607dceb",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:25:58.883Z",
+        "finished_at": "2026-11-15T20:26:00.092Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8212,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "64ca1229-b9f3-4b84-8d9a-355c0046a09b",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:00.100Z",
+        "finished_at": "2026-11-15T20:26:00.224Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "1ac369eb-4020-40c5-9873-55e4671d3e44",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:00.227Z",
+        "finished_at": "2026-11-15T20:26:01.192Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8240,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9eb9e9e9-7c04-4584-90d9-e8e9c2e10d8d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:01.265Z",
+        "finished_at": "2026-11-15T20:26:02.488Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8260,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "4d68370e-b0d6-44dd-9045-e4dcd1268c26",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:02.953Z",
+        "finished_at": "2026-11-15T20:26:05.086Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8268,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7c4caf20-8b8d-42ae-907d-d7317675b6f6",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:05.498Z",
+        "finished_at": "2026-11-15T20:26:06.191Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "01bc1797-6cb9-4eb9-b204-3c1f7b434f88",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:06.194Z",
+        "finished_at": "2026-11-15T20:26:07.283Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8274,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "960ceadb-0dce-48a0-b9d1-ec8fa269523c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:07.302Z",
+        "finished_at": "2026-11-15T20:26:08.338Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8295,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "c9d78618-fcdb-47e3-9b59-59ff9d73c5cc",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:08.361Z",
+        "finished_at": "2026-11-15T20:26:09.480Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8320,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6c5d5f33-3616-482b-b2c6-11a3d1df0e66",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:09.609Z",
+        "finished_at": "2026-11-15T20:26:09.733Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "22fe4941-e6ec-4505-873b-50eb4a44558b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:09.741Z",
+        "finished_at": "2026-11-15T20:26:10.858Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8335,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "a9f31ca5-0a98-4f2b-837b-be98294b0d2e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:11.075Z",
+        "finished_at": "2026-11-15T20:26:12.166Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8359,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "63ff0263-1ea6-42a5-8a0e-f7c3eac54429",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:12.256Z",
+        "finished_at": "2026-11-15T20:26:13.786Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8374,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "16eecb0e-5c34-47a3-94c4-c7a8e762e87c",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:13.889Z",
+        "finished_at": "2026-11-15T20:26:14.268Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "37e7cbb4-204a-4dbd-b57e-937b81422f87",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:14.271Z",
+        "finished_at": "2026-11-15T20:26:15.229Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8400,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "aa6a66f3-3e6f-4364-8b33-d5e0a320f8b0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:15.327Z",
+        "finished_at": "2026-11-15T20:26:16.386Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8422,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "3b3f5db7-9642-45f7-a1fe-d3c274305a47",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:16.582Z",
+        "finished_at": "2026-11-15T20:26:17.737Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8447,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "05376c92-3346-403b-acb6-bf1e26ffe5e9",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:18.046Z",
+        "finished_at": "2026-11-15T20:26:18.687Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "46db7e0b-e7eb-4a59-942e-7b29c0c6d7f2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:18.690Z",
+        "finished_at": "2026-11-15T20:26:19.642Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8472,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "e0c44743-a8fa-4d67-b282-b004b4186c63",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:19.710Z",
+        "finished_at": "2026-11-15T20:26:20.844Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8488,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "afb6d8c4-189f-4c3c-9800-10c41329eae4",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:20.853Z",
+        "finished_at": "2026-11-15T20:26:22.186Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8510,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6100ef23-8faf-4170-876a-771b270cc318",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:22.417Z",
+        "finished_at": "2026-11-15T20:26:24.229Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "e7bc3d5b-804a-4609-a69a-e5d40ed5af78",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:24.239Z",
+        "finished_at": "2026-11-15T20:26:25.276Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8539,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "243989ce-c92e-40ef-bf4e-05a094f1e09a",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:25.399Z",
+        "finished_at": "2026-11-15T20:26:26.370Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8565,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "e4826934-c243-40a5-9eff-8938fe6acde8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:26.379Z",
+        "finished_at": "2026-11-15T20:26:27.351Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8595,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d2045fb0-4430-4060-a081-07ea90b1019f",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:27.357Z",
+        "finished_at": "2026-11-15T20:26:27.481Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d4d122c7-4e40-4a90-8a79-54914239999b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:27.484Z",
+        "finished_at": "2026-11-15T20:26:28.503Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8624,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "68be681d-86c4-46ca-bc6d-c6a95b913ace",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:28.542Z",
+        "finished_at": "2026-11-15T20:26:29.636Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8637,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "83e25603-7891-4e61-ad5e-bf43e536f223",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:29.997Z",
+        "finished_at": "2026-11-15T20:26:31.017Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8652,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2ebb310b-47e8-4e20-a965-8fc9e3e9a837",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:31.255Z",
+        "finished_at": "2026-11-15T20:26:31.387Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d7350fce-c9c1-45c1-973a-abbf53f4c584",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:31.390Z",
+        "finished_at": "2026-11-15T20:26:32.348Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8661,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "4666990e-f159-421c-b3db-f2bde35354d2",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:32.518Z",
+        "finished_at": "2026-11-15T20:26:33.562Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8690,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "39b3ddf6-f29e-4e06-abf1-3e3ccb93b466",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:34.003Z",
+        "finished_at": "2026-11-15T20:26:35.502Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8723,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b84a5c8d-93dc-4588-8406-44f444b223ca",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:36.188Z",
+        "finished_at": "2026-11-15T20:26:36.349Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "dbe2c586-abee-4fb6-a04d-ef664b1d9a4d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:36.355Z",
+        "finished_at": "2026-11-15T20:26:37.475Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8735,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0037788c-f8b8-4429-825f-35ac38a47613",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:37.484Z",
+        "finished_at": "2026-11-15T20:26:38.500Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8752,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "ce3bda82-d422-4941-b745-84cf1a4bdd84",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:38.723Z",
+        "finished_at": "2026-11-15T20:26:39.779Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8771,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b03cc095-4d26-41f7-a824-131d14f7bf92",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:39.913Z",
+        "finished_at": "2026-11-15T20:26:40.024Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b6f5bd03-994e-4896-9294-f224bc3118e3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:40.030Z",
+        "finished_at": "2026-11-15T20:26:40.971Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8784,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "ca6a2998-2e1a-42c6-a634-81bd556b7b18",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:40.979Z",
+        "finished_at": "2026-11-15T20:26:42.275Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8807,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0fc7d405-def7-41d6-8520-c838135c346b",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:42.291Z",
+        "finished_at": "2026-11-15T20:26:44.102Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8817,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "42a61674-79fa-4393-b473-37cc512529ef",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:26:44.250Z",
+        "finished_at": "2026-11-15T20:26:44.553Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7a05e788-17f0-4f68-b3e0-f4e6c3f47721",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:44.658Z",
+        "finished_at": "2026-11-15T20:26:45.906Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 8850,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "78b36c2d-9d80-4921-b3ef-a16a75732d21",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:26:45.956Z",
+        "finished_at": "2026-11-15T20:26:46.931Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 8873,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24d44035-2bb8-4c0b-988d-1c9092192c4e",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:27:00.284Z",
+        "finished_at": "2026-11-15T20:27:01.221Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651387,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 9125,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d6804709-48ba-46e9-b42a-1264eb67efe9",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:27:01.228Z",
+        "finished_at": "2026-11-15T20:27:02.137Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 9154,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "2431b339-65dc-41d6-ba19-3a52a7b9dfb5",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:28:17.718Z",
+        "finished_at": "2026-11-15T20:28:18.735Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 10938,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "eb4b70f1-ea80-4a29-ba8f-03b6d27a6f5c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:28:19.038Z",
+        "finished_at": "2026-11-15T20:28:20.074Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 10949,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b05ecd36-132f-4b95-a57e-d821341ed4d9",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:35.857Z",
+        "finished_at": "2026-11-15T20:29:36.838Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12450,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7e937a0d-2e0f-46fd-921b-fae8ce369f3d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:36.893Z",
+        "finished_at": "2026-11-15T20:29:37.804Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12483,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "bf3cf472-fe65-427c-bed6-324e4e270f6c",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:37.924Z",
+        "finished_at": "2026-11-15T20:29:38.055Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "305a6eea-f5a7-48ca-8155-9fb08d2d9ff0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:38.155Z",
+        "finished_at": "2026-11-15T20:29:39.424Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12520,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "87aaee7f-8cb0-45eb-8b10-a6a96c97c7bb",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:39.440Z",
+        "finished_at": "2026-11-15T20:29:41.767Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12538,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9cb0eb12-099c-4ac9-9e83-e63507164fb8",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:41.815Z",
+        "finished_at": "2026-11-15T20:29:43.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12555,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "bc549501-d2fc-4224-bc6c-870afc4d8c34",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:43.050Z",
+        "finished_at": "2026-11-15T20:29:43.353Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b00f5c25-f8bb-49bd-a197-73dc2b89bb08",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:43.380Z",
+        "finished_at": "2026-11-15T20:29:44.633Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12585,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "1c141d4f-6805-44a8-83f8-75778738ab7c",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:44.638Z",
+        "finished_at": "2026-11-15T20:29:45.673Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12602,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "c417ecb8-3b97-4c8e-a9b8-ea5d09849ecc",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:45.889Z",
+        "finished_at": "2026-11-15T20:29:47.820Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12605,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "9a6a489c-e808-428b-870d-fafd5663e9b1",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:29:47.842Z",
+        "finished_at": "2026-11-15T20:29:48.704Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7e2954e3-f744-43b9-a963-aed65d1d3838",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:48.849Z",
+        "finished_at": "2026-11-15T20:29:51.121Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12609,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b467ce3f-df81-475e-9d6a-d591a80729ce",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:51.489Z",
+        "finished_at": "2026-11-15T20:29:53.093Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12611,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b080e888-5fdc-4dd9-8cf3-51f765068e34",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:53.097Z",
+        "finished_at": "2026-11-15T20:29:54.136Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12622,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "8f66f94f-a04e-4d87-be11-3b19ac5bb2d3",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:29:54.905Z",
+        "finished_at": "2026-11-15T20:30:00.956Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12623,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "b1fc19db-4b4f-4d1d-8682-ed185406d334",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:00.967Z",
+        "finished_at": "2026-11-15T20:30:02.055Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12626,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "af712f07-c741-46c0-9e4a-087e03179739",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:02.400Z",
+        "finished_at": "2026-11-15T20:30:05.189Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12628,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0b46a10e-7316-42bd-9cc7-b7e0e396bef0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:05.420Z",
+        "finished_at": "2026-11-15T20:30:08.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12630,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "5ba51ec4-fdec-4014-acbd-08488357860b",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:08.141Z",
+        "finished_at": "2026-11-15T20:30:09.123Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "7412e821-c87c-4532-b6f9-c0f6953d3243",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:09.555Z",
+        "finished_at": "2026-11-15T20:30:12.951Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12635,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d301466f-dc16-45f6-86a1-7139e281c9ea",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:13.207Z",
+        "finished_at": "2026-11-15T20:30:15.721Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12640,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fd653838-c9fa-4ea4-b1ba-6926377982fd",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:16.322Z",
+        "finished_at": "2026-11-15T20:30:20.318Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12641,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "28061324-899d-4ad1-9a21-e4996fd2bc46",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:20.788Z",
+        "finished_at": "2026-11-15T20:30:23.269Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "138fe3ea-eb73-44f5-81c5-95b3328135e6",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:23.273Z",
+        "finished_at": "2026-11-15T20:30:24.288Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12655,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "fa9a2efb-de8f-4ece-9c84-8476405f8b18",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:24.538Z",
+        "finished_at": "2026-11-15T20:30:28.113Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12656,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "533047f6-06aa-4bf7-8fd9-28a0257bb0d4",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:28.116Z",
+        "finished_at": "2026-11-15T20:30:32.237Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12662,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "0657eb11-6940-432f-9b59-205f4684f22b",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T20:30:33.205Z",
+        "finished_at": "2026-11-15T20:30:36.496Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户取消当前任务"
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "36d95ea8-9ab0-422a-9c4e-b5af20fff6b0",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:36.509Z",
+        "finished_at": "2026-11-15T20:30:37.704Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12672,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6c1cd64e-106b-4ee2-a0d0-7c55d02516dd",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:38.000Z",
+        "finished_at": "2026-11-15T20:30:39.005Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 12689,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "d36edd9b-6cb3-4cf8-a294-da5c2abe7d36",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:30:39.242Z",
+        "finished_at": "2026-11-15T20:30:42.555Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 12693,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "recordDom": 20
+  },
+  "valid": true,
+  "target": {
+    "fps": 45,
+    "p95": 40,
+    "passed": false
+  }
+}

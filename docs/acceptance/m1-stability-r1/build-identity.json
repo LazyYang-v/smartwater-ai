@@ -1,0 +1,70 @@
+{
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "frozen_at_utc": "2026-11-15T19:59:13.339078+00:00",
+  "files": {
+    "assets/index-DH3KKlOn.css": {
+      "sha256": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e",
+      "bytes": 19634
+    },
+    "assets/index-QZyuTZ0A.js": {
+      "sha256": "af328d9bfdce17639f9df2cb62f14b7e605fb36e92687ce7b8ce8ed7a9c58c04",
+      "bytes": 1342103
+    },
+    "environments/daylight_2k.hdr": {
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "favicon.svg": {
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+      "bytes": 302
+    },
+    "index.html": {
+      "sha256": "78fc5cca72f2ccb7f02b3b7792ba8205ce505cce636aedace1abadd2a738b5a6",
+      "bytes": 486
+    },
+    "models/aeration-tank.glb": {
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "bytes": 31254844
+    }
+  },
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "source_files": {
+    "src/App.vue": "e7f027474f43ec95cd393e69dcae4fd9c93a83aa6f84434d0262ab707f966975",
+    "src/agent/actionDispatcher.ts": "08c537947149566a2af1ee4d02153c40203630b27da2b10c8768f316a34ee136",
+    "src/agent/demoParser.ts": "232bed03f02b43bc44972f0db12ea58da6cd57256c615c53671cfa5f66161f19",
+    "src/agent/types.ts": "d7544be72a27c68891d20c0a709c1e97e17eba500833b783620504a6aeba4a41",
+    "src/charts/runtime.ts": "a073cbcf4ee143cc1ae4ac2c7ebf8fb6d375a55ca97376b6fa1d1fcc6dc64897",
+    "src/components/dashboard/AgentWorkspace.vue": "1e3e87ae6d980986de17aa87a79b44b9362238222752c87e55d16ae7d07f21b1",
+    "src/components/dashboard/AlarmPanel.vue": "b12e931a6feae5a4ff6b47d28fea2756002e7dd18bbc50242cb6c3b2db8adeec",
+    "src/components/dashboard/DashboardHeader.vue": "4a48c2942db3bd6ae1d4f9e238134feba0155746b35c7eb7e09345e81cfb46b2",
+    "src/components/dashboard/DashboardShell.vue": "69f85aa9ffcc1ee3afffdfbc33ef4e88e930f1c696993f746b467a3454a168fd",
+    "src/components/dashboard/DeviceSummary.vue": "24e3d4429ec998ffa4fc57e2db59a492fd54cb9e7e8e78402ed0b9360c7f515a",
+    "src/components/dashboard/KpiOverview.vue": "c2b671e1a624c23192634a3142bce6746d85b2e74349b2992adba7be35eaee02",
+    "src/components/dashboard/ProcessFlowPanel.vue": "84435f81b2865e53d62d080a9473c9a747ec3ab6144e47c304f3ea7c35bf2595",
+    "src/components/dashboard/SceneViewport.vue": "14b270a5e6aaf382581d637edded931d5ea9900b8e8a719dacf4b84807f5f7fd",
+    "src/components/dashboard/TrendPanel.vue": "f4003fdcef451fbcd62c194c39f8340b91363466c6b28b4a80e0a5957b62070c",
+    "src/composables/useDashboardContext.ts": "f52255eb3b556da7db0567091e92a70c524cb2f5c0fe29b15e262f034bb3458d",
+    "src/composables/useMockData.ts": "f0e478caf3600df7fb6adf34401f3c65f0f037f70e32da3fb0456346199464b6",
+    "src/composables/useSceneWorkspace.ts": "ec292f7a847a6ee212ff71e3bd9c7577cc70e7bd761d8a8f498a6c43f389e48e",
+    "src/data/mockDataProvider.ts": "a0f612d00fbdd5cd41a4c11f45bab88eb68ed0942db472ba5a50b00b309d6ff3",
+    "src/diagnostics/stability.ts": "7339106d8d2dd2211be2db111497905e25f2d56fb2fe89f30a2725c5befb5834",
+    "src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "src/main.ts": "61635ec69905e576f0a29b401cb4f02a6d5df2483d759403f6db436d2daaf67a",
+    "src/qa/exposeDashboardQA.ts": "0dacd625d510f2f3b7bf9797667b42ec6538bd81e79a352f9ff9ecc02fec7d7a",
+    "src/scene/cameraController.ts": "3dc5c9df20e9e0529df3a74aced8f995d94d0581ab0879a3350d9f06bc789b86",
+    "src/scene/deviceRegistry.ts": "d4acfd2dc00a4eae4cd1d39ecd94265bb1a6310114036ae92cffb8d69009502c",
+    "src/scene/frameSample.ts": "acebdc835734bbccb52097dde889563ef820b714278f4031cced6693aeaa4905",
+    "src/scene/framing.ts": "f42ce96429bbf5f2117b4dbafb8eb0d794e5b5d9450653c0bc37dda21e51facf",
+    "src/scene/loopLifecycle.ts": "58382324eae7c2b3e20218c657a9e52eb5a1b6a48b00e55dd3a5ce4c1edb0adb",
+    "src/scene/runtime.ts": "ff16350dae1605f15f9a3237eba1c29615bb94a41120ea21588fe3d0daa4554a",
+    "src/styles.css": "f7bbf6cc9a8de4daffab67fe41604b07a3ad48270d0cec5298f12c8b9c6220b8",
+    "tests/cameraDeadline.test.ts": "3814e2e17239ad04e861d4d9c00c13f1cae2f2a3349457b9535590c0472e6fab",
+    "tests/dispatcher.test.ts": "aef09436e1527b2d1bd6c61b7799243f5cb36e72972a6f1c1734de9a7d339d52",
+    "tests/framing.test.ts": "45601d1ed61695fcd1cd5f19be344a8b4095e12feb6d972eb4ce7089fc4ab09b",
+    "tests/mockData.test.ts": "27e55a77b2221f97cd8f353fc1b72d5ed8b84eabbb73475dab33e6e293cb3e35",
+    "tests/stability.test.ts": "fbbb0ec981129db9c66ac91d17fa770883b79cb244d8c38f0d9af9f8afd1a044"
+  },
+  "protected_files": 233,
+  "protected_unchanged": true
+}

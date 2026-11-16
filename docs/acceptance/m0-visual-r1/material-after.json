@@ -1,0 +1,159 @@
+{
+  "material_roles": {
+    "STRUCT_BaseSlab": {
+      "material": "Concrete / floor",
+      "uv_min": [
+        -10.850000381469727,
+        -4.849999904632568
+      ],
+      "uv_max": [
+        10.850000381469727,
+        4.849999904632568
+      ],
+      "normal_strength": [
+        0.23999999463558197
+      ],
+      "images": [
+        {
+          "name": "concrete_floor_r1_diff.png",
+          "color_space": "sRGB",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "concrete_floor_r1_nor_gl.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "concrete_floor_r1_rough.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    "STRUCT_Wall_Long": {
+      "material": "Concrete / board formed \u00b7 4m",
+      "uv_min": [
+        -5.349999904632568,
+        -2.3499999046325684
+      ],
+      "uv_max": [
+        5.349999904632568,
+        2.3499999046325684
+      ],
+      "normal_strength": [
+        0.18000000715255737
+      ],
+      "images": [
+        {
+          "name": "concrete_wall_r1_diff.png",
+          "color_space": "sRGB",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "concrete_wall_r1_nor_gl.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "concrete_wall_r1_rough.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    "ACCESS_PerimeterDeck": {
+      "material": "Concrete / walkway",
+      "uv_min": [
+        -11.449999809265137,
+        -5.449999809265137
+      ],
+      "uv_max": [
+        11.449999809265137,
+        5.449999809265137
+      ],
+      "normal_strength": [
+        0.11999999731779099
+      ],
+      "images": [
+        {
+          "name": "concrete_walkway_r1_diff.png",
+          "color_space": "sRGB",
+          "size": [
+            2048,
+            2048
+          ]
+        },
+        {
+          "name": "concrete_floor_r1_nor_gl.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "name": "concrete_floor_r1_rough.png",
+          "color_space": "Non-Color",
+          "size": [
+            1024,
+            1024
+          ]
+        }
+      ]
+    },
+    "WATER_Surface": {
+      "material": "Water / opaque process water",
+      "uv_min": [
+        -3.494999885559082,
+        -1.4950000047683716
+      ],
+      "uv_max": [
+        3.494999885559082,
+        1.4950000047683716
+      ],
+      "normal_strength": [
+        0.41999998688697815
+      ],
+      "images": [
+        {
+          "name": "water_normal_r1.png",
+          "color_space": "Non-Color",
+          "size": [
+            512,
+            512
+          ]
+        }
+      ]
+    }
+  },
+  "water_spectrum": {
+    "top_12_frequency_energy_fraction": 0.033859118819236755,
+    "size": [
+      512,
+      512
+    ],
+    "xy_stddev": [
+      0.019450973719358444,
+      0.019810043275356293
+    ]
+  }
+}

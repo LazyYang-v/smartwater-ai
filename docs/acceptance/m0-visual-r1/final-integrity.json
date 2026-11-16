@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-11-15T17:34:23.228118+00:00",
+  "build_id": "37e8f64e201b2dcc4cf59ace9043bd509f999e5beb9e5bd94b802d3db06f4810",
+  "all_assertions_passed": true,
+  "checks": {
+    "protected_old_files_unchanged": 30,
+    "preserved_source_hashes": [
+      "package.json",
+      "pnpm-lock.yaml",
+      "src/agent/actionDispatcher.ts",
+      "src/agent/demoParser.ts",
+      "src/agent/types.ts",
+      "src/scene/cameraController.ts",
+      "src/scene/deviceRegistry.ts",
+      "AGENTS.md"
+    ],
+    "demonstration_dimensions_preserved": true,
+    "frozen_build_files_unchanged": 7,
+    "blend_matches_frozen_identity": true,
+    "final_screenshots_bound_to_actual_build_and_glb": 14,
+    "fixed_view_material_and_water_comparisons_verified": true,
+    "focus_reset_visual_state_verified": true,
+    "browser_regressions_passed": 15,
+    "extra_cleanup_passed": 3,
+    "restart_passed": true,
+    "model_reopen_reimport_and_geometry_verified": true,
+    "all_long_performance_trials_preserved": 4,
+    "preview_current_identity_matches": true,
+    "old_M0_strict_screenshot_association": "UNVERIFIED; no retroactive claims"
+  }
+}

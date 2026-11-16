@@ -1,0 +1,34 @@
+{
+  "name": "smartwater-ai-m0",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "typecheck": "vue-tsc --noEmit",
+    "build": "pnpm typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "assets:download": "python3 scripts/download_assets.py",
+    "model:build": "/Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --disable-autoexec --python-exit-code 1 --python scripts/blender/build_aeration.py -- --stage final",
+    "model:validate": "/Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --disable-autoexec --python-exit-code 1 --python scripts/blender/validate_asset.py",
+    "agent:gateway": "node --use-env-proxy --experimental-strip-types --env-file-if-exists=.env.gateway.local server/index.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/vue": "2.2.1",
+    "echarts": "6.0.0",
+    "three": "0.187.0",
+    "vue": "3.5.45"
+  },
+  "devDependencies": {
+    "@types/three": "0.187.0",
+    "@vitejs/plugin-vue": "6.0.11",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vue-tsc": "3.3.14"
+  }
+}

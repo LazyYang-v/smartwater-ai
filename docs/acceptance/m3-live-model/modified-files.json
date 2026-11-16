@@ -1,0 +1,18 @@
+{
+  "files": [
+    "src/agent/llmProtocol.ts",
+    "src/agent/actionDispatcher.ts",
+    "src/agent/types.ts",
+    "src/agent/taskRunner.ts",
+    "src/agent/businessTools.ts",
+    "src/agent/llmClient.ts",
+    "server/modelResponse.mjs",
+    "server/gateway.mjs",
+    "tests/llmProtocol.test.ts",
+    "tests/businessTools.test.ts",
+    "tests/gateway.test.ts",
+    "package.json"
+  ],
+  "scene_runtime_changed": false,
+  "model_or_asset_operations": "None; no old model files read or rewritten for this check"
+}

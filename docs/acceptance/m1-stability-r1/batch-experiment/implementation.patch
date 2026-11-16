@@ -1,0 +1,79 @@
+--- fixed65/src/scene/runtime.ts
++++ experiment/src/scene/runtime.ts
+@@ -6,6 +6,7 @@
+ import { DeviceRegistry, DEVICE_ID } from './deviceRegistry'
+ import { CameraController, SceneError } from './cameraController'
+ import { fitBox, projectedBounds } from './framing'
++import { staticBatches } from './staticBatches'
+ import { LoopLifecycle } from './loopLifecycle'
+ import { FrameSample } from './frameSample'
+ import { ownership,diagnosticControls,traceInput,diagnosticsEnabled } from '../diagnostics/stability'
+@@ -42,6 +43,7 @@
+   scene.add(sun, new THREE.HemisphereLight(0xe4f0ff, 0x7b8472, 0.9))
+   const registry = new DeviceRegistry()
+   let root: THREE.Object3D | null = null
++  let batching:ReturnType<typeof staticBatches>|undefined
+   const environmentTargets = new Set<THREE.WebGLRenderTarget>()
+   let water: THREE.Object3D | null = null
+   let outline: THREE.LineSegments | null = null
+@@ -152,7 +154,7 @@
+       if (disposed || ticket !== generation) { disposeRoot(gltf.scene); return }
+       if (root) { scene.remove(root); disposeRoot(root) }
+       root = gltf.scene; water = newWater; water.visible = state.waterVisible
+-      scene.add(root); renderer.shadowMap.needsUpdate = true
++      scene.add(root);batching=staticBatches(root); renderer.shadowMap.needsUpdate = true
+       loadedModelUrl = new URL(modelUrl,location.href).href; loadedModelSha256 = responseSha256
+       overviewMode = true; updateOverview(true)
+       state.loadMs = performance.now() - started; state.status = 'ready'
+@@ -232,7 +234,7 @@
+   const loop=new LoopLifecycle(()=>{last=performance.now();renderer.setAnimationLoop(tick)},()=>renderer.setAnimationLoop(null))
+   loop.sync(document.visibilityState==='visible')
+   function dispose() { if(disposed)return;loop.dispose();ownership.renderers--;ownership.rendererDisposed++;ownership.observers--;ownership.listeners-=4; document.removeEventListener('visibilitychange',onMeasurementVisibility); disposed = true; generation++; motion.cancel('场景已卸载'); resize.disconnect(); controls.removeEventListener('start', onUserControl); controls.dispose(); renderer.domElement.removeEventListener('pointerdown',pointerDown); renderer.domElement.removeEventListener('pointerup',pointerUp); renderer.setAnimationLoop(null); if (root) disposeRoot(root); outline?.geometry.dispose();if(outline)(outline.material as THREE.Material).dispose(); environmentTargets.forEach(t=>t.dispose()); sun.shadow.map?.dispose(); renderer.dispose(); renderer.domElement.remove() }
+-  return { lightDiagnostics,syncVisibility:onMeasurementVisibility, state, load, setWater, snapshot, dispose, registry, scene, camera, controls, renderer, defaultPosition, defaultTarget, focusDevice, resetView, setView, select, motion, measurePerformance,setWaterPhase:(ms:number|null)=>{waterPhaseMs=ms},setPixelRatio:(dpr:number)=>{renderingRatio=dpr;renderer.setPixelRatio(dpr)}, setTimeoutMs: (ms: number) => { timeoutMs = ms }, beginFrameSample,endFrameSample,getRoot: () => root }
++  return { setBatching:(enabled:boolean)=>{batching?.set(enabled);renderer.shadowMap.needsUpdate=true;return batching?.stats()},lightDiagnostics,syncVisibility:onMeasurementVisibility, state, load, setWater, snapshot, dispose, registry, scene, camera, controls, renderer, defaultPosition, defaultTarget, focusDevice, resetView, setView, select, motion, measurePerformance,setWaterPhase:(ms:number|null)=>{waterPhaseMs=ms},setPixelRatio:(dpr:number)=>{renderingRatio=dpr;renderer.setPixelRatio(dpr)}, setTimeoutMs: (ms: number) => { timeoutMs = ms }, beginFrameSample,endFrameSample,getRoot: () => root }
+ }
+ 
+ export type SceneRuntime = ReturnType<typeof createScene>
+--- fixed65/src/qa/exposeDashboardQA.ts
++++ experiment/src/qa/exposeDashboardQA.ts
+@@ -15,7 +15,7 @@
+   addEventListener('pagehide',stopDiagnostics,{once:true})
+ 
+   const api={
+-    lightDiagnostics:lightweight,diagnosticSamples:()=>structuredClone(samples),startDiagnostics,stopDiagnostics,inputEvents:()=>structuredClone(inputEvents),cameraEvents:()=>structuredClone(r().motion.events),
++    setBatching:(enabled:boolean)=>r().setBatching(enabled),lightDiagnostics:lightweight,diagnosticSamples:()=>structuredClone(samples),startDiagnostics,stopDiagnostics,inputEvents:()=>structuredClone(inputEvents),cameraEvents:()=>structuredClone(r().motion.events),
+     diagnosticSwitch:(value:{chartsPaused?:boolean;scenePaused?:boolean})=>{Object.assign(diagnosticControls,value);r().syncVisibility()},cancel:scene.cancel,
+     snapshot:()=>r().snapshot(),load:(url?:string)=>r().load(url),setView:(position:number[],target:number[])=>r().setView(position,target),
+     setWater:(v:boolean)=>r().setWater(v),setWaterPhase:(ms:number|null)=>r().setWaterPhase(ms),setPixelRatio:(dpr:number)=>r().setPixelRatio(dpr),
+--- fixed65/src/scene/staticBatches.ts
++++ experiment/src/scene/staticBatches.ts
+@@ -0,0 +1,29 @@
++import * as THREE from 'three'
++import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js'
++
++// Diagnostic experiment: identical opaque static geometry/materials, grouped within
++// each existing device/site root. Original identifiers and bounds remain intact.
++export function staticBatches(root:THREE.Object3D) {
++ root.updateWorldMatrix(true,true)
++ const entries:{original:THREE.Mesh;visible:boolean}[]=[],batches:THREE.Mesh[]=[]
++ for(const name of ['SW_BIO_AERATION_001','SW_SITE_CONTEXT']) {
++  const parent=root.getObjectByName(name);if(!parent)continue
++  const inverse=parent.matrixWorld.clone().invert(),groups=new Map<string,THREE.Mesh[]>()
++  parent.traverse(object=>{
++   if(!(object instanceof THREE.Mesh)||object instanceof THREE.SkinnedMesh||object instanceof THREE.InstancedMesh||Array.isArray(object.material)||object.material.transparent||object.name==='WATER_Surface'||object.geometry.morphAttributes.position||!object.visible||object.matrixWorld.determinant()<=0)return
++   const attrs=Object.entries(object.geometry.attributes as Record<string,THREE.BufferAttribute|THREE.InterleavedBufferAttribute>).map(([k,v])=>`${k}:${v.itemSize}:${v.normalized}`).sort().join(',')
++   const key=[object.material.uuid,object.castShadow,object.receiveShadow,attrs,!!object.geometry.index].join('|')
++   const list=groups.get(key)??[];list.push(object);groups.set(key,list)
++  })
++  for(const list of groups.values()) {
++   if(list.length<2)continue
++   const copies=list.map(mesh=>mesh.geometry.clone().applyMatrix4(inverse.clone().multiply(mesh.matrixWorld)))
++   const geometry=mergeGeometries(copies,false);copies.forEach(g=>g.dispose())
++   if(!geometry)continue
++   geometry.computeBoundingBox();geometry.computeBoundingSphere()
++   const mesh=new THREE.Mesh(geometry,list[0]!.material);mesh.name='SW_DIAGNOSTIC_STATIC_BATCH_'+batches.length;mesh.castShadow=list[0]!.castShadow;mesh.receiveShadow=list[0]!.receiveShadow;mesh.visible=false
++   parent.add(mesh);batches.push(mesh);for(const original of list)entries.push({original,visible:original.visible})
++  }
++ }
++ return {set(enabled:boolean){for(const {original,visible} of entries)original.visible=enabled?false:visible;for(const mesh of batches)mesh.visible=enabled},stats:()=>({eligibleOriginals:entries.length,batchMeshes:batches.length})}
++}

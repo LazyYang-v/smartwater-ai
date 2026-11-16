@@ -1,0 +1,10 @@
+{
+  "reason": "Power STALE cache timestamp was earlier than a newer GOOD history sample",
+  "before": {
+    "latest_good": "2026-01-15T07:47:00.000Z",
+    "stale_observed_at": "2026-01-15T07:35:00.000Z"
+  },
+  "fix": "Keep the actual 07:47 observation and mark every later power history slot STALE; raw retained value is generated at the same observedAt. Dataset version bumped m1.1 -> m1.2.",
+  "regression": "tests/mockData.test.ts: stale power never predates newer GOOD history; tested at tick 0,7,13 and raw value equals NORMAL at observedAt",
+  "old_measurements_policy": "All 9 old trials remain in this folder and must not be relabelled as measurements of the corrected build."
+}

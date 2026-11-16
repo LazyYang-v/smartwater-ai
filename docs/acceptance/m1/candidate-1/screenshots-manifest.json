@@ -1,0 +1,2754 @@
+[
+  {
+    "file": "screenshots/normal-1920.png",
+    "sha256": "5f3ac620047a716ea897fd41ad8ff09a9e3413706651dd6147dc833bbfe5ead0",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:40.683Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 367.79999999999995,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 42,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 4,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:39.437Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/low-do.png",
+    "sha256": "218bab58c90233f9ba5f7c574726b07fc4a5fe0a2bed618d5d7d5326820ccda5",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:41.021Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 367.79999999999995,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 60,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 6,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:LOW_DO:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:LOW_DO:0",
+      "scenario": "LOW_DO",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:40.843Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 1.62,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        }
+      },
+      "alarms": [
+        {
+          "alarmId": "scenario:LOW_DO:DO:001",
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "occurredAt": "2026-01-15T07:32:00.000Z",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "status": "ACTIVE",
+          "source": "SIMULATED",
+          "valueAtEvent": 1.9633333333333334,
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        }
+      ]
+    },
+    "records": [],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/alarm-located.png",
+    "sha256": "cb95a6a5b2c1546205adec7d47a56ebea9331de8ab7bbd045d7786b9614994ee",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:42.351Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_BIO_AERATION_001",
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 51,
+      "textures": 15,
+      "frameMs": 17.59999999999991,
+      "camera": [
+        2.617823355365139,
+        25.4653906878979,
+        30.97172363488917
+      ],
+      "target": [
+        -0.7393657766360286,
+        -3.0707169341120206,
+        2.995147534879441
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 135,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 51,
+      "siteFraming": {
+        "left": -1.1387035546675808,
+        "right": 1.2984547372132158,
+        "bottom": -1.4974980525078285,
+        "top": 1.0695085362490921
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 6,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:LOW_DO:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:LOW_DO:0",
+      "scenario": "LOW_DO",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:40.843Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 1.62,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        }
+      },
+      "alarms": [
+        {
+          "alarmId": "scenario:LOW_DO:DO:001",
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "occurredAt": "2026-01-15T07:32:00.000Z",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "status": "ACTIVE",
+          "source": "SIMULATED",
+          "valueAtEvent": 1.9633333333333334,
+          "snapshotId": "smartwater-m1.1:LOW_DO:0"
+        }
+      ]
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/missing-data.png",
+    "sha256": "1d011c7435dff35d9e859450ac12338ef8d385da97d90158bfb442421b3e5837",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:42.747Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_BIO_AERATION_001",
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 51,
+      "textures": 15,
+      "frameMs": 16.100000000000364,
+      "camera": [
+        2.617823355365139,
+        25.4653906878979,
+        30.97172363488917
+      ],
+      "target": [
+        -0.7393657766360286,
+        -3.0707169341120206,
+        2.995147534879441
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 156,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 51,
+      "siteFraming": {
+        "left": -1.1387035546675808,
+        "right": 1.2984547372132158,
+        "bottom": -1.4974980525078285,
+        "top": 1.0695085362490921
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 8,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:MISSING_DATA:0",
+      "scenario": "MISSING_DATA",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:42.574Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": null,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "MISSING",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 80.36344103688265,
+          "unit": "kW",
+          "observedAt": "2026-01-15T07:35:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "STALE",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": null,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "MISSING",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        }
+      },
+      "alarms": [
+        {
+          "alarmId": "scenario:MISSING_DATA:DO:001",
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "occurredAt": "2026-01-15T07:32:00.000Z",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "status": "AWAITING_DATA",
+          "source": "SIMULATED",
+          "valueAtEvent": 1.9633333333333334,
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        }
+      ]
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/data-only-blower.png",
+    "sha256": "60991d183fb2ca8d30775b014b135bacfac4df4212e1291c9809ea3a45047fa2",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:44.633Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 16.899999999999636,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 229,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 8,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_AIR_BLOWER_001",
+      "hours": 1,
+      "activeTrend": "blower_power",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:MISSING_DATA:0",
+      "scenario": "MISSING_DATA",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:42.574Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": null,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "MISSING",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 80.36344103688265,
+          "unit": "kW",
+          "observedAt": "2026-01-15T07:35:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "STALE",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": null,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "MISSING",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        }
+      },
+      "alarms": [
+        {
+          "alarmId": "scenario:MISSING_DATA:DO:001",
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "occurredAt": "2026-01-15T07:32:00.000Z",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "status": "AWAITING_DATA",
+          "source": "SIMULATED",
+          "valueAtEvent": 1.9633333333333334,
+          "snapshotId": "smartwater-m1.1:MISSING_DATA:0"
+        }
+      ]
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/agent-focused.png",
+    "sha256": "b609327a5f569dba45cc221503f79a457aa8b93dde144bb8041e413684fc2f88",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:46.013Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_BIO_AERATION_001",
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 51,
+      "textures": 15,
+      "frameMs": 18.600000000000364,
+      "camera": [
+        2.617823355365139,
+        25.4653906878979,
+        30.97172363488917
+      ],
+      "target": [
+        -0.7393657766360286,
+        -3.0707169341120206,
+        2.995147534879441
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 308,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 51,
+      "siteFraming": {
+        "left": -1.1387035546675808,
+        "right": 1.2984547372132158,
+        "bottom": -1.4974980525078285,
+        "top": 1.0695085362490921
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 10,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:44.849Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24225cde-8347-4b5f-947e-b6ad2b829380",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:44.891Z",
+        "finished_at": "2026-11-15T18:09:45.808Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 297,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/water-hidden.png",
+    "sha256": "0a68e7acdca4f4530c2c4baced98645e23a1c726f22e2ba4adfa8755bb6415d2",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:46.690Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": "SW_BIO_AERATION_001",
+      "waterVisible": false,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106040,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 17,
+      "camera": [
+        2.617823355365139,
+        25.4653906878979,
+        30.97172363488917
+      ],
+      "target": [
+        -0.7393657766360286,
+        -3.0707169341120206,
+        2.995147534879441
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 342,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 1,
+      "sceneGeometryCount": 51,
+      "siteFraming": {
+        "left": -1.1387035546675808,
+        "right": 1.2984547372132158,
+        "bottom": -1.4974980525078285,
+        "top": 1.0695085362490921
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 10,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:44.849Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24225cde-8347-4b5f-947e-b6ad2b829380",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:44.891Z",
+        "finished_at": "2026-11-15T18:09:45.808Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 297,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/agent-reset.png",
+    "sha256": "e83dff142763b14fa6d43caf1b34dbc8878486580c2e631c75d9c38388b30f41",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:48.031Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 16.69999999999891,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 419,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 10,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:44.849Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24225cde-8347-4b5f-947e-b6ad2b829380",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:44.891Z",
+        "finished_at": "2026-11-15T18:09:45.808Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 297,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6cc6da8a-7288-4af2-bcda-2ad6f1474d6d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:46.969Z",
+        "finished_at": "2026-11-15T18:09:47.874Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 410,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/compact-1366.png",
+    "sha256": "5f9480f0445475ecee436dc5390a5eb642398505eca2000ced9db41505219cd4",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:48.454Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 16.69999999999891,
+      "camera": [
+        25.08552584161109,
+        38.62609800579172,
+        50.97692550717598
+      ],
+      "target": [
+        1.1867687375622527,
+        -5.494684340144591,
+        5.017777230158992
+      ],
+      "defaultCamera": [
+        25.085525841611094,
+        38.62609800579172,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622527,
+        -5.494684340144591,
+        5.017777230158992
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 438,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 996,
+        "height": 357
+      },
+      "canvas": {
+        "width": 996,
+        "height": 357
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5476449152163746,
+        "right": 0.5476448723251585,
+        "bottom": -0.8700000000000001,
+        "top": 0.8699994543202868
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 11,
+        "resizes": 3,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:44.849Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24225cde-8347-4b5f-947e-b6ad2b829380",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:44.891Z",
+        "finished_at": "2026-11-15T18:09:45.808Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 297,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6cc6da8a-7288-4af2-bcda-2ad6f1474d6d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:46.969Z",
+        "finished_at": "2026-11-15T18:09:47.874Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 410,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/compact-trend-expanded.png",
+    "sha256": "bcdba38734b484c30373d819d25315103bbfbb87ab200cb83703fd71ff8c4df2",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:09:48.752Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 740.1999999880791,
+      "firstRenderMs": 948.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 16.69999999999891,
+      "camera": [
+        25.08552584161109,
+        38.62609800579172,
+        50.97692550717598
+      ],
+      "target": [
+        1.1867687375622527,
+        -5.494684340144591,
+        5.017777230158992
+      ],
+      "defaultCamera": [
+        25.085525841611094,
+        38.62609800579172,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622527,
+        -5.494684340144591,
+        5.017777230158992
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 456,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 996,
+        "height": 357
+      },
+      "canvas": {
+        "width": 996,
+        "height": 357
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5476449152163746,
+        "right": 0.5476448723251585,
+        "bottom": -0.8700000000000001,
+        "top": 0.8699994543202868
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 12,
+        "resizes": 4,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:09:44.849Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "USER",
+        "trigger": "告警定位",
+        "action_id": "12214651-edb8-47db-8dac-cb337d74c013",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:41.294Z",
+        "finished_at": "2026-11-15T18:09:42.235Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 128,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "USER",
+        "trigger": "场景工具栏",
+        "action_id": "3dc4e646-9925-43f1-83ee-c567397a036f",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:43.056Z",
+        "finished_at": "2026-11-15T18:09:44.156Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 201,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "24225cde-8347-4b5f-947e-b6ad2b829380",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:44.891Z",
+        "finished_at": "2026-11-15T18:09:45.808Z",
+        "result": {
+          "camera": {
+            "position": [
+              2.6178233553651395,
+              25.4653906878979,
+              30.97172363488917
+            ],
+            "target": [
+              -0.7393657766360286,
+              -3.0707169341120206,
+              2.995147534879441
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_BIO_AERATION_001",
+          "rendered_frame": 297,
+          "arrival_verified": true
+        }
+      },
+      {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6cc6da8a-7288-4af2-bcda-2ad6f1474d6d",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T18:09:46.969Z",
+        "finished_at": "2026-11-15T18:09:47.874Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 410,
+          "arrival_verified": true
+        }
+      }
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 139.10000002384186,
+        "transferSize": 31255144
+      }
+    ]
+  },
+  {
+    "file": "screenshots/process-expanded.png",
+    "sha256": "10568207302338dcaed4f3b79265a0b17d63697eaff20a32dcedb507735f948e",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:23:57.752Z",
+    "url": "http://127.0.0.1:4173/?qa=1",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 556,
+      "firstRenderMs": 848.3000000119209,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 418.1,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 44,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": 0,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "sceneInstances": 1,
+      "renderLoops": 1,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 4,
+        "resizes": 2,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 1,
+      "activeTrend": "do",
+      "paused": true,
+      "hidden": false,
+      "running": false,
+      "snapshotId": "smartwater-m1.1:NORMAL:0"
+    },
+    "data": {
+      "snapshotId": "smartwater-m1.1:NORMAL:0",
+      "scenario": "NORMAL",
+      "demoTime": "2026-01-15T08:00:00.000Z",
+      "updatedAt": "2026-11-15T18:23:56.604Z",
+      "readings": {
+        "do": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "value": 2.6773329352988706,
+          "unit": "mg/L",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "blower_power": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_AIR_BLOWER_001",
+          "metricKey": "blower_power",
+          "value": 81.92164507632182,
+          "unit": "kW",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "ph": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "ph",
+          "value": 7.21408933565465,
+          "unit": "无量纲",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        },
+        "depth": {
+          "scopeType": "DEVICE",
+          "scopeId": "SW_BIO_AERATION_001",
+          "metricKey": "depth",
+          "value": 4.8,
+          "unit": "m",
+          "observedAt": "2026-01-15T08:00:00.000Z",
+          "sampleAt": "2026-01-15T08:00:00.000Z",
+          "quality": "GOOD",
+          "source": "SIMULATED",
+          "snapshotId": "smartwater-m1.1:NORMAL:0"
+        }
+      },
+      "alarms": []
+    },
+    "records": [],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "modelRequests": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 74.5,
+        "transferSize": 31255144
+      }
+    ]
+  }
+]

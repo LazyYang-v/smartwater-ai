@@ -1,0 +1,818 @@
+{
+  "at": "2026-11-16T12:24:14.745Z",
+  "source": "REAL_UPSTREAM_OPENAI_NOT_DEMO",
+  "task": {
+    "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+    "scenario_id": "LOW_DO",
+    "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T12:23:58.729Z",
+    "finished_at": "2026-11-16T12:24:14.718Z",
+    "mode": "LLM",
+    "input": "巡检当前四个单元，列出异常和缺少的数据。",
+    "status": "SUCCEEDED",
+    "tool_count": 14,
+    "model_requests": 4,
+    "evidence": [
+      {
+        "id": "SW_BIO_AERATION_001",
+        "name": "一号曝气池",
+        "modelStatus": "MODELLED",
+        "description": "生化处理 A²/O 好氧段样板 · 42 × 18 m；演示尺寸未经工程校核。",
+        "metrics": [
+          "do",
+          "ph",
+          "depth"
+        ],
+        "unit_id": "SW_UNIT_BIO_001",
+        "asset_root_node": "SW_BIO_AERATION_001",
+        "mechanical_node": "SW_BIO_AERATION_001",
+        "available_metrics": [
+          "do",
+          "ph",
+          "depth"
+        ],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_8cabc68ab175_1",
+        "tool_name": "device.get_details",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_BIO_AERATION_001",
+          "name": "一号曝气池",
+          "modelStatus": "MODELLED",
+          "description": "生化处理 A²/O 好氧段样板 · 42 × 18 m；演示尺寸未经工程校核。",
+          "metrics": [
+            "do",
+            "ph",
+            "depth"
+          ],
+          "unit_id": "SW_UNIT_BIO_001",
+          "asset_root_node": "SW_BIO_AERATION_001",
+          "mechanical_node": "SW_BIO_AERATION_001",
+          "available_metrics": [
+            "do",
+            "ph",
+            "depth"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": null
+          },
+          {
+            "metric_key": "ph",
+            "label": "pH",
+            "unit": "无量纲",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "ph",
+              "value": 7.21408933565465,
+              "unit": "无量纲",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": null
+          },
+          {
+            "metric_key": "depth",
+            "label": "水深",
+            "unit": "m",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "depth",
+              "value": 4.8,
+              "unit": "m",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": null
+          }
+        ],
+        "evidence_id": "EV_8cabc68ab175_2",
+        "tool_name": "device.get_metrics",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": null
+            },
+            {
+              "metric_key": "ph",
+              "label": "pH",
+              "unit": "无量纲",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "ph",
+                "value": 7.21408933565465,
+                "unit": "无量纲",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": null
+            },
+            {
+              "metric_key": "depth",
+              "label": "水深",
+              "unit": "m",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "depth",
+                "value": 4.8,
+                "unit": "m",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": null
+            }
+          ]
+        },
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      {
+        "id": "SW_CLR_TANK_001",
+        "name": "一号二沉池",
+        "modelStatus": "MODELLED",
+        "description": "Ø24m二沉池样板。只有模型，未配置过程模拟指标；顶部KPI仍属于一号曝气池及其关联鼓风机；本设备暂无过程指标或趋势。",
+        "metrics": [],
+        "unit_id": "SW_UNIT_CLR_001",
+        "asset_root_node": "SW_CLR_TANK_001",
+        "mechanical_node": "SW_CLR_TANK_001",
+        "available_metrics": [],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_8cabc68ab175_3",
+        "tool_name": "device.get_details",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_CLR_TANK_001",
+          "name": "一号二沉池",
+          "modelStatus": "MODELLED",
+          "description": "Ø24m二沉池样板。只有模型，未配置过程模拟指标；顶部KPI仍属于一号曝气池及其关联鼓风机；本设备暂无过程指标或趋势。",
+          "metrics": [],
+          "unit_id": "SW_UNIT_CLR_001",
+          "asset_root_node": "SW_CLR_TANK_001",
+          "mechanical_node": "SW_CLR_TANK_001",
+          "available_metrics": [],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_CLR_TANK_001"
+      },
+      {
+        "outcome": "NO_DEFINED_METRICS",
+        "device_name": "一号二沉池",
+        "metrics": [],
+        "evidence_id": "EV_8cabc68ab175_4",
+        "tool_name": "device.get_metrics",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_DATA",
+        "data": {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号二沉池",
+          "metrics": []
+        },
+        "device_id": "SW_CLR_TANK_001"
+      },
+      {
+        "id": "SW_AIR_BLOWER_001",
+        "name": "一号鼓风机 B-01",
+        "modelStatus": "MODELLED",
+        "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+        "metrics": [
+          "blower_power"
+        ],
+        "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+        "asset_root_node": "SW_BLOWER_UNIT",
+        "mechanical_node": "SW_AIR_BLOWER_001",
+        "available_metrics": [
+          "blower_power"
+        ],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_8cabc68ab175_5",
+        "tool_name": "device.get_details",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_AIR_BLOWER_001",
+          "name": "一号鼓风机 B-01",
+          "modelStatus": "MODELLED",
+          "description": "鼓风机房内重点设备；沿用既有B-01功率模拟数据，具备三维映射。功率不是全厂能耗或电量。",
+          "metrics": [
+            "blower_power"
+          ],
+          "unit_id": "SW_UNIT_BLOWER_ROOM_001",
+          "asset_root_node": "SW_BLOWER_UNIT",
+          "mechanical_node": "SW_AIR_BLOWER_001",
+          "available_metrics": [
+            "blower_power"
+          ],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": null
+          }
+        ],
+        "evidence_id": "EV_8cabc68ab175_6",
+        "tool_name": "device.get_metrics",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": null
+            }
+          ]
+        },
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      },
+      {
+        "id": "SW_PRE_PUMP_001",
+        "name": "一号提升泵",
+        "modelStatus": "MODELLED",
+        "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+        "metrics": [],
+        "unit_id": "SW_UNIT_PUMP_ROOM_001",
+        "asset_root_node": "SW_PUMP_UNIT",
+        "mechanical_node": "SW_PRE_PUMP_001",
+        "available_metrics": [],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_8cabc68ab175_7",
+        "tool_name": "device.get_details",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_PRE_PUMP_001",
+          "name": "一号提升泵",
+          "modelStatus": "MODELLED",
+          "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+          "metrics": [],
+          "unit_id": "SW_UNIT_PUMP_ROOM_001",
+          "asset_root_node": "SW_PUMP_UNIT",
+          "mechanical_node": "SW_PRE_PUMP_001",
+          "available_metrics": [],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      {
+        "outcome": "NO_DEFINED_METRICS",
+        "device_name": "一号提升泵",
+        "metrics": [],
+        "evidence_id": "EV_8cabc68ab175_8",
+        "tool_name": "device.get_metrics",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_DATA",
+        "data": {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号提升泵",
+          "metrics": []
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      {
+        "alarms": [
+          {
+            "alarmId": "scenario:LOW_DO:DO:001",
+            "deviceId": "SW_BIO_AERATION_001",
+            "metricKey": "do",
+            "occurredAt": "2026-01-15T07:32:00.000Z",
+            "level": "WARNING",
+            "ruleId": "DEMO_DO_LOW",
+            "rule": "DO < 2.0 mg/L · 演示阈值",
+            "status": "ACTIVE",
+            "source": "SIMULATED",
+            "valueAtEvent": 1.9633333333333334,
+            "snapshotId": "smartwater-m1.2:LOW_DO:0"
+          }
+        ],
+        "scope": [
+          "SW_BIO_AERATION_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_8cabc68ab175_9",
+        "tool_name": "alarm.list",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "EVENT_QUALITY_NOT_RECORDED",
+        "data": {
+          "alarms": [
+            {
+              "alarmId": "scenario:LOW_DO:DO:001",
+              "deviceId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "occurredAt": "2026-01-15T07:32:00.000Z",
+              "level": "WARNING",
+              "ruleId": "DEMO_DO_LOW",
+              "rule": "DO < 2.0 mg/L · 演示阈值",
+              "status": "ACTIVE",
+              "source": "SIMULATED",
+              "valueAtEvent": 1.9633333333333334,
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            }
+          ],
+          "scope": [
+            "SW_BIO_AERATION_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      {
+        "alarms": [],
+        "scope": [
+          "SW_CLR_TANK_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_8cabc68ab175_10",
+        "tool_name": "alarm.list",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_ALARM_RECORDS",
+        "data": {
+          "alarms": [],
+          "scope": [
+            "SW_CLR_TANK_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_CLR_TANK_001"
+      },
+      {
+        "alarms": [],
+        "scope": [
+          "SW_AIR_BLOWER_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_8cabc68ab175_11",
+        "tool_name": "alarm.list",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_ALARM_RECORDS",
+        "data": {
+          "alarms": [],
+          "scope": [
+            "SW_AIR_BLOWER_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      {
+        "alarms": [],
+        "scope": [
+          "SW_PRE_PUMP_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_8cabc68ab175_12",
+        "tool_name": "alarm.list",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_ALARM_RECORDS",
+        "data": {
+          "alarms": [],
+          "scope": [
+            "SW_PRE_PUMP_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      {
+        "alarm": {
+          "alarmId": "scenario:LOW_DO:DO:001",
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "occurredAt": "2026-01-15T07:32:00.000Z",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "status": "ACTIVE",
+          "source": "SIMULATED",
+          "valueAtEvent": 1.9633333333333334,
+          "snapshotId": "smartwater-m1.2:LOW_DO:0"
+        },
+        "metric_key": "do",
+        "unit": "mg/L",
+        "threshold": 2,
+        "operator": "<",
+        "rule_id": "DEMO_DO_LOW",
+        "rule_label": "DO < 2.0 mg/L · 演示阈值",
+        "trigger_comparison": true,
+        "event_quality": "GOOD",
+        "event_quality_basis": "EXACT_HISTORY_MATCH",
+        "current_quality": "GOOD",
+        "current_value": 1.62,
+        "limitation": "仅解释已有演示规则触发依据，不推断故障因果或提出设备控制建议",
+        "evidence_id": "EV_8cabc68ab175_13",
+        "tool_name": "alarm.inspect",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "alarm": {
+            "alarmId": "scenario:LOW_DO:DO:001",
+            "deviceId": "SW_BIO_AERATION_001",
+            "metricKey": "do",
+            "occurredAt": "2026-01-15T07:32:00.000Z",
+            "level": "WARNING",
+            "ruleId": "DEMO_DO_LOW",
+            "rule": "DO < 2.0 mg/L · 演示阈值",
+            "status": "ACTIVE",
+            "source": "SIMULATED",
+            "valueAtEvent": 1.9633333333333334,
+            "snapshotId": "smartwater-m1.2:LOW_DO:0"
+          },
+          "metric_key": "do",
+          "unit": "mg/L",
+          "threshold": 2,
+          "operator": "<",
+          "rule_id": "DEMO_DO_LOW",
+          "rule_label": "DO < 2.0 mg/L · 演示阈值",
+          "trigger_comparison": true,
+          "event_quality": "GOOD",
+          "event_quality_basis": "EXACT_HISTORY_MATCH",
+          "current_quality": "GOOD",
+          "current_value": 1.62,
+          "limitation": "仅解释已有演示规则触发依据，不推断故障因果或提出设备控制建议"
+        },
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 361,
+              "valid_samples": 361,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "coverage": 1,
+              "min": 1.550008129681413,
+              "max": 2.8822348768922477,
+              "mean": 2.569689232460915,
+              "start": "2026-01-15T02:00:00.000Z",
+              "end": "2026-01-15T08:00:00.000Z",
+              "cadence_ms": 60000
+            }
+          }
+        ],
+        "shown": {
+          "displayed": true,
+          "metric_key": "do",
+          "hours": 6,
+          "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+          "evidence_id": "EV_8cabc68ab175_14"
+        },
+        "query_evidence_id": "EV_8cabc68ab175_13",
+        "reference_kind": "SAME_SNAPSHOT_ALARM",
+        "hours": 6,
+        "evidence_id": "EV_8cabc68ab175_14",
+        "tool_name": "chart.show_trend",
+        "task_id": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 1.550008129681413,
+                "max": 2.8822348768922477,
+                "mean": 2.569689232460915,
+                "start": "2026-01-15T02:00:00.000Z",
+                "end": "2026-01-15T08:00:00.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "shown": {
+            "displayed": true,
+            "metric_key": "do",
+            "hours": 6,
+            "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+            "evidence_id": "EV_8cabc68ab175_14"
+          },
+          "query_evidence_id": "EV_8cabc68ab175_13",
+          "reference_kind": "SAME_SNAPSHOT_ALARM",
+          "hours": 6
+        },
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "unit": "mg/L"
+      }
+    ],
+    "action_ids": [
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:1",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:2",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:3",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:4",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:5",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:6",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:7",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:8",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:9",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:10",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:11",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:12",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:13",
+      "8cabc68a-b175-490f-83d3-c07f4dd5cc7c:14"
+    ],
+    "errors": [],
+    "model_receipts": [
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_a4a930f7243b493f8654c57651950f42",
+        "response_id": "chatcmpl-Ekq2astNv3m1TSeIVBC838Bn6gmbe",
+        "http_status": 200,
+        "elapsed_ms": 5230,
+        "usage": {
+          "prompt_tokens": 1160,
+          "completion_tokens": 297,
+          "total_tokens": 1457,
+          "cached_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_b92b8a58c6b447c1a53ee57ead893844",
+        "response_id": "chatcmpl-Ekq2fq7dRYk6V1qyx9imuN5qNFjIT",
+        "http_status": 200,
+        "elapsed_ms": 2742,
+        "usage": {
+          "prompt_tokens": 6344,
+          "completion_tokens": 27,
+          "total_tokens": 6371,
+          "cached_tokens": 1157,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_690ae5669602468293311d26c1886142",
+        "response_id": "chatcmpl-Ekq2hIprq7qMr6csuMvx629dnvR1s",
+        "http_status": 200,
+        "elapsed_ms": 1972,
+        "usage": {
+          "prompt_tokens": 6938,
+          "completion_tokens": 50,
+          "total_tokens": 6988,
+          "cached_tokens": 6341,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_1267cc2cef304e24883b49410fb5e2fb",
+        "response_id": "chatcmpl-Ekq2khm7K1wX2H0CWK0Zoa8cdkulv",
+        "http_status": 200,
+        "elapsed_ms": 5847,
+        "usage": {
+          "prompt_tokens": 7779,
+          "completion_tokens": 332,
+          "total_tokens": 8111,
+          "cached_tokens": 6935,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "model_feedback": [],
+    "explanation": "当前四单元巡检发现：一号曝气池有一条处于 ACTIVE 的 DO WARNING 告警，适用演示规则原文为“DO < 2.0 mg/L · 演示阈值”；该单元 DO、pH、水深当前数据质量为 GOOD，且已展示相关 DO 趋势。一号二沉池和一号提升泵没有定义可用指标，指标查询结果为 NO_DATA；一号鼓风机有功率指标数据，质量为 GOOD。其余三个单元未返回告警记录，但这不代表设备正常。设备运行状态均未观测；所有资料与指标均为 SIMULATED，不能据此判断现场运行健康或推断故障原因。 依据 EV_8cabc68ab175_1、EV_8cabc68ab175_2、EV_8cabc68ab175_3、EV_8cabc68ab175_4、EV_8cabc68ab175_5、EV_8cabc68ab175_6、EV_8cabc68ab175_7、EV_8cabc68ab175_8、EV_8cabc68ab175_9、EV_8cabc68ab175_10、EV_8cabc68ab175_11、EV_8cabc68ab175_12、EV_8cabc68ab175_13、EV_8cabc68ab175_14",
+    "scope": [
+      "SW_BIO_AERATION_001",
+      "SW_CLR_TANK_001",
+      "SW_AIR_BLOWER_001",
+      "SW_PRE_PUMP_001"
+    ]
+  },
+  "save": {
+    "status": "SAVED",
+    "message": "本地事务已提交"
+  },
+  "diagnostics": {
+    "sceneInstances": 1,
+    "renderLoops": 0,
+    "chartStats": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 15,
+      "resizes": 1,
+      "active": 2
+    },
+    "contextId": "SW_BIO_AERATION_001",
+    "hours": 6,
+    "activeTrend": "do",
+    "paused": false,
+    "hidden": false,
+    "running": true,
+    "snapshotId": "smartwater-m1.2:LOW_DO:3"
+  }
+}

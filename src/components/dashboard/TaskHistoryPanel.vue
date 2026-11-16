@@ -1,0 +1,46 @@
+<script setup lang="ts">
+import type {TaskHistoryController} from '../../composables/useTaskHistory'
+import {statusLabel} from '../../history/records'
+import {computed} from 'vue'
+const props=defineProps<{history:TaskHistoryController;detailOnly?:boolean}>()
+defineEmits<{rerun:[id:string]}>()
+const selected=computed(()=>props.history.selected.value),report=computed(()=>props.history.report.value)
+const stamp=(s:string|null)=>s?new Date(s).toLocaleString('zh-CN',{hour12:false}):'未确认'
+const save=(id:string)=>props.history.saveStates.value[id]??{status:'SAVED',message:'从本地任务库读取'}
+</script>
+<template>
+ <section v-if="!detailOnly" class="history-list" aria-label="任务历史">
+  <p class="storage-notice">仅保存在当前浏览器与站点，重要结果请导出</p><small>{{history.storage.value}}</small>
+  <div class="history-toolbar"><button class="text-button" @click="history.refresh()">刷新列表</button><span>{{history.list.value.length}} 条已加载</span></div>
+  <p v-if="!history.list.value.length">{{history.ready.value?'暂无本地任务；执行后将自动保存。':'正在读取历史…'}}</p>
+  <button v-for="item in history.list.value" :key="item.task_id" class="history-item" :data-task-id="item.task_id" @click="history.open(item.task_id)"><strong>{{item.input}}</strong><time>{{stamp(item.started_at)}}</time><span>{{item.mode}} · {{item.model}}</span><span>{{statusLabel(item.execution_status)}} · 完成步骤 {{item.completed_steps}} / {{item.total_steps}}</span><span :data-save-status="save(item.task_id).status">{{statusLabel(save(item.task_id).status)}}</span></button>
+  <button v-if="history.more.value" class="secondary-button" @click="history.refresh(true)">加载更早任务</button>
+ </section>
+ <Teleport to="body">
+ <div v-if="selected" class="history-backdrop" @keydown.esc="history.closeDetail()">
+ <section class="report-dialog" role="dialog" aria-modal="true" aria-label="任务与报告详情" tabindex="-1">
+  <header><div><span class="eyebrow">LOCAL TASK ARCHIVE</span><h2>{{report?.title??'任务执行记录'}}</h2></div><button class="secondary-button close-report" @click="history.closeDetail()">关闭</button></header>
+  <div class="report-actions"><button :disabled="!report" class="secondary-button export-md" @click="history.exportFile('md')">导出 Markdown</button><button :disabled="!report" class="secondary-button export-json" @click="history.exportFile('json')">导出 JSON</button><button class="secondary-button rerun-task" :disabled="!history.owner.value" @click="$emit('rerun',selected.task.task_id);history.closeDetail()">重新执行（新快照）</button><button v-if="save(selected.task.task_id).status==='ERROR'" class="secondary-button retry-save" @click="history.retry(selected.task.task_id)">重试保存</button></div>
+  <div class="report-scroll">
+   <p class="simulated-note">SIMULATED · 演示数据 · {{selected.task.mode}} · {{statusLabel(selected.execution_status)}}</p>
+   <p class="report-save" :data-save-status="save(selected.task.task_id).status">{{statusLabel(save(selected.task.task_id).status)}} · {{save(selected.task.task_id).message}}</p>
+   <p v-if="history.detailMessage.value" role="alert">{{history.detailMessage.value}}</p>
+   <p class="storage-notice">仅保存在当前浏览器与站点，重要结果请导出。查看和导出不会调用工具、模型或移动相机。</p>
+   <h3>用户要求</h3><p>{{selected.task.input}}</p>
+   <dl class="report-meta"><dt>任务</dt><dd>{{selected.task.task_id}}</dd><dt>原任务</dt><dd>{{selected.task.parent_task_id??'—'}}</dd><dt>报告</dt><dd>{{report?.report_id??'尚未形成终态报告'}}</dd><dt>演示场景 / 快照</dt><dd>{{selected.task.scenario_id}} / {{selected.task.snapshot_id}}</dd><dt>数据截至</dt><dd>{{selected.task.as_of}}</dd><dt>执行开始 / 结束</dt><dd>{{stamp(selected.task.started_at)}} / {{stamp(selected.task.finished_at)}}</dd><dt>当次供应商 / 模型</dt><dd>{{selected.task.mode==='DEMO'?'未调用模型':selected.task.model_receipts.length?selected.task.model_receipts.map(r=>r.provider+' / '+r.model).join('，'):'未知（未取得上游回执）'}}</dd><dt>上游用量</dt><dd>{{selected.task.model_receipts.length?selected.task.model_receipts.map(r=>r.usage==='UNKNOWN'?'未知':JSON.stringify(r.usage)).join('；'):'未知'}}</dd></dl>
+   <template v-if="report">
+    <h3>检查完成情况与监测覆盖</h3><p>资料 {{report.coverage.details_completed}} / {{report.coverage.requested_devices}} · 指标查询 {{report.coverage.metrics_completed}} / {{report.coverage.requested_devices}} · 有效监测值 {{report.coverage.devices_with_good_metrics}} / {{report.coverage.requested_devices}} · 工具成功 {{report.coverage.steps_completed}} / {{report.coverage.steps_total}}</p>
+    <article v-for="finding in report.findings" :key="finding.device_id" class="report-finding"><h3>{{finding.name}}</h3><code>{{finding.device_id}}</code><p class="finding-conclusion">{{finding.conclusion}}</p><div v-for="metric in finding.metrics" :key="metric.metric_key" class="archived-metric"><strong>{{metric.metric_key}} · {{metric.latest?.value??'—'}} {{metric.unit??metric.latest?.unit}}</strong><span>{{metric.latest?.quality}} · {{metric.latest?.observedAt}}</span><small v-if="metric.history">历史有效 {{metric.history.valid_samples}} / {{metric.history.total_samples}} · 缺测 {{metric.history.missing_samples}} · 过期 {{metric.history.stale_samples}} · {{metric.history.start}} — {{metric.history.end}}</small></div><p v-for="alarm in finding.alarms" :key="alarm.alarmId">告警 {{alarm.alarmId}} · {{alarm.rule}} · 触发值 {{alarm.valueAtEvent}} · {{alarm.status}} · {{alarm.occurredAt}}</p><p v-for="limitation in finding.limitations" :key="limitation" class="report-limit">{{limitation}}</p><small>依据 {{finding.evidence_ids.join('、')||'未取得'}}</small></article>
+    <h3>限制</h3><p v-for="limitation in report.limitations" :key="limitation">{{limitation}}</p><p>{{report.historical_curve.explanation}}</p>
+    <details><summary>模型 / 演示解释（独立文字，不作为新增事实来源）</summary><p class="safe-model-text">{{report.model_explanation}}</p></details>
+   </template>
+   <h3>错误与未完成</h3><p v-if="!selected.task.errors.length">无已记录错误；数据覆盖限制仍然存在。</p><p v-for="(error,index) in selected.task.errors" :key="index">{{error.code}} · {{error.message}}</p>
+   <h3>实际工具步骤（{{selected.steps.length}}）</h3><details v-for="step in selected.steps" :key="step.action_id" class="archived-step"><summary>{{statusLabel(step.status)}} · {{step.tool_name}}</summary><pre>{{JSON.stringify(step,null,2)}}</pre></details>
+   <details><summary>证据与引用（{{selected.task.evidence.length}}）</summary><pre>{{JSON.stringify(selected.task.evidence,null,2)}}</pre></details>
+  </div>
+ </section></div>
+ </Teleport>
+</template>
+<style>
+.agent-tabs{display:flex;gap:6px;padding:8px 16px;border-bottom:1px solid var(--border,#21435b)}.agent-tabs button{flex:1;padding:8px;color:#9cb7ca;background:transparent;border:1px solid #28455c;border-radius:5px;font-size:14px}.agent-tabs button[aria-pressed=true]{color:#7ee8e7;background:#143449;border-color:#4b9dba}.current-save{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;align-items:center}.current-save small{width:100%;color:#ffc48c}.history-list{font-size:14px}.storage-notice{color:#93b0c4;font-size:14px;line-height:1.6}.history-list>small{display:block;overflow-wrap:anywhere}.history-toolbar{display:flex;justify-content:space-between;margin:12px 0;color:#9eb8ca}.history-item{display:flex;flex-direction:column;gap:6px;width:100%;text-align:left;margin:10px 0;padding:14px;background:#102a3e;border:1px solid #2b4b62;border-radius:6px;color:#c4dae9;font:inherit;line-height:1.5}.history-item strong{color:#edf7ff}.history-item time,.history-item span{font-size:14px}.history-backdrop{position:fixed;inset:0;background:#020c19a8;z-index:1000;display:flex;justify-content:flex-end}.report-dialog{width:min(780px,95vw);height:100dvh;background:#0c2033;border-left:1px solid #41657d;box-shadow:-12px 0 30px #0006;display:flex;flex-direction:column;color:#d3e4ef;font-size:15px;line-height:1.6}.report-dialog header{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;border-bottom:1px solid #2b465f}.report-dialog h2{font-size:22px;margin:4px 0}.report-dialog h3{font-size:16px;margin:20px 0 8px;color:#dff8ff}.report-actions{display:flex;flex-wrap:wrap;gap:8px;padding:12px 24px;border-bottom:1px solid #2b465f}.report-scroll{padding:0 24px 28px;overflow:auto;min-height:0}.report-scroll p{margin:10px 0}.report-meta{display:grid;grid-template-columns:140px 1fr;gap:8px 12px;font-size:14px}.report-meta dt{color:#93b0c4}.report-meta dd{margin:0;overflow-wrap:anywhere}.simulated-note{color:#75ded6}.report-save{font-size:14px}[data-save-status=ERROR]{color:#ffbf87}[data-save-status=SAVED]{color:#83dccc}.report-finding{padding:4px 16px 14px;background:#102b40;border:1px solid #2b4a60;border-radius:6px;margin:14px 0}.report-finding code,.report-finding small{font-size:14px;overflow-wrap:anywhere}.finding-conclusion{color:#f3dfad}.report-limit{color:#a7bdcc;font-size:14px}.archived-metric{display:flex;flex-direction:column;padding:8px 0;border-bottom:1px solid #2c4558;gap:4px}.archived-metric span{font-size:14px}.report-dialog details{padding:10px 0;border-bottom:1px solid #2c4558}.report-dialog summary{cursor:pointer;font-size:14px}.report-dialog pre{font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;background:#081827;padding:12px}.safe-model-text{white-space:pre-wrap;overflow-wrap:anywhere}.report-dialog button:disabled,.agent-panel button:disabled{opacity:.45;cursor:not-allowed}@media(max-width:1400px){.agent-tabs{padding:6px 12px}.report-dialog header{padding:12px 18px}.report-actions{padding:10px 18px}.report-scroll{padding:0 18px 24px}}
+</style>

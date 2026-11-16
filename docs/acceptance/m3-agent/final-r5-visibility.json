@@ -1,0 +1,1063 @@
+{
+  "events": [
+    {
+      "at": 75824.69999998808,
+      "trusted": true,
+      "visible": "hidden",
+      "task": {
+        "task_id": "94dc3119-4c8d-48e8-a810-24bc503c8a0e",
+        "scenario_id": "NORMAL",
+        "snapshot_id": "smartwater-m1.2:NORMAL:13",
+        "as_of": "2026-01-15T08:01:05.000Z",
+        "started_at": "2026-11-16T09:39:22.689Z",
+        "finished_at": "2026-11-16T09:39:22.708Z",
+        "mode": "LLM",
+        "input": "检查提升泵运行是否正常。",
+        "status": "FAILED",
+        "tool_count": 0,
+        "model_requests": 1,
+        "evidence": [],
+        "action_ids": [],
+        "errors": [
+          {
+            "code": "LLM_NOT_CONFIGURED",
+            "message": "缺少服务端配置：SMARTWATER_OPENAI_API_KEY、SMARTWATER_MODEL"
+          }
+        ],
+        "explanation": "",
+        "scope": []
+      },
+      "diag": {
+        "sceneInstances": 1,
+        "renderLoops": 0,
+        "chartStats": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 43,
+          "resizes": 8,
+          "active": 2
+        },
+        "contextId": "SW_AIR_BLOWER_001",
+        "hours": 6,
+        "activeTrend": "blower_power",
+        "paused": false,
+        "hidden": true,
+        "running": false,
+        "snapshotId": "smartwater-m1.2:NORMAL:13"
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 550.6000000238419,
+        "firstRenderMs": 22.30000001192093,
+        "triangles": 201408,
+        "assetTriangles": 201408,
+        "calls": 236,
+        "textures": 37,
+        "frameMs": 16.80000000000291,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_AIR_BLOWER_001",
+          "SW_PRE_PUMP_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 475.89999997615814,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 539.5999999642372,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 202.5,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 209.19999998807907,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_AIR_BLOWER_001": true,
+          "SW_PRE_PUMP_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.947070901413234,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "target": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919147
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 3772,
+        "cameraBusy": false,
+        "visible": "hidden",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {}
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369095150207812,
+          "right": 0.5296509694563738,
+          "bottom": -0.8215251321105713,
+          "top": 0.7863755893632043
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      }
+    },
+    {
+      "at": 75830.89999997616,
+      "trusted": true,
+      "visible": "visible",
+      "task": {
+        "task_id": "94dc3119-4c8d-48e8-a810-24bc503c8a0e",
+        "scenario_id": "NORMAL",
+        "snapshot_id": "smartwater-m1.2:NORMAL:13",
+        "as_of": "2026-01-15T08:01:05.000Z",
+        "started_at": "2026-11-16T09:39:22.689Z",
+        "finished_at": "2026-11-16T09:39:22.708Z",
+        "mode": "LLM",
+        "input": "检查提升泵运行是否正常。",
+        "status": "FAILED",
+        "tool_count": 0,
+        "model_requests": 1,
+        "evidence": [],
+        "action_ids": [],
+        "errors": [
+          {
+            "code": "LLM_NOT_CONFIGURED",
+            "message": "缺少服务端配置：SMARTWATER_OPENAI_API_KEY、SMARTWATER_MODEL"
+          }
+        ],
+        "explanation": "",
+        "scope": []
+      },
+      "diag": {
+        "sceneInstances": 1,
+        "renderLoops": 1,
+        "chartStats": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 44,
+          "resizes": 8,
+          "active": 2
+        },
+        "contextId": "SW_AIR_BLOWER_001",
+        "hours": 6,
+        "activeTrend": "blower_power",
+        "paused": false,
+        "hidden": false,
+        "running": true,
+        "snapshotId": "smartwater-m1.2:NORMAL:13"
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 550.6000000238419,
+        "firstRenderMs": 22.30000001192093,
+        "triangles": 201408,
+        "assetTriangles": 201408,
+        "calls": 236,
+        "textures": 37,
+        "frameMs": 16.80000000000291,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_AIR_BLOWER_001",
+          "SW_PRE_PUMP_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 475.89999997615814,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 539.5999999642372,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 202.5,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 209.19999998807907,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_AIR_BLOWER_001": true,
+          "SW_PRE_PUMP_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.947070901413234,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "target": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919147
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 3772,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {}
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369095150207812,
+          "right": 0.5296509694563738,
+          "bottom": -0.8215251321105713,
+          "top": 0.7863755893632043
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      }
+    },
+    {
+      "at": 75900.29999995232,
+      "trusted": true,
+      "visible": "hidden",
+      "task": {
+        "task_id": "149d9f1f-7c97-4d5d-a99f-9138e3c85ade",
+        "scenario_id": "NORMAL",
+        "snapshot_id": "smartwater-m1.2:NORMAL:13",
+        "as_of": "2026-01-15T08:01:05.000Z",
+        "started_at": "2026-11-16T09:39:22.797Z",
+        "finished_at": "2026-11-16T09:39:22.838Z",
+        "mode": "DEMO",
+        "input": "定位一号鼓风机，查看最近六小时功率。",
+        "status": "CANCELLED",
+        "tool_count": 1,
+        "model_requests": 0,
+        "evidence": [],
+        "action_ids": [
+          "149d9f1f-7c97-4d5d-a99f-9138e3c85ade:1"
+        ],
+        "errors": [
+          {
+            "code": "PAGE_HIDDEN",
+            "message": "页面隐藏，镜头动作已取消"
+          }
+        ],
+        "explanation": "",
+        "scope": [
+          "SW_AIR_BLOWER_001"
+        ]
+      },
+      "diag": {
+        "sceneInstances": 1,
+        "renderLoops": 0,
+        "chartStats": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 44,
+          "resizes": 8,
+          "active": 2
+        },
+        "contextId": "SW_AIR_BLOWER_001",
+        "hours": 6,
+        "activeTrend": "blower_power",
+        "paused": false,
+        "hidden": true,
+        "running": false,
+        "snapshotId": "smartwater-m1.2:NORMAL:13"
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 550.6000000238419,
+        "firstRenderMs": 22.30000001192093,
+        "triangles": 199128,
+        "assetTriangles": 201408,
+        "calls": 234,
+        "textures": 37,
+        "frameMs": 16.80000000000291,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_AIR_BLOWER_001",
+          "SW_PRE_PUMP_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 475.89999997615814,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 539.5999999642372,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 202.5,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 209.19999998807907,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_AIR_BLOWER_001": true,
+          "SW_PRE_PUMP_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.941044755811106,
+          73.00624263794296,
+          69.0567065223795
+        ],
+        "target": [
+          0.13430597460248977,
+          -4.805383220802819,
+          1.9776397615178907
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 3774,
+        "cameraBusy": false,
+        "visible": "hidden",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {}
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369734306721863,
+          "right": 0.5297780853236147,
+          "bottom": -0.8218102457164254,
+          "top": 0.7863893307706582
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      }
+    },
+    {
+      "at": 82114.39999997616,
+      "trusted": true,
+      "visible": "visible",
+      "task": {
+        "task_id": "149d9f1f-7c97-4d5d-a99f-9138e3c85ade",
+        "scenario_id": "NORMAL",
+        "snapshot_id": "smartwater-m1.2:NORMAL:13",
+        "as_of": "2026-01-15T08:01:05.000Z",
+        "started_at": "2026-11-16T09:39:22.797Z",
+        "finished_at": "2026-11-16T09:39:22.838Z",
+        "mode": "DEMO",
+        "input": "定位一号鼓风机，查看最近六小时功率。",
+        "status": "CANCELLED",
+        "tool_count": 1,
+        "model_requests": 0,
+        "evidence": [],
+        "action_ids": [
+          "149d9f1f-7c97-4d5d-a99f-9138e3c85ade:1"
+        ],
+        "errors": [
+          {
+            "code": "PAGE_HIDDEN",
+            "message": "页面隐藏，镜头动作已取消"
+          }
+        ],
+        "explanation": "",
+        "scope": [
+          "SW_AIR_BLOWER_001"
+        ]
+      },
+      "diag": {
+        "sceneInstances": 1,
+        "renderLoops": 1,
+        "chartStats": {
+          "created": 2,
+          "disposed": 0,
+          "updates": 45,
+          "resizes": 8,
+          "active": 2
+        },
+        "contextId": "SW_AIR_BLOWER_001",
+        "hours": 6,
+        "activeTrend": "blower_power",
+        "paused": false,
+        "hidden": false,
+        "running": true,
+        "snapshotId": "smartwater-m1.2:NORMAL:13"
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 550.6000000238419,
+        "firstRenderMs": 22.30000001192093,
+        "triangles": 199128,
+        "assetTriangles": 201408,
+        "calls": 234,
+        "textures": 37,
+        "frameMs": 16.80000000000291,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_AIR_BLOWER_001",
+          "SW_PRE_PUMP_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 475.89999997615814,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 539.5999999642372,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 202.5,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 209.19999998807907,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_AIR_BLOWER_001": true,
+          "SW_PRE_PUMP_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.941044755811106,
+          73.00624263794296,
+          69.0567065223795
+        ],
+        "target": [
+          0.13430597460248977,
+          -4.805383220802819,
+          1.9776397615178907
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 3774,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {}
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369734306721863,
+          "right": 0.5297780853236147,
+          "bottom": -0.8218102457164254,
+          "top": 0.7863893307706582
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      }
+    }
+  ],
+  "restored": {
+    "task": {
+      "task_id": "149d9f1f-7c97-4d5d-a99f-9138e3c85ade",
+      "scenario_id": "NORMAL",
+      "snapshot_id": "smartwater-m1.2:NORMAL:13",
+      "as_of": "2026-01-15T08:01:05.000Z",
+      "started_at": "2026-11-16T09:39:22.797Z",
+      "finished_at": "2026-11-16T09:39:22.838Z",
+      "mode": "DEMO",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "status": "CANCELLED",
+      "tool_count": 1,
+      "model_requests": 0,
+      "evidence": [],
+      "action_ids": [
+        "149d9f1f-7c97-4d5d-a99f-9138e3c85ade:1"
+      ],
+      "errors": [
+        {
+          "code": "PAGE_HIDDEN",
+          "message": "页面隐藏，镜头动作已取消"
+        }
+      ],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ]
+    },
+    "diag": {
+      "sceneInstances": 1,
+      "renderLoops": 0,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 45,
+        "resizes": 8,
+        "active": 2
+      },
+      "contextId": "SW_AIR_BLOWER_001",
+      "hours": 6,
+      "activeTrend": "blower_power",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.2:NORMAL:13"
+    }
+  }
+}

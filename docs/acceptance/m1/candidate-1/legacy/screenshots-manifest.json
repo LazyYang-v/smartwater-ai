@@ -1,0 +1,92 @@
+[
+  {
+    "file": "load-failure.png",
+    "sha256": "b7a422319b4808300ab5a25024e272c78aed8122afcc8768434f36987122e238",
+    "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+    "captured_at_utc": "2026-11-15T18:06:24.393Z",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "snapshot": {
+      "status": "error",
+      "error": "响应不是有效的 GLB 文件",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 404.19999998807907,
+      "firstRenderMs": 0,
+      "triangles": 0,
+      "calls": 0,
+      "textures": 4,
+      "frameMs": 15.899999999999636,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 258,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 5,
+      "rendererDpr": 1,
+      "nativeDpr": 1,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "",
+      "loadedModelSha256": "",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 0,
+      "siteFraming": null,
+      "bounds": null
+    },
+    "loadedEntryUrls": [
+      "http://127.0.0.1:4173/assets/index-Cfge421y.js",
+      "http://127.0.0.1:4173/assets/index-DH3KKlOn.css"
+    ],
+    "browserResponseHashes": {
+      "/assets/index-Cfge421y.js": "5653b19a40f20671c3861512923a3cdee2588e816ade0ce2445188f9a93fd203",
+      "/assets/index-DH3KKlOn.css": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e"
+    },
+    "selectedLabels": 0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "status": "M1.1 已完成部分修复，仍有明确阻断项",
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "unit_tests": 25,
+  "performance_samples": 9,
+  "performance_valid": 9,
+  "performance_passed": 0,
+  "endurance_seconds": 1117.91,
+  "endurance_windows": 15,
+  "endurance_windows_valid": true,
+  "native_cancel_passed": true,
+  "real_visibility_passed": true,
+  "root_cause": "NOT_CONFIRMED",
+  "no_m2": true
+}

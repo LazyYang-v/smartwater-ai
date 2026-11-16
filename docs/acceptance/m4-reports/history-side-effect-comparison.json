@@ -1,0 +1,59 @@
+{
+  "before": {
+    "tools": 14,
+    "camera": [
+      22.947070901413234,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "diagnostics": {
+      "sceneInstances": 1,
+      "renderLoops": 0,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 23,
+        "resizes": 5,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 6,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.2:LOW_DO:33"
+    }
+  },
+  "after": {
+    "tools": 14,
+    "camera": [
+      22.947070901413234,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "modelRequests": 0,
+    "diagnostics": {
+      "sceneInstances": 1,
+      "renderLoops": 0,
+      "chartStats": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 23,
+        "resizes": 5,
+        "active": 2
+      },
+      "contextId": "SW_BIO_AERATION_001",
+      "hours": 6,
+      "activeTrend": "do",
+      "paused": false,
+      "hidden": false,
+      "running": true,
+      "snapshotId": "smartwater-m1.2:LOW_DO:33"
+    },
+    "saved": {
+      "status": "SAVED",
+      "message": "本地事务已提交"
+    }
+  }
+}

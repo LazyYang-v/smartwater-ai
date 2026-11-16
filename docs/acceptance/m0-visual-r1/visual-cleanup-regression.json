@@ -1,0 +1,294 @@
+[
+  {
+    "case": "manual cancellation visual cleanup",
+    "action": {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "action_id": "7b305559-08d4-41a5-bf3a-a3362d69851f",
+      "status": "CANCELLED",
+      "started_at": "2026-11-15T17:26:32.810Z",
+      "finished_at": "2026-11-15T17:26:32.853Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户正在手动操作相机"
+      }
+    },
+    "snapshot": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 808,
+      "firstRenderMs": 1124.6000000238419,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 0,
+      "frameMs": 32.299999999999955,
+      "camera": [
+        -10.834695055695448,
+        57.9051195067208,
+        26.558000466959122
+      ],
+      "target": [
+        1.1855408694682805,
+        -5.493183947265735,
+        5.01652357817176
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622482,
+        -5.494684340144587,
+        5.017777230158988
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 41,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1.5,
+      "canvas": {
+        "width": 1028,
+        "height": 445
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.7645255470705289,
+        "right": 0.6490466040078546,
+        "bottom": -1.3322238227709453,
+        "top": 1.3382425939875744
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "labels": 0
+  },
+  {
+    "case": "reload during focus visual cleanup",
+    "action": {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "action_id": "e3e9233a-ffd1-4a7c-90f8-cb5fc8867598",
+      "status": "CANCELLED",
+      "started_at": "2026-11-15T17:26:32.913Z",
+      "finished_at": "2026-11-15T17:26:32.945Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "正在重新加载资产"
+      }
+    },
+    "snapshot": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 456.7000000476837,
+      "firstRenderMs": 0,
+      "triangles": 0,
+      "calls": 0,
+      "textures": 4,
+      "frameMs": 17.200000000000045,
+      "camera": [
+        25.085525841611087,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "target": [
+        1.1867687375622484,
+        -5.494684340144587,
+        5.0177772301589885
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622482,
+        -5.494684340144587,
+        5.017777230158988
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 65,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1.5,
+      "canvas": {
+        "width": 1028,
+        "height": 445
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 0,
+      "siteFraming": {
+        "left": -0.6613891686072912,
+        "right": 0.6613891168076944,
+        "bottom": -0.8699999999999997,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    }
+  },
+  {
+    "case": "timeout visual cleanup",
+    "action": {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "action_id": "97eeb9b5-bcca-417a-baf8-f76129b304af",
+      "status": "FAILED",
+      "started_at": "2026-11-15T17:26:33.651Z",
+      "finished_at": "2026-11-15T17:26:33.687Z",
+      "error": {
+        "code": "TIMEOUT",
+        "message": "相机未在限定时间内完成渲染"
+      }
+    },
+    "snapshot": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 456.7000000476837,
+      "firstRenderMs": 705.6000000238419,
+      "triangles": 106042,
+      "calls": 51,
+      "textures": 4,
+      "frameMs": 17.200000000000045,
+      "camera": [
+        25.043496836666247,
+        38.60508465579618,
+        50.942611846161576
+      ],
+      "target": [
+        1.1828752729017324,
+        -5.489926722710438,
+        5.0138020069792
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.626098005791725,
+        50.97692550717599
+      ],
+      "defaultTarget": [
+        1.1867687375622482,
+        -5.494684340144587,
+        5.017777230158988
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 68,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1.5,
+      "canvas": {
+        "width": 1028,
+        "height": 445
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.6620117733910482,
+        "right": 0.6617582834751373,
+        "bottom": -0.871205097401728,
+        "top": 0.8703274682970695
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    }
+  }
+]

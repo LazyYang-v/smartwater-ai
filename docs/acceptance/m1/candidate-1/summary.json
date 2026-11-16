@@ -1,0 +1,65 @@
+{
+  "status": "M1 实施已交付，等待用户体验验收",
+  "delivered_at_utc": "2026-11-15T18:29:48.664271+00:00",
+  "preview_url": "http://127.0.0.1:4173/",
+  "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "assets_unchanged": true,
+  "mock_scenarios": [
+    "NORMAL",
+    "LOW_DO",
+    "MISSING_DATA"
+  ],
+  "tools": [
+    "scene.focus_device",
+    "scene.reset_view"
+  ],
+  "tests": {
+    "typecheck": "PASS",
+    "build": "PASS with chunk-size advisory",
+    "unit_passed": 16,
+    "legacy_browser_passed": 15,
+    "legacy_layout_assertions_passed": 3,
+    "m1_features_passed": 10,
+    "final_ui_passed": 5,
+    "restart": "PASS"
+  },
+  "screenshots": 11,
+  "screenshot_manifest": "screenshots-manifest.json",
+  "performance": {
+    "trials": 9,
+    "valid": 9,
+    "meeting_target": 9,
+    "minimum_average_fps": 57.51195336973494,
+    "maximum_average_fps": 59.776048488584124,
+    "maximum_p95_frame_ms": 18.5,
+    "frames_over_50_ms_total": 91,
+    "full_results": "performance/summary.json",
+    "conditions": {
+      "browser_native_dpr": 2,
+      "three_renderer_dpr": 1,
+      "css_viewport": [
+        1920,
+        1080
+      ],
+      "three_css_viewport": [
+        1218,
+        427
+      ],
+      "drawing_buffer": [
+        1218,
+        427
+      ]
+    },
+    "no_cross_layout_optimization_claim": true
+  },
+  "limitations": [
+    "Real hidden-tab visibility transition remains unverified; the automation kept visible. Central clock pause/no-catch-up policy is unit tested.",
+    "Occasional >50ms long frames remain. No isolated CPU/GPU attribution.",
+    "Three renderer DPR2, other devices/browsers, long-term memory and production-network cold loading not measured.",
+    "User visual and interaction acceptance pending."
+  ],
+  "report": "report.md",
+  "integrity": "final-integrity.json"
+}

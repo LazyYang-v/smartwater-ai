@@ -1,0 +1,504 @@
+{
+  "at": "2026-11-16T11:04:19.080Z",
+  "task": {
+    "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+    "scenario_id": "NORMAL",
+    "snapshot_id": "smartwater-m1.2:NORMAL:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T11:04:12.671Z",
+    "finished_at": "2026-11-16T11:04:19.052Z",
+    "mode": "LLM",
+    "input": "检查提升泵运行是否正常。",
+    "status": "SUCCEEDED",
+    "tool_count": 3,
+    "model_requests": 2,
+    "evidence": [
+      {
+        "id": "SW_PRE_PUMP_001",
+        "name": "一号提升泵",
+        "modelStatus": "MODELLED",
+        "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+        "metrics": [],
+        "unit_id": "SW_UNIT_PUMP_ROOM_001",
+        "asset_root_node": "SW_PUMP_UNIT",
+        "mechanical_node": "SW_PRE_PUMP_001",
+        "available_metrics": [],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_e5474f0d20a0_1",
+        "tool_name": "device.get_details",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_PRE_PUMP_001",
+          "name": "一号提升泵",
+          "modelStatus": "MODELLED",
+          "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+          "metrics": [],
+          "unit_id": "SW_UNIT_PUMP_ROOM_001",
+          "asset_root_node": "SW_PUMP_UNIT",
+          "mechanical_node": "SW_PRE_PUMP_001",
+          "available_metrics": [],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      {
+        "outcome": "NO_DEFINED_METRICS",
+        "device_name": "一号提升泵",
+        "metrics": [],
+        "evidence_id": "EV_e5474f0d20a0_2",
+        "tool_name": "device.get_metrics",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_DATA",
+        "data": {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号提升泵",
+          "metrics": []
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      {
+        "alarms": [],
+        "scope": [
+          "SW_PRE_PUMP_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_e5474f0d20a0_3",
+        "tool_name": "alarm.list",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_ALARM_RECORDS",
+        "data": {
+          "alarms": [],
+          "scope": [
+            "SW_PRE_PUMP_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    ],
+    "action_ids": [
+      "e5474f0d-20a0-4d98-8051-8a51fd178fc3:1",
+      "e5474f0d-20a0-4d98-8051-8a51fd178fc3:2",
+      "e5474f0d-20a0-4d98-8051-8a51fd178fc3:3"
+    ],
+    "errors": [],
+    "model_receipts": [
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_a5c10a84345d444b8111ccc3a3c6612e",
+        "response_id": "chatcmpl-EkonOsouFLClFrgfzYetByecBWsIl",
+        "http_status": 200,
+        "elapsed_ms": 3607,
+        "usage": {
+          "prompt_tokens": 1152,
+          "completion_tokens": 82,
+          "total_tokens": 1234,
+          "cached_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "provider": "OpenAI",
+        "model": "gpt-6-luna",
+        "request_id": "req_d73d36b168934f4b8d582ce412cc2e7a",
+        "response_id": "chatcmpl-EkonRfv9UOvksyUxffwy8oPOgPCup",
+        "http_status": 200,
+        "elapsed_ms": 2683,
+        "usage": {
+          "prompt_tokens": 2077,
+          "completion_tokens": 98,
+          "total_tokens": 2175,
+          "cached_tokens": 1149,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "explanation": "现有资料显示一号提升泵暂无定义指标，运行状态未观测；本次未发现告警记录，但无告警不等于设备正常，因此无法判断其是否正常运行。 依据 EV_e5474f0d20a0_1、EV_e5474f0d20a0_2、EV_e5474f0d20a0_3",
+    "scope": [
+      "SW_PRE_PUMP_001"
+    ]
+  },
+  "records": [
+    {
+      "tool_name": "device.get_details",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "LLM",
+      "trigger": "模型工具调用",
+      "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+      "snapshot_id": "smartwater-m1.2:NORMAL:0",
+      "as_of": "2026-01-15T08:00:00.000Z",
+      "model_call_id": "call_s6zriaxALHbNj6ey1fkR8Lrz",
+      "model_request_id": "req_a5c10a84345d444b8111ccc3a3c6612e",
+      "model_request_index": "1",
+      "action_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3:1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T11:04:16.311Z",
+      "finished_at": "2026-11-16T11:04:16.316Z",
+      "result": {
+        "id": "SW_PRE_PUMP_001",
+        "name": "一号提升泵",
+        "modelStatus": "MODELLED",
+        "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+        "metrics": [],
+        "unit_id": "SW_UNIT_PUMP_ROOM_001",
+        "asset_root_node": "SW_PUMP_UNIT",
+        "mechanical_node": "SW_PRE_PUMP_001",
+        "available_metrics": [],
+        "model_load_state": "ready",
+        "operating_state": "NOT_OBSERVED",
+        "limitation": "模型和加载状态不是实时运行或健康证据",
+        "evidence_id": "EV_e5474f0d20a0_1",
+        "tool_name": "device.get_details",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_PRE_PUMP_001",
+          "name": "一号提升泵",
+          "modelStatus": "MODELLED",
+          "description": "泵房内重点提升泵；仅为三维演示，暂无该设备指标，未定义流量、压力或效率模拟数据。",
+          "metrics": [],
+          "unit_id": "SW_UNIT_PUMP_ROOM_001",
+          "asset_root_node": "SW_PUMP_UNIT",
+          "mechanical_node": "SW_PRE_PUMP_001",
+          "available_metrics": [],
+          "model_load_state": "ready",
+          "operating_state": "NOT_OBSERVED",
+          "limitation": "模型和加载状态不是实时运行或健康证据"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "device.get_metrics",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "LLM",
+      "trigger": "模型工具调用",
+      "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+      "snapshot_id": "smartwater-m1.2:NORMAL:0",
+      "as_of": "2026-01-15T08:00:00.000Z",
+      "model_call_id": "call_SfNT74cQyhnJSfq7WVwAiQWB",
+      "model_request_id": "req_a5c10a84345d444b8111ccc3a3c6612e",
+      "model_request_index": "1",
+      "action_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3:2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T11:04:16.318Z",
+      "finished_at": "2026-11-16T11:04:16.320Z",
+      "result": {
+        "outcome": "NO_DEFINED_METRICS",
+        "device_name": "一号提升泵",
+        "metrics": [],
+        "evidence_id": "EV_e5474f0d20a0_2",
+        "tool_name": "device.get_metrics",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_DATA",
+        "data": {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号提升泵",
+          "metrics": []
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "alarm.list",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "LLM",
+      "trigger": "模型工具调用",
+      "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+      "snapshot_id": "smartwater-m1.2:NORMAL:0",
+      "as_of": "2026-01-15T08:00:00.000Z",
+      "model_call_id": "call_uYdWn3uh3yVSrJXFOK93LbUe",
+      "model_request_id": "req_a5c10a84345d444b8111ccc3a3c6612e",
+      "model_request_index": "1",
+      "action_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3:3",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T11:04:16.322Z",
+      "finished_at": "2026-11-16T11:04:16.325Z",
+      "result": {
+        "alarms": [],
+        "scope": [
+          "SW_PRE_PUMP_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_e5474f0d20a0_3",
+        "tool_name": "alarm.list",
+        "task_id": "e5474f0d-20a0-4d98-8051-8a51fd178fc3",
+        "snapshot_id": "smartwater-m1.2:NORMAL:0",
+        "scenario_id": "NORMAL",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NO_ALARM_RECORDS",
+        "data": {
+          "alarms": [],
+          "scope": [
+            "SW_PRE_PUMP_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    }
+  ],
+  "scene": {
+    "status": "ready",
+    "error": "",
+    "selectedId": null,
+    "waterVisible": true,
+    "loadMs": 814.2999999523163,
+    "firstRenderMs": 26,
+    "triangles": 201408,
+    "assetTriangles": 201408,
+    "calls": 236,
+    "textures": 37,
+    "frameMs": -15.603999988079067,
+    "renderMode": "interactive",
+    "viewMode": "plant4",
+    "loadedIds": [
+      "SW_BIO_AERATION_001",
+      "SW_AIR_BLOWER_001",
+      "SW_PRE_PUMP_001",
+      "SW_CLR_TANK_001"
+    ],
+    "deviceStates": {
+      "SW_BIO_AERATION_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 306.4000000357628,
+        "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+      },
+      "SW_CLR_TANK_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 803.8000000119209,
+        "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+      },
+      "SW_AIR_BLOWER_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 268.80000001192093,
+        "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+      },
+      "SW_PRE_PUMP_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 399.69999998807907,
+        "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+      }
+    },
+    "waterStates": {
+      "SW_BIO_AERATION_001": true,
+      "SW_CLR_TANK_001": true
+    },
+    "roofStates": {
+      "SW_AIR_BLOWER_001": true,
+      "SW_PRE_PUMP_001": true
+    },
+    "deviceId": "SW_BIO_AERATION_001",
+    "camera": [
+      22.947070901413237,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "target": [
+      0.13738284572602621,
+      -4.806249344409889,
+      1.9809389170919147
+    ],
+    "defaultCamera": [
+      22.947070901413227,
+      73.01503931616995,
+      69.06825672793661
+    ],
+    "defaultTarget": [
+      0.13738284572602621,
+      -4.806249344409889,
+      1.9809389170919145
+    ],
+    "zoom": 1,
+    "fov": 40,
+    "frame": 8,
+    "cameraBusy": false,
+    "visible": "visible",
+    "activeRenderLoops": 0,
+    "loadGeneration": 2,
+    "assetRequests": {
+      "/models/aeration-tank.glb": 1,
+      "/models/clarifier-tank.glb": 1,
+      "/models/blower-unit.glb": 1,
+      "/models/pump-unit.glb": 1
+    },
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "drawingBuffer": {
+      "width": 1218,
+      "height": 427
+    },
+    "canvas": {
+      "width": 1218,
+      "height": 427
+    },
+    "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+    "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+    "waterPhaseMs": null,
+    "roofPresentation": {
+      "inspectionDevice": null,
+      "manual": {}
+    },
+    "registrations": [
+      {
+        "id": "SW_BIO_AERATION_001",
+        "unitId": "SW_UNIT_BIO_001",
+        "name": "一号曝气池",
+        "url": "/models/aeration-tank.glb",
+        "dimensions": "42 × 18 m · 水深 4.8 m",
+        "assetRootNode": "SW_BIO_AERATION_001",
+        "mechanicalNode": "SW_BIO_AERATION_001",
+        "metrics": [
+          "do",
+          "ph",
+          "depth"
+        ],
+        "water": true,
+        "roof": false,
+        "modelKey": "aeration",
+        "modelState": "ready"
+      },
+      {
+        "id": "SW_AIR_BLOWER_001",
+        "unitId": "SW_UNIT_BLOWER_ROOM_001",
+        "name": "一号鼓风机",
+        "url": "/models/blower-unit.glb",
+        "dimensions": "12 × 9 m 机房 · 设备独立选择",
+        "assetRootNode": "SW_BLOWER_UNIT",
+        "mechanicalNode": "SW_AIR_BLOWER_001",
+        "metrics": [
+          "blower_power"
+        ],
+        "water": false,
+        "roof": true,
+        "modelKey": "blower",
+        "modelState": "ready"
+      },
+      {
+        "id": "SW_PRE_PUMP_001",
+        "unitId": "SW_UNIT_PUMP_ROOM_001",
+        "name": "一号提升泵",
+        "url": "/models/pump-unit.glb",
+        "dimensions": "10 × 8 m 泵房 · 演示设备",
+        "assetRootNode": "SW_PUMP_UNIT",
+        "mechanicalNode": "SW_PRE_PUMP_001",
+        "metrics": [],
+        "water": false,
+        "roof": true,
+        "modelKey": "pump",
+        "modelState": "ready"
+      },
+      {
+        "id": "SW_CLR_TANK_001",
+        "unitId": "SW_UNIT_CLR_001",
+        "name": "一号二沉池",
+        "url": "/models/clarifier-tank.glb",
+        "dimensions": "Ø24 m · 二沉池样板",
+        "assetRootNode": "SW_CLR_TANK_001",
+        "mechanicalNode": "SW_CLR_TANK_001",
+        "metrics": [],
+        "water": true,
+        "roof": false,
+        "modelKey": "clarifier",
+        "modelState": "ready"
+      }
+    ],
+    "lighting": {
+      "exposure": 1.05,
+      "sunIntensity": 2.6,
+      "sunPosition": [
+        -28,
+        50,
+        20
+      ],
+      "environmentIntensity": 0.48,
+      "shadowMapSize": [
+        2048,
+        2048
+      ]
+    },
+    "selectionEffects": 0,
+    "sceneGeometryCount": 245,
+    "siteFraming": {
+      "left": -0.5369095150207811,
+      "right": 0.5296509694563736,
+      "bottom": -0.8215251321105719,
+      "top": 0.7863755893632041
+    },
+    "assetStage": "final",
+    "bounds": {
+      "min": [
+        -47.33077621459961,
+        -4.800000190734863,
+        -10.97499942779541
+      ],
+      "max": [
+        0.9750003814697266,
+        2.325000286102295,
+        13.330777168273926
+      ]
+    }
+  },
+  "chart": null,
+  "diag": {
+    "sceneInstances": 1,
+    "renderLoops": 0,
+    "chartStats": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 6,
+      "resizes": 0,
+      "active": 2
+    },
+    "contextId": "SW_BIO_AERATION_001",
+    "hours": 1,
+    "activeTrend": "do",
+    "paused": false,
+    "hidden": false,
+    "running": true,
+    "snapshotId": "smartwater-m1.2:NORMAL:1"
+  },
+  "result_text": "结论 · 步骤完成 · 仅限演示快照\n\nSIMULATED · 截至 2026/1/15 16:00:00\n\nsmartwater-m1.2:NORMAL:0\n\n检查范围：1 / 4 个设备 · 3 个实际工具步骤\n\n一号提升泵\nSW_PRE_PUMP_001\n\n无法判断 · 未定义指标\n\n有模型或资料不等于具备监测能力\n依据：\nEV_e5474f0d20a0_1\nEV_e5474f0d20a0_2\nEV_e5474f0d20a0_3\n\n现有资料显示一号提升泵暂无定义指标，运行状态未观测；本次未发现告警记录，但无告警不等于设备正常，因此无法判断其是否正常运行。 依据 EV_e5474f0d20a0_1、EV_e5474f0d20a0_2、EV_e5474f0d20a0_3\n\n依据、权限与限制",
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "nativeDpr": 2
+  }
+}

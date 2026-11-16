@@ -1,0 +1,854 @@
+[
+  {
+    "kind": "NORMAL",
+    "pressure": "none",
+    "nodeInputAt": "2026-11-15T20:01:27.258Z",
+    "nativeCancelIssuedAt": null,
+    "before": {
+      "at": 9102.200000047684,
+      "record": {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "722579ad-2994-4b70-807f-77e9521d0ef6",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:01:25.932Z",
+        "finished_at": "2026-11-15T20:01:26.897Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 244,
+          "arrival_verified": true
+        }
+      },
+      "rect": {
+        "x": 1839,
+        "y": 435.5,
+        "width": 38,
+        "height": 28,
+        "top": 435.5,
+        "right": 1877,
+        "bottom": 463.5,
+        "left": 1839
+      },
+      "disabled": true,
+      "hit": true,
+      "visibility": "visible"
+    },
+    "after": {
+      "at": 10355.900000035763,
+      "record": {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "722579ad-2994-4b70-807f-77e9521d0ef6",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:01:25.932Z",
+        "finished_at": "2026-11-15T20:01:26.897Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 244,
+          "arrival_verified": true
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 6256.699999988079,
+        "firstRenderMs": 6755.699999988079,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 33.400000000001455,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158986
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 290,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 7648.200000047684,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7662.5,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 8613.300000011921,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        }
+      ],
+      "cameraEvents": [
+        {
+          "event": "camera_started",
+          "at": 7663.700000047684
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 8613.200000047684
+        }
+      ]
+    },
+    "stable": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 6256.699999988079,
+        "firstRenderMs": 6755.699999988079,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 33.400000000001455,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 293,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 7648.200000047684,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7662.5,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 8613.300000011921,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        }
+      ],
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "722579ad-2994-4b70-807f-77e9521d0ef6",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:01:25.932Z",
+          "finished_at": "2026-11-15T20:01:26.897Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 244,
+            "arrival_verified": true
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "7059b013-780d-473f-8a84-921453925dc5",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:01:28.742Z",
+      "finished_at": "2026-11-15T20:01:29.918Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.085525841611087,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 322,
+        "arrival_verified": true
+      }
+    },
+    "passed": false
+  },
+  {
+    "kind": "CONTROLLED_PRESSURE",
+    "pressure": "25ms busy wait every80ms, explicitly separate from benchmarks",
+    "nodeInputAt": "2026-11-15T20:01:31.366Z",
+    "nativeCancelIssuedAt": null,
+    "before": {
+      "at": 13155.100000023842,
+      "record": {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6e4cf807-ac9c-468b-8134-5e9450b16211",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:01:30.065Z",
+        "finished_at": "2026-11-15T20:01:31.055Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 357,
+          "arrival_verified": true
+        }
+      },
+      "rect": {
+        "x": 1839,
+        "y": 435.5,
+        "width": 38,
+        "height": 28,
+        "top": 435.5,
+        "right": 1877,
+        "bottom": 463.5,
+        "left": 1839
+      },
+      "disabled": true,
+      "hit": true,
+      "visibility": "visible"
+    },
+    "after": {
+      "at": 14509.300000011921,
+      "record": {
+        "tool_name": "scene.reset_view",
+        "arguments": {},
+        "source": "DEMO_AGENT",
+        "trigger": "确定性口令",
+        "action_id": "6e4cf807-ac9c-468b-8134-5e9450b16211",
+        "status": "SUCCEEDED",
+        "started_at": "2026-11-15T20:01:30.065Z",
+        "finished_at": "2026-11-15T20:01:31.055Z",
+        "result": {
+          "camera": {
+            "position": [
+              25.085525841611087,
+              38.62609800579173,
+              50.976925507175984
+            ],
+            "target": [
+              1.1867687375622464,
+              -5.494684340144581,
+              5.017777230158986
+            ],
+            "zoom": 1
+          },
+          "selected_id": null,
+          "rendered_frame": 357,
+          "arrival_verified": true
+        }
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 6256.699999988079,
+        "firstRenderMs": 6755.699999988079,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 83.39999999999964,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 394,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 7648.200000047684,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7662.5,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 8613.300000011921,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 10458.400000035763,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 10460.800000011921,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 11634.800000011921,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 11781.5,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 11782.700000047684,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 12771.200000047684,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        }
+      ],
+      "cameraEvents": [
+        {
+          "event": "camera_started",
+          "at": 7663.700000047684
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 8613.200000047684
+        },
+        {
+          "event": "camera_started",
+          "at": 10461.700000047684
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 11634.300000011921
+        },
+        {
+          "event": "camera_started",
+          "at": 11783.300000011921
+        },
+        {
+          "event": "camera_succeeded",
+          "at": 12770.800000011921
+        }
+      ]
+    },
+    "stable": {
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 6256.699999988079,
+        "firstRenderMs": 6755.699999988079,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 83.39999999999964,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 398,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": null,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "input": [
+        {
+          "event": "task_PENDING",
+          "at": 7648.200000047684,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 7662.5,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 8613.300000011921,
+          "actionId": "722579ad-2994-4b70-807f-77e9521d0ef6"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 10458.400000035763,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 10460.800000011921,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 11634.800000011921,
+          "actionId": "7059b013-780d-473f-8a84-921453925dc5"
+        },
+        {
+          "event": "task_PENDING",
+          "at": 11781.5,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        },
+        {
+          "event": "task_RUNNING",
+          "at": 11782.700000047684,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        },
+        {
+          "event": "task_SUCCEEDED",
+          "at": 12771.200000047684,
+          "actionId": "6e4cf807-ac9c-468b-8134-5e9450b16211"
+        }
+      ],
+      "records": [
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "722579ad-2994-4b70-807f-77e9521d0ef6",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:01:25.932Z",
+          "finished_at": "2026-11-15T20:01:26.897Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 244,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "7059b013-780d-473f-8a84-921453925dc5",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:01:28.742Z",
+          "finished_at": "2026-11-15T20:01:29.918Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 322,
+            "arrival_verified": true
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "source": "DEMO_AGENT",
+          "trigger": "确定性口令",
+          "action_id": "6e4cf807-ac9c-468b-8134-5e9450b16211",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T20:01:30.065Z",
+          "finished_at": "2026-11-15T20:01:31.055Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579173,
+                50.976925507175984
+              ],
+              "target": [
+                1.1867687375622464,
+                -5.494684340144581,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 357,
+            "arrival_verified": true
+          }
+        }
+      ]
+    },
+    "recovered": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "5749bf60-ae98-4575-854a-20000a393f33",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T20:01:32.914Z",
+      "finished_at": "2026-11-15T20:01:33.836Z",
+      "result": {
+        "camera": {
+          "position": [
+            25.085525841611087,
+            38.62609800579173,
+            50.976925507175984
+          ],
+          "target": [
+            1.1867687375622464,
+            -5.494684340144581,
+            5.017777230158986
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 430,
+        "arrival_verified": true
+      }
+    },
+    "passed": false
+  }
+]

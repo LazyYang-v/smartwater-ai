@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-16T10:48:29.304Z",
+  "task": {
+    "task_id": "e9fa7500-2f40-458c-9898-c3f2a4d03a38",
+    "scenario_id": "LOW_DO",
+    "snapshot_id": "smartwater-m1.2:LOW_DO:24",
+    "as_of": "2026-01-15T08:02:00.000Z",
+    "started_at": "2026-11-16T10:48:26.317Z",
+    "finished_at": "2026-11-16T10:48:29.207Z",
+    "mode": "LLM",
+    "input": "巡检当前四个单元，列出异常和缺少的数据。",
+    "status": "FAILED",
+    "tool_count": 0,
+    "model_requests": 1,
+    "evidence": [],
+    "action_ids": [],
+    "errors": [
+      {
+        "code": "MODEL_PROTOCOL_ERROR",
+        "message": "请求未完成，错误详情已脱敏；未回退Demo",
+        "details": {
+          "provider": "OpenAI",
+          "model": "gpt-6-luna",
+          "request_id": "req_ba0878b869184923b05f21c676fd6a1d",
+          "response_id": "chatcmpl-EkoY7ipEeK9vnXH5mk34Sq8GjcXG6",
+          "http_status": 200,
+          "elapsed_ms": 2844,
+          "usage": {
+            "prompt_tokens": 1109,
+            "completion_tokens": 223,
+            "total_tokens": 1332,
+            "cached_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "rejection": {
+            "code": "MODEL_PROTOCOL_ERROR",
+            "reason": "单次工具列表超过上限",
+            "tool_call_count": 9,
+            "finish_reason": "tool_calls"
+          }
+        }
+      }
+    ],
+    "model_receipts": [],
+    "explanation": "",
+    "scope": []
+  },
+  "records": []
+}

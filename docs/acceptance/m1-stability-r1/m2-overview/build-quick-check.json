@@ -1,0 +1,51 @@
+{
+  "build_id": "306b47ef404a3b8b8f313b935421c17f648b824dfbd2eec805b68c402d72e6ba",
+  "at": "2026-11-16T06:50:41.733479+00:00",
+  "files": {
+    "assets/dashboard-DKGu36po.css": {
+      "bytes": 21692,
+      "sha256": "4e95a170ca1d9cf60985b92401d3184442c62a81bf860c107b8d25dc283b3540"
+    },
+    "assets/dashboard-DkZXC5nZ.js": {
+      "bytes": 615231,
+      "sha256": "5ab7a7292f592b2a8216fc2ae4ae70a5e317c773607f3a35b7a3c57f1b0c37af"
+    },
+    "assets/useSceneWorkspace-BkJCzqgF.js": {
+      "bytes": 771247,
+      "sha256": "b1caaa49e7fff924a0546c94b897ee7ef8fe60304950921ec35e94a8f67e825c"
+    },
+    "assets/viewer-CwsYaPmr.css": {
+      "bytes": 1635,
+      "sha256": "d464612a01afae81847613842c6dbc6d14872b236e9ddec89b6a7920eea9cede"
+    },
+    "assets/viewer-DWJHcb0D.js": {
+      "bytes": 3680,
+      "sha256": "9c205c7eaa51a851e73c195c43be86c29713e8ca7cf05d0cdf3662c73ac1e493"
+    },
+    "environments/daylight_2k.hdr": {
+      "bytes": 5451493,
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198"
+    },
+    "favicon.svg": {
+      "bytes": 302,
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226"
+    },
+    "index.html": {
+      "bytes": 580,
+      "sha256": "9c14767f662cbe2b8dfec0fcacf9f1c0e8ac973aedd2362c47e83dd94745e9e2"
+    },
+    "models/aeration-tank.glb": {
+      "bytes": 31254844,
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+    },
+    "models/clarifier-tank.glb": {
+      "bytes": 29034200,
+      "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+    },
+    "viewer.html": {
+      "bytes": 465,
+      "sha256": "a590a15d0d676d488d3741a5cebdd8867be14feb4f0def4232ace71b30dd174b"
+    }
+  },
+  "protected_unchanged": true
+}

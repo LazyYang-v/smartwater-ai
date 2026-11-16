@@ -1,0 +1,20 @@
+const task=await taskSpace(62),page=task.page('p1'),fs=await import('node:fs/promises')
+const base='/Users/leizhenyang/projects/smartwater-ai/docs/acceptance/m1-stability-r1/'
+const before=await page.evaluate(()=>{__SW_M1__.startDiagnostics();__SW_M1__.scenario('NORMAL');return {scene:__SW_M1__.snapshot(),diagnostics:__SW_M1__.lightDiagnostics()}})
+await page.cdp('Performance.enable',{});const a=await page.cdp('Performance.getMetrics',{})
+await page.cdp('Profiler.enable',{});await page.cdp('Profiler.setSamplingInterval',{interval:20000});await page.cdp('Profiler.start',{})
+await page.evaluate(()=>{const trial={done:false};window.__AFTER_ENDURANCE__=trial;void __SW_M1__.measurePerformance(10).then(measurement=>Object.assign(trial,{done:true,measurement})).catch(error=>Object.assign(trial,{done:true,error:String(error)}))})
+await page.cdp('Emulation.setFocusEmulationEnabled',{enabled:false});await new Promise(r=>setTimeout(r,10000))
+const b=await page.cdp('Performance.getMetrics',{}),profile=(await page.cdp('Profiler.stop',{})).profile
+await page.cdp('Profiler.disable',{});await page.cdp('Performance.disable',{})
+const afterTrace=await page.evaluate(()=>__SW_M1__.lightDiagnostics())
+for(let i=0;i<24;i++){const done=await page.evaluate(()=>__AFTER_ENDURANCE__.done);await page.cdp('Emulation.setFocusEmulationEnabled',{enabled:false});if(done)break;await new Promise(r=>setTimeout(r,5000))}
+const result=await page.evaluate(()=>({trial:__AFTER_ENDURANCE__,samples:__SW_M1__.diagnosticSamples(),after:__SW_M1__.lightDiagnostics()}))
+const prior=Object.fromEntries(a.metrics.map(x=>[x.name,x.value])),metricDeltas=Object.fromEntries(b.metrics.map(x=>[x.name,x.value-(prior[x.name]??0)]))
+const time=new Map();for(let i=0;i<profile.samples.length;i++)time.set(profile.samples[i],(time.get(profile.samples[i])??0)+(profile.timeDeltas[i]??0))
+const top=profile.nodes.map(n=>({function:n.callFrame.functionName,url:n.callFrame.url,sampled_ms:(time.get(n.id)??0)/1000})).sort((a,b)=>b.sampled_ms-a.sampled_ms).slice(0,40)
+await fs.writeFile(base+'normal-after-endurance-profile.json',JSON.stringify(profile)+'\n')
+await fs.writeFile(base+'normal-after-endurance.json',JSON.stringify({kind:'Low-frequency 50Hz profile after observed same-page endurance recovery; eligibility must use actual trace-phase and sampled FPS, not filename',before,afterTrace,profile_phase_scene_fps:(afterTrace.frame-before.diagnostics.frame)*1000/(afterTrace.at-before.diagnostics.at),metricDeltas,top,...result},null,2)+'\n')
+await page.evaluate(()=>__SW_M1__.stopDiagnostics());await page.cdp('Emulation.setFocusEmulationEnabled',{enabled:false})
+console.log(JSON.stringify({done:result.trial.done,average_fps:result.trial.measurement?.average_fps,top:top.slice(0,6)}))
+if(!result.trial.done)throw new Error('Do not overlap unfinished diagnostic with endurance')

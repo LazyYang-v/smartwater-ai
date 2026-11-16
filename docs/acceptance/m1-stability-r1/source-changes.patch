@@ -1,0 +1,575 @@
+--- before/src/App.vue
++++ after/src/App.vue
+@@ -1,5 +1,5 @@
+ <script setup lang="ts">
+-import { onMounted,watch } from 'vue'
++import { onMounted,onBeforeUnmount,watch } from 'vue'
+ import DashboardShell from './components/dashboard/DashboardShell.vue'
+ import DashboardHeader from './components/dashboard/DashboardHeader.vue'
+ import KpiOverview from './components/dashboard/KpiOverview.vue'
+@@ -24,7 +24,9 @@
+ }
+ watch(()=>records.value.at(-1),record=>{if(record?.status==='SUCCEEDED'&&record.tool_name==='scene.focus_device'){contextId.value=String(record.arguments.device_id);activeTrend.value='do'}})
+ const time=(v:string)=>new Date(v).toLocaleString('zh-CN',{hour12:false,timeZone:'Asia/Shanghai'})
+-onMounted(()=>exposeDashboardQA(scene,data,context,locate))
++let disposeQA:(()=>void)|undefined
++onMounted(()=>{disposeQA=exposeDashboardQA(scene,data,context,locate)})
++onBeforeUnmount(()=>disposeQA?.())
+ </script>
+ <template>
+   <DashboardShell :left-collapsed="leftCollapsed" :trends-expanded="trendsExpanded">
+--- before/src/agent/actionDispatcher.ts
++++ after/src/agent/actionDispatcher.ts
+@@ -1,4 +1,5 @@
+ import type { ActionRecord, ToolCall, ToolHandler, ToolName } from './types.ts'
++import { traceInput } from '../diagnostics/stability.ts'
+ 
+ export class ActionDispatcher {
+   readonly records: ActionRecord[] = []
+@@ -18,10 +19,10 @@
+     this.active?.abort('新命令已接管相机')
+     const controller = new AbortController(); this.active = controller
+     const record: ActionRecord = { ...call, arguments: structuredClone(call.arguments), ...context, action_id: actionId, status: 'PENDING', started_at: new Date().toISOString(), finished_at: null }
+-    this.records.push(record); this.changed()
++    this.records.push(record); traceInput('task_PENDING',{actionId}); this.changed()
+     // Publish the idempotency entry before invoking the handler.
+     const promise = Promise.resolve().then(async () => {
+-      record.status = 'RUNNING'; this.changed()
++      record.status = 'RUNNING'; traceInput('task_RUNNING',{actionId}); this.changed()
+       try {
+         if (controller.signal.aborted) throw { code: 'CANCELLED', message: String(controller.signal.reason) }
+         const result = await this.tools[call.tool_name](record.arguments, controller.signal)
+@@ -31,10 +32,11 @@
+         const info = error as { code?: string; message?: string }
+         const message = info.message ?? String(error)
+         const code = controller.signal.aborted ? 'CANCELLED' : info.code ?? message.split(':')[0] ?? 'TOOL_FAILED'
+-        record.status = code === 'CANCELLED' ? 'CANCELLED' : 'FAILED'
++        record.status = code === 'CANCELLED' || code === 'PAGE_HIDDEN' ? 'CANCELLED' : 'FAILED'
+         record.error = { code, message }
+       } finally {
+         record.finished_at = new Date().toISOString()
++        traceInput('task_'+record.status,{actionId})
+         if (this.active === controller) this.active = null
+         this.changed()
+       }
+--- before/src/components/dashboard/AgentWorkspace.vue
++++ after/src/components/dashboard/AgentWorkspace.vue
+@@ -1,5 +1,6 @@
+ <script setup lang="ts">
+ import { computed,ref } from 'vue'
++import { traceInput } from '../../diagnostics/stability'
+ import { PhCrosshair,PhArrowCounterClockwise,PhPaperPlaneTilt,PhTerminalWindow } from '@phosphor-icons/vue'
+ import type { ActionRecord } from '../../agent/types'
+ const props=defineProps<{records:ActionRecord[];reply:string;selectedId:string|null;contextName:string;taskState:string}>()
+@@ -12,7 +13,7 @@
+ </script>
+ <template>
+   <aside class="agent-panel"><div class="agent-heading"><span class="agent-symbol"><PhCrosshair :size="24"/></span><div><h2>场景工作台</h2><p>Demo Agent · 确定性演示解析器</p></div></div>
+-    <div class="agent-context"><span>当前设备上下文</span><strong>{{contextName}}</strong><code>{{selectedId?'三维选中：'+selectedId:'三维无选中对象'}}</code><div class="task-state" :data-status="taskState"><i class="status-dot"/>{{statusLabel(taskState)}}<button v-if="taskState==='RUNNING'||taskState==='PENDING'" class="text-button" @click="emit('cancel')">取消</button></div></div>
++    <div class="agent-context"><span>当前设备上下文</span><strong>{{contextName}}</strong><code>{{selectedId?'三维选中：'+selectedId:'三维无选中对象'}}</code><div class="task-state" :data-status="taskState"><i class="status-dot"/>{{statusLabel(taskState)}}<button class="text-button cancel-task" :disabled="taskState!=='RUNNING'&&taskState!=='PENDING'" @click="event=>{traceInput('cancel_control_received',{trusted:event.isTrusted,eventTimestamp:event.timeStamp});emit('cancel')}">取消</button></div></div>
+     <div class="agent-body"><div class="command-suggestions"><button @click="send('定位一号曝气池')"><PhCrosshair :size="17"/>定位一号曝气池</button><button @click="send('回到总览')"><PhArrowCounterClockwise :size="17"/>回到总览</button></div><p class="reply" aria-live="polite">{{reply}}</p>
+       <div class="execution-heading"><PhTerminalWindow :size="17"/><span>真实工具执行记录</span><span class="record-count">{{records.length}}</span></div><div v-if="!records.length" class="empty-record"><p>尚无工具调用</p><small>仅允许定位与恢复总览两个工具</small></div><div v-else class="action-records"><article v-for="record in visibleRecords" :key="record.action_id" class="action-record" :data-status="record.status" :data-source="record.source"><div class="record-top"><span>{{statusLabel(record.status)}}</span><time>{{time(record.started_at)}}</time></div><p class="record-source">{{record.source==='USER'?'用户界面操作':record.source==='TEST'?'验收调用':'Demo Agent 口令'}} · {{record.trigger}}</p><strong>{{record.tool_name}}</strong><code v-if="record.arguments.device_id">{{record.arguments.device_id}}</code><small v-else>默认总览 · 清除选择</small><p v-if="record.error">{{record.error.code}} · {{record.error.message}}</p><p v-else-if="record.status==='SUCCEEDED'">相机状态已验证 · 渲染帧已确认</p><details><summary>执行详情</summary><pre>{{JSON.stringify(record,null,2)}}</pre></details></article><button v-if="records.length>limit" class="secondary-button" @click="limit+=20">加载更早记录（还有 {{records.length-limit}} 条）</button></div>
+     </div><form class="agent-input" @submit.prevent="send()"><label for="command">场景指令</label><div><input id="command" v-model="command" placeholder="输入场景指令…" autocomplete="off"/><button aria-label="发送指令" type="submit"><PhPaperPlaneTilt :size="20" weight="fill"/></button></div><p>仅操作三维视图 · 不连接真实设备</p></form>
+--- before/src/components/dashboard/TrendPanel.vue
++++ after/src/components/dashboard/TrendPanel.vue
+@@ -1,18 +1,19 @@
+ <script setup lang="ts">
+ import { computed,onBeforeUnmount,onMounted,ref,watch,nextTick } from 'vue'
+ import type { EChartsType } from 'echarts/core'
++import { diagnosticControls,ownership } from '../../diagnostics/stability'
+ import { createChart,disposeChart,chartStats } from '../../charts/runtime'
+ import { trendWindow,chartValue,displayValue,qualityLabel,RULES,METRICS,type Snapshot } from '../../data/mockDataProvider'
+ const props=defineProps<{snapshot:Snapshot;metric:'do'|'blower_power';hours:1|6|24;visible:boolean;contextActive:boolean}>()
+ const emit=defineEmits<{range:[hours:1|6|24]}>()
+ const host=ref<HTMLElement>()
+-let chart:EChartsType|undefined,observer:ResizeObserver|undefined,resizeFrame=0
++let chart:EChartsType|undefined,observer:ResizeObserver|undefined,resizeFrame=0,lastWidth=0,lastHeight=0
+ const points=computed(()=>trendWindow(props.snapshot,props.metric,props.hours))
+ const current=computed(()=>props.snapshot.readings[props.metric])
+ const metricInfo=computed(()=>METRICS[props.metric])
+ const time=(v:string)=>new Date(v).toLocaleTimeString('zh-CN',{hour12:false,timeZone:'Asia/Shanghai'})
+ function update() {
+-  if(!chart||!props.visible||!host.value?.clientWidth||!host.value?.clientHeight)return
++  if(diagnosticControls.chartsPaused||document.visibilityState!=='visible'||!chart||!props.visible||!host.value?.clientWidth||!host.value?.clientHeight)return
+   const color=props.metric==='do'?'#64d6e8':'#8caaf5'
+   chart.setOption({animation:false,aria:{enabled:true},textStyle:{fontFamily:'PingFang SC, sans-serif'},
+     grid:{left:43,right:18,top:24,bottom:31},legend:{data:[metricInfo.value.label],top:0,right:0,textStyle:{color:'#a9c1d3',fontSize:11}},
+@@ -27,15 +28,18 @@
+   },{notMerge:false,lazyUpdate:false});chartStats.updates++
+ }
+ function resize() {
+-  if(!host.value||!props.visible||!host.value.clientWidth||!host.value.clientHeight)return
+-  if(!chart) {chart=createChart(host.value);update()}
+-  chart.resize();chartStats.resizes++;update()
++  if(!host.value||!props.visible||document.visibilityState!=='visible')return
++  const width=host.value.clientWidth,height=host.value.clientHeight
++  if(!width||!height)return
++  if(!chart) {chart=createChart(host.value);lastWidth=width;lastHeight=height;update();return}
++  if(width!==lastWidth||height!==lastHeight){lastWidth=width;lastHeight=height;chart.resize();chartStats.resizes++}
+ }
+-onMounted(()=>{observer=new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(resize)});observer.observe(host.value!);resize()})
++function visibilityChanged(){if(document.visibilityState==='visible'){resize();update()}}
++onMounted(()=>{ownership.trendMounts++;ownership.observers++;ownership.listeners++;document.addEventListener('visibilitychange',visibilityChanged);observer=new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(resize)});observer.observe(host.value!);resize()})
+ watch(()=>props.snapshot.snapshotId,update)
+ watch(()=>props.hours,update)
+ watch(()=>props.visible,async()=>{await nextTick();resize();update()})
+-onBeforeUnmount(()=>{observer?.disconnect();cancelAnimationFrame(resizeFrame);if(chart)disposeChart(chart)})
++onBeforeUnmount(()=>{ownership.trendUnmounts++;ownership.observers--;ownership.listeners--;document.removeEventListener('visibilitychange',visibilityChanged);observer?.disconnect();cancelAnimationFrame(resizeFrame);if(chart)disposeChart(chart)})
+ </script>
+ <template>
+   <section class="trend-panel info-panel" :class="{'context-active':contextActive}" :data-trend="metric" :data-snapshot-id="snapshot.snapshotId" :data-hours="hours" :data-last-value="current.value">
+--- before/src/composables/useMockData.ts
++++ after/src/composables/useMockData.ts
+@@ -1,4 +1,5 @@
+ import { computed, onBeforeUnmount, onMounted, ref, shallowRef } from 'vue'
++import { ownership } from '../diagnostics/stability'
+ import { MockDataProvider,SimulationClock,type Scenario } from '../data/mockDataProvider'
+ 
+ export function useMockData() {
+@@ -11,15 +12,21 @@
+   const publish=()=>{snapshot.value=provider.advance(new Date().toISOString())}
+   function switchScenario(value:Scenario) { clock.reset(performance.now());snapshot.value=provider.switchScenario(value,new Date().toISOString()) }
+   function setPaused(value:boolean) { paused.value=value;clock.reset(performance.now()) }
+-  function visibilityChanged() { hidden.value=document.visibilityState!=='visible';clock.reset(performance.now()) }
+-  onMounted(()=>{
+-    snapshot.value=provider.switchScenario('NORMAL',new Date().toISOString())
+-    document.addEventListener('visibilitychange',visibilityChanged)
++  function stopTimer(){if(timer!==undefined){clearInterval(timer);timer=undefined;ownership.dataTimers--;ownership.dataTimerStops++}}
++  function startTimer(){
++    if(timer!==undefined||hidden.value)return
++    ownership.dataTimers++;ownership.dataTimerStarts++
+     timer=setInterval(()=>{
+       const now=performance.now();systemTime.value=new Date().toISOString()
+       if(clock.pulse(now,running.value))publish()
+     },1000)
++  }
++  function visibilityChanged() { hidden.value=document.visibilityState!=='visible';clock.reset(performance.now());if(hidden.value)stopTimer();else {systemTime.value=new Date().toISOString();startTimer()} }
++  onMounted(()=>{
++    snapshot.value=provider.switchScenario('NORMAL',new Date().toISOString())
++    document.addEventListener('visibilitychange',visibilityChanged)
++    ownership.listeners++;startTimer()
+   })
+-  onBeforeUnmount(()=>{clearInterval(timer);document.removeEventListener('visibilitychange',visibilityChanged)})
++  onBeforeUnmount(()=>{stopTimer();ownership.listeners--;document.removeEventListener('visibilitychange',visibilityChanged)})
+   return {snapshot,paused,hidden,running,systemTime,switchScenario,setPaused,advance:publish}
+ }
+--- before/src/composables/useSceneWorkspace.ts
++++ after/src/composables/useSceneWorkspace.ts
+@@ -1,3 +1,4 @@
++import { traceInput } from '../diagnostics/stability'
+ import { computed, onBeforeUnmount, ref, shallowRef } from 'vue'
+ import { createScene, type SceneRuntime } from '../scene/runtime'
+ import { ActionDispatcher } from '../agent/actionDispatcher'
+@@ -35,7 +36,7 @@
+   }
+   function dispatchUser(call:ToolCall,trigger:string) { return dispatcher.dispatch(call,undefined,{source:'USER',trigger}) }
+   const taskState=computed(()=>records.value.at(-1)?.status??'IDLE')
+-  function cancel() {dispatcher.cancel('用户取消当前任务')}
++  function cancel() {traceInput('cancel_dispatched',{actionId:dispatcher.records.at(-1)?.action_id});dispatcher.cancel('用户取消当前任务')}
+   onBeforeUnmount(()=>{dispatcher.cancel('页面已卸载');runtime.value?.dispose()})
+   return {runtime,records,reply,dispatcher,execute,dispatchUser,attach,cancel,taskState,sceneInstances:()=>sceneInstances}
+ }
+--- before/src/diagnostics/stability.ts
++++ after/src/diagnostics/stability.ts
+@@ -0,0 +1,10 @@
++// App-owned registrations only; these counts do not describe browser/Vue internals.
++export const ownership = { renderers:0, rendererCreated:0, rendererDisposed:0, observers:0, listeners:0, dataTimers:0, dataTimerStarts:0, dataTimerStops:0, trendMounts:0, trendUnmounts:0 }
++export const diagnosticControls = { chartsPaused:false, scenePaused:false }
++export const inputEvents:{event:string;at:number;actionId?:string;trusted?:boolean;eventTimestamp?:number}[]=[]
++export let diagnosticsEnabled = false
++export function enableDiagnostics(value:boolean) { diagnosticsEnabled=value }
++export function traceInput(event:string,detail:Omit<(typeof inputEvents)[number],'event'|'at'>={}) {
++  if(!diagnosticsEnabled)return
++  inputEvents.push({event,at:performance.now(),...detail});if(inputEvents.length>500)inputEvents.shift()
++}
+--- before/src/qa/exposeDashboardQA.ts
++++ after/src/qa/exposeDashboardQA.ts
+@@ -1,12 +1,22 @@
+ import type { useSceneWorkspace } from '../composables/useSceneWorkspace'
+ import type { useMockData } from '../composables/useMockData'
+ import type { useDashboardContext } from '../composables/useDashboardContext'
++import { ownership,diagnosticControls,inputEvents,enableDiagnostics } from '../diagnostics/stability'
+ import { chartStats } from '../charts/runtime'
+ import type { ToolCall } from '../agent/types'
+ export function exposeDashboardQA(scene:ReturnType<typeof useSceneWorkspace>,data:ReturnType<typeof useMockData>,context:ReturnType<typeof useDashboardContext>,locate:(id:string,trigger?:string)=>unknown) {
+   if(!import.meta.env.DEV&&!new URLSearchParams(location.search).has('qa'))return
+   const r=()=>scene.runtime.value!
++  let diagnosticTimer:ReturnType<typeof setInterval>|undefined
++  const samples:unknown[]=[]
++  const lightweight=()=>({at:performance.now(),wallTime:new Date().toISOString(),...r().lightDiagnostics(),scenario:data.snapshot.value.scenario,snapshotId:data.snapshot.value.snapshotId,task:scene.taskState.value,charts:{...chartStats},ownership:{...ownership},toolRecords:scene.dispatcher.records.length,history:{do:data.snapshot.value.history.do.length,blower_power:data.snapshot.value.history.blower_power.length},domNodes:document.getElementsByTagName('*').length,unavailable:{browserInternalListeners:null,gpuMemoryBytes:null,vueInternalSubscriptions:null}})
++  function stopDiagnostics(){if(diagnosticTimer!==undefined){clearInterval(diagnosticTimer);diagnosticTimer=undefined}enableDiagnostics(false);r().motion.diagnosticsEnabled=false}
++  function startDiagnostics(){if(diagnosticTimer!==undefined)return;enableDiagnostics(true);r().motion.diagnosticsEnabled=true;diagnosticTimer=setInterval(()=>{samples.push(lightweight());if(samples.length>1800)samples.shift()},1000)}
++  addEventListener('pagehide',stopDiagnostics,{once:true})
++
+   const api={
++    lightDiagnostics:lightweight,diagnosticSamples:()=>structuredClone(samples),startDiagnostics,stopDiagnostics,inputEvents:()=>structuredClone(inputEvents),cameraEvents:()=>structuredClone(r().motion.events),
++    diagnosticSwitch:(value:{chartsPaused?:boolean;scenePaused?:boolean})=>{Object.assign(diagnosticControls,value);r().syncVisibility()},cancel:scene.cancel,
+     snapshot:()=>r().snapshot(),load:(url?:string)=>r().load(url),setView:(position:number[],target:number[])=>r().setView(position,target),
+     setWater:(v:boolean)=>r().setWater(v),setWaterPhase:(ms:number|null)=>r().setWaterPhase(ms),setPixelRatio:(dpr:number)=>r().setPixelRatio(dpr),
+     send:(text:string)=>scene.execute(text),dispatch:(call:ToolCall,id?:string)=>scene.dispatcher.dispatch(call,id,{source:'TEST',trigger:'验收调用'}),records:()=>structuredClone(scene.dispatcher.records),
+@@ -22,4 +32,5 @@
+     panels:(value:{left?:boolean;trends?:boolean;tab?:'do'|'blower_power'})=>{if(value.left!==undefined)context.leftCollapsed.value=value.left;if(value.trends!==undefined)context.trendsExpanded.value=value.trends;if(value.tab)context.activeTrend.value=value.tab},
+     diagnostics:()=>({sceneInstances:scene.sceneInstances(),renderLoops:r().snapshot().activeRenderLoops,chartStats:{...chartStats},contextId:context.contextId.value,hours:context.hours.value,activeTrend:context.activeTrend.value,paused:data.paused.value,hidden:data.hidden.value,running:data.running.value,snapshotId:data.snapshot.value.snapshotId}),
+   }})
++  return ()=>{stopDiagnostics();removeEventListener('pagehide',stopDiagnostics)}
+ }
+--- before/src/scene/cameraController.ts
++++ after/src/scene/cameraController.ts
+@@ -2,39 +2,61 @@
+ import type { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+ 
+ export class SceneError extends Error {
+-  constructor(public code: string, message: string) { super(message); this.name = 'SceneError' }
++  code: string
++  constructor(code: string, message: string) { super(message); this.code = code; this.name = 'SceneError' }
+ }
+ 
+ type Pose = { position: number[]; target: number[]; zoom: number }
+ type Motion = {
+   from: Vector3; fromTarget: Vector3; to: Vector3; target: Vector3; fromZoom: number; zoom: number
+-  start: number; duration: number; selectedId: string | null
++  start: number; deadline: number; duration: number; selectedId: string | null; signal?: AbortSignal
+   resolve: (value: unknown) => void; reject: (reason: unknown) => void
+   cleanup: () => void; arrived: boolean
+ }
+ 
+ export class CameraController {
+   private motion: Motion | null = null
+-  constructor(private camera: PerspectiveCamera, private controls: OrbitControls, private selected: () => string | null) {}
+-  cancel(reason = '相机操作被中断') {
++  private camera: PerspectiveCamera
++  private controls: OrbitControls
++  private selected: () => string | null
++  private visible: () => boolean
++  readonly events: {event:string;at:number;code?:string}[] = []
++  diagnosticsEnabled = false
++  constructor(camera: PerspectiveCamera, controls: OrbitControls, selected: () => string | null, visible = () => typeof document === 'undefined' || document.visibilityState === 'visible') {
++    this.camera=camera;this.controls=controls;this.selected=selected;this.visible=visible
++  }
++  private trace(event:string,code?:string) {if(this.diagnosticsEnabled){this.events.push({event,at:performance.now(),code});if(this.events.length>300)this.events.shift()}}
++  cancel(reason = '相机操作被中断', code = 'CANCELLED') {
+     const motion = this.motion
+     if (!motion) return
+-    this.motion = null; motion.cleanup(); motion.reject(new SceneError('CANCELLED', reason))
++    this.motion = null; motion.cleanup(); this.trace('camera_stopped',code); motion.reject(new SceneError(code, reason))
++  }
++  private valid(now:number) {
++    const motion=this.motion
++    if(!motion)return false
++    if(!this.visible()){this.cancel('页面隐藏，镜头动作已取消','PAGE_HIDDEN');return false}
++    if(motion.signal?.aborted){this.cancel(String(motion.signal.reason));return false}
++    if(now>=motion.deadline){this.cancel('相机未在限定时间内完成渲染','TIMEOUT');return false}
++    return true
+   }
+   move(position: Vector3, target: Vector3, selectedId: string | null, signal?: AbortSignal, timeoutMs = 5000, zoom = 1): Promise<unknown> {
+     if (signal?.aborted) return Promise.reject(new SceneError('CANCELLED', String(signal.reason)))
++    if (!this.visible()) return Promise.reject(new SceneError('PAGE_HIDDEN', '页面隐藏，不能启动镜头动作'))
+     this.cancel('新动作已接管相机')
+     return new Promise((resolve, reject) => {
+       const abort = () => this.cancel(String(signal?.reason ?? '操作取消'))
+       const timer = setTimeout(() => {
+         const motion = this.motion
+-        if (motion?.resolve === resolve) { this.motion = null; motion.cleanup(); reject(new SceneError('TIMEOUT', '相机未在限定时间内完成渲染')) }
++        if (motion?.resolve === resolve) this.cancel('相机未在限定时间内完成渲染','TIMEOUT')
+       }, timeoutMs)
+-      this.motion = { from: this.camera.position.clone(), fromTarget: this.controls.target.clone(), fromZoom: this.camera.zoom, zoom, to: position.clone(), target: target.clone(), selectedId, start: performance.now(), duration: 900, resolve, reject, arrived: false, cleanup: () => { clearTimeout(timer); signal?.removeEventListener('abort', abort) } }
++      const start=performance.now()
++      this.motion = { from: this.camera.position.clone(), fromTarget: this.controls.target.clone(), fromZoom: this.camera.zoom, zoom, to: position.clone(), target: target.clone(), selectedId, start, deadline:start+timeoutMs, signal, duration: 900, resolve, reject, arrived: false, cleanup: () => { clearTimeout(timer); signal?.removeEventListener('abort', abort) } }
++      this.trace('camera_started')
+       signal?.addEventListener('abort', abort, { once: true })
+     })
+   }
+   update(now: number) {
++    if(!this.valid(now))return
+     const motion = this.motion
+     if (!motion) return
+     const t = Math.min(1, Math.max(0, (now - motion.start) / motion.duration))
+@@ -46,10 +68,12 @@
+     motion.arrived = t === 1
+   }
+   afterRender(frame: number) {
++    if(!this.valid(performance.now()))return
+     const motion = this.motion
+     if (!motion?.arrived) return
+     if (this.camera.position.distanceTo(motion.to) > 0.00001 || this.controls.target.distanceTo(motion.target) > 0.00001 || this.selected() !== motion.selectedId || Math.abs(this.camera.zoom - motion.zoom) > 0.00001) return
+     this.motion = null; motion.cleanup()
++    this.trace('camera_succeeded')
+     motion.resolve({ camera: this.pose(), selected_id: motion.selectedId, rendered_frame: frame, arrival_verified: true })
+   }
+   pose(): Pose { return { position: this.camera.position.toArray(), target: this.controls.target.toArray(), zoom: this.camera.zoom } }
+--- before/src/scene/frameSample.ts
++++ after/src/scene/frameSample.ts
+@@ -0,0 +1,14 @@
++export class FrameSample {
++  readonly started:number
++  timestamps:number[]=[];intervals:number[]=[];calls:number[]=[];submissions=0
++  hidden:{at:number;state:string}[]=[]
++  constructor(now:number,visible:boolean){this.started=now;if(!visible)this.visibility(now,'hidden')}
++  visibility(now:number,state:string){this.hidden.push({at:now,state})}
++  callback(now:number){const previous=this.timestamps.at(-1);if(previous!==undefined)this.intervals.push(now-previous);this.timestamps.push(now)}
++  submitted(calls:number){this.submissions++;this.calls.push(calls)}
++  finish(now:number){
++    const duration=now-this.started,sorted=[...this.intervals].sort((a,b)=>a-b)
++    const p=(q:number)=>sorted.length?sorted[Math.min(sorted.length-1,Math.floor(sorted.length*q))]!:null
++    return {total_duration_ms:duration,sampled_duration_ms:duration,sample_count:this.intervals.length,raf_callbacks:this.timestamps.length,scene_submissions:this.submissions,average_fps:this.submissions*1000/duration,raf_callback_hz:this.timestamps.length*1000/duration,p95_frame_ms:p(.95),p99_frame_ms:p(.99),median_frame_ms:p(.5),frames_over_50_ms:this.intervals.filter(x=>x>50).length,frames_over_100_ms:this.intervals.filter(x=>x>100).length,frame_times_ms:this.intervals,raf_timestamps_ms:this.timestamps,draw_calls_min:this.calls.length?Math.min(...this.calls):null,draw_calls_max:this.calls.length?Math.max(...this.calls):null,page_visible_throughout:!this.hidden.some(e=>e.state!=='visible'),visibility_events:this.hidden,interpretation:'Scene submissions per elapsed sample time; rAF intervals are raw and unclamped. Neither is a measurement of presented frames or GPU time.'}
++  }
++}
+--- before/src/scene/loopLifecycle.ts
++++ after/src/scene/loopLifecycle.ts
+@@ -0,0 +1,13 @@
++// One owner for the application's Three loop, independent of ECharts animation.
++export class LoopLifecycle {
++  active=false;starts=0;stops=0;disposed=false
++  private startLoop:()=>void;private stopLoop:()=>void
++  constructor(start:()=>void,stop:()=>void) {this.startLoop=start;this.stopLoop=stop}
++  sync(visible:boolean) {
++    const wanted=visible&&!this.disposed
++    if(wanted===this.active)return
++    this.active=wanted
++    if(wanted){this.starts++;this.startLoop()}else{this.stops++;this.stopLoop()}
++  }
++  dispose(){this.disposed=true;this.sync(false)}
++}
+--- before/src/scene/runtime.ts
++++ after/src/scene/runtime.ts
+@@ -6,11 +6,15 @@
+ import { DeviceRegistry, DEVICE_ID } from './deviceRegistry'
+ import { CameraController, SceneError } from './cameraController'
+ import { fitBox, projectedBounds } from './framing'
++import { LoopLifecycle } from './loopLifecycle'
++import { FrameSample } from './frameSample'
++import { ownership,diagnosticControls,traceInput,diagnosticsEnabled } from '../diagnostics/stability'
+ 
+ export function createScene(host: HTMLElement) {
+   const state = reactive({ status: 'loading', error: '', selectedId: null as string | null, waterVisible: true, loadMs: 0, firstRenderMs: 0, triangles: 0, calls: 0, textures: 0, frameMs: 0 })
+   const scene = new THREE.Scene()
+   scene.background = new THREE.Color('#d8e3e6')
++  ownership.renderers++;ownership.rendererCreated++
+   const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' })
+   // M1 caps only the 3D drawing buffer; DOM text retains the browser's native DPR.
+   let renderingRatio = 1
+@@ -44,16 +48,21 @@
+   let selectionEpoch = 0, overviewMode = true
+   let waterPhaseMs: number | null = null
+   let loadedModelUrl = '', loadedModelSha256 = ''
+-  let renderLoopInstallations = 0
+   let disposed = false, generation = 0, frame = 0, last = performance.now(), lastStats = 0
+-  let frameSamples: number[] | null = null, drawSamples: number[] | null = null, measurementVisible = true
+-  const onMeasurementVisibility=()=>{if(frameSamples&&document.visibilityState!=='visible')measurementVisible=false}
+-  document.addEventListener('visibilitychange',onMeasurementVisibility)
++  let frameSample:FrameSample|null=null
++  let callbackCount=0,diagnosticRenderCalls=0,diagnosticRenderCpuMs=0,diagnosticRenderMaxMs=0
++  const onMeasurementVisibility=()=>{
++    const visible=document.visibilityState==='visible'
++    frameSample?.visibility(performance.now(),document.visibilityState)
++    if(!visible)motion.cancel('页面隐藏，镜头动作已取消','PAGE_HIDDEN')
++    loop.sync(visible&&!diagnosticControls.scenePaused)
++  }
++  document.addEventListener('visibilitychange',onMeasurementVisibility);ownership.listeners++
+   let timeoutMs = 5000
+   let loadStarted = 0
+   const motion = new CameraController(camera, controls, () => registry.selectedId)
+-  const onUserControl = () => { overviewMode = false; motion.cancel('用户正在手动操作相机') }
+-  controls.addEventListener('start', onUserControl)
++  const onUserControl = () => { traceInput('user_camera_control'); overviewMode = false; motion.cancel('用户正在手动操作相机') }
++  controls.addEventListener('start', onUserControl);ownership.listeners++
+   function select(id: string | null) {
+     selectionEpoch++
+     if (id === registry.selectedId && (id === null || outline)) return
+@@ -89,15 +98,17 @@
+     select(hit ? registry.resolve(hit.object) : null)
+   }
+   renderer.domElement.addEventListener('pointerdown', pointerDown)
+-  renderer.domElement.addEventListener('pointerup', pointerUp)
++  renderer.domElement.addEventListener('pointerup', pointerUp);ownership.listeners+=2
++  let lastWidth=0,lastHeight=0,lastRatio=0
+   const resize = new ResizeObserver(() => {
+     const w = host.clientWidth, h = host.clientHeight
+-    if (!w || !h) return
++    if (!w || !h || (w===lastWidth&&h===lastHeight&&lastRatio===renderingRatio)) return
++    lastWidth=w;lastHeight=h;lastRatio=renderingRatio
+     renderer.setPixelRatio(renderingRatio)
+     renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix()
+     updateOverview(overviewMode && !motion.busy)
+   })
+-  resize.observe(host)
++  resize.observe(host);ownership.observers++
+   function disposeRoot(object: THREE.Object3D) {
+     const textures = new Set<THREE.Texture>()
+     object.traverse(node => { if (node instanceof THREE.Mesh) {
+@@ -177,59 +188,51 @@
+   function setView(position: number[], target: number[]) { overviewMode = false; motion.cancel('检查视角接管相机'); camera.position.fromArray(position); controls.target.fromArray(target); controls.update() }
+   async function measurePerformance(durationSeconds = 18) {
+     requireReady(); motion.cancel('开始性能测试'); select(null)
+-    const samples: number[] = []
+-    const calls: number[] = []
+-    const started = performance.now()
+-    const radius = 62, height = 36
+-    measurementVisible = document.visibilityState === 'visible'
+-    const visibilityChanged = () => { if(document.visibilityState!=='visible') measurementVisible = false }
+-    document.addEventListener('visibilitychange',visibilityChanged)
++    const started=performance.now(),moves=Math.max(20,Math.ceil(durationSeconds/.9))
+     try {
+-      const moves = Math.max(20,Math.ceil(durationSeconds/0.9))
+-      for (let step = 0; step < moves + 2; step++) {
+-        if (step === 2) { frameSamples = samples; drawSamples = calls }
+-        const angle = 0.67 + step * Math.PI * 2 / moves
+-        await motion.move(new THREE.Vector3(Math.sin(angle)*radius,height,Math.cos(angle)*radius),defaultTarget,null,undefined,5000)
+-      }
+-    } finally { frameSamples = null; drawSamples = null;document.removeEventListener('visibilitychange',visibilityChanged) }
+-    if (!measurementVisible || samples.length < 100) throw new SceneError('MEASUREMENT_INVALID','页面可见性或采样数量不满足要求')
+-    const sorted = [...samples].sort((a,b) => a-b)
+-    const percentile = (p: number) => sorted[Math.min(sorted.length-1,Math.floor(sorted.length*p))]!
+-    return { measured_at: new Date().toISOString(), total_duration_ms: performance.now()-started, warmup_moves:2, sample_count:samples.length, sampled_duration_ms:samples.reduce((a,b)=>a+b,0), average_fps:1000/(samples.reduce((a,b)=>a+b,0)/samples.length), median_frame_ms:percentile(.5), p95_frame_ms:percentile(.95), p99_frame_ms:percentile(.99), frames_over_33_34_ms:samples.filter(ms=>ms>33.34).length, frames_over_50_ms:samples.filter(ms=>ms>50).length, draw_calls_min:Math.min(...calls), draw_calls_max:Math.max(...calls), frame_times_ms:samples, page_visible_throughout:measurementVisible, camera_moving:true, camera_owner:'CameraController', webgl_renderer:renderer.getContext().getParameter(renderer.getContext().RENDERER), ...snapshot() }
+-  }
+-  let windowSampleStarted = 0
++      for(let step=0;step<moves+2;step++){
++        if(step===2)beginFrameSample()
++        const angle=.67+step*Math.PI*2/moves
++        await motion.move(new THREE.Vector3(Math.sin(angle)*62,36,Math.cos(angle)*62),defaultTarget,null,undefined,5000)
++      }
++      return {...endFrameSample(),total_duration_with_warmup_ms:performance.now()-started,warmup_moves:2,camera_moving:true,camera_owner:'CameraController'}
++    } catch(error){return {...endFrameSample(),workload_error:String(error),warmup_moves:2}}
++  }
+   function beginFrameSample() {
+     requireReady()
+-    if(frameSamples)throw new SceneError('MEASUREMENT_BUSY','已有帧采样正在进行')
+-    windowSampleStarted=performance.now();frameSamples=[];drawSamples=[];measurementVisible=document.visibilityState==='visible'
++    if(frameSample)throw new SceneError('MEASUREMENT_BUSY','已有帧采样正在进行')
++    frameSample=new FrameSample(performance.now(),document.visibilityState==='visible')
+     return snapshot()
+   }
+   function endFrameSample() {
+-    if(!frameSamples||!drawSamples)throw new SceneError('MEASUREMENT_NOT_STARTED','尚未开始帧采样')
+-    const samples=frameSamples,calls=drawSamples;frameSamples=null;drawSamples=null
+-    const sorted=[...samples].sort((a,b)=>a-b),sum=samples.reduce((a,b)=>a+b,0)
+-    const percentile=(p:number)=>sorted[Math.min(sorted.length-1,Math.floor(sorted.length*p))]!
+-    return {measured_at:new Date().toISOString(),total_duration_ms:performance.now()-windowSampleStarted,sampled_duration_ms:sum,sample_count:samples.length,average_fps:1000*samples.length/sum,p95_frame_ms:percentile(.95),p99_frame_ms:percentile(.99),frames_over_50_ms:samples.filter(ms=>ms>50).length,frame_times_ms:samples,draw_calls_min:Math.min(...calls),draw_calls_max:Math.max(...calls),page_visible_throughout:measurementVisible,...snapshot()}
+-  }
+-  function snapshot() { return { ...state, calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, camera: camera.position.toArray(), target: controls.target.toArray(), defaultCamera:defaultPosition.toArray(),defaultTarget:defaultTarget.toArray(), zoom: camera.zoom,fov:camera.fov, frame, cameraBusy: motion.busy, visible: document.visibilityState,activeRenderLoops:disposed?0:renderLoopInstallations,loadGeneration:generation, rendererDpr: renderer.getPixelRatio(), nativeDpr:devicePixelRatio,drawingBuffer:{width:renderer.domElement.width,height:renderer.domElement.height},canvas: { width: host.clientWidth, height: host.clientHeight },loadedModelUrl,loadedModelSha256,waterPhaseMs,lighting:{exposure:renderer.toneMappingExposure,sunIntensity:sun.intensity,sunPosition:sun.position.toArray(),environmentIntensity:scene.environmentIntensity,shadowMapSize:sun.shadow.mapSize.toArray()},selectionEffects:scene.children.filter(o=>o.name==='SW_SELECTION_COPING_CORNERS').length,sceneGeometryCount:renderer.info.memory.geometries,siteFraming:root?.getObjectByName('SW_SITE_CONTEXT') ? projectedBounds(new THREE.Box3().setFromObject(root.getObjectByName('SW_SITE_CONTEXT')!,true),camera):null,assetStage: root?.getObjectByName(DEVICE_ID)?.userData.asset_stage, bounds: state.status === 'ready' ? (() => { try { const b = registry.bounds(DEVICE_ID); return { min: b.min.toArray(), max: b.max.toArray() } } catch { return null } })() : null } }
+-  renderLoopInstallations++
+-  renderer.setAnimationLoop((now: number) => {
++    if(!frameSample)throw new SceneError('MEASUREMENT_NOT_STARTED','尚未开始帧采样')
++    const sample=frameSample;frameSample=null
++    return {measured_at:new Date().toISOString(),...sample.finish(performance.now()),...snapshot()}
++  }
++  function lightDiagnostics(){return {pageAgeMs:performance.now(),visible:document.visibilityState,cameraBusy:motion.busy,frame,callbackCount,renderCpuDiagnostics:{enabled:diagnosticsEnabled,calls:diagnosticRenderCalls,totalMs:diagnosticRenderCpuMs,maxMs:diagnosticRenderMaxMs,meaning:'CPU wall duration of renderer.render, not GPU time'},loop:{active:loop.active,starts:loop.starts,stops:loop.stops},renderer:{...ownership},geometryCount:renderer.info.memory.geometries,textureCount:renderer.info.memory.textures,programCount:renderer.info.programs?.length??null,calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,rendererDpr:renderer.getPixelRatio(),nativeDpr:devicePixelRatio,canvas:{width:host.clientWidth,height:host.clientHeight},drawingBuffer:{width:renderer.domElement.width,height:renderer.domElement.height},loadGeneration:generation}}
++  function snapshot() { return { ...state, calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, camera: camera.position.toArray(), target: controls.target.toArray(), defaultCamera:defaultPosition.toArray(),defaultTarget:defaultTarget.toArray(), zoom: camera.zoom,fov:camera.fov, frame, cameraBusy: motion.busy, visible: document.visibilityState,activeRenderLoops:loop.active?1:0,loadGeneration:generation, rendererDpr: renderer.getPixelRatio(), nativeDpr:devicePixelRatio,drawingBuffer:{width:renderer.domElement.width,height:renderer.domElement.height},canvas: { width: host.clientWidth, height: host.clientHeight },loadedModelUrl,loadedModelSha256,waterPhaseMs,lighting:{exposure:renderer.toneMappingExposure,sunIntensity:sun.intensity,sunPosition:sun.position.toArray(),environmentIntensity:scene.environmentIntensity,shadowMapSize:sun.shadow.mapSize.toArray()},selectionEffects:scene.children.filter(o=>o.name==='SW_SELECTION_COPING_CORNERS').length,sceneGeometryCount:renderer.info.memory.geometries,siteFraming:root?.getObjectByName('SW_SITE_CONTEXT') ? projectedBounds(new THREE.Box3().setFromObject(root.getObjectByName('SW_SITE_CONTEXT')!,true),camera):null,assetStage: root?.getObjectByName(DEVICE_ID)?.userData.asset_stage, bounds: state.status === 'ready' ? (() => { try { const b = registry.bounds(DEVICE_ID); return { min: b.min.toArray(), max: b.max.toArray() } } catch { return null } })() : null } }
++  const tick = (now:number) => {
++    if(disposed||document.visibilityState!=='visible'||diagnosticControls.scenePaused){onMeasurementVisibility();return}
++    callbackCount++;frameSample?.callback(now)
+     const delta = now - last; last = now
+-    if (frameSamples) { frameSamples.push(delta); if (document.visibilityState !== 'visible') measurementVisible = false }
+     motion.update(now)
+     if (water instanceof THREE.Mesh && water.material instanceof THREE.MeshStandardMaterial && water.material.normalMap) {
+       const phase = waterPhaseMs ?? now
+       water.material.normalMap.offset.set(phase * 0.0000013, phase * 0.0000009)
+     }
+     controls.update()
++    const cpuStart=diagnosticsEnabled?performance.now():0
+     renderer.render(scene, camera); frame++
+-    if (drawSamples) drawSamples.push(renderer.info.render.calls)
++    if(diagnosticsEnabled){const elapsed=performance.now()-cpuStart;diagnosticRenderCalls++;diagnosticRenderCpuMs+=elapsed;diagnosticRenderMaxMs=Math.max(diagnosticRenderMaxMs,elapsed)}
++    frameSample?.submitted(renderer.info.render.calls)
+     if (state.status === 'ready' && state.firstRenderMs === 0) state.firstRenderMs = performance.now() - loadStarted
+     motion.afterRender(frame)
+     if (now - lastStats > 750) { state.calls = renderer.info.render.calls; state.triangles = renderer.info.render.triangles; state.textures = renderer.info.memory.textures; state.frameMs = delta; lastStats = now }
+-  })
+-  function dispose() { document.removeEventListener('visibilitychange',onMeasurementVisibility); disposed = true; generation++; motion.cancel('场景已卸载'); resize.disconnect(); controls.removeEventListener('start', onUserControl); controls.dispose(); renderer.domElement.removeEventListener('pointerdown',pointerDown); renderer.domElement.removeEventListener('pointerup',pointerUp); renderer.setAnimationLoop(null); if (root) disposeRoot(root); outline?.geometry.dispose(); environmentTargets.forEach(t=>t.dispose()); sun.shadow.map?.dispose(); renderer.dispose(); renderer.domElement.remove() }
+-  return { state, load, setWater, snapshot, dispose, registry, scene, camera, controls, renderer, defaultPosition, defaultTarget, focusDevice, resetView, setView, select, motion, measurePerformance,setWaterPhase:(ms:number|null)=>{waterPhaseMs=ms},setPixelRatio:(dpr:number)=>{renderingRatio=dpr;renderer.setPixelRatio(dpr)}, setTimeoutMs: (ms: number) => { timeoutMs = ms }, beginFrameSample,endFrameSample,getRoot: () => root }
++  }
++  const loop=new LoopLifecycle(()=>{last=performance.now();renderer.setAnimationLoop(tick)},()=>renderer.setAnimationLoop(null))
++  loop.sync(document.visibilityState==='visible')
++  function dispose() { if(disposed)return;loop.dispose();ownership.renderers--;ownership.rendererDisposed++;ownership.observers--;ownership.listeners-=4; document.removeEventListener('visibilitychange',onMeasurementVisibility); disposed = true; generation++; motion.cancel('场景已卸载'); resize.disconnect(); controls.removeEventListener('start', onUserControl); controls.dispose(); renderer.domElement.removeEventListener('pointerdown',pointerDown); renderer.domElement.removeEventListener('pointerup',pointerUp); renderer.setAnimationLoop(null); if (root) disposeRoot(root); outline?.geometry.dispose();if(outline)(outline.material as THREE.Material).dispose(); environmentTargets.forEach(t=>t.dispose()); sun.shadow.map?.dispose(); renderer.dispose(); renderer.domElement.remove() }
++  return { lightDiagnostics,syncVisibility:onMeasurementVisibility, state, load, setWater, snapshot, dispose, registry, scene, camera, controls, renderer, defaultPosition, defaultTarget, focusDevice, resetView, setView, select, motion, measurePerformance,setWaterPhase:(ms:number|null)=>{waterPhaseMs=ms},setPixelRatio:(dpr:number)=>{renderingRatio=dpr;renderer.setPixelRatio(dpr)}, setTimeoutMs: (ms: number) => { timeoutMs = ms }, beginFrameSample,endFrameSample,getRoot: () => root }
+ }
+ 
+ export type SceneRuntime = ReturnType<typeof createScene>
+--- before/tests/cameraDeadline.test.ts
++++ after/tests/cameraDeadline.test.ts
+@@ -0,0 +1,47 @@
++import { test } from 'node:test'
++import assert from 'node:assert/strict'
++import { PerspectiveCamera,Vector3 } from 'three'
++import { CameraController } from '../src/scene/cameraController.ts'
++import type { OrbitControls } from 'three/addons/controls/OrbitControls.js'
++
++test('a late animation callback cannot succeed ahead of its delayed deadline timer',async()=>{
++ const camera=new PerspectiveCamera(),controls={target:new Vector3()} as OrbitControls
++ const motion=new CameraController(camera,controls,()=>null)
++ const started=performance.now(),result=motion.move(new Vector3(1,2,3),new Vector3(),null,undefined,50)
++ motion.update(started+1000);motion.afterRender(1)
++ await assert.rejects(result,(error:{code?:string})=>error.code==='TIMEOUT')
++ assert.equal(motion.busy,false)
++})
++
++test('a hidden page cancels before another camera mutation or success',async()=>{
++ const camera=new PerspectiveCamera(),controls={target:new Vector3()} as OrbitControls
++ let visible=true
++ const motion=new CameraController(camera,controls,()=>null,()=>visible)
++ const result=motion.move(new Vector3(4,5,6),new Vector3(),null)
++ const before=camera.position.clone();visible=false
++ motion.update(performance.now()+1000);motion.afterRender(1)
++ await assert.rejects(result,(error:{code?:string})=>error.code==='PAGE_HIDDEN')
++ assert.deepEqual(camera.position,before);assert.equal(motion.busy,false)
++ visible=true;motion.update(performance.now()+1500);motion.afterRender(2)
++ assert.deepEqual(camera.position,before)
++})
++
++test('abort after arrival but before render cannot produce a success receipt',async()=>{
++ const camera=new PerspectiveCamera(),controls={target:new Vector3()} as OrbitControls
++ const motion=new CameraController(camera,controls,()=>null),abort=new AbortController()
++ const result=motion.move(new Vector3(1,2,3),new Vector3(),null,abort.signal)
++ motion.update(performance.now()+901);abort.abort('用户取消');motion.afterRender(1)
++ await assert.rejects(result,(error:{code?:string})=>error.code==='CANCELLED')
++ const before=camera.position.clone();motion.update(performance.now()+2000)
++ assert.deepEqual(camera.position,before)
++})
++
++test('deadline is checked again between camera arrival and render acknowledgement',async(t)=>{
++ let now=0;t.mock.method(performance,'now',()=>now)
++ const camera=new PerspectiveCamera(),controls={target:new Vector3()} as OrbitControls
++ const motion=new CameraController(camera,controls,()=>null)
++ const result=motion.move(new Vector3(1,2,3),new Vector3(),null)
++ now=901;motion.update(now)
++ now=6000;motion.afterRender(1)
++ await assert.rejects(result,(error:{code?:string})=>error.code==='TIMEOUT')
++})
+--- before/tests/stability.test.ts
++++ after/tests/stability.test.ts
+@@ -0,0 +1,35 @@
++import { test } from 'node:test'
++import assert from 'node:assert/strict'
++import { LoopLifecycle } from '../src/scene/loopLifecycle.ts'
++import { FrameSample } from '../src/scene/frameSample.ts'
++import { ActionDispatcher } from '../src/agent/actionDispatcher.ts'
++
++test('repeated visibility/resume signals never duplicate the owned Three loop',()=>{
++ let starts=0,stops=0
++ const loop=new LoopLifecycle(()=>starts++,()=>stops++)
++ loop.sync(true);loop.sync(true);loop.sync(false);loop.sync(false)
++ loop.sync(true);loop.sync(true);loop.dispose();loop.dispose();loop.sync(true)
++ assert.equal(starts,2);assert.equal(stops,2);assert.equal(loop.active,false)
++})
++test('FPS uses submissions and elapsed wall time; raw long intervals remain in P95',()=>{
++ const meter=new FrameSample(0,true)
++ for(const t of [10,20,30,230]){meter.callback(t);meter.submitted(50)}
++ const result=meter.finish(250)
++ assert.equal(result.average_fps,16);assert.deepEqual(result.frame_times_ms,[10,10,200])
++ assert.equal(result.p95_frame_ms,200);assert.equal(result.frames_over_50_ms,1);assert.equal(result.frames_over_100_ms,1)
++ assert.equal(result.scene_submissions,4);assert.equal(result.draw_calls_max,50)
++})
++test('a foreground sample retains hidden intervals and becomes explicitly ineligible',()=>{
++ const meter=new FrameSample(0,true);meter.callback(1);meter.submitted(50)
++ meter.visibility(10,'hidden');meter.visibility(200,'visible');meter.callback(210);meter.submitted(50)
++ const result=meter.finish(220)
++ assert.equal(result.page_visible_throughout,false);assert.deepEqual(result.frame_times_ms,[209]);assert.equal(result.visibility_events.length,2)
++})
++test('PAGE_HIDDEN keeps its reason and produces exactly one CANCELLED terminal record',async()=>{
++ const handler=async()=>{throw {code:'PAGE_HIDDEN',message:'页面隐藏'}}
++ const dispatcher=new ActionDispatcher({'scene.focus_device':handler,'scene.reset_view':handler})
++ const record=await dispatcher.dispatch({tool_name:'scene.reset_view',arguments:{}},'hidden')
++ assert.equal(record.status,'CANCELLED');assert.equal(record.error?.code,'PAGE_HIDDEN');assert.ok(record.finished_at)
++ assert.equal(await dispatcher.dispatch({tool_name:'scene.reset_view',arguments:{}},'hidden'),record)
++ assert.equal(dispatcher.records.length,1)
++})

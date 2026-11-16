@@ -1,0 +1,2 @@
+{"done":true,"average_fps":16.546057949249114,"top":[{"function":"(program)","url":"","sampled_ms":2385.426},{"function":"(idle)","url":"","sampled_ms":817.959},{"function":"eu","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":648.362},{"function":"ht","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":452.129},{"function":"renderBufferDirect","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":410.643},{"function":"bindVertexArray","url":"","sampled_ms":389.35}]}
+

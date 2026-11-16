@@ -1,0 +1,287 @@
+[p1 "SmartWater · M1 模拟运营大屏" | space "SmartWater M0 implementation"(62): 4 managed, 0 untracked — p1* "SmartWater · M1 模拟运营大屏", p2 "SmartWater · 单池数字孪生", p3 "SmartWater · 单池数字孪生", p4 "SmartWater · M1 模拟运营大屏"]
+root
+  container
+    anchor "SmartWater 首页" [ref=1, loc=css:a[aria-label="SmartWater 首页"], url=http://127.0.0.1:4173/]
+      svg_root
+      container
+        container
+          text "SmartWater"
+          text "AI"
+        text "智慧污水厂 · 三维运营空间"
+    container
+      heading
+        text "智慧水务运营大屏"
+      paragraph
+        svg_root
+        text "M1 · 单池样板 / 数据与场景联动"
+    container
+      container
+        text "系统时间"
+        text "04:01:25"
+      container
+        text "数据更新"
+        text "04:01:23"
+    text "SIMULATED · 演示数据"
+  container "演示数据控制"
+    container
+      text "BIOLOGICAL TREATMENT / 01"
+      container
+        text "演示时间"
+        text "2026/1/15 16:00:05"
+    container
+      text "演示场景"
+      combobox [ref=2]
+        text "正常演示"
+      button [ref=3]
+        text "暂停演示"
+      text "每 5 秒更新"
+      button [ref=4]
+        text "收起信息"
+  container "关键模拟指标"
+    container
+      svg_root
+      container
+        container
+          text "当前溶解氧"
+          text "有效"
+        container
+          text "2.68"
+          text "mg/L"
+        paragraph
+          text "一号曝气池 · DO < 2.0 mg/L · 演示阈值"
+    container
+      svg_root
+      container
+        container
+          text "当前水深"
+          text "有效"
+        container
+          text "4.8"
+          text "m"
+        paragraph
+          text "固定演示水深 · 对应三维水面"
+    container
+      svg_root
+      container
+        container
+          text "关联鼓风机功率"
+          text "有效"
+        container
+          text "81.9"
+          text "kW"
+        paragraph
+          text "B-01 · DATA_ONLY / 暂无三维模型"
+    container
+      svg_root
+      container
+        container
+          text "当前有效告警"
+          text "演示规则"
+        container
+          text "0"
+          text "项"
+        paragraph
+          text "根据当前告警集合计算"
+  container
+    container
+      container
+        container
+          heading
+            text "工艺示意"
+          button [ref=5]
+            text "展开"
+        paragraph
+          text "A²/O · 沿用参考工艺，仅好氧段有模型"
+        paragraph
+          text "进水 → 格栅/提升 → 初沉 → 生化 A²/O → 二沉 → 深度处理/消毒 → 出水"
+      container
+        container
+          heading
+            text "当前告警"
+          text "0"
+        paragraph
+          text "DO < 2.0 mg/L · 演示阈值 · 非运行建议"
+        container
+          text "暂无演示告警"
+          text "依据本快照指标与演示规则"
+      container
+        container
+          heading
+            text "对象信息"
+          text "有三维模型"
+        heading
+          text "一号曝气池"
+        text "SW_BIO_AERATION_001"
+        paragraph
+          text "生化处理 A²/O 好氧段样板 · 42 × 18 m；演示尺寸未经工程校核。"
+        unordered_list
+          container
+            list_item
+              text "溶解氧"
+            list_item
+              text "2.68"
+              text "mg/L"
+              text "有效"
+          container
+            list_item
+              text "pH"
+            list_item
+              text "7.21"
+              text "无量纲"
+              text "有效"
+          container
+            list_item
+              text "水深"
+            list_item
+              text "4.8"
+              text "m"
+              text "有效"
+        paragraph
+          text "三维：无选中对象"
+        button [ref=6]
+          text "定位设备"
+        button [ref=7]
+          text "查看关联鼓风机 →"
+    container
+      container "曝气池三维场景"
+        container
+          container
+            text "三维现场"
+            text "一号曝气池样板 · 非完整厂区"
+          container
+            button [ref=8]
+              svg_root
+              text "隐藏水面"
+            button [ref=9]
+              svg_root
+              text "恢复总览"
+        container
+          canvas
+          text "N"
+          text "局部坐标 · 米制"
+          text "拖动旋转 · 滚轮缩放 · 点击选择设备"
+          text "局部场地 64 × 40 m"
+        container
+          text "场景就绪"
+          text "42 × 18 m · 水深 4.8 m"
+          text "SW_BIO_AERATION_001"
+      container
+        container
+          container
+            container
+              heading
+                text "一号曝气池 DO"
+              text "2.68 mg/L · 有效"
+            container "趋势时间范围"
+              button [ref=10]
+                text "1h"
+              button [ref=11]
+                text "6h"
+              button [ref=12]
+                text "24h"
+          image "这是一个图表，图表类型是折线图，表示溶解氧。其中，前10项是——1768460405000，2.5004058466981，1768460465000，2.4531804811017097，1768460525000，2.4849615185682943，..."
+            svg_root "mg/L 0 1 2 3 4 15:10 15:20 15:30 15:40 15:50 16:00 溶解氧 演示阈值 2.0"
+              text "mg/L"
+              text "0"
+              text "1"
+              text "2"
+              text "3"
+              text "4"
+              text "15:10"
+              text "15:20"
+              text "15:30"
+              text "15:40"
+              text "15:50"
+              text "16:00"
+              text "溶解氧"
+              text "演示阈值 2.0"
+          container
+            text "SIMULATED · 演示时间 / 北京时间"
+            text "阈值仅供演示"
+            container [ref=13]
+              text "样本"
+        container
+          container
+            container
+              heading
+                text "关联鼓风机功率"
+              text "81.9 kW · 有效"
+            container "趋势时间范围"
+              button [ref=14]
+                text "1h"
+              button [ref=15]
+                text "6h"
+              button [ref=16]
+                text "24h"
+          image "这是一个图表，图表类型是折线图，表示关联鼓风机功率。其中，前10项是——1768460405000，77.45085973446982，1768460465000，77.24571218499798，1768460525000，77.21263..."
+            svg_root "kW 60 70 80 90 100 15:10 15:20 15:30 15:40 15:50 16:00 关联鼓风机功率"
+              text "kW"
+              text "60"
+              text "70"
+              text "80"
+              text "90"
+              text "100"
+              text "15:10"
+              text "15:20"
+              text "15:30"
+              text "15:40"
+              text "15:50"
+              text "16:00"
+              text "关联鼓风机功率"
+          container
+            text "SIMULATED · 演示时间 / 北京时间"
+            text "kW 为功率，非电量"
+            container [ref=17]
+              text "样本"
+    container
+      container
+        svg_root
+        container
+          heading
+            text "场景工作台"
+          paragraph
+            text "Demo Agent · 确定性演示解析器"
+      container
+        text "当前设备上下文"
+        text "一号曝气池"
+        text "三维无选中对象"
+        container
+          text "等待指令"
+          button [ref=18]
+            text "取消"
+      container
+        container
+          button [ref=19]
+            svg_root
+            text "定位一号曝气池"
+          button [ref=20]
+            svg_root
+            text "回到总览"
+        paragraph
+          text "支持两条场景口令。成功回执仅在相机到位并完成实际渲染后显示。"
+        container
+          svg_root
+          text "真实工具执行记录"
+          text "0"
+        container
+          paragraph
+            text "尚无工具调用"
+          text "仅允许定位与恢复总览两个工具"
+      form
+        text "场景指令"
+        container
+          textbox [ref=21, loc=css:input[placeholder="输入场景指令…"]]
+            text "输入场景指令…"
+          button "发送指令" [ref=22, loc=css:button[aria-label="发送指令"]]
+            svg_root
+        paragraph
+          text "仅操作三维视图 · 不连接真实设备"
+  container
+    text "SMARTWATER M1 · 单池样板"
+    text "GLB 资产 · 6.26 s 加载 · 50 DRAW CALLS"
+    text "演示规则 / 演示尺寸 · 非工程校核"
+
+Native cancel normal: false
+Native cancel stress: false
+Real visibility: false,false
+

@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-16T12:22:40.647Z",
+  "test_database": "smartwater-m4-test-chain",
+  "fixtures": "TEST_INJECTED, not real Agent execution",
+  "checks": [
+    {
+      "name": "cursor pagination retains all same-timestamp records without duplicates",
+      "passed": true,
+      "detail": {
+        "total": 40
+      }
+    },
+    {
+      "name": "unsafe model HTML and remote Markdown are inert in historical view",
+      "passed": true
+    },
+    {
+      "name": "second tab cannot execute or recover tasks owned by first tab",
+      "passed": true
+    },
+    {
+      "name": "new owner recovers interrupted task without replay, with unconfirmed end time",
+      "passed": true
+    },
+    {
+      "name": "aborted short transaction does not write task or report",
+      "passed": true
+    }
+  ]
+}

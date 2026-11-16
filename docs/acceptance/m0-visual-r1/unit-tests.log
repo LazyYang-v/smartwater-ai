@@ -1,0 +1,15 @@
+$ node --experimental-strip-types --test tests/*.test.ts
+✔ only the two demonstration commands resolve to allowed calls (2.157167ms)
+✔ a repeated action id executes once and returns the same promise (5.858292ms)
+✔ a superseded operation cannot report success even if its handler resolves late (1.344333ms)
+✔ failure is terminal, timestamped, and replaying its id does not retry (0.588791ms)
+✔ perspective site fits and centers in 1440x659 actual viewport (4.939291ms)
+✔ perspective site fits and centers in 989x434 actual viewport (4.876583ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 230.160584

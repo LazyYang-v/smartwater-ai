@@ -1,0 +1,65 @@
+{
+  "status": "M1 功能已交付，性能目标未完全达到，等待用户体验验收",
+  "build_id": "6b9d43cf1d05489dc64954ab53c5841dd5a1768b4104e7d85ea1ef726bb52d78",
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "preview_url": "http://127.0.0.1:4173/",
+  "dataset_version": "smartwater-m1.2",
+  "assets_unchanged": true,
+  "tests": {
+    "typecheck": "PASS",
+    "build": "PASS with chunk-size advisory",
+    "unit_passed": 17,
+    "legacy_browser_passed": 15,
+    "legacy_layout_assertions_passed": 3,
+    "m1_feature_checks_passed": 10,
+    "final_ui_checks_passed": 5,
+    "cancel_button_method": "DOM click event path; native pointer timing under degraded performance remains unverified",
+    "restart": "PASS"
+  },
+  "screenshots": 11,
+  "screenshot_manifest": "screenshots-manifest.json",
+  "performance": {
+    "attempts": 10,
+    "complete_measurements": 9,
+    "incomplete_attempts": 1,
+    "meeting_target": 6,
+    "overall_target_passed": false,
+    "minimum_average_fps": 3.583784093732678,
+    "maximum_average_fps": 59.47160226983015,
+    "maximum_p95_frame_ms": 1584.2999999999956,
+    "frames_over_50_ms_total": 1058,
+    "conditions": {
+      "browser_native_dpr": 2,
+      "three_renderer_dpr": 1,
+      "css_viewport": [
+        1920,
+        1080
+      ],
+      "three_css_viewport": [
+        1218,
+        427
+      ],
+      "drawing_buffer": [
+        1218,
+        427
+      ]
+    },
+    "all_attempts": "performance/summary.json",
+    "diagnostic": "performance-diagnostic.json",
+    "diagnosis": "performance-diagnosis.md",
+    "root_cause_confirmed": false,
+    "no_cross_layout_optimization_claim": true
+  },
+  "limitations": [
+    "Third-round performance target failed; severe frame-time instability remains.",
+    "CPU/long-task diagnostic narrows investigation to rendering submission or browser/host waiting paths, but GPU/driver/OS/external contention is not isolated.",
+    "Native pointer cancel timing under degraded performance and real hidden-tab transition remain unverified.",
+    "Three renderer DPR2, other machines/browsers, long-term memory and production-network cold loading not measured.",
+    "Visual and interaction acceptance pending."
+  ],
+  "report": "report.md",
+  "integrity": "final-integrity.json",
+  "previous_candidate": "candidate-1/NOT-FINAL.md",
+  "correction_validation": "correction-validation.json"
+}

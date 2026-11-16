@@ -1,0 +1,86 @@
+{
+  "status": "M0.1 视觉修正已交付，等待用户视觉验收",
+  "recorded_at_utc": "2026-11-15T17:34:23.228118+00:00",
+  "preview_url": "http://127.0.0.1:4173/",
+  "build_id": "37e8f64e201b2dcc4cf59ace9043bd509f999e5beb9e5bd94b802d3db06f4810",
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "glb_bytes": 31254844,
+  "triangles": 106042,
+  "mesh_count": 50,
+  "draw_calls": {
+    "unselected": 50,
+    "selected": 51,
+    "water_hidden": 49
+  },
+  "tests": {
+    "typecheck": "PASS",
+    "build": "PASS with existing chunk size advisory",
+    "unit": {
+      "passed": 6,
+      "failed": 0
+    },
+    "browser": {
+      "passed": 15,
+      "failed": 0
+    },
+    "extra_selection_cleanup": {
+      "passed": 3,
+      "failed": 0
+    },
+    "restart": "PASS",
+    "independent_blend_glb_validation": "PASS"
+  },
+  "final_screenshots": 14,
+  "screenshot_manifest": "final/screenshots-manifest.json",
+  "performance_trials": [
+    {
+      "file": "performance-dpr1.json",
+      "average_fps": 52.941623353191055,
+      "p95_frame_ms": 32.90000000000873,
+      "p99_frame_ms": 81.59999999997672,
+      "duration_ms": 63182.8,
+      "passed_sample_target": true,
+      "start_focused": true,
+      "renderer_dpr": 1
+    },
+    {
+      "file": "performance-dpr2-unfocused.json",
+      "average_fps": 32.33034860680928,
+      "p95_frame_ms": 100.10000000000218,
+      "p99_frame_ms": 168.59999999999854,
+      "duration_ms": 66315.4,
+      "passed_sample_target": false,
+      "start_focused": false,
+      "renderer_dpr": 2
+    },
+    {
+      "file": "performance-old-glb-dpr1.json",
+      "average_fps": 47.41889101844313,
+      "p95_frame_ms": 50,
+      "p99_frame_ms": 98.70000000000437,
+      "duration_ms": 63497.9,
+      "passed_sample_target": false,
+      "start_focused": true,
+      "renderer_dpr": 1
+    },
+    {
+      "file": "performance-dpr2.json",
+      "average_fps": 54.99566623275689,
+      "p95_frame_ms": 31.799999999999272,
+      "p99_frame_ms": 51.700000000004366,
+      "duration_ms": 62532.2,
+      "passed_sample_target": true,
+      "start_focused": true,
+      "renderer_dpr": 2
+    }
+  ],
+  "limitations": [
+    "Occasional long frames; DPR2 initial trial did not meet stable frame-time criterion; later focused sample passed. Causality is not isolated.",
+    "No claim of universal stable 30 FPS or all-device performance.",
+    "Original M0 screenshot strict build association remains unverified.",
+    "Visual quality awaits user acceptance."
+  ],
+  "final_integrity": "final-integrity.json",
+  "report": "report.md"
+}

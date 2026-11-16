@@ -1,0 +1,2248 @@
+{
+  "build": "33e1733a5ff84653cc5c8f87a597a86abae9ab53014461492012a0d0b1c0ecb4",
+  "screenshots": [
+    {
+      "file": "final-four-overview.png",
+      "at": "2026-11-16T07:59:42.193Z",
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 673.1999999880791,
+        "firstRenderMs": 27.099999964237213,
+        "triangles": 201408,
+        "assetTriangles": 201408,
+        "calls": 236,
+        "textures": 37,
+        "frameMs": 17.20000000006985,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_PRE_PUMP_001",
+          "SW_AIR_BLOWER_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 686.5999999642372,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 630.3999999761581,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 478.80000001192093,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 257.5999999642372,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.947070901413234,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "target": [
+          0.1373828457260267,
+          -4.806249344409889,
+          1.9809389170919156
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 45446,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {
+            "SW_AIR_BLOWER_001": true
+          }
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369095150207812,
+          "right": 0.5296509694563738,
+          "bottom": -0.8215251321105713,
+          "top": 0.7863755893632043
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "context": "SW_BIO_AERATION_001",
+      "snapshotId": "smartwater-m1.2:NORMAL:0",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "charts": [
+        {
+          "metric": "do",
+          "unavailable": false,
+          "paths": 14,
+          "chart": {
+            "x": 323,
+            "y": 865.5,
+            "width": 572,
+            "height": 135.5,
+            "top": 865.5,
+            "right": 895,
+            "bottom": 1001,
+            "left": 323
+          }
+        },
+        {
+          "metric": "blower_power",
+          "unavailable": false,
+          "paths": 13,
+          "chart": {
+            "x": 941,
+            "y": 865.5,
+            "width": 572,
+            "height": 135.5,
+            "top": 865.5,
+            "right": 1513,
+            "bottom": 1001,
+            "left": 941
+          }
+        }
+      ]
+    },
+    {
+      "file": "final-blower-focused.png",
+      "at": "2026-11-16T07:59:43.300Z",
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": "SW_AIR_BLOWER_001",
+        "waterVisible": true,
+        "loadMs": 673.1999999880791,
+        "firstRenderMs": 27.099999964237213,
+        "triangles": 109330,
+        "assetTriangles": 201408,
+        "calls": 89,
+        "textures": 37,
+        "frameMs": 16.900000000023283,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_PRE_PUMP_001",
+          "SW_AIR_BLOWER_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 686.5999999642372,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 630.3999999761581,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 478.80000001192093,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 257.5999999642372,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          -22.450788842413413,
+          6.745421765080366,
+          -17.94500954777791
+        ],
+        "target": [
+          -23.04217054355862,
+          1.7186773053461186,
+          -22.873190390654628
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 45502,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": "SW_AIR_BLOWER_001",
+          "manual": {
+            "SW_AIR_BLOWER_001": true
+          }
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 1,
+        "sceneGeometryCount": 246,
+        "siteFraming": {
+          "left": -2.286989884153614,
+          "right": 10.575812421414355,
+          "bottom": -1.0390561528458884,
+          "top": 4.120014805131532
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.700000047683716,
+            0.17999999225139618,
+            -24.299999952316284
+          ],
+          "max": [
+            -20.299999952316284,
+            3.299999952316284,
+            -21.5
+          ]
+        }
+      },
+      "context": "SW_AIR_BLOWER_001",
+      "snapshotId": "smartwater-m1.2:NORMAL:0",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "charts": [
+        {
+          "metric": "do",
+          "unavailable": true,
+          "paths": 14,
+          "chart": {
+            "x": 323,
+            "y": 865.5,
+            "width": 572,
+            "height": 154.5,
+            "top": 865.5,
+            "right": 895,
+            "bottom": 1020,
+            "left": 323
+          }
+        },
+        {
+          "metric": "blower_power",
+          "unavailable": false,
+          "paths": 13,
+          "chart": {
+            "x": 941,
+            "y": 865.5,
+            "width": 572,
+            "height": 135.5,
+            "top": 865.5,
+            "right": 1513,
+            "bottom": 1001,
+            "left": 941
+          }
+        }
+      ]
+    },
+    {
+      "file": "final-pump-focused.png",
+      "at": "2026-11-16T07:59:44.424Z",
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": "SW_PRE_PUMP_001",
+        "waterVisible": true,
+        "loadMs": 673.1999999880791,
+        "firstRenderMs": 27.099999964237213,
+        "triangles": 64122,
+        "assetTriangles": 201408,
+        "calls": 77,
+        "textures": 37,
+        "frameMs": 16.399999999906868,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_PRE_PUMP_001",
+          "SW_AIR_BLOWER_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 686.5999999642372,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 630.3999999761581,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 478.80000001192093,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 257.5999999642372,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_PRE_PUMP_001": false,
+          "SW_AIR_BLOWER_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          -41.399061264299476,
+          5.454611732523685,
+          -18.85541072279874
+        ],
+        "target": [
+          -41.88909178589011,
+          1.2893522990032993,
+          -22.93899840272069
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 45558,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": "SW_PRE_PUMP_001",
+          "manual": {
+            "SW_AIR_BLOWER_001": true
+          }
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 1,
+        "sceneGeometryCount": 246,
+        "siteFraming": {
+          "left": -2.6227916206275643,
+          "right": 24.333123040388042,
+          "bottom": -2.7781041109042652,
+          "top": 3.7275489708567604
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -44.40000009536743,
+            0.17999999225139618,
+            -24.25
+          ],
+          "max": [
+            -39.34999990463257,
+            2.5149998664855957,
+            -21.75
+          ]
+        }
+      },
+      "context": "SW_PRE_PUMP_001",
+      "snapshotId": "smartwater-m1.2:NORMAL:0",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "charts": [
+        {
+          "metric": "do",
+          "unavailable": true,
+          "paths": 14,
+          "chart": {
+            "x": 323,
+            "y": 865.5,
+            "width": 572,
+            "height": 154.5,
+            "top": 865.5,
+            "right": 895,
+            "bottom": 1020,
+            "left": 323
+          }
+        },
+        {
+          "metric": "blower_power",
+          "unavailable": true,
+          "paths": 13,
+          "chart": {
+            "x": 941,
+            "y": 865.5,
+            "width": 572,
+            "height": 154.5,
+            "top": 865.5,
+            "right": 1513,
+            "bottom": 1020,
+            "left": 941
+          }
+        }
+      ]
+    },
+    {
+      "file": "final-agent-reset.png",
+      "at": "2026-11-16T07:59:48.293Z",
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 673.1999999880791,
+        "firstRenderMs": 27.099999964237213,
+        "triangles": 201408,
+        "assetTriangles": 201408,
+        "calls": 236,
+        "textures": 37,
+        "frameMs": 18.20000000006985,
+        "renderMode": "interactive",
+        "viewMode": "plant4",
+        "loadedIds": [
+          "SW_BIO_AERATION_001",
+          "SW_PRE_PUMP_001",
+          "SW_AIR_BLOWER_001",
+          "SW_CLR_TANK_001"
+        ],
+        "deviceStates": {
+          "SW_BIO_AERATION_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 686.5999999642372,
+            "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+          },
+          "SW_CLR_TANK_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 630.3999999761581,
+            "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+          },
+          "SW_AIR_BLOWER_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 478.80000001192093,
+            "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+          },
+          "SW_PRE_PUMP_001": {
+            "status": "ready",
+            "error": "",
+            "loadMs": 257.5999999642372,
+            "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+          }
+        },
+        "waterStates": {
+          "SW_BIO_AERATION_001": true,
+          "SW_CLR_TANK_001": true
+        },
+        "roofStates": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "deviceId": "SW_BIO_AERATION_001",
+        "camera": [
+          22.94707090141323,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "target": [
+          0.1373828457260231,
+          -4.806249344409889,
+          1.9809389170919156
+        ],
+        "defaultCamera": [
+          22.947070901413227,
+          73.01503931616995,
+          69.06825672793661
+        ],
+        "defaultTarget": [
+          0.13738284572602621,
+          -4.806249344409889,
+          1.9809389170919145
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 45778,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 0,
+        "loadGeneration": 2,
+        "assetRequests": {
+          "/models/aeration-tank.glb": 1,
+          "/models/clarifier-tank.glb": 1,
+          "/models/blower-unit.glb": 1,
+          "/models/pump-unit.glb": 1
+        },
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4173/models/clarifier-tank.glb",
+        "loadedModelSha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+        "waterPhaseMs": null,
+        "roofPresentation": {
+          "inspectionDevice": null,
+          "manual": {
+            "SW_AIR_BLOWER_001": true
+          }
+        },
+        "registrations": [
+          {
+            "id": "SW_BIO_AERATION_001",
+            "unitId": "SW_UNIT_BIO_001",
+            "name": "一号曝气池",
+            "url": "/models/aeration-tank.glb",
+            "dimensions": "42 × 18 m · 水深 4.8 m",
+            "assetRootNode": "SW_BIO_AERATION_001",
+            "mechanicalNode": "SW_BIO_AERATION_001",
+            "metrics": [
+              "do",
+              "ph",
+              "depth"
+            ],
+            "water": true,
+            "roof": false,
+            "modelKey": "aeration",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_PRE_PUMP_001",
+            "unitId": "SW_UNIT_PUMP_ROOM_001",
+            "name": "一号提升泵",
+            "url": "/models/pump-unit.glb",
+            "dimensions": "10 × 8 m 泵房 · 演示设备",
+            "assetRootNode": "SW_PUMP_UNIT",
+            "mechanicalNode": "SW_PRE_PUMP_001",
+            "metrics": [],
+            "water": false,
+            "roof": true,
+            "modelKey": "pump",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_AIR_BLOWER_001",
+            "unitId": "SW_UNIT_BLOWER_ROOM_001",
+            "name": "一号鼓风机",
+            "url": "/models/blower-unit.glb",
+            "dimensions": "12 × 9 m 机房 · 设备独立选择",
+            "assetRootNode": "SW_BLOWER_UNIT",
+            "mechanicalNode": "SW_AIR_BLOWER_001",
+            "metrics": [
+              "blower_power"
+            ],
+            "water": false,
+            "roof": true,
+            "modelKey": "blower",
+            "modelState": "ready"
+          },
+          {
+            "id": "SW_CLR_TANK_001",
+            "unitId": "SW_UNIT_CLR_001",
+            "name": "一号二沉池",
+            "url": "/models/clarifier-tank.glb",
+            "dimensions": "Ø24 m · 二沉池样板",
+            "assetRootNode": "SW_CLR_TANK_001",
+            "mechanicalNode": "SW_CLR_TANK_001",
+            "metrics": [],
+            "water": true,
+            "roof": false,
+            "modelKey": "clarifier",
+            "modelState": "ready"
+          }
+        ],
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 245,
+        "siteFraming": {
+          "left": -0.5369095150207812,
+          "right": 0.5296509694563738,
+          "bottom": -0.8215251321105715,
+          "top": 0.7863755893632043
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -47.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            0.9750003814697266,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "context": "SW_PRE_PUMP_001",
+      "snapshotId": "smartwater-m1.2:NORMAL:1",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "charts": [
+        {
+          "metric": "do",
+          "unavailable": true,
+          "paths": 14,
+          "chart": {
+            "x": 323,
+            "y": 865.5,
+            "width": 572,
+            "height": 154.5,
+            "top": 865.5,
+            "right": 895,
+            "bottom": 1020,
+            "left": 323
+          }
+        },
+        {
+          "metric": "blower_power",
+          "unavailable": true,
+          "paths": 13,
+          "chart": {
+            "x": 941,
+            "y": 865.5,
+            "width": 572,
+            "height": 154.5,
+            "top": 865.5,
+            "right": 1513,
+            "bottom": 1020,
+            "left": 941
+          }
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "22f064b7-ba5a-44c8-868c-aec135bc0ba7",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:42:33.752Z",
+      "finished_at": "2026-11-16T07:42:33.763Z",
+      "error": {
+        "code": "PAGE_HIDDEN",
+        "message": "页面隐藏，镜头动作已取消"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "f4756db6-16ca-4127-8c23-974d9bd558ec",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:42:35.643Z",
+      "finished_at": "2026-11-16T07:42:36.615Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 66,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "34b20386-2e94-493a-bb79-3c2d948608e2",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:54:51.673Z",
+      "finished_at": "2026-11-16T07:54:51.804Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户取消当前任务"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "547efe0b-5a4a-4e22-b9ed-c2e5c29c9fbb",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:51.805Z",
+      "finished_at": "2026-11-16T07:54:52.727Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602633,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 43980,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_CLR_TANK_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "a04b8b58-0bfd-4f27-81c9-00a7f49b1d8e",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:52.727Z",
+      "finished_at": "2026-11-16T07:54:53.643Z",
+      "result": {
+        "camera": {
+          "position": [
+            33.751172524739374,
+            27.487219254161673,
+            32.15452364344979
+          ],
+          "target": [
+            30.134699216293754,
+            -3.2528038676261364,
+            2.017246073069584
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_CLR_TANK_001",
+        "rendered_frame": 44035,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": null
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "d752147a-ebce-401d-80a0-6faa6e551930",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:53.644Z",
+      "finished_at": "2026-11-16T07:54:54.560Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602666,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44090,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "e42c7330-f891-43a0-bbdc-6b96626a4b8a",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:54.561Z",
+      "finished_at": "2026-11-16T07:54:55.475Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.45078884241341,
+            6.745421765080366,
+            -17.94500954777791
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 44145,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "01f8db82-da52-4f4a-94b4-4d74fca38777",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:55.476Z",
+      "finished_at": "2026-11-16T07:54:56.394Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260267,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44200,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "c105bb60-9254-4483-a0e2-85a66fd5c77e",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:54:56.395Z",
+      "finished_at": "2026-11-16T07:54:56.529Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户取消当前任务"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "ff7b5d0c-453a-404a-a3d1-d5aaac182ff6",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:56.530Z",
+      "finished_at": "2026-11-16T07:54:57.442Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44263,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "bcc0880f-b78d-484e-8407-d6889c1774bd",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:57.443Z",
+      "finished_at": "2026-11-16T07:54:58.359Z",
+      "result": {
+        "camera": {
+          "position": [
+            -19.38217664463485,
+            25.46539068789791,
+            30.971723634889145
+          ],
+          "target": [
+            -22.73936577663602,
+            -3.0707169341120086,
+            2.995147534879427
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_BIO_AERATION_001",
+        "rendered_frame": 44318,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": null
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "7829e1bc-bcbf-4e12-86bc-081dd00ee213",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:58.360Z",
+      "finished_at": "2026-11-16T07:54:59.277Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.947070901413234,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602666,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44373,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_CLR_TANK_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "346dba96-b6fb-42cc-94a6-d81a4177c0e5",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:54:59.278Z",
+      "finished_at": "2026-11-16T07:55:00.194Z",
+      "result": {
+        "camera": {
+          "position": [
+            33.751172524739374,
+            27.487219254161673,
+            32.15452364344979
+          ],
+          "target": [
+            30.134699216293754,
+            -3.2528038676261364,
+            2.017246073069584
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_CLR_TANK_001",
+        "rendered_frame": 44428,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": null
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "976b994a-7805-4a89-abe1-999296d37cd2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:00.196Z",
+      "finished_at": "2026-11-16T07:55:01.108Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602666,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44483,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "b5a65d63-92e9-4fa0-9451-9d4b912362b0",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:55:01.110Z",
+      "finished_at": "2026-11-16T07:55:01.243Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户取消当前任务"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "85713515-ece7-4ad7-ac9a-b668dee8f364",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:01.244Z",
+      "finished_at": "2026-11-16T07:55:02.159Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44546,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "86859097-8923-4a83-b788-b70e3908e8f5",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:02.160Z",
+      "finished_at": "2026-11-16T07:55:03.074Z",
+      "result": {
+        "camera": {
+          "position": [
+            -41.399061264299476,
+            5.454611732523688,
+            -18.855410722798737
+          ],
+          "target": [
+            -41.88909178589011,
+            1.2893522990032995,
+            -22.93899840272069
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_PRE_PUMP_001",
+        "rendered_frame": 44601,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": false,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "e38f9533-11b7-46a9-b793-7faf72e4328b",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:03.076Z",
+      "finished_at": "2026-11-16T07:55:03.993Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260231,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44656,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "2588002b-48ee-4ca1-8083-e006306e4a6e",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:03.995Z",
+      "finished_at": "2026-11-16T07:55:04.909Z",
+      "result": {
+        "camera": {
+          "position": [
+            -19.38217664463485,
+            25.46539068789791,
+            30.971723634889145
+          ],
+          "target": [
+            -22.73936577663602,
+            -3.0707169341120086,
+            2.995147534879427
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_BIO_AERATION_001",
+        "rendered_frame": 44711,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": null
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "7153224f-7b62-4bb1-9757-bb075a6b1d51",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:04.910Z",
+      "finished_at": "2026-11-16T07:55:05.825Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.947070901413234,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602666,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44766,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_CLR_TANK_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "7859c1c6-1e7a-4f46-82f9-ce82260cf57f",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:55:05.827Z",
+      "finished_at": "2026-11-16T07:55:05.961Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户取消当前任务"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "473c7d7e-07b0-49d3-8e0e-be528d606ecc",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:05.962Z",
+      "finished_at": "2026-11-16T07:55:06.875Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44829,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "89482bad-f002-4ce8-a922-693a1221bc1e",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:06.877Z",
+      "finished_at": "2026-11-16T07:55:07.791Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.45078884241341,
+            6.745421765080366,
+            -17.94500954777791
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 44884,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "3357126e-a4ab-4c35-8db2-1c47aa627080",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:07.793Z",
+      "finished_at": "2026-11-16T07:55:08.710Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260267,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 44939,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "61a087d9-01b5-44b8-bb7f-7c054195281f",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:08.712Z",
+      "finished_at": "2026-11-16T07:55:09.625Z",
+      "result": {
+        "camera": {
+          "position": [
+            -41.399061264299476,
+            5.454611732523688,
+            -18.855410722798737
+          ],
+          "target": [
+            -41.88909178589011,
+            1.2893522990032995,
+            -22.93899840272069
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_PRE_PUMP_001",
+        "rendered_frame": 44994,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": false,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "4b3109f6-f1c8-4a8e-90e8-1f7eda8e7374",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:55:09.626Z",
+      "finished_at": "2026-11-16T07:55:10.544Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260231,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45049,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "9dc68c55-1197-4f39-9b76-8517495813f6",
+      "status": "FAILED",
+      "started_at": "2026-11-16T07:56:43.166Z",
+      "finished_at": "2026-11-16T07:56:43.232Z",
+      "error": {
+        "code": "TIMEOUT",
+        "message": "相机未在限定时间内完成渲染"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "ede5bae0-be44-4a72-aad1-901739da90e1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:56:43.242Z",
+      "finished_at": "2026-11-16T07:56:44.168Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45108,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "04b586ae-d75c-4b41-9fe8-19a980a0aabe",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T07:56:44.170Z",
+      "finished_at": "2026-11-16T07:56:44.200Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户正在手动操作相机"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "294f4fa0-578b-46af-ba86-2bddc6b10ebe",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:56:44.221Z",
+      "finished_at": "2026-11-16T07:56:45.125Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.450788842413413,
+            6.745421765080366,
+            -17.945009547777918
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 45166,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "82ead16d-73d3-4ce3-97ee-38ee7ecba2a0",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:56:45.254Z",
+      "finished_at": "2026-11-16T07:56:46.176Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.947070901413234,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260267,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45223,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        }
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "a342b24f-aa85-4983-aef1-063e22b4ac31",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:56:46.182Z",
+      "finished_at": "2026-11-16T07:56:47.093Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45278,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "d836d2a5-546a-477e-9f69-97eb444583de",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:56:47.201Z",
+      "finished_at": "2026-11-16T07:56:48.126Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.13738284572602621,
+            -4.806249344409889,
+            1.9809389170919147
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45337,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "56a31f2b-feb9-4d8d-ae89-ea655de7748b",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:58:24.551Z",
+      "finished_at": "2026-11-16T07:58:25.459Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.450788842413413,
+            6.745421765080366,
+            -17.94500954777791
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 45390,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "70b4466d-6276-49f5-b68e-d8f284a1fda4",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:41.228Z",
+      "finished_at": "2026-11-16T07:59:42.159Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.947070901413234,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260267,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45446,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "1d1d0488-9eba-425d-9a16-e61ebedb43b7",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:42.343Z",
+      "finished_at": "2026-11-16T07:59:43.256Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.450788842413413,
+            6.745421765080366,
+            -17.94500954777791
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 45502,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "177105ee-293b-42fa-8609-7d99225e9a8c",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:43.476Z",
+      "finished_at": "2026-11-16T07:59:44.390Z",
+      "result": {
+        "camera": {
+          "position": [
+            -41.399061264299476,
+            5.454611732523685,
+            -18.85541072279874
+          ],
+          "target": [
+            -41.88909178589011,
+            1.2893522990032993,
+            -22.93899840272069
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_PRE_PUMP_001",
+        "rendered_frame": 45558,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": false,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "f08402c4-73ad-4cd0-a0bf-1d3a48ae3ed1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:44.603Z",
+      "finished_at": "2026-11-16T07:59:45.509Z",
+      "result": {
+        "camera": {
+          "position": [
+            -19.382176644634853,
+            25.465390687897916,
+            30.971723634889155
+          ],
+          "target": [
+            -22.73936577663602,
+            -3.070716934112008,
+            2.9951475348794254
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_BIO_AERATION_001",
+        "rendered_frame": 45613,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": null
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "8004fc8e-9455-4e09-a33d-a367c5e04509",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:45.511Z",
+      "finished_at": "2026-11-16T07:59:46.424Z",
+      "result": {
+        "camera": {
+          "position": [
+            -22.450788842413413,
+            6.745421765080366,
+            -17.945009547777914
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 45668,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "91d7f486-863d-44dd-aa64-b957d7a314c6",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:46.426Z",
+      "finished_at": "2026-11-16T07:59:47.342Z",
+      "result": {
+        "camera": {
+          "position": [
+            -41.399061264299476,
+            5.454611732523685,
+            -18.85541072279874
+          ],
+          "target": [
+            -41.88909178589011,
+            1.2893522990032993,
+            -22.93899840272069
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_PRE_PUMP_001",
+        "rendered_frame": 45723,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": false,
+          "SW_AIR_BLOWER_001": true
+        },
+        "inspection_device": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "source": "DEMO_AGENT",
+      "trigger": "确定性口令",
+      "action_id": "4c32f920-affa-4924-8833-74aa664f12e9",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T07:59:47.344Z",
+      "finished_at": "2026-11-16T07:59:48.258Z",
+      "result": {
+        "camera": {
+          "position": [
+            22.94707090141323,
+            73.01503931616995,
+            69.06825672793661
+          ],
+          "target": [
+            0.1373828457260231,
+            -4.806249344409889,
+            1.9809389170919156
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 45778,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_PRE_PUMP_001": true,
+          "SW_AIR_BLOWER_001": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-16T12:20:55.763Z",
+  "reason": "First cancel quickcheck did not receive its click: task cancelled PAGE_HIDDEN before the native helper could click. Not counted as user-cancel pass.",
+  "task": {
+    "task_id": "b0c7fb21-91d1-4cc1-b977-7b372765297c",
+    "scenario_id": "MISSING_DATA",
+    "snapshot_id": "smartwater-m1.2:MISSING_DATA:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T12:20:15.229Z",
+    "finished_at": "2026-11-16T12:20:15.304Z",
+    "mode": "DEMO",
+    "input": "定位一号曝气池",
+    "status": "CANCELLED",
+    "tool_count": 1,
+    "model_requests": 0,
+    "evidence": [],
+    "action_ids": [
+      "b0c7fb21-91d1-4cc1-b977-7b372765297c:1"
+    ],
+    "errors": [
+      {
+        "code": "PAGE_HIDDEN",
+        "message": "页面隐藏，镜头动作已取消"
+      }
+    ],
+    "model_receipts": [],
+    "model_feedback": [],
+    "explanation": "",
+    "scope": [
+      "SW_BIO_AERATION_001"
+    ]
+  }
+}

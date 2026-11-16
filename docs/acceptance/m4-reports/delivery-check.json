@@ -1,0 +1,10 @@
+{
+  "fixed_build_unchanged": true,
+  "real_report_saved_and_reloaded": true,
+  "evidence_references_all_exist": true,
+  "schema_version": 1,
+  "source": "SIMULATED",
+  "tests_passed": 75,
+  "no_asset_writes": true,
+  "secret_audit": true
+}

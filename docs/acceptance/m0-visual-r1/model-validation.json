@@ -1,0 +1,32 @@
+{
+  "editable_blend": {
+    "opened": true,
+    "active_scene": "SmartWater_M0",
+    "scene": "SmartWater_M0",
+    "managed_objects": 52,
+    "all_file_images_packed": true
+  },
+  "independent_glb_reimport": true,
+  "unique_device_id": "SW_BIO_AERATION_001",
+  "root_nodes_separate": true,
+  "water_local_z": 0.5,
+  "device_bounds_z_up": {
+    "min": [
+      -25.33077621459961,
+      -13.330777168273926,
+      -4.800000190734863
+    ],
+    "max": [
+      22.975000381469727,
+      10.97499942779541,
+      2.325000286102295
+    ]
+  },
+  "ground_opening_verified": true,
+  "mesh_objects": 50,
+  "triangles": 106042,
+  "finite_vertices_and_normals": true,
+  "nondegenerate_faces": true,
+  "glb_bytes": 31254844,
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+}

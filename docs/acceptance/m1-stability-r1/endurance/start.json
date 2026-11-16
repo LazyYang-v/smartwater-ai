@@ -1,0 +1,202 @@
+{
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "fresh_document_after_reverted_experiment": true,
+  "start": {
+    "at": "2026-11-15T20:47:07.838Z",
+    "scene": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 5899.600000023842,
+      "firstRenderMs": 6323,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 848,
+      "camera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "target": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "defaultCamera": [
+        25.085525841611087,
+        38.62609800579173,
+        50.976925507175984
+      ],
+      "defaultTarget": [
+        1.1867687375622464,
+        -5.494684340144581,
+        5.017777230158987
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 160,
+      "cameraBusy": false,
+      "visible": "visible",
+      "activeRenderLoops": 1,
+      "loadGeneration": 1,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.5356372463518793,
+        "right": 0.5356372044010965,
+        "bottom": -0.87,
+        "top": 0.8699994543202864
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "dashboard": {
+      "at": 7393.5,
+      "wallTime": "2026-11-15T20:47:07.844Z",
+      "pageAgeMs": 7393.600000023842,
+      "visible": "visible",
+      "cameraBusy": false,
+      "frame": 160,
+      "callbackCount": 160,
+      "renderCpuDiagnostics": {
+        "enabled": false,
+        "calls": 0,
+        "totalMs": 0,
+        "maxMs": 0,
+        "meaning": "CPU wall duration of renderer.render, not GPU time"
+      },
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "renderer": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "rendererDpr": 1,
+      "nativeDpr": 2,
+      "canvas": {
+        "width": 1218,
+        "height": 427
+      },
+      "drawingBuffer": {
+        "width": 1218,
+        "height": 427
+      },
+      "loadGeneration": 1,
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:1",
+      "task": "IDLE",
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 4,
+        "resizes": 0,
+        "active": 2
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "toolRecords": 0,
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "domNodes": 384,
+      "unavailable": {
+        "browserInternalListeners": null,
+        "gpuMemoryBytes": null,
+        "vueInternalSubscriptions": null
+      }
+    },
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  "tabs": [
+    {
+      "label": "p1",
+      "url": "http://127.0.0.1:4173/?qa=1",
+      "active": true
+    },
+    {
+      "label": "p2",
+      "url": "http://127.0.0.1:4173/",
+      "active": false
+    },
+    {
+      "label": "p3",
+      "url": "http://127.0.0.1:4173/",
+      "active": false
+    },
+    {
+      "label": "p4",
+      "url": "http://127.0.0.1:4173/",
+      "active": false
+    }
+  ]
+}

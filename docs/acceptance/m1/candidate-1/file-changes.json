@@ -1,0 +1,264 @@
+{
+  "recorded_at_utc": "2026-11-15T18:29:48.663350+00:00",
+  "changes": [
+    {
+      "file": "src/App.vue",
+      "state": "modified",
+      "before_sha256": "a0f3645a8a912560af95f86357c5addcb6d8612fb1f65f7d8c3b308c13dfc79f",
+      "sha256": "012d9158ec726d02ad144456787f39d8603b3d75a2ade5d74764ee4c0c2ddfbc",
+      "bytes": 5696
+    },
+    {
+      "file": "src/main.ts",
+      "state": "modified",
+      "before_sha256": "e6989f43be872be95a6bcf4185151038b63e88fc2ff7b4a776b654b909804598",
+      "sha256": "61635ec69905e576f0a29b401cb4f02a6d5df2483d759403f6db436d2daaf67a",
+      "bytes": 257
+    },
+    {
+      "file": "src/styles.css",
+      "state": "modified",
+      "before_sha256": "4739c724bb2503521e40f6a4d8c22a0994b8b815eb61d1aa9f2e6eec3461c145",
+      "sha256": "f7bbf6cc9a8de4daffab67fe41604b07a3ad48270d0cec5298f12c8b9c6220b8",
+      "bytes": 19813
+    },
+    {
+      "file": "src/agent/actionDispatcher.ts",
+      "state": "modified",
+      "before_sha256": "391adb72241f4398dc1730fea9e6014737a3cc4c378f952db9f1ef3cac585433",
+      "sha256": "14b829f2aeaa9b2e1f877157ebdaa814428d4234edd10c34aa8f718f4b457141",
+      "bytes": 2701
+    },
+    {
+      "file": "src/agent/types.ts",
+      "state": "modified",
+      "before_sha256": "ee629e3eb507e17ed57f377fb395d26e3837ae984bc8e891d5432081d63e4723",
+      "sha256": "d7544be72a27c68891d20c0a709c1e97e17eba500833b783620504a6aeba4a41",
+      "bytes": 549
+    },
+    {
+      "file": "src/scene/runtime.ts",
+      "state": "modified",
+      "before_sha256": "e9a68924e72c4d8975df281b1426c60e4329b210803c95419d058c7d99cacb74",
+      "sha256": "3f12a35813be8168cd2952011b761125e213407e561a636d8edcc1484cd348cd",
+      "bytes": 17891
+    },
+    {
+      "file": "tests/dispatcher.test.ts",
+      "state": "modified",
+      "before_sha256": "eb179f7863690c469cefb7a7434751ccfefccfa01e08763650df7c4523335b21",
+      "sha256": "aef09436e1527b2d1bd6c61b7799243f5cb36e72972a6f1c1734de9a7d339d52",
+      "bytes": 3158
+    },
+    {
+      "file": "dist/index.html",
+      "state": "modified",
+      "before_sha256": "29d8c941ad7b70e79962af9d1585ee587a27919e3035460f694c173fa7c060ce",
+      "sha256": "10f54a150061d59fde0622efaf34c25566f18a00b49f22954cfb9412592cc612",
+      "bytes": 486
+    },
+    {
+      "file": "dist/build-id.json",
+      "state": "modified",
+      "before_sha256": "48f065a88610537ecb2563b25db291005ce76dc69d59004011a4cb8a74a17086",
+      "sha256": "1f5fe60b81acff73fbb38ffa539c9f644ef0cee2bd2e6158db92e0159a26062b",
+      "bytes": 4394
+    },
+    {
+      "file": "dist/qa-assets/m0-before.glb",
+      "state": "replaced production bundle; original retained in baseline archive",
+      "before_sha256": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857"
+    },
+    {
+      "file": "dist/assets/index-DiwN4qak.js",
+      "state": "replaced production bundle; original retained in baseline archive",
+      "before_sha256": "f373974f8b6d5757f899b91ffa4d9c4fb353a55b4eb282cdd30d988e76d32901"
+    },
+    {
+      "file": "dist/assets/index-hh5qXsvO.css",
+      "state": "replaced production bundle; original retained in baseline archive",
+      "before_sha256": "f1ee42a1b982235a4aabee021758bc68188e01173b78c065fa805b647d1f02ab"
+    },
+    {
+      "file": "package.json",
+      "state": "modified",
+      "before_sha256": "3d517833f3f44775c501fc899a10d3abbced5c7a5921bc4c0ce63811f6fa9373",
+      "sha256": "a0d8f4ceb33d778aff9e253d1383c86c746792aae67a953d1fc849fc702fb0ce",
+      "bytes": 1230
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "state": "modified",
+      "before_sha256": "614f88fa59f420fdb04e8a9cd6b13a84b0b5adfed839a02fb8ae5aa35d5c867d",
+      "sha256": "401de182c126be0094890c1107c0fd3611106e076463bc888b170ac47525eca8",
+      "bytes": 29306
+    },
+    {
+      "file": "README.md",
+      "state": "modified",
+      "before_sha256": "17296b8b71e9aae5ddcef644fddd5b019ea82aeb63182c8245c6b8f9aa411054",
+      "sha256": "3ccd2bfa87497cc807afb1f7a6018409c2736a4385106f1d5086ba30a255b22d",
+      "bytes": 4020
+    },
+    {
+      "file": "index.html",
+      "state": "modified",
+      "before_sha256": "f7b018e4a802c20f1b9b40ef65b57f8c69ee14c88fc201c359dc2cd8d46f126f",
+      "sha256": "c8a44920f7434728ba2ffb5a7488fe5f84e3304e41d7711916a1b50cbde59e81",
+      "bytes": 386
+    },
+    {
+      "file": "src/charts/runtime.ts",
+      "state": "created",
+      "sha256": "a073cbcf4ee143cc1ae4ac2c7ebf8fb6d375a55ca97376b6fa1d1fcc6dc64897",
+      "bytes": 702
+    },
+    {
+      "file": "src/components/dashboard/AgentWorkspace.vue",
+      "state": "created",
+      "sha256": "ded8f886611a81fd78e804cc5ac0b76541ce9b99d0e0edc72ac04fde989198ae",
+      "bytes": 3569
+    },
+    {
+      "file": "src/components/dashboard/AlarmPanel.vue",
+      "state": "created",
+      "sha256": "b12e931a6feae5a4ff6b47d28fea2756002e7dd18bbc50242cb6c3b2db8adeec",
+      "bytes": 1576
+    },
+    {
+      "file": "src/components/dashboard/DashboardHeader.vue",
+      "state": "created",
+      "sha256": "4a48c2942db3bd6ae1d4f9e238134feba0155746b35c7eb7e09345e81cfb46b2",
+      "bytes": 989
+    },
+    {
+      "file": "src/components/dashboard/DashboardShell.vue",
+      "state": "created",
+      "sha256": "69f85aa9ffcc1ee3afffdfbc33ef4e88e930f1c696993f746b467a3454a168fd",
+      "bytes": 528
+    },
+    {
+      "file": "src/components/dashboard/DeviceSummary.vue",
+      "state": "created",
+      "sha256": "24e3d4429ec998ffa4fc57e2db59a492fd54cb9e7e8e78402ed0b9360c7f515a",
+      "bytes": 1897
+    },
+    {
+      "file": "src/components/dashboard/KpiOverview.vue",
+      "state": "created",
+      "sha256": "c2b671e1a624c23192634a3142bce6746d85b2e74349b2992adba7be35eaee02",
+      "bytes": 2000
+    },
+    {
+      "file": "src/components/dashboard/ProcessFlowPanel.vue",
+      "state": "created",
+      "sha256": "84435f81b2865e53d62d080a9473c9a747ec3ab6144e47c304f3ea7c35bf2595",
+      "bytes": 1109
+    },
+    {
+      "file": "src/components/dashboard/SceneViewport.vue",
+      "state": "created",
+      "sha256": "14b270a5e6aaf382581d637edded931d5ea9900b8e8a719dacf4b84807f5f7fd",
+      "bytes": 2288
+    },
+    {
+      "file": "src/components/dashboard/TrendPanel.vue",
+      "state": "created",
+      "sha256": "0e6668b2fc7590f3e51e7b9b81a65662d0c5746a977c8ace82e095d75e8cd9dc",
+      "bytes": 5166
+    },
+    {
+      "file": "src/composables/useDashboardContext.ts",
+      "state": "created",
+      "sha256": "f52255eb3b556da7db0567091e92a70c524cb2f5c0fe29b15e262f034bb3458d",
+      "bytes": 1815
+    },
+    {
+      "file": "src/composables/useMockData.ts",
+      "state": "created",
+      "sha256": "bfec626ec609e6ffb6aacf8c19d4e035951135b64f915c426230eaacf3b71430",
+      "bytes": 1559
+    },
+    {
+      "file": "src/composables/useSceneWorkspace.ts",
+      "state": "created",
+      "sha256": "b414e739317f997ec3180e3ef9cefec5de75e451411e1a22d146e60b78c8f8cc",
+      "bytes": 2819
+    },
+    {
+      "file": "src/data/mockDataProvider.ts",
+      "state": "created",
+      "sha256": "02c9512634d55578137bfb562ba40ee2ef13587a5e4275d2f3805f348649389d",
+      "bytes": 7081
+    },
+    {
+      "file": "src/qa/exposeDashboardQA.ts",
+      "state": "created",
+      "sha256": "7caf3b3fd9d71c4d3b136dccfef60dbcf8a384afa8fceb78bcdda065c0bf5a65",
+      "bytes": 3056
+    },
+    {
+      "file": "tests/mockData.test.ts",
+      "state": "created",
+      "sha256": "57df1c5830eab0f8d7f8e556916ef132379436f529cffa043bb60bf6bf761dd3",
+      "bytes": 4293
+    },
+    {
+      "file": "scripts/m1-browser-evidence.mjs",
+      "state": "created",
+      "sha256": "bd05c5607d70c428dffc241b34e94409be602c797679b9cb05a5badae416a052",
+      "bytes": 5258
+    },
+    {
+      "file": "scripts/m1-browser-features.mjs",
+      "state": "created",
+      "sha256": "a21a16fadd62d8754dd8b06d1ebba4d0b4b6fc6f89531bebe699d0db4b59ad8f",
+      "bytes": 12036
+    },
+    {
+      "file": "scripts/m1-browser-final-checks.mjs",
+      "state": "created",
+      "sha256": "711b61e8021aeafa1ffc39534cf57a23742f5d32d507ab8631be820932200824",
+      "bytes": 6160
+    },
+    {
+      "file": "scripts/m1-browser-legacy.mjs",
+      "state": "created",
+      "sha256": "592ebd4fca5e3851337537fbd2759c8204253903bc74fb6befd3e83b601a289b",
+      "bytes": 12351
+    },
+    {
+      "file": "scripts/m1-browser-performance.mjs",
+      "state": "created",
+      "sha256": "e6df8f85d92730db9990acd758493a8ed09f5a87a050aa4e11cfb979b204f974",
+      "bytes": 5840
+    },
+    {
+      "file": "scripts/m1-browser-production.mjs",
+      "state": "created",
+      "sha256": "959080127b7236a9bf25bea429597032f1b01bce96c29a9d33b872ef822ae61c",
+      "bytes": 12021
+    },
+    {
+      "file": "scripts/m1-browser-restart.mjs",
+      "state": "created",
+      "sha256": "3c0cd8e8abb7c76c4c4d47c588c3b247e2c106c68e446e770394907cc65b088c",
+      "bytes": 2279
+    },
+    {
+      "file": "scripts/m1-final-integrity.py",
+      "state": "created",
+      "sha256": "31dbdde2cf9f93e1b7dd687963b184c7deb23abad192733b4be03ed093d961a3",
+      "bytes": 5387
+    },
+    {
+      "file": "scripts/m1-freeze.py",
+      "state": "created",
+      "sha256": "9c05887c6203aee8da6a576674d05059f82b87adc6595be8ba5bd3a6598b77a9",
+      "bytes": 1524
+    }
+  ],
+  "additional_documentation_and_evidence": "docs/acceptance/m1/; PNG hashes listed in screenshots-manifest.json",
+  "protected_file_count": 108,
+  "all_protected_unchanged": true
+}

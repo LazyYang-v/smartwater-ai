@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-16T10:45:59.754559+00:00",
+  "build_id": "50751a696214206a6759ae9d2e0c18ae04e4ad00f64e2494ed1b5ea562f16651",
+  "frontend_sha256": {
+    "dist/index.html": "538afe82b02b6606f8dbc66bd50ec205cc6635680530055b6c27734772cd1dbe",
+    "dist/assets/useSceneWorkspace-ClULg4Xq.js": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+    "dist/assets/dashboard-BAW77Tho.css": "db3c1b0dfbc177680ccf5a184364c4a7ad7e1f332e00a18bee7010cea27cfc7c",
+    "dist/assets/viewer-gOB4UVnm.js": "f62b6ba34b8662e1a495213d5ae0d47eee29a9d56181c509009c6d31567252f4",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e",
+    "dist/assets/llmClient-OLUuHlzO.js": "b748396c4fe10ea649c7cd884ab2ecdd62f930a8210d6daa7dbccafdf8eb9b53",
+    "dist/assets/dashboard-BgUe9k0q.js": "fdd6749946c36326bfacc68c3bbb8b7ee5ef467cb96ae027466d5cc14a6d80ff"
+  },
+  "server_source_sha256": {
+    "server/modelResponse.mjs": "5caf0633582bc8031d3723d3f26f7ced14564a979501f4751fdcc7e904d64134",
+    "server/gateway.mjs": "8bcca0f21565376349d4fe7bb138af7920c47e36a7fb15467e26add578f508d4",
+    "server/index.mjs": "0a4582392551840bcc9a4de07446f186c66954a79c407d4b816f407425541e85"
+  },
+  "model": "gpt-6-luna",
+  "provider": "OpenAI",
+  "api": "Chat Completions",
+  "reasoning_effort": "none",
+  "no_secret_files_included": true
+}

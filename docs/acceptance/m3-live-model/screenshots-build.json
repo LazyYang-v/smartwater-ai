@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-16T11:17:52.906963+00:00",
+  "frontend_sha256": {
+    "dist/index.html": "82463c1a2322040cc0951d49dd2897b582097b3f3dcd99225f4d20b7f699048f",
+    "dist/assets/llmClient-D6dzUcCr.js": "1a8f28b720d0791648aa8b840d874a684185181ba896ab56e2a6241299c2c7e3",
+    "dist/assets/dashboard-CkXzRhSA.js": "e6f1d53be01bdb76d14a37c9ed43c6a96e88b83d7c33ebda0b7996bcddc239e3",
+    "dist/assets/useSceneWorkspace-ClULg4Xq.js": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+    "dist/assets/dashboard-BAW77Tho.css": "db3c1b0dfbc177680ccf5a184364c4a7ad7e1f332e00a18bee7010cea27cfc7c",
+    "dist/assets/viewer-gOB4UVnm.js": "f62b6ba34b8662e1a495213d5ae0d47eee29a9d56181c509009c6d31567252f4",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e"
+  },
+  "build_id": "2f2a593cb89fffbc620b9916a263e7b38531b4ed0167a9998a5654fae5113e16",
+  "notes": "Actual successful A/C paraphrase and B image build, before final negative-assertion synonym correction only. All models/assets/layout unchanged."
+}

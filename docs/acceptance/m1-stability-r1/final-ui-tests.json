@@ -1,0 +1,736 @@
+{
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "tests": [
+    {
+      "name": "full action history remains queryable with only20 initial DOM records",
+      "status": "PASS",
+      "evidence": {
+        "all": 24,
+        "dom": 20,
+        "records": [
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "6c7ea9d9-49de-4365-aa11-2139ec118252",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:53.488Z",
+            "finished_at": "2026-11-15T21:08:54.408Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 272,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "bc932a12-85ed-4a91-ad84-876520126fa1",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:54.411Z",
+            "finished_at": "2026-11-15T21:08:55.324Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 327,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "558364c5-77c8-4896-927d-6f3381cb6934",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:55.328Z",
+            "finished_at": "2026-11-15T21:08:56.243Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 382,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "c06c4769-731f-48a6-b456-c4be53945b35",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:56.247Z",
+            "finished_at": "2026-11-15T21:08:57.158Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 437,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "15530a41-a246-4851-afb4-375d7d6aa4e3",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:57.164Z",
+            "finished_at": "2026-11-15T21:08:58.091Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 492,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "8d8944a9-7104-428d-a164-565583f1836e",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:58.096Z",
+            "finished_at": "2026-11-15T21:08:59.009Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 547,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "92cb9301-ccc4-4a92-9707-0cb066440299",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:59.012Z",
+            "finished_at": "2026-11-15T21:08:59.937Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 600,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "9216001d-061f-4a3f-b60a-fb4b3e4e38d9",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:08:59.942Z",
+            "finished_at": "2026-11-15T21:09:00.860Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 655,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "13eae73f-d712-4cbd-9a9e-22f87c733846",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:00.865Z",
+            "finished_at": "2026-11-15T21:09:01.793Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 710,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "78689dbd-57d8-46fe-a1e2-afb4597fe881",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:01.798Z",
+            "finished_at": "2026-11-15T21:09:02.708Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 765,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "9582725f-e2e2-4e72-97fe-abddab56105d",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:02.712Z",
+            "finished_at": "2026-11-15T21:09:03.626Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 820,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "7c008b7d-ee84-4737-a128-784425e3befe",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:03.632Z",
+            "finished_at": "2026-11-15T21:09:04.541Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 875,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "4179523c-0b1c-42dd-a962-d53c5e7b437b",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:04.546Z",
+            "finished_at": "2026-11-15T21:09:05.459Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 930,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "df5b9f76-0c56-4b42-83af-0f10dc65fff4",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:05.464Z",
+            "finished_at": "2026-11-15T21:09:06.376Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 985,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "e69d40d8-5891-46ef-9a31-296c37f62250",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:06.381Z",
+            "finished_at": "2026-11-15T21:09:07.309Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 1041,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "8d17b19a-cfca-4f51-be5c-5b230d00afb0",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:07.316Z",
+            "finished_at": "2026-11-15T21:09:08.226Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 1096,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "cff48855-494e-45a8-9819-e9bfd83768ec",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:08.232Z",
+            "finished_at": "2026-11-15T21:09:09.154Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 1150,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "369ef32b-fdfb-4b99-89af-61bf6bc33309",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:09.159Z",
+            "finished_at": "2026-11-15T21:09:10.076Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 1206,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "a5cd4e3d-9c49-4de0-9f15-0cbeeb70c978",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:10.084Z",
+            "finished_at": "2026-11-15T21:09:11.009Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 1261,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "97f36df5-0541-4e7f-a2ad-b417e950fb7c",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:11.015Z",
+            "finished_at": "2026-11-15T21:09:11.925Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 1316,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "c4c215e2-31de-40c6-9567-5d7c2d9d9f28",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:11.931Z",
+            "finished_at": "2026-11-15T21:09:12.873Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 1372,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "a8804b2e-9f19-40dd-a05a-912c9124d5b8",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:12.879Z",
+            "finished_at": "2026-11-15T21:09:13.792Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 1427,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "3e5c797e-170d-4377-a8f9-2e314cedaddc",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:13.800Z",
+            "finished_at": "2026-11-15T21:09:14.740Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.6178233553651395,
+                  25.4653906878979,
+                  30.97172363488917
+                ],
+                "target": [
+                  -0.7393657766360286,
+                  -3.0707169341120206,
+                  2.995147534879441
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 1483,
+              "arrival_verified": true
+            }
+          },
+          {
+            "tool_name": "scene.reset_view",
+            "arguments": {},
+            "source": "DEMO_AGENT",
+            "trigger": "确定性口令",
+            "action_id": "293fa855-364a-4373-ba4e-37b83b584dc6",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T21:09:14.746Z",
+            "finished_at": "2026-11-15T21:09:15.659Z",
+            "result": {
+              "camera": {
+                "position": [
+                  25.085525841611087,
+                  38.62609800579173,
+                  50.976925507175984
+                ],
+                "target": [
+                  1.1867687375622464,
+                  -5.494684340144581,
+                  5.017777230158986
+                ],
+                "zoom": 1
+              },
+              "selected_id": null,
+              "rendered_frame": 1539,
+              "arrival_verified": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "explicit history paging exposes earlier records without loss",
+      "status": "PASS",
+      "evidence": {
+        "all": 24,
+        "dom": 24
+      }
+    },
+    {
+      "name": "critical tool/id/status/input text remains at least14 CSSpx",
+      "status": "PASS",
+      "evidence": {
+        "tool": "14px",
+        "id": "14px",
+        "status": "14px",
+        "input": "14px"
+      }
+    },
+    {
+      "name": "native pointer tooltip shows unit, quality, time and simulated source",
+      "status": "PASS",
+      "evidence": [
+        "16:00:00溶解氧：2.68 mg/L质量：有效 · SIMULATED"
+      ]
+    }
+  ]
+}

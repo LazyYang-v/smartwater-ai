@@ -1,0 +1,2 @@
+[{"name":"full action history remains queryable with only20 initial DOM records","status":"PASS"},{"name":"explicit history paging exposes earlier records without loss","status":"PASS"},{"name":"critical tool/id/status/input text remains at least14 CSSpx","status":"PASS"},{"name":"native pointer tooltip shows unit, quality, time and simulated source","status":"PASS"}]
+

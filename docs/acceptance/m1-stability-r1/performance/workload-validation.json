@@ -1,0 +1,281 @@
+[
+  {
+    "file": "round-1-A.json",
+    "round": 1,
+    "mode": "A",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 404,
+    "logDOM": 2,
+    "fullRecordCount": 2,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 6,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 69379.30000001192
+  },
+  {
+    "file": "round-1-B.json",
+    "round": 1,
+    "mode": "B",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 426,
+    "logDOM": 4,
+    "fullRecordCount": 4,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 38,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 71314.09999996424
+  },
+  {
+    "file": "round-1-C.json",
+    "round": 1,
+    "mode": "C",
+    "actions": {
+      "CANCELLED": 14,
+      "SUCCEEDED": 40
+    },
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 603,
+    "logDOM": 20,
+    "fullRecordCount": 60,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 174,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 62140.700000047684
+  },
+  {
+    "file": "round-2-A.json",
+    "round": 2,
+    "mode": "A",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 603,
+    "logDOM": 20,
+    "fullRecordCount": 62,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 178,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 68037.90000003576
+  },
+  {
+    "file": "round-2-B.json",
+    "round": 2,
+    "mode": "B",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 603,
+    "logDOM": 20,
+    "fullRecordCount": 64,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 206,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 70456.60000002384
+  },
+  {
+    "file": "round-2-C.json",
+    "round": 2,
+    "mode": "C",
+    "actions": {
+      "CANCELLED": 14,
+      "SUCCEEDED": 41
+    },
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": "SW_BIO_AERATION_001",
+    "effects": 1,
+    "geometryCount": 51,
+    "textureCount": 15,
+    "programCount": 5,
+    "domNodes": 643,
+    "logDOM": 20,
+    "fullRecordCount": 121,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 342,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 62107.69999998808
+  },
+  {
+    "file": "round-3-A.json",
+    "round": 3,
+    "mode": "A",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 639,
+    "logDOM": 20,
+    "fullRecordCount": 123,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 344,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 67290.39999997616
+  },
+  {
+    "file": "round-3-B.json",
+    "round": 3,
+    "mode": "B",
+    "actions": {},
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 639,
+    "logDOM": 20,
+    "fullRecordCount": 125,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 372,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 72051.30000001192
+  },
+  {
+    "file": "round-3-C.json",
+    "round": 3,
+    "mode": "C",
+    "actions": {
+      "CANCELLED": 6,
+      "SUCCEEDED": 22
+    },
+    "all_success_receipts_verified": true,
+    "terminal_records": true,
+    "errors": [],
+    "selectedId": null,
+    "effects": 0,
+    "geometryCount": 50,
+    "textureCount": 15,
+    "programCount": 4,
+    "domNodes": 639,
+    "logDOM": 20,
+    "fullRecordCount": 155,
+    "loop": {
+      "active": true,
+      "starts": 1,
+      "stops": 0
+    },
+    "charts": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 450,
+      "resizes": 0,
+      "active": 2
+    },
+    "duration_ms": 64922.09999996424
+  }
+]

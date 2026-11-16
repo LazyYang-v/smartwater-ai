@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-15T21:20:48.232901+00:00",
+  "build_id": "65ab7ca143451ccd8e8aec88aba960abd31ae3aab977e6059baad972971d9545",
+  "protected_checked": 233,
+  "protected_mismatches": [],
+  "source_mismatches": [],
+  "unexpected_source_files": [],
+  "dist_mismatches": [],
+  "metadata_matches": true,
+  "dependency_files_unchanged": {
+    "package.json": true,
+    "pnpm-lock.yaml": true
+  },
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "blend_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "harnesses": {
+    "scripts/m11-baseline-profile.mjs": "8b55cefb440d97d11a6c5ee4d81f9a70c4c02545e135ce79b7308a200b9df15b",
+    "scripts/m11-baseline-replay.mjs": "235079202a1360bb56c248f8c99610f979086dfefb5176035b5842a947161d9e",
+    "scripts/m11-batch-compare.mjs": "af4e31b2b8ec78e339de29c04c76ba7beb814f7a59559c9dcec3750206bb7aee",
+    "scripts/m11-batch-reversal.mjs": "8ab92774d303c9f6747700747d52df0bd9828affaefbce4f8ae32ed32f928cc2",
+    "scripts/m11-browser-diagnostics.mjs": "287349c24e5a029473dcfea8ad8ce5c1adb3ad5543be93feff98e893186f2040",
+    "scripts/m11-browser-endurance.mjs": "a653379e74b67212de65524f5c407754290d375d8d187508471291b2edd87be0",
+    "scripts/m11-browser-features.mjs": "1c35840e9c0493258d8689569e108ff4dd08438e8941b74c0922d80cbd8c2bcc",
+    "scripts/m11-browser-final-ui.mjs": "5b4c9f237390e528fe29c5e92a8a6cabd38ee638e53b1ff8ec9e4afc73406a20",
+    "scripts/m11-browser-interaction.mjs": "11a495a37d6c05ea9cb7c05873bb205b35122d4db940ca0d5f2a51522a56b2ed",
+    "scripts/m11-browser-legacy.mjs": "8419bfeed5d4407db934e0be1a77deb2fd725b78f19a2ca286d7b90a9abec2df",
+    "scripts/m11-browser-performance.mjs": "03b4f81cf32a626ee6a1f8b06d2a8f9de2cd68e7a0ad6b6a3cd2f652011a5f79",
+    "scripts/m11-browser-restart.mjs": "ffcd5e068e542c60c5957c22d8f6ff648cb86001e516d45f82821c6cafe7208b",
+    "scripts/m11-build-after-baseline.py": "090fb9c3f841567560f83745b0a4645bddb1973192df3f392ad256f2dc20e86e",
+    "scripts/m11-diagnostic-overhead.mjs": "e18cbb43ecae26b4c02c6c73fea40850d2d1ac0453c9e869158dfc8ec6ecc651",
+    "scripts/m11-final-integrity.py": "49a14d7125c393297fd87ddeaed1255978694000db8555ff06980ac4b5192e9e",
+    "scripts/m11-freeze.py": "d26ec957854ca4eb384c2e92c550719a1916412d958988fd05f511b5c91c56bf",
+    "scripts/m11-normal-profile.mjs": "a19125e2bf047cab0e5a7e1f2e3f11f7974aef6eaa3f3c0ff26f75aba57b7fad",
+    "scripts/m11-old-new-pair.mjs": "216edf74ce5559dd555628c51ff0eb2444a80a1bc29e56d3d097ebd5001cfbf4",
+    "scripts/m11-restart-server.py": "64e5c4ee03e32501dbe38583f282f08fd738300165573e7bfe91b46a51632e7d",
+    "scripts/m11-revert-batch-experiment.py": "aed787efa8c2017638c6cd319d89004f09e7345e0b05ddb8ab1ed447156b403b",
+    "scripts/m11-severe-profile.mjs": "f5ccc56a6fbcfbc6a0957319d5268dbef275b9d0899c5a8665feadc5db104131",
+    "scripts/m11-write-report.py": "93c5468eb7a2d9f63049807ea201d1529ec48c893d2b5e81e3fe7f76dd185d01"
+  },
+  "passed": true
+}

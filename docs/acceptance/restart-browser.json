@@ -1,0 +1,165 @@
+{
+  "afterRestart": {
+    "initial": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 2293.5,
+      "firstRenderMs": 2571.699999988079,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 11,
+      "frameMs": 15.899999999999636,
+      "camera": [
+        42,
+        39.00000000000001,
+        53.00000000000001
+      ],
+      "target": [
+        0,
+        -0.5,
+        0
+      ],
+      "zoom": 1,
+      "frame": 91,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1.5,
+      "canvas": {
+        "width": 1028,
+        "height": 445
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "focus": {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "action_id": "c49eac10-6153-46d1-ad36-add6e7dbeff3",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T16:27:23.645Z",
+      "finished_at": "2026-11-15T16:27:24.593Z",
+      "result": {
+        "camera": {
+          "position": [
+            5.080612935563679,
+            33.73647539781425,
+            37.99259976511352
+          ],
+          "target": [
+            -1.1778879165649414,
+            -1.2374999523162842,
+            1.1778888702392576
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_BIO_AERATION_001",
+        "rendered_frame": 147,
+        "arrival_verified": true
+      }
+    },
+    "reset": {
+      "tool_name": "scene.reset_view",
+      "arguments": {},
+      "action_id": "96c8f223-5a89-4648-b8cd-30e693a9dd46",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-15T16:27:24.634Z",
+      "finished_at": "2026-11-15T16:27:25.555Z",
+      "result": {
+        "camera": {
+          "position": [
+            42,
+            39.00000000000001,
+            53.00000000000001
+          ],
+          "target": [
+            0,
+            -0.5,
+            0
+          ],
+          "zoom": 1
+        },
+        "selected_id": null,
+        "rendered_frame": 160,
+        "arrival_verified": true
+      }
+    },
+    "final": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 2293.5,
+      "firstRenderMs": 2571.699999988079,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 11,
+      "frameMs": 300,
+      "camera": [
+        42,
+        39.00000000000001,
+        53.00000000000001
+      ],
+      "target": [
+        0,
+        -0.5,
+        0
+      ],
+      "zoom": 1,
+      "frame": 160,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1.5,
+      "canvas": {
+        "width": 1028,
+        "height": 445
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    }
+  },
+  "normalProduction": {
+    "url": "http://127.0.0.1:4173/",
+    "diagnosticsExposed": false,
+    "records": [
+      {
+        "status": "SUCCEEDED",
+        "text": "执行成功\n00:27:32\nscene.reset_view\n默认总览 · 清除选择\n\n相机状态已验证 · 渲染帧已确认\n\n执行详情"
+      },
+      {
+        "status": "SUCCEEDED",
+        "text": "执行成功\n00:27:31\nscene.focus_device\nSW_BIO_AERATION_001\n\n相机状态已验证 · 渲染帧已确认\n\n执行详情"
+      }
+    ],
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    }
+  }
+}

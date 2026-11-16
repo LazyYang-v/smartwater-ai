@@ -1,0 +1,725 @@
+{
+  "scope": "Application explicit ownership only; internal library registrations and GPU bytes unavailable. Frame/pass counts are separate.",
+  "windows": [
+    {
+      "window": 1,
+      "at": "2026-11-15T20:48:39.345Z",
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:16",
+      "pageAgeMs": 98892.20000004768,
+      "submittedFrame": 1453,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 38,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 420,
+      "toolRecords": 0,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 14.445591277655394,
+      "p95_frame_ms": 185.3000000000029
+    },
+    {
+      "window": 2,
+      "at": "2026-11-15T20:49:50.660Z",
+      "scenario": "LOW_DO",
+      "snapshotId": "smartwater-m1.2:LOW_DO:12",
+      "pageAgeMs": 170205.40000003576,
+      "submittedFrame": 3432,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 66,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 408,
+      "toolRecords": 2,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 27.554610258665654,
+      "p95_frame_ms": 116.59999999997672
+    },
+    {
+      "window": 3,
+      "at": "2026-11-15T20:51:13.386Z",
+      "scenario": "MISSING_DATA",
+      "snapshotId": "smartwater-m1.2:MISSING_DATA:14",
+      "pageAgeMs": 252932,
+      "submittedFrame": 4830,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 98,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 444,
+      "toolRecords": 2,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 16.7240043390671,
+      "p95_frame_ms": 165.60000000000582
+    },
+    {
+      "window": 4,
+      "at": "2026-11-15T20:52:27.526Z",
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:13",
+      "pageAgeMs": 327068.5,
+      "submittedFrame": 6421,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 128,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 404,
+      "toolRecords": 2,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 21.674444566320073,
+      "p95_frame_ms": 133.30000000004657
+    },
+    {
+      "window": 5,
+      "at": "2026-11-15T20:53:42.166Z",
+      "scenario": "LOW_DO",
+      "snapshotId": "smartwater-m1.2:LOW_DO:12",
+      "pageAgeMs": 401773.3000000119,
+      "submittedFrame": 8108,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 156,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 466,
+      "toolRecords": 4,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 22.31791990189932,
+      "p95_frame_ms": 118.59999999997672
+    },
+    {
+      "window": 6,
+      "at": "2026-11-15T20:54:52.748Z",
+      "scenario": "MISSING_DATA",
+      "snapshotId": "smartwater-m1.2:MISSING_DATA:12",
+      "pageAgeMs": 472354.5,
+      "submittedFrame": 10131,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 184,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 430,
+      "toolRecords": 4,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 29.253821132941937,
+      "p95_frame_ms": 100.5
+    },
+    {
+      "window": 7,
+      "at": "2026-11-15T20:56:03.025Z",
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:12",
+      "pageAgeMs": 542630.4000000358,
+      "submittedFrame": 11823,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 212,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 462,
+      "toolRecords": 4,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 24.16444189858427,
+      "p95_frame_ms": 116.70000000001164
+    },
+    {
+      "window": 8,
+      "at": "2026-11-15T20:57:15.547Z",
+      "scenario": "LOW_DO",
+      "snapshotId": "smartwater-m1.2:LOW_DO:12",
+      "pageAgeMs": 615151.6000000238,
+      "submittedFrame": 13795,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 242,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 452,
+      "toolRecords": 6,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 27.992513630075678,
+      "p95_frame_ms": 100.90000000002328
+    },
+    {
+      "window": 9,
+      "at": "2026-11-15T20:58:28.944Z",
+      "scenario": "MISSING_DATA",
+      "snapshotId": "smartwater-m1.2:MISSING_DATA:13",
+      "pageAgeMs": 688548.7000000477,
+      "submittedFrame": 15188,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 272,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 488,
+      "toolRecords": 6,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 18.72598895754463,
+      "p95_frame_ms": 149.69999999995343
+    },
+    {
+      "window": 10,
+      "at": "2026-11-15T20:59:50.529Z",
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:14",
+      "pageAgeMs": 770133,
+      "submittedFrame": 16369,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 304,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 448,
+      "toolRecords": 6,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 14.250883592583492,
+      "p95_frame_ms": 183.69999999995343
+    },
+    {
+      "window": 11,
+      "at": "2026-11-15T21:01:09.995Z",
+      "scenario": "LOW_DO",
+      "snapshotId": "smartwater-m1.2:LOW_DO:13",
+      "pageAgeMs": 849597.6000000238,
+      "submittedFrame": 17657,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 336,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 510,
+      "toolRecords": 8,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 17.69336470693541,
+      "p95_frame_ms": 150.90000000002328
+    },
+    {
+      "window": 12,
+      "at": "2026-11-15T21:02:19.723Z",
+      "scenario": "MISSING_DATA",
+      "snapshotId": "smartwater-m1.2:MISSING_DATA:12",
+      "pageAgeMs": 919324.7000000477,
+      "submittedFrame": 20490,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 364,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 474,
+      "toolRecords": 8,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 41.76951672862454,
+      "p95_frame_ms": 51.09999999997672
+    },
+    {
+      "window": 13,
+      "at": "2026-11-15T21:03:23.920Z",
+      "scenario": "NORMAL",
+      "snapshotId": "smartwater-m1.2:NORMAL:11",
+      "pageAgeMs": 983521.2000000477,
+      "submittedFrame": 24311,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 390,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 506,
+      "toolRecords": 8,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 59.569444756339806,
+      "p95_frame_ms": 17.699999999953434
+    },
+    {
+      "window": 14,
+      "at": "2026-11-15T21:04:29.918Z",
+      "scenario": "LOW_DO",
+      "snapshotId": "smartwater-m1.2:LOW_DO:11",
+      "pageAgeMs": 1049518.7000000477,
+      "submittedFrame": 28255,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 418,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 496,
+      "toolRecords": 10,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 59.8085548539288,
+      "p95_frame_ms": 17.699999999953434
+    },
+    {
+      "window": 15,
+      "at": "2026-11-15T21:05:34.183Z",
+      "scenario": "MISSING_DATA",
+      "snapshotId": "smartwater-m1.2:MISSING_DATA:11",
+      "pageAgeMs": 1113783.4000000358,
+      "submittedFrame": 32072,
+      "loop": {
+        "active": true,
+        "starts": 1,
+        "stops": 0
+      },
+      "ownership": {
+        "renderers": 1,
+        "rendererCreated": 1,
+        "rendererDisposed": 0,
+        "observers": 3,
+        "listeners": 7,
+        "dataTimers": 1,
+        "dataTimerStarts": 1,
+        "dataTimerStops": 0,
+        "trendMounts": 2,
+        "trendUnmounts": 0
+      },
+      "geometryCount": 50,
+      "textureCount": 15,
+      "programCount": 4,
+      "calls": 50,
+      "triangles": 106042,
+      "charts": {
+        "created": 2,
+        "disposed": 0,
+        "updates": 444,
+        "resizes": 0,
+        "active": 2
+      },
+      "history": {
+        "do": 1441,
+        "blower_power": 1441
+      },
+      "DOM": 532,
+      "toolRecords": 10,
+      "loadGeneration": 1,
+      "visible": "visible",
+      "workload_error": null,
+      "average_fps": 59.452765410686936,
+      "p95_frame_ms": 17.699999999953434
+    }
+  ]
+}

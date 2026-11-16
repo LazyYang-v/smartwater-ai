@@ -1,0 +1,142 @@
+{
+  "screenshots": [
+    {
+      "file": "blower-power-release.png",
+      "task_file": "task-paraphrase-a-release-real.json",
+      "task_id": "25613f5d-d009-4c19-b9de-6863b4943560",
+      "snapshot_id": "smartwater-m1.2:NORMAL:0",
+      "capture_mtime": "2026-11-16T11:14:33.449963+00:00",
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "nativeDpr": 2
+      },
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 421.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 842.3000000119209,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 218,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 344.4000000357628,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      },
+      "frontend_build_id": "2f2a593cb89fffbc620b9916a263e7b38531b4ed0167a9998a5654fae5113e16"
+    },
+    {
+      "file": "low-do-release.png",
+      "task_file": "task-b-release-real.json",
+      "task_id": "5a87e64c-2b37-4605-a202-4a8ce1f0472a",
+      "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+      "capture_mtime": "2026-11-16T11:14:53.382601+00:00",
+      "png_pixels": [
+        1920,
+        1080
+      ],
+      "viewport": {
+        "width": 1920,
+        "height": 1080,
+        "nativeDpr": 2
+      },
+      "camera": [
+        -22.450788842413413,
+        6.745421765080366,
+        -17.94500954777791
+      ],
+      "target": [
+        -23.04217054355862,
+        1.7186773053461186,
+        -22.873190390654628
+      ],
+      "selected_device": "SW_AIR_BLOWER_001",
+      "loaded_glbs": {
+        "SW_BIO_AERATION_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 421.89999997615814,
+          "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+        },
+        "SW_CLR_TANK_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 842.3000000119209,
+          "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+        },
+        "SW_AIR_BLOWER_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 218,
+          "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+        },
+        "SW_PRE_PUMP_001": {
+          "status": "ready",
+          "error": "",
+          "loadMs": 344.4000000357628,
+          "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+        }
+      },
+      "frontend_build_id": "2f2a593cb89fffbc620b9916a263e7b38531b4ed0167a9998a5654fae5113e16"
+    }
+  ],
+  "capture_frontend": {
+    "at": "2026-11-16T11:17:52.906963+00:00",
+    "frontend_sha256": {
+      "dist/index.html": "82463c1a2322040cc0951d49dd2897b582097b3f3dcd99225f4d20b7f699048f",
+      "dist/assets/llmClient-D6dzUcCr.js": "1a8f28b720d0791648aa8b840d874a684185181ba896ab56e2a6241299c2c7e3",
+      "dist/assets/dashboard-CkXzRhSA.js": "e6f1d53be01bdb76d14a37c9ed43c6a96e88b83d7c33ebda0b7996bcddc239e3",
+      "dist/assets/useSceneWorkspace-ClULg4Xq.js": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+      "dist/assets/dashboard-BAW77Tho.css": "db3c1b0dfbc177680ccf5a184364c4a7ad7e1f332e00a18bee7010cea27cfc7c",
+      "dist/assets/viewer-gOB4UVnm.js": "f62b6ba34b8662e1a495213d5ae0d47eee29a9d56181c509009c6d31567252f4",
+      "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e"
+    },
+    "build_id": "2f2a593cb89fffbc620b9916a263e7b38531b4ed0167a9998a5654fae5113e16",
+    "notes": "Actual successful A/C paraphrase and B image build, before final negative-assertion synonym correction only. All models/assets/layout unchanged."
+  },
+  "delivery_frontend_sha256": {
+    "dist/index.html": "cc85c1ff7c6689fbbcde55a41b53e88d538d030dca3b225a600891fbe93086b6",
+    "dist/assets/useSceneWorkspace-ClULg4Xq.js": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+    "dist/assets/dashboard-BAW77Tho.css": "db3c1b0dfbc177680ccf5a184364c4a7ad7e1f332e00a18bee7010cea27cfc7c",
+    "dist/assets/llmClient-BSESS0Qh.js": "c474598e72401c1f1d0c1544408a22dd0efc1352ac6322bb10abe4ad9269a9d2",
+    "dist/assets/viewer-gOB4UVnm.js": "f62b6ba34b8662e1a495213d5ae0d47eee29a9d56181c509009c6d31567252f4",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e",
+    "dist/assets/dashboard-bNotLKPl.js": "f7f8372cdf57929951641a3b6a950eff0192973e98bed7f1a8c134861df930db"
+  },
+  "delivery_build_id": "f687592073884a542dabc18b432ab8585fddc8c118d5d317ea43763efc928ddd",
+  "difference": "Final delivery adds negative-assertion synonym handling only after these real successful screenshots; D and real cancellation/reset were freshly verified on final build. Capture and delivery hashes are not claimed identical.",
+  "server_sha256": {
+    "server/modelResponse.mjs": "5caf0633582bc8031d3723d3f26f7ced14564a979501f4751fdcc7e904d64134",
+    "server/gateway.mjs": "41868f7dfc5acfb046bb471d88382a0d193e5367d50139a01c2787bbc213c102",
+    "server/index.mjs": "0a4582392551840bcc9a4de07446f186c66954a79c407d4b816f407425541e85"
+  }
+}

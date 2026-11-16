@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-16T09:53:01.065Z",
+  "local_config_file": "/Users/leizhenyang/projects/smartwater-ai/.env.gateway.local",
+  "config_file_exists": false,
+  "example_file_exists": true,
+  "key_configured": false,
+  "model_configured": false,
+  "missing": [
+    "SMARTWATER_OPENAI_API_KEY",
+    "SMARTWATER_MODEL"
+  ],
+  "provider": "OpenAI",
+  "protocol": "openai-chat-completions",
+  "model": null,
+  "configuration_ready": false,
+  "local_status_checks": [
+    {
+      "port": 8787,
+      "http_status": 200,
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ]
+    },
+    {
+      "port": 5173,
+      "http_status": 200,
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ]
+    },
+    {
+      "port": 4173,
+      "http_status": 200,
+      "ready": false,
+      "protocol": "openai-chat-completions",
+      "missing": [
+        "SMARTWATER_OPENAI_API_KEY",
+        "SMARTWATER_MODEL"
+      ]
+    }
+  ],
+  "upstream_requests_sent": 0,
+  "basic_request": "NOT_RUN_MISSING_CONFIGURATION",
+  "real_tool_loop": "NOT_RUN_MISSING_CONFIGURATION",
+  "business_tasks_A_D": "NOT_RUN_MISSING_CONFIGURATION",
+  "two_paraphrases": "NOT_RUN_MISSING_CONFIGURATION",
+  "live_network_cancellation": "NOT_VERIFIED",
+  "screenshots": "NOT_CAPTURED_NO_LIVE_RUN",
+  "upstream_request_id": null,
+  "actual_usage": "未知（未发送上游请求）",
+  "product_code_modified": false
+}

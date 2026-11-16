@@ -1,0 +1,481 @@
+{
+  "recorded_at_utc": "2026-11-15T19:31:44.894450+00:00",
+  "git_status": "?? .gitignore\n?? AGENTS.md\n?? README.md\n?? assets/\n?? config/\n?? docs/\n?? index.html\n?? package.json\n?? pnpm-lock.yaml\n?? public/\n?? scripts/\n?? src/\n?? tests/\n?? tsconfig.json\n?? vite.config.ts\n",
+  "files": {
+    "src/App.vue": {
+      "sha256": "012d9158ec726d02ad144456787f39d8603b3d75a2ade5d74764ee4c0c2ddfbc",
+      "bytes": 5696
+    },
+    "src/main.ts": {
+      "sha256": "61635ec69905e576f0a29b401cb4f02a6d5df2483d759403f6db436d2daaf67a",
+      "bytes": 257
+    },
+    "src/styles.css": {
+      "sha256": "f7bbf6cc9a8de4daffab67fe41604b07a3ad48270d0cec5298f12c8b9c6220b8",
+      "bytes": 19813
+    },
+    "src/env.d.ts": {
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "bytes": 38
+    },
+    "src/composables/useSceneWorkspace.ts": {
+      "sha256": "b414e739317f997ec3180e3ef9cefec5de75e451411e1a22d146e60b78c8f8cc",
+      "bytes": 2819
+    },
+    "src/composables/useDashboardContext.ts": {
+      "sha256": "f52255eb3b556da7db0567091e92a70c524cb2f5c0fe29b15e262f034bb3458d",
+      "bytes": 1815
+    },
+    "src/composables/useMockData.ts": {
+      "sha256": "bfec626ec609e6ffb6aacf8c19d4e035951135b64f915c426230eaacf3b71430",
+      "bytes": 1559
+    },
+    "src/charts/runtime.ts": {
+      "sha256": "a073cbcf4ee143cc1ae4ac2c7ebf8fb6d375a55ca97376b6fa1d1fcc6dc64897",
+      "bytes": 702
+    },
+    "src/qa/exposeDashboardQA.ts": {
+      "sha256": "7caf3b3fd9d71c4d3b136dccfef60dbcf8a384afa8fceb78bcdda065c0bf5a65",
+      "bytes": 3056
+    },
+    "src/agent/demoParser.ts": {
+      "sha256": "232bed03f02b43bc44972f0db12ea58da6cd57256c615c53671cfa5f66161f19",
+      "bytes": 418
+    },
+    "src/agent/actionDispatcher.ts": {
+      "sha256": "14b829f2aeaa9b2e1f877157ebdaa814428d4234edd10c34aa8f718f4b457141",
+      "bytes": 2701
+    },
+    "src/agent/types.ts": {
+      "sha256": "d7544be72a27c68891d20c0a709c1e97e17eba500833b783620504a6aeba4a41",
+      "bytes": 549
+    },
+    "src/scene/cameraController.ts": {
+      "sha256": "1acb800aa1c0d389c17771ca2fe4cd1420e4d23e300928d83001af1fcd404a9e",
+      "bytes": 3265
+    },
+    "src/scene/framing.ts": {
+      "sha256": "f42ce96429bbf5f2117b4dbafb8eb0d794e5b5d9450653c0bc37dda21e51facf",
+      "bytes": 2066
+    },
+    "src/scene/runtime.ts": {
+      "sha256": "3f12a35813be8168cd2952011b761125e213407e561a636d8edcc1484cd348cd",
+      "bytes": 17891
+    },
+    "src/scene/deviceRegistry.ts": {
+      "sha256": "d4acfd2dc00a4eae4cd1d39ecd94265bb1a6310114036ae92cffb8d69009502c",
+      "bytes": 1150
+    },
+    "src/data/mockDataProvider.ts": {
+      "sha256": "a0f612d00fbdd5cd41a4c11f45bab88eb68ed0942db472ba5a50b00b309d6ff3",
+      "bytes": 7271
+    },
+    "src/components/dashboard/AgentWorkspace.vue": {
+      "sha256": "ded8f886611a81fd78e804cc5ac0b76541ce9b99d0e0edc72ac04fde989198ae",
+      "bytes": 3569
+    },
+    "src/components/dashboard/DashboardShell.vue": {
+      "sha256": "69f85aa9ffcc1ee3afffdfbc33ef4e88e930f1c696993f746b467a3454a168fd",
+      "bytes": 528
+    },
+    "src/components/dashboard/DeviceSummary.vue": {
+      "sha256": "24e3d4429ec998ffa4fc57e2db59a492fd54cb9e7e8e78402ed0b9360c7f515a",
+      "bytes": 1897
+    },
+    "src/components/dashboard/ProcessFlowPanel.vue": {
+      "sha256": "84435f81b2865e53d62d080a9473c9a747ec3ab6144e47c304f3ea7c35bf2595",
+      "bytes": 1109
+    },
+    "src/components/dashboard/TrendPanel.vue": {
+      "sha256": "0e6668b2fc7590f3e51e7b9b81a65662d0c5746a977c8ace82e095d75e8cd9dc",
+      "bytes": 5166
+    },
+    "src/components/dashboard/DashboardHeader.vue": {
+      "sha256": "4a48c2942db3bd6ae1d4f9e238134feba0155746b35c7eb7e09345e81cfb46b2",
+      "bytes": 989
+    },
+    "src/components/dashboard/SceneViewport.vue": {
+      "sha256": "14b270a5e6aaf382581d637edded931d5ea9900b8e8a719dacf4b84807f5f7fd",
+      "bytes": 2288
+    },
+    "src/components/dashboard/KpiOverview.vue": {
+      "sha256": "c2b671e1a624c23192634a3142bce6746d85b2e74349b2992adba7be35eaee02",
+      "bytes": 2000
+    },
+    "src/components/dashboard/AlarmPanel.vue": {
+      "sha256": "b12e931a6feae5a4ff6b47d28fea2756002e7dd18bbc50242cb6c3b2db8adeec",
+      "bytes": 1576
+    },
+    "tests/dispatcher.test.ts": {
+      "sha256": "aef09436e1527b2d1bd6c61b7799243f5cb36e72972a6f1c1734de9a7d339d52",
+      "bytes": 3158
+    },
+    "tests/mockData.test.ts": {
+      "sha256": "27e55a77b2221f97cd8f353fc1b72d5ed8b84eabbb73475dab33e6e293cb3e35",
+      "bytes": 4978
+    },
+    "tests/framing.test.ts": {
+      "sha256": "45601d1ed61695fcd1cd5f19be344a8b4095e12feb6d972eb4ce7089fc4ab09b",
+      "bytes": 964
+    },
+    "scripts/m1-browser-restart.mjs": {
+      "sha256": "3c0cd8e8abb7c76c4c4d47c588c3b247e2c106c68e446e770394907cc65b088c",
+      "bytes": 2279
+    },
+    "scripts/m1-freeze.py": {
+      "sha256": "9c05887c6203aee8da6a576674d05059f82b87adc6595be8ba5bd3a6598b77a9",
+      "bytes": 1524
+    },
+    "scripts/m1-browser-final-checks-v2.mjs": {
+      "sha256": "13539ed6ac796444db503be04f0e8fd192d07e138572c7a5de4c567133d35a29",
+      "bytes": 8163
+    },
+    "scripts/m1-browser-evidence.mjs": {
+      "sha256": "bd05c5607d70c428dffc241b34e94409be602c797679b9cb05a5badae416a052",
+      "bytes": 5258
+    },
+    "scripts/m1-browser-performance-recovery.mjs": {
+      "sha256": "71f9f57fc0fb50f568a9b841649b813da7f5f9a0ef3b108e4a051667ad095988",
+      "bytes": 6073
+    },
+    "scripts/freeze_visual_r1.py": {
+      "sha256": "5b2049ba80c17c3cc094c5d79fa11e2a431495ddfd08c7948d83530292281d3e",
+      "bytes": 2001
+    },
+    "scripts/m1-browser-legacy.mjs": {
+      "sha256": "592ebd4fca5e3851337537fbd2759c8204253903bc74fb6befd3e83b601a289b",
+      "bytes": 12351
+    },
+    "scripts/m1-write-report.py": {
+      "sha256": "8e9c84f6d2651601797d5f630fb423dd1df6a3dab3d901e3f1130348e9287108",
+      "bytes": 9959
+    },
+    "scripts/browser-performance.mjs": {
+      "sha256": "d6dfeff918d32ed728eac8630012d581b56b8973c30d1c669a6f1e470414dd01",
+      "bytes": 3775
+    },
+    "scripts/m1-final-integrity.py": {
+      "sha256": "fe858bd4ce15240939026c817e8ede09003f757b2b97369ac3367d6ca9890caf",
+      "bytes": 5985
+    },
+    "scripts/m1-browser-performance-diagnostic.mjs": {
+      "sha256": "956a2ea92488836c6bdab3ddfc5501a1c088d410a2d5cd46eb10782d772e2124",
+      "bytes": 4204
+    },
+    "scripts/m1-browser-features.mjs": {
+      "sha256": "a21a16fadd62d8754dd8b06d1ebba4d0b4b6fc6f89531bebe699d0db4b59ad8f",
+      "bytes": 12036
+    },
+    "scripts/m1-browser-production.mjs": {
+      "sha256": "959080127b7236a9bf25bea429597032f1b01bce96c29a9d33b872ef822ae61c",
+      "bytes": 12021
+    },
+    "scripts/m1-browser-final-checks.mjs": {
+      "sha256": "7417b36fb8f4711785d32c416d37baf95608a146176ed18bae87e3a560ad3ea7",
+      "bytes": 7437
+    },
+    "scripts/m1-browser-performance.mjs": {
+      "sha256": "e6df8f85d92730db9990acd758493a8ed09f5a87a050aa4e11cfb979b204f974",
+      "bytes": 5840
+    },
+    "scripts/download_assets.py": {
+      "sha256": "2fd792d79e0000dcc7cd9e870082f0c622eb67db646eafe35d1b4cec73ef580d",
+      "bytes": 2847
+    },
+    "scripts/browser-restart-check.mjs": {
+      "sha256": "e4b940b4600e50185909f4bee7b893d02e1db4fc7c5cfad823f7bb08930c7ce6",
+      "bytes": 3284
+    },
+    "scripts/download_visual_r1.py": {
+      "sha256": "b5a5c0fea34875792c1f4477435c5bab6e427939367d5fc6ec5b3ea147bb1952",
+      "bytes": 2009
+    },
+    "scripts/browser-acceptance.mjs": {
+      "sha256": "99e8d053f70c43c64e59dc9acf11c8f2bc6e7f25d1f5a140a45b3b8accda0d89",
+      "bytes": 16206
+    },
+    "scripts/browser-visual-evidence.mjs": {
+      "sha256": "d8d2862198042307e2a8e31df55b7f8217b53162352b802c661257b19ca320e5",
+      "bytes": 5866
+    },
+    "scripts/blender/validate_asset.py": {
+      "sha256": "3469ad253b4ffc7a65fc515ef72910326b4123b52ea6696c2b528e588c69038c",
+      "bytes": 4641
+    },
+    "scripts/blender/visual_materials.py": {
+      "sha256": "d1b3b7dc06dc40c455359c02810453e22af7d22b03b49df78e3bdb2955d4becb",
+      "bytes": 4843
+    },
+    "scripts/blender/build_aeration.py": {
+      "sha256": "24f6a99bde9d53ada467a4011ce28c02bc09b549cef1774ec3ea9ba0467aa8da",
+      "bytes": 23340
+    },
+    "scripts/blender/inspect_visual_materials.py": {
+      "sha256": "f581765395a79e2a29ec160ba8db737f35cbb63ac0fce55b42f91fff8842df66",
+      "bytes": 2093
+    },
+    "AGENTS.md": {
+      "sha256": "514eaef2642ee0889ee8209fbfcb0816ba817a7b04e360af4df8cfdbe97c78d2",
+      "bytes": 1596
+    },
+    "README.md": {
+      "sha256": "3ccd2bfa87497cc807afb1f7a6018409c2736a4385106f1d5086ba30a255b22d",
+      "bytes": 4020
+    },
+    "package.json": {
+      "sha256": "a0d8f4ceb33d778aff9e253d1383c86c746792aae67a953d1fc849fc702fb0ce",
+      "bytes": 1230
+    },
+    "pnpm-lock.yaml": {
+      "sha256": "401de182c126be0094890c1107c0fd3611106e076463bc888b170ac47525eca8",
+      "bytes": 29306
+    },
+    "index.html": {
+      "sha256": "c8a44920f7434728ba2ffb5a7488fe5f84e3304e41d7711916a1b50cbde59e81",
+      "bytes": 386
+    },
+    "vite.config.ts": {
+      "sha256": "913dc05edd5a69a4be0426717fbd0e967c5379689dd5384453549f2d25e274b6",
+      "bytes": 124
+    },
+    "tsconfig.json": {
+      "sha256": "c9b1ad66c406800ad56641799cb21d48a6357ffb5fdb71241bf00b650ca5ceee",
+      "bytes": 377
+    }
+  },
+  "protected": {
+    "docs/acceptance/model-validation.log": "6ffa5ba4baf8e7405c25533cd13986144b84ecf07b65997aa5126dd6d8ff90a0",
+    "docs/acceptance/summary.json": "7777394b4ea2626c9637ad0b70ca1f99be17103a040bdd6e1b14395206aaa87f",
+    "docs/acceptance/screenshots.json": "687f9ae93391fc82bb442d7fb229c34459177576ca4d09374a3d356d3494516c",
+    "docs/acceptance/restart-process.json": "1ab843e06c179da1bd40bf3908b57c8fd697698f60df04f29a5a89dacf027624",
+    "docs/acceptance/restart-normal-production.png": "f3077d2afc7c3240db19616601b188aa7c1145f17a364e5113808867427ae078",
+    "docs/acceptance/stage-b-first-web.png": "9987ba7fbc303e88b9925b270beeecc3791d7e0adedb7320fc9a5604bcbb1c25",
+    "docs/acceptance/agent-reset-overview.png": "f9f14549fc0ecfd10f86ea777cda2a3cf67ee9ae6abf852d3320c5692a2c4590",
+    "docs/acceptance/restart-browser.json": "dc5256a62675b3bc34fd89acbe15c30e64fec879794eeee5af6dc5ff6bf0d5af",
+    "docs/acceptance/browser-tests.json": "e7d8ea7f1084353dcd9cd85d7e4c4397bcdc30351bc3f2d7c01499c66777c57b",
+    "docs/acceptance/model-final.json": "a1c72200ecc7d3d1341347ac7833c355f156ea18b339b83b3978119c9db81d7b",
+    "docs/acceptance/unit-tests.log": "9cab80490c157ffc8a1899567b85a43b96828c2c198b6132880e0b8dc7b5df1c",
+    "docs/acceptance/build-final.log": "0cf1a9485603661c8b047aeee5072eca6f0de69067844476d8c757320228836e",
+    "docs/acceptance/stage-a-missing-asset.png": "4b7abb53689fe8faa244576ad1e8888536e7a89dc63e7b9468350ba1b468c689",
+    "docs/acceptance/agent-focused.png": "8da76f4fbebf27cc44e57c9cc9ebd2de046443dd939c10e8a72b918da275a0c8",
+    "docs/acceptance/load-failure.png": "6596a5f6bf37f803ac0733dcdeb36c8610500fd25fff06750cf528249069ac84",
+    "docs/acceptance/build-first.log": "23ec8ead55a13dc38c77f1e075424c84b8f4a3000f4cc46c92e6dd09c9ff55e0",
+    "docs/acceptance/connections-closeup.png": "025303ae4dc4f8d764d5c5b878ae3eb2fac2cb195a9da226e81abb0aaf4a9603",
+    "docs/acceptance/performance.json": "825f4de4fadf34f02e35a7c9580a876c8592e5093b59cd1f95ab285ab540f4ac",
+    "docs/acceptance/model-first.json": "d9fed87e813e8c64c55a16d3f0d8e88d3eb7807fa982ebac48e9233a815a90f0",
+    "docs/acceptance/layout-and-visible-tools.json": "b7b4d8ffb4cc22efea88eb8c1cf153cb1b65327f3e641afe2dd25c169fa4a24f",
+    "docs/acceptance/performance-baseline.json": "9d756f1a84a1667cfbb6e451de8786f226a870d5e97b6185b227cf5a21dd8720",
+    "docs/acceptance/performance-no-polling.json": "cbab977666bedbc56d6b7c9108268190c7b2a2d39083aba4d1eb07a192cb8b41",
+    "docs/acceptance/aerators-water-hidden.png": "781ea52120ff75d63a42aa9017419e891e9e3a0b0c5c900aee727a069feb47b0",
+    "docs/acceptance/overview-1920.png": "04dfef7196e0a4b2142d9eadec4c3ae60fbf102b1fcb764be5528cea3cbe2ba5",
+    "docs/acceptance/layout-1366.png": "40d4bca8380c766239b1d7d1e8bc43ef01587f5a984dbca10152352d4f61686f",
+    "docs/acceptance/stage-c-overview.png": "99e6df4604e5af1d4a2ad91429dffd5d9dad766f880a5bd8cd3c14ad2e770372",
+    "docs/acceptance/stage-c-aerators.png": "96fc11f77ed8d88f805455866af6b0297a65a31e8882f80f8c9afcd178376be9",
+    "docs/acceptance/model-validation.json": "990c647d8145e1687fb6010351822afb79290521a21bf6667fb95bebe45bdbf5",
+    "docs/acceptance/build.log": "2d7885a45f7026902809e850a1b94aecb321d38c730e2e08a8c68b2ba63d7f1a",
+    "docs/acceptance/m1/final-ui-preparation.json": "3d420e6847ed2d44a6a74955fe2ea24c6845dcd9d34f6f37b57a228fc135687a",
+    "docs/acceptance/m1/diagnostic-cpu-profile.json": "642e4c3186ec4be10b9a9bf77f95b3bf7271634fc830da8a4fbcb615888613a8",
+    "docs/acceptance/m1/summary.json": "79a62a9e84bff744f92ae3c8c2358ae333085a798ca37a9b20e86e82d2b54a24",
+    "docs/acceptance/m1/screenshots-manifest.json": "147914863f2916a486e7cf91626e8248167902e69d507081ddd385604e769634",
+    "docs/acceptance/m1/file-changes.json": "e4a5dc3a7b23531f2eee33e53523654b90bb4c02b68c2ecf517b259c0d775cfa",
+    "docs/acceptance/m1/restart-process.json": "0decb1cc8abaf7e3dd6d832918bc1d0105be9b5b65e1f625ff78cdf94a05414d",
+    "docs/acceptance/m1/final-ui-native-pointer-attempt.json": "51085b45a5667248bd573061d428d332123bac5b93d585620aaebae2b46a8409",
+    "docs/acceptance/m1/performance-diagnostic.json": "b2a4ff0f72cac37fe67f3dc4bc9db119b9450e7eedcd8b99f91f0674257eaef6",
+    "docs/acceptance/m1/final-integrity.json": "b536c9f4fd44d95201ca999efb29a7eb7b0acbe13825d67a0d963264b8877b0e",
+    "docs/acceptance/m1/dependency-compatibility.json": "5dbc0275b58a4e27c291bccdd72cd48e3594fac803d707ab2bb11845ebcc07e6",
+    "docs/acceptance/m1/restart-browser.json": "5ad97426b628db04474edfcc408d0454d2897a1dddc6d0b0d723d024c4d1eaf1",
+    "docs/acceptance/m1/report.md": "f912d69e77f6272fd1d3cdb99624785f06efa23c5ae79624d17969e14badba5d",
+    "docs/acceptance/m1/build-identity.json": "75df963c8750f60a7d1448849aa12e71de141c5d72c5d785b5a061b6f1a763a2",
+    "docs/acceptance/m1/typecheck.log": "aacdfedc485449151e8f0cedfb8264a7d15047256a7b3c3a4a9e848e28e7b178",
+    "docs/acceptance/m1/data-rules.md": "2f94f17f10be13fc03dd5925842c33a1ca02d3225b953210c9a8d864c70ffe0f",
+    "docs/acceptance/m1/correction-validation.json": "e217479a20f8c76d8f44eb05bbcd2747fa0f12d0ad3c1c5bd3f43880c0725ba8",
+    "docs/acceptance/m1/performance-diagnosis.md": "1af8c4f3a4e7d49cba6848f1b019b21b0e0025dcb6012053028a436e0a48709e",
+    "docs/acceptance/m1/final-ui-real-history.json": "181338c0262a173a44bb3afadef33de3d45acd39e4dc78e3c234d3b34c3d580c",
+    "docs/acceptance/m1/unit-tests.log": "61d104f98406c2b29fc9ea6adfb603cdae246ebaa24b597e5fd5b3ffd7e23268",
+    "docs/acceptance/m1/m0.1-frontend-before.tar.gz": "574b65dd2a2a3e90be9e941d3361b4f52267870963f4e31cfeb7d83758170124",
+    "docs/acceptance/m1/legacy-layout-assertions.json": "272b69e6d683fb24dde967f3bd5ed9e99963f35ba3d9dfbf6d04ad2b81c168d1",
+    "docs/acceptance/m1/baseline.json": "51794b6db9ac853fbecf7b0ad9c4c05643e48475dda6b5961783f8c9038a64b5",
+    "docs/acceptance/m1/final-ui-setup-failure.log": "00a4d10d7ff0196d413a08636a13220823da3feaef10efbef6ed15059c949e8d",
+    "docs/acceptance/m1/final-ui-checks.json": "ef2b579bd097a1768d7bb36b05b371364c9a212107df74e3d82d820b6465bd76",
+    "docs/acceptance/m1/final-ui-after-cancel-history.json": "cc285f97955b421a67ac47bc8defa6ae4d8a694a51b2cf0b65aada154db13887",
+    "docs/acceptance/m1/feature-tests.json": "40005f5b9b69123aa86e40550d640115db4e51872612b613759f8cf014c0cd1b",
+    "docs/acceptance/m1/build.log": "591e8f9272e4bdda8d008e4f76c1b926b7e0abb6df254711d5708efc3f2a300f",
+    "docs/acceptance/m0-visual-r1/model-validation.log": "eb5db7cfc7d4ed0a49a3818abc429ea907094d805e3ba95d444c5323af2c9005",
+    "docs/acceptance/m0-visual-r1/performance-old-glb-dpr1.json": "b05ea101e9fff25c5758836a78066b2fdba30e1b89c8b05136e031de67a14d47",
+    "docs/acceptance/m0-visual-r1/performance-dpr1.json": "74d4bcb1acc9e10123bc7f6d12ab08296080b025e927de80cd8668f3498654b4",
+    "docs/acceptance/m0-visual-r1/summary.json": "31f002df1577711d2e07a0af027ccab9cadf5d2b9641e4afff841bd9576a62b8",
+    "docs/acceptance/m0-visual-r1/material-after.json": "f55ca26334443a9136da3cb858d06be0e1f7ef7c44cb1d7f3b0b1e3648275d89",
+    "docs/acceptance/m0-visual-r1/screenshots-manifest.json": "36a078914e31cca15ed70c2394b537dbd1301edfd4cb62a44fea79529482ebf5",
+    "docs/acceptance/m0-visual-r1/concrete-closeup.png": "eaf1eed23ef5b1fc718946629d9387af49795ccae3bbc06ddc8c0b5652955c31",
+    "docs/acceptance/m0-visual-r1/ui-step-old-material.png": "72e704f6387a8b47ba8cfcf85b22991818259d09484c6e66916d9076e2bfe9c6",
+    "docs/acceptance/m0-visual-r1/build-model.log": "e219f6e16f5ec33e191041a2c073fb604ed1396c887a03dd96d721a262bc16d8",
+    "docs/acceptance/m0-visual-r1/file-changes.json": "ec8bf363b06dd3b16bd5b7e2deb5708f5640f8eb7620e9a63ec44f84dc4c1b04",
+    "docs/acceptance/m0-visual-r1/restart-process.json": "ee597ee3575d0f59a440c2f2b19d373789f415f19786b2637b74f22a4113c159",
+    "docs/acceptance/m0-visual-r1/water-fixed-before.png": "81117a8b4c14c658125b751ada6bf6e1a3ca0c5ec2dd8f90fb13858439ba8610",
+    "docs/acceptance/m0-visual-r1/restart-normal-production.png": "fc22813f1e2a4f98650869e07dd2844379035fc3a59b1f51f02ee16a23073f87",
+    "docs/acceptance/m0-visual-r1/geometry-preservation.json": "334accc00938256911d159b484638649fc5b4de73332f02039da2b687093b432",
+    "docs/acceptance/m0-visual-r1/agent-reset-overview.png": "62942d20acc1dbcd62715ec6d3f469043fd564ce30a7caf7f9dbb1e402450f06",
+    "docs/acceptance/m0-visual-r1/final-integrity.json": "7b663793d8f4ce3e05ce190ddb5cdaf95da76e85d2826b52c914dc06ceb9b33c",
+    "docs/acceptance/m0-visual-r1/restart-browser.json": "0067148029e7e0dbda546afda8a7654bcbb0d8ea6f39918ec0383cee3fdbc0a0",
+    "docs/acceptance/m0-visual-r1/water-fixed-after.png": "96161f985a5f626c727142eab4453ea39db8d4c08aaa4c52f62edc67f72a6239",
+    "docs/acceptance/m0-visual-r1/browser-tests.json": "1f5ac7c3060038b52bc4be1a7883f452bbe5adcf51a24742f4d284d508273eff",
+    "docs/acceptance/m0-visual-r1/report.md": "efbeb03546a0e977bdebe229f85bb40cd4baed9a8704a8fe212783d1ddec7fbc",
+    "docs/acceptance/m0-visual-r1/model-final.json": "17bebeb1744ba7f68a9354fb5cfe51d77260020143498f5a81cf9a8e7f1a70ff",
+    "docs/acceptance/m0-visual-r1/build-identity.json": "48f065a88610537ecb2563b25db291005ce76dc69d59004011a4cb8a74a17086",
+    "docs/acceptance/m0-visual-r1/material-fixed-before.png": "14684214aa9f282b1863bf88c060d154e215159682f48d0cdc2eb4235e11b195",
+    "docs/acceptance/m0-visual-r1/material-fixed-after.png": "8abeeaa6ff6bbe811ff05db0ddeb8950c41ff2bef7079c765b6bf01611f9d230",
+    "docs/acceptance/m0-visual-r1/iteration-water.png": "36f654dea681ae236c0a6b9acc91f530526398651951bda44264870482d320a8",
+    "docs/acceptance/m0-visual-r1/performance-dpr2-unfocused.json": "bcd825b4dba9ddf503c9fd29668a61eb3eec70ff4cf31ef1c446d6a13fc5dc10",
+    "docs/acceptance/m0-visual-r1/typecheck.log": "aacdfedc485449151e8f0cedfb8264a7d15047256a7b3c3a4a9e848e28e7b178",
+    "docs/acceptance/m0-visual-r1/unit-tests.log": "66f8e15b2b60ec94a44eec8c2bb61a0f3b73e165872c909bdc4585fcb1acf15c",
+    "docs/acceptance/m0-visual-r1/material-diagnosis.json": "b933727c7598bafc8ff1f1e8f691ccddd9a343d1d543623102125887c16d749e",
+    "docs/acceptance/m0-visual-r1/agent-focused.png": "7421f93bbb2c14b1e34cdbbea62bae6ab619de62c190b76f87dc69739da69d09",
+    "docs/acceptance/m0-visual-r1/load-failure.png": "7172e49d4a1f30013daaa99ca809d7122a35bc634837e89e2536f619d0969582",
+    "docs/acceptance/m0-visual-r1/connections-closeup.png": "df3ec0de2013e2340929588eb688978234abafb15f1b474ee721a0c8fe3c676a",
+    "docs/acceptance/m0-visual-r1/iteration-material.png": "ae2c2dd1d5b76aff91d574bc2d502ed0415bf2b2d0dbaf396a9a4ae34f9de5c3",
+    "docs/acceptance/m0-visual-r1/layout-and-visible-tools.json": "9ae12d87844bc0714f45297237544f5599d04d1c77f65c38535e6d06396c39c4",
+    "docs/acceptance/m0-visual-r1/visual-cleanup-regression.json": "f250ed31a6c68b85a2b8cd3cd1321ccb9b19a3ad8b55a8bb42f3fb4b4eb16f5f",
+    "docs/acceptance/m0-visual-r1/aerators-water-hidden.png": "49925c4bf685b3dfe09682cf62531b5f4fd3ada7d43911709a2fef94aa215992",
+    "docs/acceptance/m0-visual-r1/channel-inspection.json": "77f58cbdb2cb60495092b1d2eed0920cb11cd0b2fedfaa4c0f2550c6e7613d80",
+    "docs/acceptance/m0-visual-r1/downloaded-resources.json": "97a49df01b6174f587ba954a8a9fd4c534a3871dedbe234ee04f3132d7e3081e",
+    "docs/acceptance/m0-visual-r1/material-diagnosis.log": "d2133c52b240a6eff6312834c28dca1aaecc9ef8c0fc4af8389ca17979caa200",
+    "docs/acceptance/m0-visual-r1/iteration-overview.png": "254e873dc962ea6debe1668b50ec7038f62a1f1a87fa2367c3858fdf01197d17",
+    "docs/acceptance/m0-visual-r1/overview-new-camera.png": "ad2c93f172665d1836f9167f55dd309a13aa3648c3c699cfaaee2e73db659b55",
+    "docs/acceptance/m0-visual-r1/overview-1920.png": "a3060bd9b660810ce2fffe4977807a4b0b2e8c8d5ce121b5446c0fe646f66135",
+    "docs/acceptance/m0-visual-r1/layout-1366.png": "e295679e95d222e0676efb1414f12af601a6b9ec73fad06d6d77c959312a811a",
+    "docs/acceptance/m0-visual-r1/overview-old-camera.png": "75f29173d21d1ba1f3bef27a5d5f5c229dd1cce23488de78b979b4a0cfa1aea6",
+    "docs/acceptance/m0-visual-r1/model-validation.json": "391d4892fc0689d61aa0eda60b4d42e2ed1682399711efb932e2d1d409719718",
+    "docs/acceptance/m0-visual-r1/water-closeup.png": "5a92479253a668927138d9eb3bb8b106941f49f25e34c8f4cbc25f6941dc858f",
+    "docs/acceptance/m0-visual-r1/performance-dpr2.json": "bb3cab92522bc848078517056f73cc077b105573450e764231481bdc298074c1",
+    "docs/acceptance/m0-visual-r1/build.log": "f07c2a1eeb2d944f52d673f7537388e08aa99b72533aa07283f9356ea60aa994",
+    "docs/acceptance/m0-visual-r1/baseline/state.json": "ab7e0540cde1420546cbee5fc693a846528801a0f84c2f94dd990954704b4ac0",
+    "docs/acceptance/m0-visual-r1/baseline/m0-before.tar.gz": "232cc958f8e296a10480993297e74f93ed86217eee5a91c0da3a5e69a62eb511",
+    "docs/acceptance/m0-visual-r1/final/screenshots-manifest.json": "709a07adc08dc3dc748d91caa4fad1b8f707a6c5b2ce7e66904e9b2901a043cb",
+    "docs/acceptance/m0-visual-r1/final/concrete-closeup.png": "7c0f9a8d800572a6157bab8cf61bf5247793cbd0ebb7bb80336564e51cdba5ba",
+    "docs/acceptance/m0-visual-r1/final/agent-reset-overview.png": "dabf35b786366177761b4959b8846ba6f7709ec2a0a5aca1b9acfbe90b147bdb",
+    "docs/acceptance/m0-visual-r1/final/water-after.png": "dd45b2598ad9c1fe003eb44f4a5a0ca829e2665f1502e2b743159bb2ba344f04",
+    "docs/acceptance/m0-visual-r1/final/material-before.png": "0feaa05e2e48ef07dfe142ca6f019d365e9a1accff5d1da5b8bbb9ba458e1217",
+    "docs/acceptance/m0-visual-r1/final/agent-focused.png": "fe78cd5845318ddc9453f30780d95b5f9d81f4295a80bbded11108c92bbff1d0",
+    "docs/acceptance/m0-visual-r1/final/connections-closeup.png": "0e2e63a4b90cf90d633001b73685a197b5f1b4252a0f66f823720d70fde562d1",
+    "docs/acceptance/m0-visual-r1/final/material-after.png": "ff5c2753bd4ce45c0fdc626598daf6979f112dcc4c7a4176cf5a2dc04823bcc6",
+    "docs/acceptance/m0-visual-r1/final/aerators-water-hidden.png": "47a4faee4231de7300b8452eabb0f804beeadaa57675250e17c24386fea66e59",
+    "docs/acceptance/m0-visual-r1/final/water-before.png": "0f7e9da5393d8ece1d6e216f1d5a712091efcc9673c6124ca4a0a537d9f56f46",
+    "docs/acceptance/m0-visual-r1/final/overview-new-camera.png": "913e01e879a14dbcd95ac563c48a01e11cf66f1ce9f1316e84d933c7979d4df1",
+    "docs/acceptance/m0-visual-r1/final/overview-1920.png": "eea8bace8aa24b43433306ee6fb176de572d94199cde86250ec5e6c3de1fcd1e",
+    "docs/acceptance/m0-visual-r1/final/layout-1366.png": "5de68ed40330492216b9957daf67de82f7009be98ada40fa8acea955cc6b1574",
+    "docs/acceptance/m0-visual-r1/final/overview-old-camera.png": "adb637f3f016943accf5fbfb231d38d23ca52b458d057ac1537cb453b8541dae",
+    "docs/acceptance/m0-visual-r1/final/water-closeup.png": "ea7e20c779ddbb9cb38fea39f1d2aed2d74931a22384b8ca2569610b69d7d082",
+    "docs/acceptance/m0-visual-r1/baseline/site/index.html": "252a74ebdd0f2d369fd8f0ddb875fb4379355b0a02baaf33a098871e775dd926",
+    "docs/acceptance/m0-visual-r1/baseline/site/favicon.svg": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+    "docs/acceptance/m0-visual-r1/baseline/site/environments/daylight_2k.hdr": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "docs/acceptance/m0-visual-r1/baseline/site/models/aeration-tank.glb": "03d18ce77b0b2f641ba5e0784ec34c622edce3eb795e43e4c0236777c6f2f857",
+    "docs/acceptance/m0-visual-r1/baseline/site/assets/index-CRYPafbZ.css": "8e59d61f3e2b4e1aec298db9b1374c263a799ab67c22378462cfaa4132b9b45a",
+    "docs/acceptance/m0-visual-r1/baseline/site/assets/index-BVclSLk7.js": "94577ec2a6ecf485cb955dd3867c208900e928cfb49645973634bdd1a94bc9ca",
+    "docs/acceptance/m1/screenshots/agent-reset.png": "8eddd6e6ec3c4151d839689a1b85e7e316a8cb3f76c17efa237f2e879214dfff",
+    "docs/acceptance/m1/screenshots/missing-data.png": "b026baa28ceca8485e536d181bfb68b4da8abf5ea2be488d7f9804009c2c2b6c",
+    "docs/acceptance/m1/screenshots/alarm-located.png": "d1f4f6ea45c6907ba26da616fb3ff9f347561e7dab7160578a5e2f7be5d3cf1c",
+    "docs/acceptance/m1/screenshots/normal-1920.png": "24683d0acd2f5468afebe31f98638b3ecb724a7b79a822ceb1a23f2f39ff01e1",
+    "docs/acceptance/m1/screenshots/data-only-blower.png": "505810bfa3d0c688c7c690ca34c27936ab5b089e90a45a8382f039c7fc17528f",
+    "docs/acceptance/m1/screenshots/low-do.png": "3c402bcca38a067ff1aafcf019e2311da3e2d542eb8e43a43170639ba5bab3c1",
+    "docs/acceptance/m1/screenshots/agent-focused.png": "a4cf309011acf23d59356d27c32e23fd66c2123bdcd5e743be2f770d30b37fbe",
+    "docs/acceptance/m1/screenshots/compact-1366.png": "3b8b9274ae8312f22bec437abba40d5e39d2e4c1e5f4c43c6242b626b310e1bb",
+    "docs/acceptance/m1/screenshots/process-expanded.png": "f205c625a96fdeb53cd9ff3cdf33124ecd8d20375949f693653ccde088ceb4ca",
+    "docs/acceptance/m1/screenshots/compact-trend-expanded.png": "7e7536318b9b968ce4c1e52d8d0e5910a858f639876abd1b9692daef37625912",
+    "docs/acceptance/m1/screenshots/water-hidden.png": "449ec90109d034e82888a5877c829d13aaa6c8d4691e0f2ba669e49cb2412107",
+    "docs/acceptance/m1/legacy/screenshots-manifest.json": "ea977a02032541796fb9d069a3069e31a4679570985958656586b72229bbed85",
+    "docs/acceptance/m1/legacy/browser-tests.json": "ae51abe1fb477537d8d58ce2a7dfa7323bde574a5c4668f76da59d68e445d50f",
+    "docs/acceptance/m1/legacy/load-failure.png": "019392f76e2d1f627b29e173014ca2f681567b8c5dcc79a07a8e8656a389acd9",
+    "docs/acceptance/m1/candidate-1/dev-first-overview.png": "cea6eea48be7d584da5390f18f21ee88ba7fde4965e4eebec650940e89a55827",
+    "docs/acceptance/m1/candidate-1/summary.json": "311210537aa498bac9e7fb2d53b6a4f7322607baefae37e469fc1c5667a6e4fe",
+    "docs/acceptance/m1/candidate-1/visibility-development.json": "9c5274392f4005c4ebf4976fdcd4d473fe76ee8d2f2369b53ff54c6d95b5f36a",
+    "docs/acceptance/m1/candidate-1/screenshots-manifest.json": "c709e0d90842e5b8b75dbd5a2c7b4297b41ffd9960fe38bea9a413692bfac374",
+    "docs/acceptance/m1/candidate-1/file-changes.json": "1d87739f98c7da8637b5231b7e531c006945ccbcc19bd01f2fb19b2eb5d333cf",
+    "docs/acceptance/m1/candidate-1/restart-process.json": "1fc854c7169a7ccc74c31a558777ebde638f3b4cd732cbbf12ff72ccf1a1d129",
+    "docs/acceptance/m1/candidate-1/chronology-before-fix.log": "231a5b207bb4bff305e7616d2dc7fde8bb69e4085d39abe4e91cc89a512ed6c5",
+    "docs/acceptance/m1/candidate-1/dev-layout-compact.png": "953f75553415a14e68300b5516fcf528b15cef25dcbadada10f54a0f4df39519",
+    "docs/acceptance/m1/candidate-1/final-integrity.json": "c0f06d43f3eb5684a784c526ce1c0829a76b8deaaa0d19d87828c66b45d744a3",
+    "docs/acceptance/m1/candidate-1/dependency-compatibility.json": "5dbc0275b58a4e27c291bccdd72cd48e3594fac803d707ab2bb11845ebcc07e6",
+    "docs/acceptance/m1/candidate-1/restart-browser.json": "2f037ba747d6d9526d2044f4f80a9a64949e8dc9c7e1abf8f0d14913ed6e19de",
+    "docs/acceptance/m1/candidate-1/report.md": "90236384cdfdbf9da6da78076d6dd60c62b55adbca27b155e58c4ccda03b8f9c",
+    "docs/acceptance/m1/candidate-1/frontend-build-before-fix.tar.gz": "036560b78dadfed5b31552c219d9d3a145bc332907d51c50960faaabd9479de0",
+    "docs/acceptance/m1/candidate-1/build-identity.json": "1f5fe60b81acff73fbb38ffa539c9f644ef0cee2bd2e6158db92e0159a26062b",
+    "docs/acceptance/m1/candidate-1/dev-layout-desktop.png": "bd4575e5a6ceadd694206bef6bfbe2136205a5fab08ddc3df0fcd7678f4e3b2a",
+    "docs/acceptance/m1/candidate-1/dev-low-do.png": "01c131374a2840953fe713492be29ac08ac42ae9c3949350c8c124e6e9de8e17",
+    "docs/acceptance/m1/candidate-1/typecheck.log": "aacdfedc485449151e8f0cedfb8264a7d15047256a7b3c3a4a9e848e28e7b178",
+    "docs/acceptance/m1/candidate-1/data-rules.md": "ebc89af96c942e1846804174553dac39f0de775fcf36bb922aed0459ebe2eb54",
+    "docs/acceptance/m1/candidate-1/feature-tests-development.json": "e7b745b7572c3d0bc0aa762e223513ad9f748b85f9ce9d51082e0549cc74b66c",
+    "docs/acceptance/m1/candidate-1/data-correction.json": "08daea6a691728d7a844a8202f37476c5c5ca9e4b29616bcfaef6ed835a5cc7b",
+    "docs/acceptance/m1/candidate-1/unit-tests.log": "5c677e09b9cdd3f653af19841c3242d19fb6df2a9fb034cd5bf9bc1cfe1d58df",
+    "docs/acceptance/m1/candidate-1/legacy-layout-assertions.json": "514ba27b852e8b95df6cfb63570fd94337d605f006c55596fbb81cb25d36bfd8",
+    "docs/acceptance/m1/candidate-1/feature-tests-development-r2.json": "582602f1851b60c9549bea3f8db387e3e27d66517e13c9dba5d371005c8c2a3b",
+    "docs/acceptance/m1/candidate-1/final-ui-checks.json": "f75e640fd9be06b10cc7cdea79dfa28229d2a524d18ad9dccd86c2db0fb1323b",
+    "docs/acceptance/m1/candidate-1/feature-tests.json": "fb1673bc5aecc2927753d08de736878e9f8bffc21b428db8defe930f8892d9f9",
+    "docs/acceptance/m1/candidate-1/NOT-FINAL.md": "ff5bc524d53624b0d90a259de1935b2f9d02835dd272cb95d4f9b11eced2eeb7",
+    "docs/acceptance/m1/candidate-1/build.log": "cd79cf86a79923afd681e25c8815c0d3d22864eefbf4caa0eda08b712d37dad0",
+    "docs/acceptance/m1/performance/summary.json": "12d6c33f4bb925bb46909d37ba4e630e4e5bfaf9f96d641fed7179604587ac0c",
+    "docs/acceptance/m1/performance/round-1-commands_panels.json": "07c69cbf37c69ac571caa621803941bbb9de1ccc68c1bc4095227037c5ede581",
+    "docs/acceptance/m1/performance/round-2-camera_only.json": "e945b612a5e5266eb4055fd5b9485654622affbad5626f110ae87b1a518414a4",
+    "docs/acceptance/m1/performance/round-2-camera_data_charts.json": "70ab55de506011e44c065266192c8c178bf4901f3a73f480e072828360ef33b9",
+    "docs/acceptance/m1/performance/round-1-camera_data_charts.json": "94a309dd6ed53c5b4c74b3eaca50c86d86faacc395cc7d94fd0ec6f8f67e2a03",
+    "docs/acceptance/m1/performance/round-3-camera_only.json": "4e34cf73f74c9fd3f215cc3bb46694349c2e18b00f0a19cbe7159955d0e04aeb",
+    "docs/acceptance/m1/performance/initial-attempts-summary.json": "7bd497cc064ca1fbe8c2b8348f1c4a440681b22f2275895c477aadb23bcfdc95",
+    "docs/acceptance/m1/performance/round-3-camera_data_charts.json": "ab96998bd6b4543e9ab11dfc2335944be45730243e148f7a53ece9d1325ca6e1",
+    "docs/acceptance/m1/performance/round-3-commands_panels.json": "9694425fa4a0646684b2e1479cd11e283c9c0d5c5b7a96a1213065a2ff6c1f5d",
+    "docs/acceptance/m1/performance/round-2-commands_panels.json": "9e1708402e467cbd8d66c59046e76beeb813826bbc979a1f55486932e15a6318",
+    "docs/acceptance/m1/performance/round-3-camera_data_charts-collection-retry.json": "9859170f4451a4b0b62e2138bf274ed97effcfb054f60f98a2764bfb568e36d7",
+    "docs/acceptance/m1/performance/round-1-camera_only.json": "1ee3b6c4b9b25e1ad1b013aab3742bb1faba1c053a4aa9d79209af47bb7a68b1",
+    "docs/acceptance/m1/candidate-1/source-before-fix/mockData.test.ts": "57df1c5830eab0f8d7f8e556916ef132379436f529cffa043bb60bf6bf761dd3",
+    "docs/acceptance/m1/candidate-1/source-before-fix/mockDataProvider.ts": "02c9512634d55578137bfb562ba40ee2ef13587a5e4275d2f3805f348649389d",
+    "docs/acceptance/m1/candidate-1/screenshots/agent-reset.png": "e83dff142763b14fa6d43caf1b34dbc8878486580c2e631c75d9c38388b30f41",
+    "docs/acceptance/m1/candidate-1/screenshots/missing-data.png": "1d011c7435dff35d9e859450ac12338ef8d385da97d90158bfb442421b3e5837",
+    "docs/acceptance/m1/candidate-1/screenshots/alarm-located.png": "cb95a6a5b2c1546205adec7d47a56ebea9331de8ab7bbd045d7786b9614994ee",
+    "docs/acceptance/m1/candidate-1/screenshots/normal-1920.png": "5f3ac620047a716ea897fd41ad8ff09a9e3413706651dd6147dc833bbfe5ead0",
+    "docs/acceptance/m1/candidate-1/screenshots/data-only-blower.png": "60991d183fb2ca8d30775b014b135bacfac4df4212e1291c9809ea3a45047fa2",
+    "docs/acceptance/m1/candidate-1/screenshots/low-do.png": "218bab58c90233f9ba5f7c574726b07fc4a5fe0a2bed618d5d7d5326820ccda5",
+    "docs/acceptance/m1/candidate-1/screenshots/agent-focused.png": "b609327a5f569dba45cc221503f79a457aa8b93dde144bb8041e413684fc2f88",
+    "docs/acceptance/m1/candidate-1/screenshots/compact-1366.png": "5f9480f0445475ecee436dc5390a5eb642398505eca2000ced9db41505219cd4",
+    "docs/acceptance/m1/candidate-1/screenshots/process-expanded.png": "10568207302338dcaed4f3b79265a0b17d63697eaff20a32dcedb507735f948e",
+    "docs/acceptance/m1/candidate-1/screenshots/compact-trend-expanded.png": "bcdba38734b484c30373d819d25315103bbfbb87ab200cb83703fd71ff8c4df2",
+    "docs/acceptance/m1/candidate-1/screenshots/water-hidden.png": "0a68e7acdca4f4530c2c4baced98645e23a1c726f22e2ba4adfa8755bb6415d2",
+    "docs/acceptance/m1/candidate-1/legacy/screenshots-manifest.json": "6f466d52ce5bc3c13cfd33d6f62277832b9e2fc34e350f229b2e3516841c0ab0",
+    "docs/acceptance/m1/candidate-1/legacy/browser-tests.json": "297e7080a3abc69c6d84551284b44f07ea611ef1d8870ccd1ce55911dbb81697",
+    "docs/acceptance/m1/candidate-1/legacy/load-failure.png": "b7a422319b4808300ab5a25024e272c78aed8122afcc8768434f36987122e238",
+    "docs/acceptance/m1/candidate-1/performance/summary.json": "e0ff8b9be56f358f5c5abee3eefea0727a893b7723bec4c2f6ed972f40850e30",
+    "docs/acceptance/m1/candidate-1/performance/round-1-commands_panels.json": "5e879662cbead499f02ea3b6b99d5416056506fd3061470b284bd818ba6fafe3",
+    "docs/acceptance/m1/candidate-1/performance/round-2-camera_only.json": "b8a21c3756fed3d547b7e2a30347ad721b41f3a6c3ccf95bcef3eed58990782e",
+    "docs/acceptance/m1/candidate-1/performance/round-2-camera_data_charts.json": "8f9bd55100e3b81db4ecfd34de7d59702b7d5a061f9c719c580df9516d930431",
+    "docs/acceptance/m1/candidate-1/performance/round-1-camera_data_charts.json": "e3a9a3548b497440e742a22fa1168bf5dbf09d9172d764dd91cb11eac051d4b7",
+    "docs/acceptance/m1/candidate-1/performance/round-3-camera_only.json": "138e58dca2f5ab6f868369ffb84ec8ac51da04d8c2cc4efe3db859b3ee597c3c",
+    "docs/acceptance/m1/candidate-1/performance/round-3-camera_data_charts.json": "f1b0bb05bd0b83764d0fbd2b835094777c798943f56d200cea853c07a6cb3641",
+    "docs/acceptance/m1/candidate-1/performance/round-3-commands_panels.json": "f4a7bd34d3508705da6cd81def091e5172a4698e8acce3ef6894c4576e47de0d",
+    "docs/acceptance/m1/candidate-1/performance/round-2-commands_panels.json": "4fc52e6210af87bd42fc5cc0274b72dc9617cca5b08907b68e2089006e074a7c",
+    "docs/acceptance/m1/candidate-1/performance/round-1-camera_only.json": "6335f2e7ed816b6099b7bfb34a3c0b8c2670087e26615b75607673211099bafd",
+    "assets/source/aeration-tank.blend": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+    "assets/source/textures/concrete_floor_r1_diff.png": "edd112f70015b34856033cfc9bd724e1fc3a655dab3ed7cc3d0cddfad04b6333",
+    "assets/source/textures/concrete_floor_01_rough_2k.jpg": "e66fa941d6daa33ba334c853bf126c85f1d77e7b72778073237e4ef8c7c97774",
+    "assets/source/textures/worn_asphalt_rough_2k.jpg": "71572c4d7f3b4f33bd45f2b25368b853101e58c85c826a7109bab851eb847a6a",
+    "assets/source/textures/concrete_nor_gl_2k.jpg": "74bd74e02c00565c84d89f6a73fe672ba4fe254c5b43d83eaca0eb7be5159265",
+    "assets/source/textures/concrete_floor_r1_rough.png": "b998598d2c2d1955b2f821d3c505f7ff72c1f035df6f762eac965685487ba6ee",
+    "assets/source/textures/concrete_wall_r1_nor_gl.png": "03622c7d20d1e63eb93c62d0254adb6218d4d7f08c77cda8c875b55d9642fb55",
+    "assets/source/textures/concrete_walkway_r1_diff.png": "8874ed25a87536695116718fa8ad076c81b75a412afb3abf48c1973b4ce86d46",
+    "assets/source/textures/concrete_floor_01_diff_2k.jpg": "ca24c52dabae67ef49093f91d8f9b9e5328a3b9fcb1327742ff6181ee542e017",
+    "assets/source/textures/water_normal_generated.png": "d7dbf53a61f75bbe04ee954cd12e03973949d10c1b7b1baef44f72ac4997e447",
+    "assets/source/textures/worn_asphalt_nor_gl_2k.jpg": "114db3391e7d74c03758b06c8af2901a2c9392cf4cb37e7a8a3254a3235ce63e",
+    "assets/source/textures/concrete_rough_2k.jpg": "d58060aa195ffd5fc90fc2468491f9e6fd8a8d374362605d8cfe7ddeabcdc84c",
+    "assets/source/textures/concrete_diff_2k.jpg": "92a0b37c2f64630ba776b514f3276ecbb98cd59a23dea2c7b83b3c63bc3e4f7a",
+    "assets/source/textures/concrete_wall_r1_diff.png": "d308430cca9f351ba299bd0a21336eaca1498e8030f63257990129783433e32c",
+    "assets/source/textures/concrete_wall_r1_rough.png": "a97e823a4c77a249aad20f4cd0d30ad75eaddf258d384daa385dd8f45b67d3e3",
+    "assets/source/textures/water_normal_r1.png": "42996dd77ad322b071803309a61beac669a8c4913e25430914c81b544135dd57",
+    "assets/source/textures/concrete_floor_01_nor_gl_2k.jpg": "796b010208e346bbeec4c468f286c3892852a454f77cb516d6f4a6e7c240de01",
+    "assets/source/textures/concrete_floor_r1_nor_gl.png": "5a81a71862820c29e5c12cbe5c40a64d96f2702a89807048cb31b2de59d2f399",
+    "assets/source/textures/worn_asphalt_diff_2k.jpg": "8313d3f8d25515d6ef0be59d461cdeb0feb484694eae385711ecf688c0afa4de",
+    "scripts/blender/validate_asset.py": "3469ad253b4ffc7a65fc515ef72910326b4123b52ea6696c2b528e588c69038c",
+    "scripts/blender/visual_materials.py": "d1b3b7dc06dc40c455359c02810453e22af7d22b03b49df78e3bdb2955d4becb",
+    "scripts/blender/build_aeration.py": "24f6a99bde9d53ada467a4011ce28c02bc09b549cef1774ec3ea9ba0467aa8da",
+    "scripts/blender/inspect_visual_materials.py": "f581765395a79e2a29ec160ba8db737f35cbb63ac0fce55b42f91fff8842df66",
+    "docs/references/dashboard-target.png": "b59b4d090c143b86ba82217249e20afa19c161ce083722e83da288cf8a2d683c",
+    "public/models/aeration-tank.glb": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+    "public/environments/daylight_2k.hdr": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "config/aeration.json": "c541f955a7776ab01ff3862082f8fa8c4b861a5c8ff29d912299603a9a7a2718"
+  }
+}

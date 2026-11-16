@@ -1,0 +1,7 @@
+{
+  "stopped_project_preview_pid": 74525,
+  "verified_command": "node /Users/leizhenyang/projects/smartwater-ai/node_modules/.bin/../vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strictPort",
+  "stopped_at_utc": "2026-11-15T18:10:27.270522+00:00",
+  "restart_command": "pnpm preview",
+  "url": "http://127.0.0.1:4173/"
+}

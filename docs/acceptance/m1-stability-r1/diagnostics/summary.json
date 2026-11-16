@@ -1,0 +1,119 @@
+[
+  {
+    "mode": "FULL",
+    "average_fps": 33.348553955354234,
+    "p95_frame_ms": 84.79999999999927,
+    "done": true,
+    "top": []
+  },
+  {
+    "mode": "PROFILER_ON",
+    "done": false,
+    "top": [
+      {
+        "function": "(program)",
+        "url": "",
+        "sampled_ms": 5033.707
+      },
+      {
+        "function": "(idle)",
+        "url": "",
+        "sampled_ms": 3103.361
+      },
+      {
+        "function": "ht",
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "sampled_ms": 957.505
+      },
+      {
+        "function": "renderBufferDirect",
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "sampled_ms": 952.242
+      },
+      {
+        "function": "(garbage collector)",
+        "url": "",
+        "sampled_ms": 899.52
+      },
+      {
+        "function": "eu",
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "sampled_ms": 717.824
+      }
+    ]
+  },
+  {
+    "mode": "FULL_AFTER_PROFILE",
+    "average_fps": 13.630040421712165,
+    "p95_frame_ms": 200,
+    "done": true,
+    "top": []
+  },
+  {
+    "mode": "DATA_PAUSED",
+    "average_fps": 14.378558693293016,
+    "p95_frame_ms": 184.3000000000029,
+    "done": true,
+    "top": []
+  },
+  {
+    "mode": "CHART_SUBMISSION_PAUSED",
+    "done": false,
+    "top": []
+  },
+  {
+    "mode": "THREE_PAUSED",
+    "done": true,
+    "top": []
+  },
+  {
+    "mode": "PANEL_OPERATIONS",
+    "done": false,
+    "top": []
+  },
+  {
+    "mode": "CSS_EFFECTS_OFF",
+    "average_fps": 31.112027267331328,
+    "p95_frame_ms": 98.20000000001164,
+    "done": true,
+    "top": []
+  },
+  {
+    "mode": "CONTROLLED_CPU_PRESSURE",
+    "average_fps": 25.717709175542208,
+    "p95_frame_ms": 134.20000000001164,
+    "done": true,
+    "top": [
+      {
+        "function": "",
+        "url": "",
+        "sampled_ms": 4379.134
+      },
+      {
+        "function": "(idle)",
+        "url": "",
+        "sampled_ms": 4030.517
+      },
+      {
+        "function": "(program)",
+        "url": "",
+        "sampled_ms": 3937.09
+      },
+      {
+        "function": "now",
+        "url": "",
+        "sampled_ms": 1077.886
+      },
+      {
+        "function": "(garbage collector)",
+        "url": "",
+        "sampled_ms": 460.5
+      },
+      {
+        "function": "O1",
+        "url": "http://127.0.0.1:4173/assets/index-QZyuTZ0A.js",
+        "sampled_ms": 393.421
+      }
+    ]
+  }
+]

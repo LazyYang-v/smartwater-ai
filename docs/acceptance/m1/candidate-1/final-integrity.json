@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-11-15T18:28:01.625203+00:00",
+  "build_id": "ea1d07293bed9f621b0a4e6bd9b6bfeb10c820b1d1ee36707f3929382fba76a1",
+  "all_assertions_passed": true,
+  "checks": {
+    "protected_files_unchanged": 108,
+    "frozen_dist_files_unchanged": 6,
+    "frozen_source_files_unchanged": 29,
+    "original_unit_and_browser_assertions_retained": true,
+    "same_conditions_performance_trials": 9,
+    "performance_target_met_trials": 9,
+    "actual_screenshot_resource_associations": 11,
+    "source_model_materials_and_reference_unchanged": true,
+    "unit": 16,
+    "legacy_browser": 15,
+    "legacy_layout_assertions": 3,
+    "feature_browser": 10,
+    "final_ui": 5,
+    "restart": true,
+    "real_hidden_tab_transition": "UNVERIFIED: the browser automation kept document.visibilityState visible; deterministic clock policy is unit tested."
+  }
+}

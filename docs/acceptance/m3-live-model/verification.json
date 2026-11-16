@@ -1,0 +1,250 @@
+{
+  "at": "2026-11-16T11:27:34.545501+00:00",
+  "cases": {
+    "A": "task-a-real.json",
+    "B": "task-b-release-real.json",
+    "C": "task-c-release-real.json",
+    "D": "task-d-accepted-real.json",
+    "改写A": "task-paraphrase-a-release-real.json",
+    "改写C": "task-paraphrase-c-release-real.json"
+  },
+  "checks": [
+    {
+      "check": "A真实完成",
+      "passed": true
+    },
+    {
+      "check": "A预算",
+      "passed": true
+    },
+    {
+      "check": "A实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "A固定快照",
+      "passed": true
+    },
+    {
+      "check": "A回执关联",
+      "passed": true
+    },
+    {
+      "check": "A用量记录",
+      "passed": true
+    },
+    {
+      "check": "A实际定位",
+      "passed": true
+    },
+    {
+      "check": "A六小时同版曲线",
+      "passed": true
+    },
+    {
+      "check": "A程序统计与单位",
+      "passed": true
+    },
+    {
+      "check": "B真实完成",
+      "passed": true
+    },
+    {
+      "check": "B预算",
+      "passed": true
+    },
+    {
+      "check": "B实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "B固定快照",
+      "passed": true
+    },
+    {
+      "check": "B回执关联",
+      "passed": true
+    },
+    {
+      "check": "B用量记录",
+      "passed": true
+    },
+    {
+      "check": "B实际触发依据",
+      "passed": true
+    },
+    {
+      "check": "B固定DO曲线",
+      "passed": true
+    },
+    {
+      "check": "C真实完成",
+      "passed": true
+    },
+    {
+      "check": "C预算",
+      "passed": true
+    },
+    {
+      "check": "C实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "C固定快照",
+      "passed": true
+    },
+    {
+      "check": "C回执关联",
+      "passed": true
+    },
+    {
+      "check": "C用量记录",
+      "passed": true
+    },
+    {
+      "check": "Cdevice.get_details覆盖四设备",
+      "passed": true
+    },
+    {
+      "check": "Cdevice.get_metrics覆盖四设备",
+      "passed": true
+    },
+    {
+      "check": "CSW_CLR_TANK_001没有虚构指标",
+      "passed": true
+    },
+    {
+      "check": "CSW_PRE_PUMP_001没有虚构指标",
+      "passed": true
+    },
+    {
+      "check": "D真实完成",
+      "passed": true
+    },
+    {
+      "check": "D预算",
+      "passed": true
+    },
+    {
+      "check": "D实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "D固定快照",
+      "passed": true
+    },
+    {
+      "check": "D回执关联",
+      "passed": true
+    },
+    {
+      "check": "D用量记录",
+      "passed": true
+    },
+    {
+      "check": "D不把无指标当正常",
+      "passed": true
+    },
+    {
+      "check": "改写A真实完成",
+      "passed": true
+    },
+    {
+      "check": "改写A预算",
+      "passed": true
+    },
+    {
+      "check": "改写A实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "改写A固定快照",
+      "passed": true
+    },
+    {
+      "check": "改写A回执关联",
+      "passed": true
+    },
+    {
+      "check": "改写A用量记录",
+      "passed": true
+    },
+    {
+      "check": "改写A实际定位",
+      "passed": true
+    },
+    {
+      "check": "改写A六小时同版曲线",
+      "passed": true
+    },
+    {
+      "check": "改写A程序统计与单位",
+      "passed": true
+    },
+    {
+      "check": "改写C真实完成",
+      "passed": true
+    },
+    {
+      "check": "改写C预算",
+      "passed": true
+    },
+    {
+      "check": "改写C实际步骤关联",
+      "passed": true
+    },
+    {
+      "check": "改写C固定快照",
+      "passed": true
+    },
+    {
+      "check": "改写C回执关联",
+      "passed": true
+    },
+    {
+      "check": "改写C用量记录",
+      "passed": true
+    },
+    {
+      "check": "改写Cdevice.get_details覆盖四设备",
+      "passed": true
+    },
+    {
+      "check": "改写Cdevice.get_metrics覆盖四设备",
+      "passed": true
+    },
+    {
+      "check": "改写CSW_CLR_TANK_001没有虚构指标",
+      "passed": true
+    },
+    {
+      "check": "改写CSW_PRE_PUMP_001没有虚构指标",
+      "passed": true
+    },
+    {
+      "check": "改写C区分缺测与过期",
+      "passed": true
+    },
+    {
+      "check": "真实取消收到可信输入",
+      "passed": true
+    },
+    {
+      "check": "真实取消本地请求abort",
+      "passed": true
+    },
+    {
+      "check": "取消后保留已完成步骤并拒绝迟到副作用",
+      "passed": true
+    },
+    {
+      "check": "取消后真实新任务恢复",
+      "passed": true
+    },
+    {
+      "check": "单一场景与图表实例",
+      "passed": true
+    }
+  ],
+  "scope": "Actual recorded live results; no tool execution or model responses fabricated by this verification script."
+}

@@ -1,0 +1,17 @@
+PASS GLB / HDR loaded with unique device and independent water
+PASS unknown command creates no tool record
+PASS focus and reset verify camera, selection and actual render
+PASS duplicate action id has no second side effect
+PASS missing device explicitly fails
+PASS real in-progress reload rejects commands
+PASS missing GLB fails and ordinary retry recovers
+PASS invalid GLB enters load failure and blocks tools
+PASS rapid commands cancel the old action
+PASS manual camera drag cancels the running action
+PASS timeout cannot return success
+PASS ordinary device click shares selection with tools
+PASS ordinary water toggle changes independent mesh state
+PASS foreground road occludes the buried device when clicking
+PASS repeated focus / supersession / reset do not duplicate or leak selection effects
+{"passed":15,"failed":[]}
+

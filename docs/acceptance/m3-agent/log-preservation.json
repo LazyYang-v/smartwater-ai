@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-16T09:28:26.291424+00:00",
+  "reason": "Existing project dev process wrote its automatic Vite configuration restart notification into old evidence log. Exact original prefix SHA matched baseline; only this-turn appended bytes archived separately, original restored. Dev process restarted with new session output.",
+  "original": "docs/acceptance/m1-stability-r1/restart-server.log",
+  "original_bytes": 96,
+  "this_turn_append_bytes": 48,
+  "original_sha256": "2d69118051c7200c8acd9a5600494de54887149e28057c26cdf51eb63893f2ea"
+}

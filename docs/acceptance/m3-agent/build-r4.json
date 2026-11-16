@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-11-16T09:23:47.791019+00:00",
+  "build_id": "8183182c6302de7e03cba125e6578a1e9e7bc66261cac29c34decd785931a5ae",
+  "dist_sha256": {
+    "dist/assets/dashboard-B8GxGsso.js": "2acabf2413742bbe1a817afaabafdee72a6e27f513a39aa4eaff11edb0304959",
+    "dist/assets/dashboard-BAW77Tho.css": "db3c1b0dfbc177680ccf5a184364c4a7ad7e1f332e00a18bee7010cea27cfc7c",
+    "dist/assets/llmClient-BOeztjSc.js": "18058ca5a2e850dc86799ea3b541efd42f405e6a19a87cfbeae83ad14b69d16a",
+    "dist/assets/useSceneWorkspace-ClULg4Xq.js": "a93026ae3f77724bfd7e57bcb4ce7fdaae37a93566777940bb4c23ca4db827ea",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e",
+    "dist/assets/viewer-gOB4UVnm.js": "f62b6ba34b8662e1a495213d5ae0d47eee29a9d56181c509009c6d31567252f4",
+    "dist/environments/daylight_2k.hdr": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "dist/favicon.svg": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+    "dist/index.html": "a4f9263ab0bbba965b88124b5a42df341b36849b65455e9fea2dee91daa6bb31",
+    "dist/models/aeration-tank.glb": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+    "dist/models/blower-unit.glb": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+    "dist/models/clarifier-tank.glb": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+    "dist/models/pump-unit.glb": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e",
+    "dist/viewer.html": "fff002e0e82c6d3572292ee51ec79afd3d0d27669e1b2d167a37ffac91457a9c"
+  },
+  "glb_sha256": {
+    "public/models/pump-unit.glb": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e",
+    "public/models/blower-unit.glb": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+    "public/models/clarifier-tank.glb": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+    "public/models/aeration-tank.glb": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+  },
+  "policy": "Final r4 fixed production build for delivery screenshots and regression; no subsequent build mutation."
+}

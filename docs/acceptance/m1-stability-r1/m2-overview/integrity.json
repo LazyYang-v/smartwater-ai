@@ -1,0 +1,38 @@
+{
+  "build": "da5fa8afcf9f39dffd94e0312b4ab979278336eb8f8f8dd3866e113e210f7481",
+  "build_and_source_unchanged_during_confirmation": true,
+  "previous_protected_unchanged": 233,
+  "protected_assets_unchanged": {
+    "public/models/aeration-tank.glb": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+    "public/models/clarifier-tank.glb": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+    "assets/source/aeration-tank.blend": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+    "assets/source/clarifier-tank.blend": "bc0338c05d3471ef07137d3c56e7482900fce02aa56ef19ef2a609ad6acbc061",
+    "docs/references/dashboard-target.png": "b59b4d090c143b86ba82217249e20afa19c161ce083722e83da288cf8a2d683c"
+  },
+  "source_before_archive": ".cache/m21-before.tgz",
+  "changed": [
+    "src/App.vue",
+    "src/components/dashboard/AgentWorkspace.vue",
+    "src/components/dashboard/AlarmPanel.vue",
+    "src/components/dashboard/DeviceSummary.vue",
+    "src/components/dashboard/KpiOverview.vue",
+    "src/components/dashboard/SceneViewport.vue",
+    "src/components/dashboard/TrendPanel.vue",
+    "src/composables/useDashboardContext.ts",
+    "src/composables/useSceneWorkspace.ts",
+    "src/data/mockDataProvider.ts",
+    "src/qa/exposeDashboardQA.ts",
+    "src/scene/deviceRegistry.ts",
+    "src/scene/runtime.ts",
+    "src/styles.css"
+  ],
+  "added": [
+    "src/scene/assetCache.ts",
+    "src/scene/plantSite.ts",
+    "tests/plantOverview.test.ts",
+    "config/aeration.json",
+    "config/clarifier.json",
+    "config/plant-layout.json"
+  ],
+  "checked_at": "2026-11-16T07:02:11.094477+00:00"
+}

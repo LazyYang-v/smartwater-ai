@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "origin": "Original three input-bounds/projection assertions evaluated against corrected M1 build production feature-test evidence",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "input": {
+    "x": 1029,
+    "y": 606.5,
+    "width": 318,
+    "height": 120.5,
+    "top": 606.5,
+    "right": 1347,
+    "bottom": 727,
+    "left": 1029
+  },
+  "siteFraming": {
+    "left": -0.5476449152163746,
+    "right": 0.5476448723251585,
+    "bottom": -0.8700000000000001,
+    "top": 0.8699994543202868
+  }
+}

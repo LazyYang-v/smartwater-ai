@@ -1,0 +1,171 @@
+{
+  "device_id": "SW_CLR_TANK_001",
+  "created_at_utc": "2026-11-15T21:47:46.106497+00:00",
+  "triangles": 63274,
+  "mesh_nodes": 68,
+  "glb_bytes": 29034200,
+  "glb_sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+  "blend_sha256": "bc0338c05d3471ef07137d3c56e7482900fce02aa56ef19ef2a609ad6acbc061",
+  "material_source_sha256": "0d25407693ddb3039c99796e6a01467c91a318ce74028b1e5083a1bb56e23796",
+  "reused_images": [
+    {
+      "name": "concrete_floor_r1_diff.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "concrete_wall_r1_diff.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "concrete_wall_r1_rough.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "concrete_floor_r1_nor_gl.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "concrete_wall_r1_nor_gl.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "concrete_floor_r1_rough.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "concrete_walkway_r1_diff.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "worn_asphalt_diff_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "packed": true
+    },
+    {
+      "name": "worn_asphalt_nor_gl_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "worn_asphalt_rough_2k.jpg",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    },
+    {
+      "name": "water_normal_r1.png",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color",
+      "packed": true
+    }
+  ],
+  "source_reopened": true,
+  "independent_glb_import": true,
+  "dimensions": {
+    "scene_name": "SmartWater_M2_Clarifier",
+    "collection": "SW_M2_GENERATED",
+    "device_id": "SW_CLR_TANK_001",
+    "engineering_validated": false,
+    "units": "metres",
+    "revision": "m2-clarifier-r1",
+    "basin": {
+      "inner_radius": 12,
+      "wall_thickness": 0.4,
+      "floor_z": -4.3,
+      "top_z": 1.2,
+      "water_z": 0.5,
+      "base_thickness": 0.5,
+      "sump_z": -4.9,
+      "segments": 256
+    },
+    "access": {
+      "width": 1.5,
+      "deck_thickness": 0.18,
+      "rail_height": 1.1,
+      "rail_mid_height": 0.56,
+      "rail_post_spacing": 2.1,
+      "rail_radius": 0.025,
+      "post_radius": 0.028
+    },
+    "mechanism": {
+      "pivot_z": 1.38,
+      "deck_z": 1.58,
+      "bridge_length": 13.15,
+      "bridge_width": 1.25,
+      "wheel_radius": 0.25,
+      "wheel_track_radius": 13.45,
+      "feedwell_radius": 1.8,
+      "weir_radius": 11.2,
+      "weir_teeth": 192
+    },
+    "site": {
+      "length": 40,
+      "width": 40,
+      "road_y": -16.4,
+      "road_width": 4.2
+    },
+    "quality": {
+      "pipe_sides": 16,
+      "small_pipe_sides": 10,
+      "bevel_segments": 2
+    },
+    "materials": {
+      "concrete_tile_m": 4,
+      "asphalt_tile_m": 2,
+      "floor_tile_m": 2,
+      "walkway_tile_m": 2
+    },
+    "material_source": "assets/source/aeration-tank.blend",
+    "license_reference": "docs/asset-register.json",
+    "dimension_note": "Project-selected 24m circular demonstration unit; shared M0 ground/wall/water levels. Central sludge sump is a local depression. No engineering or safety compliance claim."
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "index": 1,
+    "version": "M1_BEFORE",
+    "average_fps": 31.752772812120373,
+    "p95_frame_ms": 99.10000000000036,
+    "done": true
+  },
+  {
+    "index": 2,
+    "version": "M11_FIXED",
+    "average_fps": 25.175804726643772,
+    "p95_frame_ms": 116.60000000000218,
+    "done": true
+  },
+  {
+    "index": 3,
+    "version": "M1_BEFORE",
+    "average_fps": 21.252375624746556,
+    "p95_frame_ms": 150.89999999999782,
+    "done": true
+  },
+  {
+    "index": 4,
+    "version": "M11_FIXED",
+    "average_fps": 18.78403119575814,
+    "p95_frame_ms": 151.39999999999782,
+    "done": true
+  }
+]

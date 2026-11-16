@@ -1,0 +1,3172 @@
+{
+  "browser": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "details": {
+      "architecture": "arm",
+      "bitness": "64",
+      "brands": [
+        {
+          "brand": "Not:A-Brand",
+          "version": "8"
+        },
+        {
+          "brand": "Chromium",
+          "version": "156"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "156"
+        }
+      ],
+      "fullVersionList": [
+        {
+          "brand": "Not:A-Brand",
+          "version": "8.0.0.0"
+        },
+        {
+          "brand": "Chromium",
+          "version": "156.0.8078.96"
+        },
+        {
+          "brand": "Google Chrome",
+          "version": "156.0.8078.96"
+        }
+      ],
+      "mobile": false,
+      "platform": "macOS",
+      "platformVersion": "26.0.1"
+    },
+    "source": "Browser-reported navigator values; Browser.getVersion unavailable"
+  },
+  "initial": {
+    "snapshot": {
+      "status": "ready",
+      "error": "",
+      "selectedId": null,
+      "waterVisible": true,
+      "loadMs": 2764.800000011921,
+      "firstRenderMs": 3132.5,
+      "triangles": 106042,
+      "calls": 50,
+      "textures": 15,
+      "frameMs": 567.9000000000001,
+      "camera": [
+        25.085525841611087,
+        38.62609800579172,
+        50.97692550717597
+      ],
+      "target": [
+        1.186768737562249,
+        -5.494684340144587,
+        5.017777230158986
+      ],
+      "defaultCamera": [
+        25.085525841611084,
+        38.62609800579172,
+        50.97692550717597
+      ],
+      "defaultTarget": [
+        1.186768737562249,
+        -5.494684340144585,
+        5.017777230158986
+      ],
+      "zoom": 1,
+      "fov": 40,
+      "frame": 122,
+      "cameraBusy": false,
+      "visible": "visible",
+      "rendererDpr": 1,
+      "canvas": {
+        "width": 1440,
+        "height": 659
+      },
+      "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+      "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "waterPhaseMs": null,
+      "lighting": {
+        "exposure": 1.05,
+        "sunIntensity": 2.6,
+        "sunPosition": [
+          -28,
+          50,
+          20
+        ],
+        "environmentIntensity": 0.48,
+        "shadowMapSize": [
+          2048,
+          2048
+        ]
+      },
+      "selectionEffects": 0,
+      "sceneGeometryCount": 50,
+      "siteFraming": {
+        "left": -0.699218812502102,
+        "right": 0.6992187577397104,
+        "bottom": -0.870000000000001,
+        "top": 0.8699994543202865
+      },
+      "assetStage": "final",
+      "bounds": {
+        "min": [
+          -25.33077621459961,
+          -4.800000190734863,
+          -10.97499942779541
+        ],
+        "max": [
+          22.975000381469727,
+          2.325000286102295,
+          13.330777168273926
+        ]
+      }
+    },
+    "assets": [
+      {
+        "name": "SmartWater_M0",
+        "parent": "",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SW_BIO_AERATION_001",
+        "parent": "SmartWater_M0",
+        "device_id": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_BridgeBeams",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_BridgeGrating",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_ConcreteSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_PerimeterDeck",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairNosings",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairStringers",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "ACCESS_StairTreads",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscBodies",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscConnections",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_DiscMembranes",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_Laterals",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AERATOR_PipeSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_01",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_02",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_03",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_04",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_05",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Branch_06",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_BranchFlanges",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_DropAnchors",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_DropSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_FlangeBolts",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_Main",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainEndCaps",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainFlanges",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_MainSupports",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveBodies",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveHandwheels",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "AIR_ValveStems",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_AnchorBolts",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_Baseplates",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_BridgeRailing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_Railing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SAFETY_StairRailing",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_BaseSlab",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Coping",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_DeckJoints",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_ExpansionJoints",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Wall_End",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "STRUCT_Wall_Long",
+        "parent": "SW_BIO_AERATION_001",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "WATER_Surface",
+        "parent": "SW_BIO_AERATION_001",
+        "part_id": "WATER_SURFACE",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SW_SITE_CONTEXT",
+        "parent": "SmartWater_M0",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Hardscape",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PavingJoints",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PlantingBeds",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_PlantingBeds001",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Road",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_RoadCurbs",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_RoadMarkings",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Shrubs",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      },
+      {
+        "name": "SITE_Shrubs001",
+        "parent": "SW_SITE_CONTEXT",
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ]
+      }
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 1
+    },
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+        "duration": 183.60000002384186,
+        "transferSize": 31255144,
+        "decodedBodySize": 31254844
+      },
+      {
+        "url": "http://127.0.0.1:4173/environments/daylight_2k.hdr",
+        "duration": 430.39999997615814,
+        "transferSize": 3586486,
+        "decodedBodySize": 5451493
+      }
+    ]
+  },
+  "results": [
+    {
+      "name": "GLB / HDR loaded with unique device and independent water",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2764.800000011921,
+          "firstRenderMs": 3132.5,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 567.9000000000001,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144587,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 122,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "assets": [
+          {
+            "name": "SmartWater_M0",
+            "parent": "",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SW_BIO_AERATION_001",
+            "parent": "SmartWater_M0",
+            "device_id": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_BridgeBeams",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_BridgeGrating",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_ConcreteSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_PerimeterDeck",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairNosings",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairStringers",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "ACCESS_StairTreads",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscBodies",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscConnections",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_DiscMembranes",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_Laterals",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AERATOR_PipeSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_01",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_02",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_03",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_04",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_05",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Branch_06",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_BranchFlanges",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_DropAnchors",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_DropSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_FlangeBolts",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_Main",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainEndCaps",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainFlanges",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_MainSupports",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveBodies",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveHandwheels",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "AIR_ValveStems",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_AnchorBolts",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_Baseplates",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_BridgeRailing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_Railing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SAFETY_StairRailing",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_BaseSlab",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Coping",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_DeckJoints",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_ExpansionJoints",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Wall_End",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "STRUCT_Wall_Long",
+            "parent": "SW_BIO_AERATION_001",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "WATER_Surface",
+            "parent": "SW_BIO_AERATION_001",
+            "part_id": "WATER_SURFACE",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SW_SITE_CONTEXT",
+            "parent": "SmartWater_M0",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Hardscape",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PavingJoints",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PlantingBeds",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_PlantingBeds001",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Road",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_RoadCurbs",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_RoadMarkings",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Shrubs",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          },
+          {
+            "name": "SITE_Shrubs001",
+            "parent": "SW_SITE_CONTEXT",
+            "rotation": [
+              0,
+              0,
+              0,
+              "XYZ"
+            ]
+          }
+        ],
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "viewport": {
+          "width": 1920,
+          "height": 1080,
+          "dpr": 1
+        },
+        "resources": [
+          {
+            "url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "duration": 183.60000002384186,
+            "transferSize": 31255144,
+            "decodedBodySize": 31254844
+          },
+          {
+            "url": "http://127.0.0.1:4173/environments/daylight_2k.hdr",
+            "duration": 430.39999997615814,
+            "transferSize": 3586486,
+            "decodedBodySize": 5451493
+          }
+        ]
+      }
+    },
+    {
+      "name": "unknown command creates no tool record",
+      "status": "PASS",
+      "evidence": {
+        "before": 0,
+        "after": 0,
+        "result": null
+      }
+    },
+    {
+      "name": "focus and reset verify camera, selection and actual render",
+      "status": "PASS",
+      "evidence": {
+        "before": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2764.800000011921,
+          "firstRenderMs": 3132.5,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 567.9000000000001,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144587,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 122,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "focus": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "9ac04785-eb4a-467a-b167-1bd3eb7a4b7c",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T17:10:20.326Z",
+          "finished_at": "2026-11-15T17:10:21.356Z",
+          "result": {
+            "camera": {
+              "position": [
+                2.7474693824219747,
+                28.786956186192754,
+                33.893491789461784
+              ],
+              "target": [
+                -0.9791175977053455,
+                -2.8890331448894813,
+                2.838600288400767
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 142,
+            "arrival_verified": true
+          }
+        },
+        "focused": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 2764.800000011921,
+          "firstRenderMs": 3132.5,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 15,
+          "frameMs": 249.89999999999964,
+          "camera": [
+            2.7474693824219747,
+            28.786956186192754,
+            33.893491789461784
+          ],
+          "target": [
+            -0.9791175977053455,
+            -2.8890331448894813,
+            2.838600288400767
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 142,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 1,
+          "sceneGeometryCount": 51,
+          "siteFraming": {
+            "left": -1.2753738511799453,
+            "right": 1.428425103086631,
+            "bottom": -1.2861046790581094,
+            "top": 0.979439897224084
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "reset": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "7eba99c9-da7c-49de-b427-23a71b3d4f9b",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T17:10:21.432Z",
+          "finished_at": "2026-11-15T17:10:22.412Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579172,
+                50.97692550717597
+              ],
+              "target": [
+                1.186768737562249,
+                -5.494684340144586,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 193,
+            "arrival_verified": true
+          }
+        },
+        "after": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 2764.800000011921,
+          "firstRenderMs": 3132.5,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 17.699999999999818,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144586,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 193,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "duplicate action id has no second side effect",
+      "status": "PASS",
+      "evidence": {
+        "before": 2,
+        "after": 3,
+        "first": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "browser-repeat",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T17:10:22.444Z",
+          "finished_at": "2026-11-15T17:10:23.361Z",
+          "result": {
+            "camera": {
+              "position": [
+                2.7474693824219747,
+                28.786956186192754,
+                33.893491789461784
+              ],
+              "target": [
+                -0.9791175977053455,
+                -2.8890331448894813,
+                2.838600288400767
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 241,
+            "arrival_verified": true
+          }
+        },
+        "second": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "browser-repeat",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T17:10:22.444Z",
+          "finished_at": "2026-11-15T17:10:23.361Z",
+          "result": {
+            "camera": {
+              "position": [
+                2.7474693824219747,
+                28.786956186192754,
+                33.893491789461784
+              ],
+              "target": [
+                -0.9791175977053455,
+                -2.8890331448894813,
+                2.838600288400767
+              ],
+              "zoom": 1
+            },
+            "selected_id": "SW_BIO_AERATION_001",
+            "rendered_frame": 241,
+            "arrival_verified": true
+          }
+        }
+      }
+    },
+    {
+      "name": "missing device explicitly fails",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_MISSING"
+        },
+        "action_id": "missing-device",
+        "status": "FAILED",
+        "started_at": "2026-11-15T17:10:23.371Z",
+        "finished_at": "2026-11-15T17:10:23.374Z",
+        "error": {
+          "code": "DEVICE_NOT_FOUND",
+          "message": "DEVICE_NOT_FOUND: 未找到设备 SW_MISSING"
+        }
+      }
+    },
+    {
+      "name": "real in-progress reload rejects commands",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "f5fe61fe-adb7-4564-a5a5-e5867f7697e2",
+        "status": "FAILED",
+        "started_at": "2026-11-15T17:10:23.388Z",
+        "finished_at": "2026-11-15T17:10:23.389Z",
+        "error": {
+          "code": "SCENE_NOT_READY",
+          "message": "三维场景尚未就绪"
+        }
+      }
+    },
+    {
+      "name": "missing GLB fails and ordinary retry recovers",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "missing",
+          "error": "资产尚未生成",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 1982.3999999761581,
+          "firstRenderMs": 0,
+          "triangles": 0,
+          "calls": 0,
+          "textures": 4,
+          "frameMs": 82.70000000000073,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144587,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 283,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "",
+          "loadedModelSha256": "",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 0,
+          "siteFraming": null,
+          "bounds": null
+        },
+        "action": {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "1f9767fb-cba9-4c5b-8f13-1c27fb91e24c",
+          "status": "FAILED",
+          "started_at": "2026-11-15T17:10:25.696Z",
+          "finished_at": "2026-11-15T17:10:25.704Z",
+          "error": {
+            "code": "LOAD_FAILED",
+            "message": "资产尚未生成"
+          }
+        }
+      }
+    },
+    {
+      "name": "invalid GLB enters load failure and blocks tools",
+      "status": "PASS",
+      "evidence": {
+        "snapshot": {
+          "status": "error",
+          "error": "响应不是有效的 GLB 文件",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 1038,
+          "firstRenderMs": 0,
+          "triangles": 0,
+          "calls": 0,
+          "textures": 15,
+          "frameMs": 364.7999999999993,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144586,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 331,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "",
+          "loadedModelSha256": "",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 0,
+          "siteFraming": null,
+          "bounds": null
+        },
+        "action": {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "0f32e750-cbad-4216-8585-6cd8cd2d3b07",
+          "status": "FAILED",
+          "started_at": "2026-11-15T17:10:27.608Z",
+          "finished_at": "2026-11-15T17:10:27.617Z",
+          "error": {
+            "code": "LOAD_FAILED",
+            "message": "响应不是有效的 GLB 文件"
+          }
+        }
+      }
+    },
+    {
+      "name": "rapid commands cancel the old action",
+      "status": "PASS",
+      "evidence": [
+        {
+          "tool_name": "scene.focus_device",
+          "arguments": {
+            "device_id": "SW_BIO_AERATION_001"
+          },
+          "action_id": "cde4dae6-92f4-4650-8c01-d5e521f1f131",
+          "status": "CANCELLED",
+          "started_at": "2026-11-15T17:10:30.355Z",
+          "finished_at": "2026-11-15T17:10:30.458Z",
+          "error": {
+            "code": "CANCELLED",
+            "message": "新命令已接管相机"
+          }
+        },
+        {
+          "tool_name": "scene.reset_view",
+          "arguments": {},
+          "action_id": "e405abb4-112f-451d-be53-9283ada4f4f8",
+          "status": "SUCCEEDED",
+          "started_at": "2026-11-15T17:10:30.456Z",
+          "finished_at": "2026-11-15T17:10:31.381Z",
+          "result": {
+            "camera": {
+              "position": [
+                25.085525841611087,
+                38.62609800579172,
+                50.97692550717597
+              ],
+              "target": [
+                1.186768737562249,
+                -5.494684340144586,
+                5.017777230158986
+              ],
+              "zoom": 1
+            },
+            "selected_id": null,
+            "rendered_frame": 462,
+            "arrival_verified": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "manual camera drag cancels the running action",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "d4a96d31-b5f0-4feb-b034-72b9d40f62bd",
+        "status": "CANCELLED",
+        "started_at": "2026-11-15T17:10:31.435Z",
+        "finished_at": "2026-11-15T17:10:31.549Z",
+        "error": {
+          "code": "CANCELLED",
+          "message": "用户正在手动操作相机"
+        }
+      }
+    },
+    {
+      "name": "timeout cannot return success",
+      "status": "PASS",
+      "evidence": {
+        "tool_name": "scene.focus_device",
+        "arguments": {
+          "device_id": "SW_BIO_AERATION_001"
+        },
+        "action_id": "93a6c64c-dd1c-46b0-ae21-28cf89477c2c",
+        "status": "FAILED",
+        "started_at": "2026-11-15T17:10:31.600Z",
+        "finished_at": "2026-11-15T17:10:31.622Z",
+        "error": {
+          "code": "TIMEOUT",
+          "message": "相机未在限定时间内完成渲染"
+        }
+      }
+    },
+    {
+      "name": "ordinary device click shares selection with tools",
+      "status": "PASS",
+      "evidence": {
+        "point": {
+          "x": 660.6118311626485,
+          "y": 463.7499380890929
+        },
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 15,
+          "frameMs": 883.5999999999985,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144587,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 512,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 1,
+          "sceneGeometryCount": 51,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "ordinary water toggle changes independent mesh state",
+      "status": "PASS",
+      "evidence": {
+        "hidden": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": false,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106040,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 132.8000000000029,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144586,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 521,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 1,
+          "sceneGeometryCount": 51,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "shown": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 15,
+          "frameMs": 132.8000000000029,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144586,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 529,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 1,
+          "sceneGeometryCount": 51,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "foreground road occludes the buried device when clicking",
+      "status": "PASS",
+      "evidence": {
+        "point": {
+          "x": 726.4896678186878,
+          "y": 657.2593119927899
+        },
+        "snapshot": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 132.8000000000029,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.186768737562249,
+            -5.494684340144587,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 534,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "repeated focus / supersession / reset do not duplicate or leak selection effects",
+      "status": "PASS",
+      "evidence": {
+        "snapshots": [
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": "SW_BIO_AERATION_001",
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 51,
+            "textures": 15,
+            "frameMs": 49.70000000000073,
+            "camera": [
+              2.7474693824219747,
+              28.786956186192754,
+              33.893491789461784
+            ],
+            "target": [
+              -0.9791175977053455,
+              -2.8890331448894813,
+              2.838600288400767
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 561,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 1,
+            "sceneGeometryCount": 51,
+            "siteFraming": {
+              "left": -1.2753738511799453,
+              "right": 1.428425103086631,
+              "bottom": -1.2861046790581094,
+              "top": 0.979439897224084
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": null,
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 50,
+            "textures": 15,
+            "frameMs": 17.299999999999272,
+            "camera": [
+              25.085525841611087,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "target": [
+              1.186768737562249,
+              -5.494684340144586,
+              5.017777230158986
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 612,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 0,
+            "sceneGeometryCount": 50,
+            "siteFraming": {
+              "left": -0.699218812502102,
+              "right": 0.6992187577397104,
+              "bottom": -0.870000000000001,
+              "top": 0.8699994543202865
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": "SW_BIO_AERATION_001",
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 51,
+            "textures": 15,
+            "frameMs": 66.60000000000218,
+            "camera": [
+              2.7474693824219747,
+              28.786956186192754,
+              33.893491789461784
+            ],
+            "target": [
+              -0.9791175977053455,
+              -2.8890331448894813,
+              2.838600288400767
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 652,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 1,
+            "sceneGeometryCount": 51,
+            "siteFraming": {
+              "left": -1.2753738511799453,
+              "right": 1.428425103086631,
+              "bottom": -1.2861046790581094,
+              "top": 0.979439897224084
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": null,
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 50,
+            "textures": 15,
+            "frameMs": 15.400000000001455,
+            "camera": [
+              25.085525841611087,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "target": [
+              1.186768737562249,
+              -5.494684340144586,
+              5.017777230158986
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 689,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 0,
+            "sceneGeometryCount": 50,
+            "siteFraming": {
+              "left": -0.699218812502102,
+              "right": 0.6992187577397104,
+              "bottom": -0.870000000000001,
+              "top": 0.8699994543202865
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": "SW_BIO_AERATION_001",
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 51,
+            "textures": 15,
+            "frameMs": 84.10000000000218,
+            "camera": [
+              2.7474693824219747,
+              28.786956186192754,
+              33.893491789461784
+            ],
+            "target": [
+              -0.9791175977053455,
+              -2.8890331448894813,
+              2.838600288400767
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 727,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 1,
+            "sceneGeometryCount": 51,
+            "siteFraming": {
+              "left": -1.2753738511799453,
+              "right": 1.428425103086631,
+              "bottom": -1.2861046790581094,
+              "top": 0.979439897224084
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": null,
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 50,
+            "textures": 15,
+            "frameMs": 17.900000000001455,
+            "camera": [
+              25.085525841611087,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "target": [
+              1.186768737562249,
+              -5.494684340144586,
+              5.017777230158986
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 780,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 0,
+            "sceneGeometryCount": 50,
+            "siteFraming": {
+              "left": -0.699218812502102,
+              "right": 0.6992187577397104,
+              "bottom": -0.870000000000001,
+              "top": 0.8699994543202865
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": "SW_BIO_AERATION_001",
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 51,
+            "textures": 15,
+            "frameMs": 14.799999999999272,
+            "camera": [
+              2.7474693824219747,
+              28.786956186192754,
+              33.893491789461784
+            ],
+            "target": [
+              -0.9791175977053455,
+              -2.8890331448894813,
+              2.838600288400767
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 818,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 1,
+            "sceneGeometryCount": 51,
+            "siteFraming": {
+              "left": -1.2753738511799453,
+              "right": 1.428425103086631,
+              "bottom": -1.2861046790581094,
+              "top": 0.979439897224084
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          },
+          {
+            "status": "ready",
+            "error": "",
+            "selectedId": null,
+            "waterVisible": true,
+            "loadMs": 1834.800000011921,
+            "firstRenderMs": 2175.699999988079,
+            "triangles": 106042,
+            "calls": 50,
+            "textures": 15,
+            "frameMs": 83.40000000000146,
+            "camera": [
+              25.085525841611087,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "target": [
+              1.186768737562249,
+              -5.494684340144586,
+              5.017777230158986
+            ],
+            "defaultCamera": [
+              25.085525841611084,
+              38.62609800579172,
+              50.97692550717597
+            ],
+            "defaultTarget": [
+              1.186768737562249,
+              -5.494684340144585,
+              5.017777230158986
+            ],
+            "zoom": 1,
+            "fov": 40,
+            "frame": 859,
+            "cameraBusy": false,
+            "visible": "visible",
+            "rendererDpr": 1,
+            "canvas": {
+              "width": 1440,
+              "height": 659
+            },
+            "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+            "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+            "waterPhaseMs": null,
+            "lighting": {
+              "exposure": 1.05,
+              "sunIntensity": 2.6,
+              "sunPosition": [
+                -28,
+                50,
+                20
+              ],
+              "environmentIntensity": 0.48,
+              "shadowMapSize": [
+                2048,
+                2048
+              ]
+            },
+            "selectionEffects": 0,
+            "sceneGeometryCount": 50,
+            "siteFraming": {
+              "left": -0.699218812502102,
+              "right": 0.6992187577397104,
+              "bottom": -0.870000000000001,
+              "top": 0.8699994543202865
+            },
+            "assetStage": "final",
+            "bounds": {
+              "min": [
+                -25.33077621459961,
+                -4.800000190734863,
+                -10.97499942779541
+              ],
+              "max": [
+                22.975000381469727,
+                2.325000286102295,
+                13.330777168273926
+              ]
+            }
+          }
+        ],
+        "repeated": [
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "action_id": "93145d8c-13f4-4967-95c3-aef7538cce64",
+            "status": "CANCELLED",
+            "started_at": "2026-11-15T17:10:43.568Z",
+            "finished_at": "2026-11-15T17:10:43.619Z",
+            "error": {
+              "code": "CANCELLED",
+              "message": "新命令已接管相机"
+            }
+          },
+          {
+            "tool_name": "scene.focus_device",
+            "arguments": {
+              "device_id": "SW_BIO_AERATION_001"
+            },
+            "action_id": "e3f2f6b0-d786-4c36-aa3b-d7e7f4eacb6f",
+            "status": "SUCCEEDED",
+            "started_at": "2026-11-15T17:10:43.614Z",
+            "finished_at": "2026-11-15T17:10:44.626Z",
+            "result": {
+              "camera": {
+                "position": [
+                  2.747469382421975,
+                  28.786956186192754,
+                  33.893491789461784
+                ],
+                "target": [
+                  -0.9791175977053457,
+                  -2.8890331448894813,
+                  2.838600288400767
+                ],
+                "zoom": 1
+              },
+              "selected_id": "SW_BIO_AERATION_001",
+              "rendered_frame": 899,
+              "arrival_verified": true
+            }
+          }
+        ],
+        "selected": {
+          "status": "ready",
+          "error": "",
+          "selectedId": "SW_BIO_AERATION_001",
+          "waterVisible": true,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106042,
+          "calls": 51,
+          "textures": 15,
+          "frameMs": 16.5,
+          "camera": [
+            2.747469382421975,
+            28.786956186192754,
+            33.893491789461784
+          ],
+          "target": [
+            -0.9791175977053457,
+            -2.8890331448894813,
+            2.838600288400767
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 899,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 1,
+          "sceneGeometryCount": 51,
+          "siteFraming": {
+            "left": -1.2753738511799453,
+            "right": 1.428425103086631,
+            "bottom": -1.2861046790581094,
+            "top": 0.979439897224084
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        },
+        "clean": {
+          "status": "ready",
+          "error": "",
+          "selectedId": null,
+          "waterVisible": true,
+          "loadMs": 1834.800000011921,
+          "firstRenderMs": 2175.699999988079,
+          "triangles": 106042,
+          "calls": 50,
+          "textures": 15,
+          "frameMs": 17.700000000000728,
+          "camera": [
+            25.085525841611087,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "target": [
+            1.1867687375622489,
+            -5.494684340144586,
+            5.017777230158986
+          ],
+          "defaultCamera": [
+            25.085525841611084,
+            38.62609800579172,
+            50.97692550717597
+          ],
+          "defaultTarget": [
+            1.186768737562249,
+            -5.494684340144585,
+            5.017777230158986
+          ],
+          "zoom": 1,
+          "fov": 40,
+          "frame": 950,
+          "cameraBusy": false,
+          "visible": "visible",
+          "rendererDpr": 1,
+          "canvas": {
+            "width": 1440,
+            "height": 659
+          },
+          "loadedModelUrl": "http://127.0.0.1:4173/models/aeration-tank.glb",
+          "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+          "waterPhaseMs": null,
+          "lighting": {
+            "exposure": 1.05,
+            "sunIntensity": 2.6,
+            "sunPosition": [
+              -28,
+              50,
+              20
+            ],
+            "environmentIntensity": 0.48,
+            "shadowMapSize": [
+              2048,
+              2048
+            ]
+          },
+          "selectionEffects": 0,
+          "sceneGeometryCount": 50,
+          "siteFraming": {
+            "left": -0.699218812502102,
+            "right": 0.6992187577397104,
+            "bottom": -0.870000000000001,
+            "top": 0.8699994543202865
+          },
+          "assetStage": "final",
+          "bounds": {
+            "min": [
+              -25.33077621459961,
+              -4.800000190734863,
+              -10.97499942779541
+            ],
+            "max": [
+              22.975000381469727,
+              2.325000286102295,
+              13.330777168273926
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

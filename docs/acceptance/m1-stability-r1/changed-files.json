@@ -1,0 +1,72 @@
+[
+  {
+    "file": "src/App.vue",
+    "new": false,
+    "sha256": "e7f027474f43ec95cd393e69dcae4fd9c93a83aa6f84434d0262ab707f966975"
+  },
+  {
+    "file": "src/agent/actionDispatcher.ts",
+    "new": false,
+    "sha256": "08c537947149566a2af1ee4d02153c40203630b27da2b10c8768f316a34ee136"
+  },
+  {
+    "file": "src/components/dashboard/AgentWorkspace.vue",
+    "new": false,
+    "sha256": "1e3e87ae6d980986de17aa87a79b44b9362238222752c87e55d16ae7d07f21b1"
+  },
+  {
+    "file": "src/components/dashboard/TrendPanel.vue",
+    "new": false,
+    "sha256": "f4003fdcef451fbcd62c194c39f8340b91363466c6b28b4a80e0a5957b62070c"
+  },
+  {
+    "file": "src/composables/useMockData.ts",
+    "new": false,
+    "sha256": "f0e478caf3600df7fb6adf34401f3c65f0f037f70e32da3fb0456346199464b6"
+  },
+  {
+    "file": "src/composables/useSceneWorkspace.ts",
+    "new": false,
+    "sha256": "ec292f7a847a6ee212ff71e3bd9c7577cc70e7bd761d8a8f498a6c43f389e48e"
+  },
+  {
+    "file": "src/diagnostics/stability.ts",
+    "new": true,
+    "sha256": "7339106d8d2dd2211be2db111497905e25f2d56fb2fe89f30a2725c5befb5834"
+  },
+  {
+    "file": "src/qa/exposeDashboardQA.ts",
+    "new": false,
+    "sha256": "0dacd625d510f2f3b7bf9797667b42ec6538bd81e79a352f9ff9ecc02fec7d7a"
+  },
+  {
+    "file": "src/scene/cameraController.ts",
+    "new": false,
+    "sha256": "3dc5c9df20e9e0529df3a74aced8f995d94d0581ab0879a3350d9f06bc789b86"
+  },
+  {
+    "file": "src/scene/frameSample.ts",
+    "new": true,
+    "sha256": "acebdc835734bbccb52097dde889563ef820b714278f4031cced6693aeaa4905"
+  },
+  {
+    "file": "src/scene/loopLifecycle.ts",
+    "new": true,
+    "sha256": "58382324eae7c2b3e20218c657a9e52eb5a1b6a48b00e55dd3a5ce4c1edb0adb"
+  },
+  {
+    "file": "src/scene/runtime.ts",
+    "new": false,
+    "sha256": "ff16350dae1605f15f9a3237eba1c29615bb94a41120ea21588fe3d0daa4554a"
+  },
+  {
+    "file": "tests/cameraDeadline.test.ts",
+    "new": true,
+    "sha256": "3814e2e17239ad04e861d4d9c00c13f1cae2f2a3349457b9535590c0472e6fab"
+  },
+  {
+    "file": "tests/stability.test.ts",
+    "new": true,
+    "sha256": "fbbb0ec981129db9c66ac91d17fa770883b79cb244d8c38f0d9af9f8afd1a044"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "stage": "new unit tests",
+      "result": "FAILED",
+      "reason": "Node strip-types cannot execute TypeScript constructor parameter properties",
+      "fix": "Declared repository fields explicitly; runtime dependencies unchanged.",
+      "subsequent": "75 tests passed"
+    },
+    {
+      "stage": "native helper cancel quickcheck",
+      "result": "NOT_A_CANCEL_PASS",
+      "reason": "PAGE_HIDDEN cancelled task before click helper could receive input.",
+      "evidence": "quickcheck-interrupted-attempt.json",
+      "subsequent": "Actual trusted CDP mouse input during RUNNING passed; browser-checks.json"
+    },
+    {
+      "stage": "first history camera comparison",
+      "result": "ASSERTION_FAILED",
+      "reason": "Strict serialized camera comparison failed; original numeric delta was not captured, so cause is unconfirmed.",
+      "fix": "Test compares camera coordinates with 1e-6 metre tolerance and stores actual before/after values; no product camera code was changed.",
+      "subsequent": "history-side-effect-comparison.json has identical before/after coordinates, unchanged tool count, zero model calls."
+    }
+  ]
+}

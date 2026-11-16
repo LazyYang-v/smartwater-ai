@@ -1,0 +1,36 @@
+{
+  "build_id": "4a50bf053e9e31e6a3c7344eacace59db7955f146ffcb7e744dcc09ce781f1c3",
+  "files": {
+    "assets/index-DH3KKlOn.css": {
+      "sha256": "837ee75a7e7200a2f56e59b35d93fcd0f5b41c1e60d41cf271c5238a9919386e",
+      "bytes": 19634
+    },
+    "assets/index-I9oLiPdh.js": {
+      "sha256": "f831040d69ec500f49a6661d647fc815a5f04892e5032445abde8837a50d69d2",
+      "bytes": 1347708
+    },
+    "environments/daylight_2k.hdr": {
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "favicon.svg": {
+      "sha256": "ac71c8efd85cbd971f21ffc1e0ec10cd90a8ea88ad3663a7a15cd219d809a226",
+      "bytes": 302
+    },
+    "index.html": {
+      "sha256": "f6bc09554f9487011319ec1142889d24d92cbbbec7e1847d9a90b20075ea00b0",
+      "bytes": 486
+    },
+    "models/aeration-tank.glb": {
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+      "bytes": 31254844
+    }
+  },
+  "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+  "source_files": {
+    "src/scene/runtime.ts": "d037bbcc9b7e1d19967b9ceea15e500e36a7d87603b831db0427f6967a4a7810",
+    "src/qa/exposeDashboardQA.ts": "fce0a1113e686496c3c98695ee81ff175cc15cdd71fc0a62996e7c0329b5fb57",
+    "src/scene/staticBatches.ts": "d6f3dc48d71a2593b4986a5cdb8ad7fd7cab09556e372f1d1b340f70e5315a79"
+  },
+  "kind": "EXPERIMENT_ONLY_NOT_DELIVERED"
+}

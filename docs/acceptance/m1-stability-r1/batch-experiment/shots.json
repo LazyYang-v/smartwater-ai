@@ -1,0 +1,217 @@
+{
+  "build_id": "4a50bf053e9e31e6a3c7344eacace59db7955f146ffcb7e744dcc09ce781f1c3",
+  "shots": [
+    {
+      "file": "batch-off.png",
+      "enabled": false,
+      "stats": {
+        "eligibleOriginals": 36,
+        "batchMeshes": 6
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4526,
+        "firstRenderMs": 4935.900000035763,
+        "triangles": 106042,
+        "calls": 50,
+        "textures": 15,
+        "frameMs": 466.59999999999945,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158986
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 123,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4181/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": 0,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 50,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "rect": {
+        "x": 309,
+        "y": 328,
+        "width": 1218,
+        "height": 427,
+        "top": 328,
+        "right": 1527,
+        "bottom": 755,
+        "left": 309
+      },
+      "at": "2026-11-15T20:40:55.809Z"
+    },
+    {
+      "file": "batch-on.png",
+      "enabled": true,
+      "stats": {
+        "eligibleOriginals": 36,
+        "batchMeshes": 6
+      },
+      "scene": {
+        "status": "ready",
+        "error": "",
+        "selectedId": null,
+        "waterVisible": true,
+        "loadMs": 4526,
+        "firstRenderMs": 4935.900000035763,
+        "triangles": 106042,
+        "calls": 20,
+        "textures": 15,
+        "frameMs": 300,
+        "camera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "defaultCamera": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "defaultTarget": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158987
+        ],
+        "zoom": 1,
+        "fov": 40,
+        "frame": 136,
+        "cameraBusy": false,
+        "visible": "visible",
+        "activeRenderLoops": 1,
+        "loadGeneration": 1,
+        "rendererDpr": 1,
+        "nativeDpr": 2,
+        "drawingBuffer": {
+          "width": 1218,
+          "height": 427
+        },
+        "canvas": {
+          "width": 1218,
+          "height": 427
+        },
+        "loadedModelUrl": "http://127.0.0.1:4181/models/aeration-tank.glb",
+        "loadedModelSha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+        "waterPhaseMs": 0,
+        "lighting": {
+          "exposure": 1.05,
+          "sunIntensity": 2.6,
+          "sunPosition": [
+            -28,
+            50,
+            20
+          ],
+          "environmentIntensity": 0.48,
+          "shadowMapSize": [
+            2048,
+            2048
+          ]
+        },
+        "selectionEffects": 0,
+        "sceneGeometryCount": 56,
+        "siteFraming": {
+          "left": -0.5356372463518793,
+          "right": 0.5356372044010965,
+          "bottom": -0.87,
+          "top": 0.8699994543202864
+        },
+        "assetStage": "final",
+        "bounds": {
+          "min": [
+            -25.33077621459961,
+            -4.800000190734863,
+            -10.97499942779541
+          ],
+          "max": [
+            22.975000381469727,
+            2.325000286102295,
+            13.330777168273926
+          ]
+        }
+      },
+      "rect": {
+        "x": 309,
+        "y": 328,
+        "width": 1218,
+        "height": 427,
+        "top": 328,
+        "right": 1527,
+        "bottom": 755,
+        "left": 309
+      },
+      "at": "2026-11-15T20:40:56.663Z"
+    }
+  ]
+}

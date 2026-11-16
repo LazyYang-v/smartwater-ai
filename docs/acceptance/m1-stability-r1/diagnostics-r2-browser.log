@@ -1,0 +1,10 @@
+{"mode":"FULL","average_fps":30.0860184295285,"p95_frame_ms":99.5,"done":true,"top":[]}
+{"mode":"PROFILER_ON","average_fps":27.820604048054452,"p95_frame_ms":116.69999999999709,"done":true,"top":[{"function":"(idle)","url":"","sampled_ms":7476.747},{"function":"(program)","url":"","sampled_ms":4908.705},{"function":"renderBufferDirect","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":1264.407},{"function":"ht","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":899.476},{"function":"p","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":759.806},{"function":"at","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":541.916}]}
+{"mode":"FULL_AFTER_PROFILE","average_fps":31.97231476459802,"p95_frame_ms":100,"done":true,"top":[]}
+{"mode":"DATA_PAUSED","average_fps":31.74619429698856,"p95_frame_ms":100,"done":true,"top":[]}
+{"mode":"CHART_SUBMISSION_PAUSED","average_fps":34.205776634702985,"p95_frame_ms":98.30000000000291,"done":true,"top":[]}
+{"mode":"THREE_PAUSED","done":true,"top":[]}
+{"mode":"PANEL_OPERATIONS","average_fps":29.098720828044137,"p95_frame_ms":100,"done":true,"top":[]}
+{"mode":"CSS_EFFECTS_OFF","average_fps":33.37929771172734,"p95_frame_ms":84.5,"done":true,"top":[]}
+{"mode":"CONTROLLED_CPU_PRESSURE","average_fps":32.52396101188204,"p95_frame_ms":100,"done":true,"top":[{"function":"","url":"","sampled_ms":5551.587},{"function":"(idle)","url":"","sampled_ms":5187.109},{"function":"(program)","url":"","sampled_ms":4145.181},{"function":"now","url":"","sampled_ms":1270.731},{"function":"s","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":432.628},{"function":"renderBufferDirect","url":"http://127.0.0.1:4173/assets/index-QZyuTZ0A.js","sampled_ms":420.055}]}
+

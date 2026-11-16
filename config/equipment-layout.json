@@ -1,0 +1,11 @@
+{
+ "id":"smartwater-four-unit-demo-r1","note":"Four demonstration units. Air/water process relationships are schematic, not connected engineering pipework.",
+ "placements":[
+  {"deviceId":"SW_BIO_AERATION_001","position":[-22,0,0],"yaw":0},
+  {"deviceId":"SW_CLR_TANK_001","position":[31,0,0],"yaw":0},
+  {"deviceId":"SW_AIR_BLOWER_001","position":[-23,0,-23],"yaw":0},
+  {"deviceId":"SW_PRE_PUMP_001","position":[-42,0,-23],"yaw":0}
+ ],
+ "site":{"length":104,"width":52,"centerZ":-4,"top":0,"thickness":0.24,"roadZ":18.2,"roadWidth":4.2,"plantingZ":-29.1,"serviceRoadZ":-15.4},
+ "overviewDirection":[0.34,1.16,1.0],"overviewFill":0.9
+}

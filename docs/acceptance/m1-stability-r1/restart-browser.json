@@ -1,0 +1,74 @@
+{
+  "tested_at_utc": "2026-11-15T21:11:54.688Z",
+  "normal": {
+    "url": "http://127.0.0.1:4173/",
+    "title": "SmartWater · M1 模拟运营大屏",
+    "qaExposed": false,
+    "snapshotId": "smartwater-m1.2:NORMAL:0",
+    "charts": 2
+  },
+  "focus": {
+    "tool_name": "scene.focus_device",
+    "arguments": {
+      "device_id": "SW_BIO_AERATION_001"
+    },
+    "source": "USER",
+    "trigger": "告警定位",
+    "action_id": "2abfbf9d-271e-4f88-b666-8d5d1b9ab697",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-15T21:11:51.569Z",
+    "finished_at": "2026-11-15T21:11:52.490Z",
+    "result": {
+      "camera": {
+        "position": [
+          2.6178233553651395,
+          25.4653906878979,
+          30.97172363488917
+        ],
+        "target": [
+          -0.7393657766360286,
+          -3.0707169341120206,
+          2.995147534879441
+        ],
+        "zoom": 1
+      },
+      "selected_id": "SW_BIO_AERATION_001",
+      "rendered_frame": 171,
+      "arrival_verified": true
+    }
+  },
+  "reset": {
+    "tool_name": "scene.reset_view",
+    "arguments": {},
+    "source": "DEMO_AGENT",
+    "trigger": "确定性口令",
+    "action_id": "1071d88b-cf9d-4e5f-bdd3-6a10ad758459",
+    "status": "SUCCEEDED",
+    "started_at": "2026-11-15T21:11:53.447Z",
+    "finished_at": "2026-11-15T21:11:54.357Z",
+    "result": {
+      "camera": {
+        "position": [
+          25.085525841611087,
+          38.62609800579173,
+          50.976925507175984
+        ],
+        "target": [
+          1.1867687375622464,
+          -5.494684340144581,
+          5.017777230158986
+        ],
+        "zoom": 1
+      },
+      "selected_id": null,
+      "rendered_frame": 283,
+      "arrival_verified": true
+    }
+  },
+  "data": {
+    "text": "当前溶解氧缺测—mg/L一号曝气池 · DO < 2.0 mg/L · 演示阈值当前水深有效4.8m固定演示水深 · 对应三维水面关联鼓风机功率过期—kWB-01 · DATA_ONLY / 暂无三维模型当前有效告警演示规则1项含待数据确认事件 · 未自动解除",
+    "records": 2,
+    "selectedLabels": 0
+  },
+  "passed": true
+}

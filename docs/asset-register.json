@@ -1,0 +1,348 @@
+{
+  "assets": [
+    {
+      "asset": "concrete",
+      "author": "Rob Tuytel",
+      "channel": "Base Color",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/concrete",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_diff_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete/concrete_diff_2k.jpg",
+      "expected_md5": "8ddd1a273bbde0e4095cba8647c79b96",
+      "expected_size": 2265804,
+      "filename": "concrete_diff_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:01:41.773502+00:00",
+      "bytes": 2265804,
+      "sha256": "92a0b37c2f64630ba776b514f3276ecbb98cd59a23dea2c7b83b3c63bc3e4f7a",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "sRGB"
+    },
+    {
+      "asset": "concrete",
+      "author": "Rob Tuytel",
+      "channel": "Normal",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/concrete",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_nor_gl_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete/concrete_nor_gl_2k.jpg",
+      "expected_md5": "73f9112331204512b2612792367f506a",
+      "expected_size": 589619,
+      "filename": "concrete_nor_gl_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:01:17.203190+00:00",
+      "bytes": 589619,
+      "sha256": "74bd74e02c00565c84d89f6a73fe672ba4fe254c5b43d83eaca0eb7be5159265",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "Non-Color"
+    },
+    {
+      "asset": "concrete",
+      "author": "Rob Tuytel",
+      "channel": "Roughness",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/concrete",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_rough_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete/concrete_rough_2k.jpg",
+      "expected_md5": "69b8f7a10c68946248fcc48e3e046e58",
+      "expected_size": 961406,
+      "filename": "concrete_rough_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:01:41.327244+00:00",
+      "bytes": 961406,
+      "sha256": "d58060aa195ffd5fc90fc2468491f9e6fd8a8d374362605d8cfe7ddeabcdc84c",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "Non-Color"
+    },
+    {
+      "asset": "worn_asphalt",
+      "author": "Amal Kumar",
+      "channel": "Base Color",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/worn_asphalt",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/worn_asphalt_diff_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_diff_2k.jpg",
+      "expected_md5": "7bd15211eea2137bfcc6af510e17cd3d",
+      "expected_size": 3573942,
+      "filename": "worn_asphalt_diff_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:02:15.781912+00:00",
+      "bytes": 3573942,
+      "sha256": "8313d3f8d25515d6ef0be59d461cdeb0feb484694eae385711ecf688c0afa4de",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "sRGB"
+    },
+    {
+      "asset": "worn_asphalt",
+      "author": "Amal Kumar",
+      "channel": "Normal",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/worn_asphalt",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/worn_asphalt_nor_gl_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_nor_gl_2k.jpg",
+      "expected_md5": "e5e67ff8533fba07858b7efaa0bf29f0",
+      "expected_size": 5863366,
+      "filename": "worn_asphalt_nor_gl_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:03:53.415664+00:00",
+      "bytes": 5863366,
+      "sha256": "114db3391e7d74c03758b06c8af2901a2c9392cf4cb37e7a8a3254a3235ce63e",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "Non-Color"
+    },
+    {
+      "asset": "worn_asphalt",
+      "author": "Amal Kumar",
+      "channel": "Roughness",
+      "format": "jpg",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/worn_asphalt",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/worn_asphalt_rough_2k.jpg",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_asphalt/worn_asphalt_rough_2k.jpg",
+      "expected_md5": "38ef204748fd27be2a256e61d265f2ca",
+      "expected_size": 1823718,
+      "filename": "worn_asphalt_rough_2k.jpg",
+      "downloaded_at_utc": "2026-11-15T16:02:00.876245+00:00",
+      "bytes": 1823718,
+      "sha256": "71572c4d7f3b4f33bd45f2b25368b853101e58c85c826a7109bab851eb847a6a",
+      "decoded": true,
+      "width": 2048,
+      "height": 2048,
+      "color_space": "Non-Color"
+    },
+    {
+      "asset": "kloofendal_48d_partly_cloudy_puresky",
+      "author": "Greg Zaal; Jarod Guest",
+      "channel": "environment",
+      "format": "hdr",
+      "resolution": "2K",
+      "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "public/environments/daylight_2k.hdr",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "expected_md5": "2eba3a4d7eeb23cbfbeca364c97e7980",
+      "expected_size": 5451493,
+      "filename": "daylight_2k.hdr",
+      "downloaded_at_utc": "2026-11-15T16:03:25.386130+00:00",
+      "bytes": 5451493,
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "decoded": true,
+      "width": 2048,
+      "height": 1024,
+      "color_space": "Linear Rec.709"
+    },
+    {
+      "asset": "concrete_floor_01",
+      "source": "https://polyhaven.com/a/concrete_floor_01",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_floor_01_diff_2k.jpg",
+      "filename": "concrete_floor_01_diff_2k.jpg",
+      "channel": "Diffuse",
+      "resolution": "2K",
+      "width": 2048,
+      "height": 2048,
+      "downloaded_at_utc": "2026-11-15T16:52:45.920431+00:00",
+      "sha256": "ca24c52dabae67ef49093f91d8f9b9e5328a3b9fcb1327742ff6181ee542e017",
+      "expected_md5": "bde1be20188bbec1d3970f37ee210ca1",
+      "bytes": 2967720,
+      "decoded": true,
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_01/concrete_floor_01_diff_2k.jpg"
+    },
+    {
+      "asset": "concrete_floor_01",
+      "source": "https://polyhaven.com/a/concrete_floor_01",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_floor_01_nor_gl_2k.jpg",
+      "filename": "concrete_floor_01_nor_gl_2k.jpg",
+      "channel": "nor_gl",
+      "resolution": "2K",
+      "width": 2048,
+      "height": 2048,
+      "downloaded_at_utc": "2026-11-15T16:52:46.997808+00:00",
+      "sha256": "796b010208e346bbeec4c468f286c3892852a454f77cb516d6f4a6e7c240de01",
+      "expected_md5": "ee04738b0919c3bd75ea77fc55e1e7d8",
+      "bytes": 3261423,
+      "decoded": true,
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_01/concrete_floor_01_nor_gl_2k.jpg"
+    },
+    {
+      "asset": "concrete_floor_01",
+      "source": "https://polyhaven.com/a/concrete_floor_01",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "file": "assets/source/textures/concrete_floor_01_rough_2k.jpg",
+      "filename": "concrete_floor_01_rough_2k.jpg",
+      "channel": "Rough",
+      "resolution": "2K",
+      "width": 2048,
+      "height": 2048,
+      "downloaded_at_utc": "2026-11-15T16:52:45.643556+00:00",
+      "sha256": "e66fa941d6daa33ba334c853bf126c85f1d77e7b72778073237e4ef8c7c97774",
+      "expected_md5": "3e7d67a2c5444140a30570e93eb23bd3",
+      "bytes": 1488360,
+      "decoded": true,
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_01/concrete_floor_01_rough_2k.jpg"
+    }
+  ],
+  "generated_assets": [
+    {
+      "file": "assets/source/textures/water_normal_generated.png",
+      "source": "scripts/blender/build_aeration.py",
+      "author": "SmartWater M0 project",
+      "license": "Project-generated",
+      "resolution": [
+        256,
+        256
+      ],
+      "sha256": "d7dbf53a61f75bbe04ee954cd12e03973949d10c1b7b1baef44f72ac4997e447"
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_diff.png",
+      "source_files": [
+        "concrete_diff_2k.jpg",
+        "concrete_floor_01_diff_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:05:57.960619+00:00",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "sha256": "d308430cca9f351ba299bd0a21336eaca1498e8030f63257990129783433e32c",
+      "description": "Neutral photographic concrete; role-specific contrast, no added dirt or exposure changes"
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_diff.png",
+      "source_files": [
+        "concrete_floor_01_diff_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:05:58.325381+00:00",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "sha256": "edd112f70015b34856033cfc9bd724e1fc3a655dab3ed7cc3d0cddfad04b6333",
+      "description": "Neutral photographic concrete; role-specific contrast, no added dirt or exposure changes"
+    },
+    {
+      "file": "assets/source/textures/concrete_walkway_r1_diff.png",
+      "source_files": [
+        "concrete_floor_01_diff_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:05:58.811081+00:00",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "sha256": "8874ed25a87536695116718fa8ad076c81b75a412afb3abf48c1973b4ce86d46",
+      "description": "Neutral photographic concrete; role-specific contrast, no added dirt or exposure changes"
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_nor_gl.png",
+      "source_files": [
+        "concrete_nor_gl_2k.jpg",
+        "concrete_floor_01_nor_gl_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:05:59.521538+00:00",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "03622c7d20d1e63eb93c62d0254adb6218d4d7f08c77cda8c875b55d9642fb55",
+      "description": "Normalized OpenGL normal; wall keeps restrained formwork relief"
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_nor_gl.png",
+      "source_files": [
+        "concrete_floor_01_nor_gl_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:05:59.880619+00:00",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "5a81a71862820c29e5c12cbe5c40a64d96f2702a89807048cb31b2de59d2f399",
+      "description": "Normalized OpenGL normal; wall keeps restrained formwork relief"
+    },
+    {
+      "file": "assets/source/textures/concrete_wall_r1_rough.png",
+      "source_files": [
+        "concrete_rough_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:06:00.469061+00:00",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "a97e823a4c77a249aad20f4cd0d30ad75eaddf258d384daa385dd8f45b67d3e3",
+      "description": "Matte, low-contrast roughness; scalar Non-Color data"
+    },
+    {
+      "file": "assets/source/textures/concrete_floor_r1_rough.png",
+      "source_files": [
+        "concrete_floor_01_rough_2k.jpg"
+      ],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:06:00.857434+00:00",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "b998598d2c2d1955b2f821d3c505f7ff72c1f035df6f762eac965685487ba6ee",
+      "description": "Matte, low-contrast roughness; scalar Non-Color data"
+    },
+    {
+      "file": "assets/source/textures/water_normal_r1.png",
+      "source_files": [],
+      "author": "SmartWater M0.1 project; original scans by Rob Tuytel",
+      "license": "CC0-1.0 derivatives",
+      "generated_at_utc": "2026-11-15T17:06:01.102053+00:00",
+      "resolution": [
+        512,
+        512
+      ],
+      "sha256": "42996dd77ad322b071803309a61beac669a8c4913e25430914c81b544135dd57",
+      "description": "Seeded isotropic four-scale periodic noise height gradients; no finite set of directional sine waves"
+    }
+  ]
+}

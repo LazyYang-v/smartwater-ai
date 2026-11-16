@@ -1,0 +1,58 @@
+[
+  {
+    "label": "p1",
+    "active": true,
+    "openedBy": "agent",
+    "url": "http://127.0.0.1:4173/",
+    "title": "SmartWater · M1 模拟运营大屏",
+    "visible": "visible",
+    "focus": true,
+    "ageMs": 1123505.699999988,
+    "canvases": 1,
+    "entries": [
+      "http://127.0.0.1:4173/assets/index-qtB-IJjd.js"
+    ]
+  },
+  {
+    "label": "p2",
+    "active": false,
+    "openedBy": "unknown",
+    "url": "http://127.0.0.1:4173/",
+    "title": "SmartWater · 单池数字孪生",
+    "visible": "visible",
+    "focus": true,
+    "ageMs": 11085317.699999988,
+    "canvases": 1,
+    "entries": [
+      "http://127.0.0.1:4173/assets/index-BVclSLk7.js"
+    ]
+  },
+  {
+    "label": "p3",
+    "active": false,
+    "openedBy": "unknown",
+    "url": "http://127.0.0.1:4173/",
+    "title": "SmartWater · 单池数字孪生",
+    "visible": "visible",
+    "focus": true,
+    "ageMs": 7044625.399999976,
+    "canvases": 1,
+    "entries": [
+      "http://127.0.0.1:4173/assets/index-DiwN4qak.js"
+    ]
+  },
+  {
+    "label": "p4",
+    "active": false,
+    "openedBy": "unknown",
+    "url": "http://127.0.0.1:4173/",
+    "title": "SmartWater · M1 模拟运营大屏",
+    "visible": "visible",
+    "focus": true,
+    "ageMs": 823280.1000000238,
+    "canvases": 1,
+    "entries": [
+      "http://127.0.0.1:4173/assets/index-qtB-IJjd.js"
+    ]
+  }
+]

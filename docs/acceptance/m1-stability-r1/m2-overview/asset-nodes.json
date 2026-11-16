@@ -1,0 +1,154 @@
+[
+  {
+    "file": "aeration-tank.glb",
+    "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f",
+    "cameras": 0,
+    "punctual_lights": 0,
+    "roots": [
+      {
+        "index": 41,
+        "name": "SW_BIO_AERATION_001",
+        "extras": {
+          "device_id": "SW_BIO_AERATION_001",
+          "display_name": "\u4e00\u53f7\u66dd\u6c14\u6c60",
+          "asset_stage": "final",
+          "coordinate_system": "local metres; source Z up; GLB Y up",
+          "engineering_validated": false
+        },
+        "children": [
+          "ACCESS_BridgeBeams",
+          "ACCESS_BridgeGrating",
+          "ACCESS_ConcreteSupports",
+          "ACCESS_PerimeterDeck",
+          "ACCESS_StairNosings",
+          "ACCESS_StairStringers",
+          "ACCESS_StairTreads",
+          "AERATOR_DiscBodies",
+          "AERATOR_DiscConnections",
+          "AERATOR_DiscMembranes",
+          "AERATOR_Laterals",
+          "AERATOR_PipeSupports",
+          "AIR_Branch_01",
+          "AIR_Branch_02",
+          "AIR_Branch_03",
+          "AIR_Branch_04",
+          "AIR_Branch_05",
+          "AIR_Branch_06",
+          "AIR_BranchFlanges",
+          "AIR_DropAnchors",
+          "AIR_DropSupports",
+          "AIR_FlangeBolts",
+          "AIR_Main",
+          "AIR_MainEndCaps",
+          "AIR_MainFlanges",
+          "AIR_MainSupports",
+          "AIR_ValveBodies",
+          "AIR_ValveHandwheels",
+          "AIR_ValveStems",
+          "SAFETY_AnchorBolts",
+          "SAFETY_Baseplates",
+          "SAFETY_BridgeRailing",
+          "SAFETY_Railing",
+          "SAFETY_StairRailing",
+          "STRUCT_BaseSlab",
+          "STRUCT_Coping",
+          "STRUCT_DeckJoints",
+          "STRUCT_ExpansionJoints",
+          "STRUCT_Wall_End",
+          "STRUCT_Wall_Long",
+          "WATER_Surface"
+        ],
+        "transform": {}
+      },
+      {
+        "index": 51,
+        "name": "SW_SITE_CONTEXT",
+        "extras": null,
+        "children": [
+          "SITE_Hardscape",
+          "SITE_PavingJoints",
+          "SITE_PlantingBeds",
+          "SITE_PlantingBeds.001",
+          "SITE_Road",
+          "SITE_RoadCurbs",
+          "SITE_RoadMarkings",
+          "SITE_Shrubs",
+          "SITE_Shrubs.001"
+        ],
+        "transform": {}
+      }
+    ]
+  },
+  {
+    "file": "clarifier-tank.glb",
+    "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa",
+    "cameras": 0,
+    "punctual_lights": 0,
+    "roots": [
+      {
+        "index": 64,
+        "name": "SW_CLR_TANK_001",
+        "extras": {
+          "device_id": "SW_CLR_TANK_001",
+          "display_name": "\u4e00\u53f7\u4e8c\u6c89\u6c60",
+          "asset_stage": "m2-clarifier-r1",
+          "geometry_form": "circular",
+          "engineering_validated": false,
+          "units": "metres"
+        },
+        "children": [
+          "ACCESS_DeckPiers",
+          "ACCESS_GradeLanding",
+          "ACCESS_PerimeterDeck",
+          "ACCESS_PierFootings",
+          "ACCESS_StairNosings",
+          "ACCESS_StairStringers",
+          "ACCESS_StairTreads",
+          "HYDRO_Effluent",
+          "HYDRO_EffluentSleeve",
+          "HYDRO_Feedwell",
+          "HYDRO_FlangeBolts",
+          "HYDRO_Influent",
+          "HYDRO_InfluentFlanges",
+          "HYDRO_LaunderFloor",
+          "HYDRO_OutletBase",
+          "HYDRO_OutletWalls",
+          "HYDRO_SludgeOutlet",
+          "HYDRO_VNotchWeir",
+          "HYDRO_WeirFixings",
+          "HYDRO_WeirSupport",
+          "MECH_CenterBearing",
+          "MECH_PeripheralTrack",
+          "MECH_ScraperBridgePivot",
+          "SAFETY_Anchors",
+          "SAFETY_PerimeterPosts",
+          "SAFETY_PerimeterRails",
+          "SAFETY_PostBases",
+          "SAFETY_StairPosts",
+          "SAFETY_StairRails",
+          "STRUCT_BaseEdge",
+          "STRUCT_CenterPier",
+          "STRUCT_CircularWall",
+          "STRUCT_Coping",
+          "STRUCT_RadialJoints",
+          "STRUCT_SlopedFloor",
+          "WATER_Surface"
+        ],
+        "transform": {}
+      },
+      {
+        "index": 70,
+        "name": "SW_SITE_CONTEXT",
+        "extras": null,
+        "children": [
+          "SITE_Curbs",
+          "SITE_GreenStrip",
+          "SITE_Hardscape",
+          "SITE_Road",
+          "SITE_RoadMarkings"
+        ],
+        "transform": {}
+      }
+    ]
+  }
+]

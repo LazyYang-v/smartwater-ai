@@ -1,0 +1,26 @@
+$ node --experimental-strip-types --test tests/*.test.ts
+✔ only the two demonstration commands resolve to allowed calls (0.874084ms)
+✔ a repeated action id executes once and returns the same promise (1.505ms)
+✔ a superseded operation cannot report success even if its handler resolves late (0.192417ms)
+✔ failure is terminal, timestamped, and replaying its id does not retry (0.138542ms)
+✔ user-origin metadata is retained without changing idempotency or tool semantics (0.105834ms)
+✔ perspective site fits and centers in 1440x659 actual viewport (1.92375ms)
+✔ perspective site fits and centers in 989x434 actual viewport (0.714167ms)
+✔ NORMAL has one coherent snapshot, fixed 4.8m depth and no calculated alarms (6.967458ms)
+✔ LOW_DO alarm refers to an actually low GOOD reading and its event time sample (4.36725ms)
+✔ MISSING_DATA leaves actual null gaps and does not clear existing low DO event (3.977459ms)
+✔ scenario switches publish atomically and reproduce data without accumulating prior alarms (21.801709ms)
+✔ NORMAL: KPI/device raw readings equal trend endpoints in every time window (4.23875ms)
+✔ LOW_DO: KPI/device raw readings equal trend endpoints in every time window (5.578542ms)
+✔ MISSING_DATA: KPI/device raw readings equal trend endpoints in every time window (4.161ms)
+✔ advancing demo changes time by five seconds, preserves depth and event occurrence (8.581958ms)
+✔ central clock pauses hidden time and never catches up with a publication storm (0.122833ms)
+✔ stale power never predates newer GOOD history and retains the value at its actual observedAt (14.147167ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 163.414459

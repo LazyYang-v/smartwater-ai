@@ -1,0 +1,570 @@
+{
+  "generated_from": "src/agent/contracts.ts; result data fields documented from actual businessTools implementation",
+  "envelope": [
+    "evidence_id",
+    "tool_name",
+    "task_id",
+    "scenario_id",
+    "snapshot_id",
+    "as_of",
+    "source=SIMULATED",
+    "quality",
+    "device_id/metric_key/unit where applicable",
+    "data"
+  ],
+  "tools": [
+    {
+      "name": "scene.focus_device",
+      "description": "定位已加载的指定设备，确认相机到位、选中并实际渲染；不修改现场设备。",
+      "permission": "PRESENTATION",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "required": [
+          "device_id"
+        ],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 6500,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "camera.position/target/zoom",
+        "selected_id",
+        "rendered_frame",
+        "arrival_verified",
+        "roof_presentation",
+        "inspection_device"
+      ]
+    },
+    {
+      "name": "scene.reset_view",
+      "description": "恢复当前场景总览并清除选择，确认实际渲染。",
+      "permission": "PRESENTATION",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 6500,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "camera.position/target/zoom",
+        "selected_id=null",
+        "rendered_frame",
+        "arrival_verified",
+        "roof_presentation"
+      ]
+    },
+    {
+      "name": "device.get_details",
+      "description": "读取四单元设备资料、模型映射与可用指标；模型状态不是运行状态。",
+      "permission": "READ_DATA",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "required": [
+          "device_id"
+        ],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 2000,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "id/name/description",
+        "unit_id",
+        "asset_root_node",
+        "mechanical_node",
+        "available_metrics",
+        "model_load_state",
+        "operating_state=NOT_OBSERVED",
+        "limitation"
+      ]
+    },
+    {
+      "name": "device.get_metrics",
+      "description": "读取固定演示快照的指标；可按1/6/24小时计算已有DO/功率历史统计，缺测不补零。",
+      "permission": "READ_DATA",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "metric_keys": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "do",
+                "ph",
+                "depth",
+                "blower_power"
+              ]
+            },
+            "maxItems": 4,
+            "uniqueItems": true
+          },
+          "hours": {
+            "type": "integer",
+            "enum": [
+              1,
+              6,
+              24
+            ]
+          }
+        },
+        "required": [
+          "device_id"
+        ],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 2000,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "outcome=DATA_AVAILABLE|NO_DEFINED_METRICS",
+        "metrics[].metric_key/label/unit",
+        "metrics[].latest{value,quality,observedAt,sampleAt,scopeId,source,snapshotId}",
+        "metrics[].history{hours,total_samples,valid_samples,missing_samples,stale_samples,invalid_samples,expected_samples,coverage,min,max,mean,start,end,cadence_ms}|null"
+      ]
+    },
+    {
+      "name": "chart.show_trend",
+      "description": "以任务相同快照展示已有DO或功率趋势，复用原图表。",
+      "permission": "PRESENTATION",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "maxLength": 80
+          },
+          "metric_key": {
+            "type": "string",
+            "enum": [
+              "do",
+              "blower_power"
+            ]
+          },
+          "hours": {
+            "type": "integer",
+            "enum": [
+              1,
+              6,
+              24
+            ]
+          },
+          "evidence_id": {
+            "type": "string",
+            "maxLength": 100
+          }
+        },
+        "required": [
+          "device_id",
+          "metric_key",
+          "hours"
+        ],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 3000,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "metrics[] (same query schema)",
+        "shown{displayed,metric_key,hours,snapshot_id,evidence_id}",
+        "query_evidence_id",
+        "hours"
+      ]
+    },
+    {
+      "name": "alarm.list",
+      "description": "读取该快照的演示告警，空集合不是设备正常证明。",
+      "permission": "READ_DATA",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string",
+            "maxLength": 80
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 2000,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "alarms[]{alarmId,deviceId,metricKey,occurredAt,level,ruleId,rule,status,source,valueAtEvent,snapshotId}",
+        "scope",
+        "limitation"
+      ]
+    },
+    {
+      "name": "alarm.inspect",
+      "description": "读取具体告警的时间、触发值、演示阈值、质量与规则依据，不推断故障因果。",
+      "permission": "READ_DATA",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "alarm_id": {
+            "type": "string",
+            "maxLength": 120
+          }
+        },
+        "required": [
+          "alarm_id"
+        ],
+        "additionalProperties": false
+      },
+      "resultSchema": {
+        "type": "object",
+        "required": [
+          "evidence_id",
+          "snapshot_id",
+          "as_of",
+          "source",
+          "quality",
+          "data"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "as_of": {
+            "type": "string"
+          },
+          "source": {
+            "const": "SIMULATED"
+          },
+          "quality": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "errors": [
+        "INVALID_ARGUMENTS",
+        "DEVICE_NOT_FOUND",
+        "METRIC_NOT_OWNED",
+        "HISTORY_NOT_AVAILABLE",
+        "ALARM_NOT_FOUND",
+        "EVIDENCE_MISMATCH",
+        "SCENE_NOT_READY",
+        "LOAD_FAILED",
+        "DISPLAY_FAILED",
+        "TIMEOUT",
+        "CANCELLED"
+      ],
+      "limits": {
+        "argumentBytes": 4096,
+        "timeoutMs": 2000,
+        "maxItems": 1441
+      },
+      "result_data_fields": [
+        "alarm (same alarm schema)",
+        "metric_key/unit",
+        "threshold/operator/rule_id/rule_label/trigger_comparison",
+        "event_quality/event_quality_basis",
+        "current_quality/current_value",
+        "limitation"
+      ]
+    }
+  ]
+}

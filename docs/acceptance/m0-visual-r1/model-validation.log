@@ -1,0 +1,58 @@
+$ /Applications/Blender.app/Contents/MacOS/Blender --background --factory-startup --disable-autoexec --python-exit-code 1 --python scripts/blender/validate_asset.py
+00:00.885  blend            | Read blend: "/Users/leizhenyang/projects/smartwater-ai/assets/source/aeration-tank.blend"
+01:07:38 | INFO: Data are loaded, start creating Blender stuff
+01:07:38 | INFO: Blender create Mesh node ACCESS_BridgeBeams
+01:07:39 | INFO: Blender create Mesh node ACCESS_BridgeGrating
+01:07:39 | INFO: Blender create Mesh node ACCESS_ConcreteSupports
+01:07:39 | INFO: Blender create Mesh node ACCESS_PerimeterDeck
+01:07:39 | INFO: Blender create Mesh node ACCESS_StairNosings
+01:07:39 | INFO: Blender create Mesh node ACCESS_StairStringers
+01:07:39 | INFO: Blender create Mesh node ACCESS_StairTreads
+01:07:39 | INFO: Blender create Mesh node AERATOR_DiscBodies
+01:07:39 | INFO: Blender create Mesh node AERATOR_DiscConnections
+01:07:39 | INFO: Blender create Mesh node AERATOR_DiscMembranes
+01:07:39 | INFO: Blender create Mesh node AERATOR_Laterals
+01:07:39 | INFO: Blender create Mesh node AERATOR_PipeSupports
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_01
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_02
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_03
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_04
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_05
+01:07:39 | INFO: Blender create Mesh node AIR_Branch_06
+01:07:39 | INFO: Blender create Mesh node AIR_BranchFlanges
+01:07:39 | INFO: Blender create Mesh node AIR_DropAnchors
+01:07:39 | INFO: Blender create Mesh node AIR_DropSupports
+01:07:39 | INFO: Blender create Mesh node AIR_FlangeBolts
+01:07:39 | INFO: Blender create Mesh node AIR_Main
+01:07:39 | INFO: Blender create Mesh node AIR_MainEndCaps
+01:07:39 | INFO: Blender create Mesh node AIR_MainFlanges
+01:07:39 | INFO: Blender create Mesh node AIR_MainSupports
+01:07:39 | INFO: Blender create Mesh node AIR_ValveBodies
+01:07:39 | INFO: Blender create Mesh node AIR_ValveHandwheels
+01:07:39 | INFO: Blender create Mesh node AIR_ValveStems
+01:07:39 | INFO: Blender create Mesh node SAFETY_AnchorBolts
+01:07:39 | INFO: Blender create Mesh node SAFETY_Baseplates
+01:07:39 | INFO: Blender create Mesh node SAFETY_BridgeRailing
+01:07:39 | INFO: Blender create Mesh node SAFETY_Railing
+01:07:39 | INFO: Blender create Mesh node SAFETY_StairRailing
+01:07:39 | INFO: Blender create Mesh node STRUCT_BaseSlab
+01:07:39 | INFO: Blender create Mesh node STRUCT_Coping
+01:07:39 | INFO: Blender create Mesh node STRUCT_DeckJoints
+01:07:39 | INFO: Blender create Mesh node STRUCT_ExpansionJoints
+01:07:39 | INFO: Blender create Mesh node STRUCT_Wall_End
+01:07:39 | INFO: Blender create Mesh node STRUCT_Wall_Long
+01:07:39 | INFO: Blender create Mesh node WATER_Surface
+01:07:39 | INFO: Blender create Mesh node SITE_Hardscape
+01:07:39 | INFO: Blender create Mesh node SITE_PavingJoints
+01:07:39 | INFO: Blender create Mesh node SITE_PlantingBeds
+01:07:39 | INFO: Blender create Mesh node SITE_PlantingBeds.001
+01:07:39 | INFO: Blender create Mesh node SITE_Road
+01:07:39 | INFO: Blender create Mesh node SITE_RoadCurbs
+01:07:39 | INFO: Blender create Mesh node SITE_RoadMarkings
+01:07:39 | INFO: Blender create Mesh node SITE_Shrubs
+01:07:39 | INFO: Blender create Mesh node SITE_Shrubs.001
+01:07:39 | INFO: glTF import finished in 0.60s
+M0_VALIDATION_SUCCESS={"editable_blend": {"opened": true, "active_scene": "SmartWater_M0", "scene": "SmartWater_M0", "managed_objects": 52, "all_file_images_packed": true}, "independent_glb_reimport": true, "unique_device_id": "SW_BIO_AERATION_001", "root_nodes_separate": true, "water_local_z": 0.5, "device_bounds_z_up": {"min": [-25.33077621459961, -13.330777168273926, -4.800000190734863], "max": [22.975000381469727, 10.97499942779541, 2.325000286102295]}, "ground_opening_verified": true, "mesh_objects": 50, "triangles": 106042, "finite_vertices_and_normals": true, "nondegenerate_faces": true, "glb_bytes": 31254844, "glb_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"}
+Blender 5.3.0 (hash 02f0899d78e3 built 2026-11-10 01:31:21)
+
+Blender quit
