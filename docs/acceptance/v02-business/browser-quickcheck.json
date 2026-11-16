@@ -1,0 +1,326 @@
+{
+  "at": "2026-11-16T19:33:06.586Z",
+  "tasks": [
+    {
+      "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+      "scenario_id": "LOW_DO",
+      "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+      "as_of": "2026-11-16T19:32:09.869Z",
+      "started_at": "2026-11-16T19:32:09.970Z",
+      "finished_at": "2026-11-16T19:32:10.033Z",
+      "mode": "DEMO",
+      "input": "检查提升泵运行是否正常。",
+      "data_mode": "BUSINESS_API",
+      "data_version": "smartwater-business-v02",
+      "rule_snapshot": {
+        "lowDo": {
+          "id": "DEMO_DO_LOW",
+          "unit": "mg/L",
+          "below": 2,
+          "label": "DO < 2.0 mg/L · 演示阈值",
+          "version": "demo-do-v1"
+        }
+      },
+      "status": "SUCCEEDED",
+      "tool_count": 2,
+      "model_requests": 0,
+      "evidence": [
+        {
+          "id": "SW_PRE_PUMP_001",
+          "name": "一号提升泵",
+          "metrics": [],
+          "unit_id": "SW_UNIT_PUMP_ROOM_001",
+          "limitation": "已建模和无告警均不代表设备健康；数据来源为独立模拟采集器",
+          "description": "已有三维模型，尚未定义流量、压力或效率指标。",
+          "modelStatus": "MODELLED",
+          "asset_root_node": "SW_PUMP_UNIT",
+          "mechanical_node": "SW_PRE_PUMP_001",
+          "operating_state": "NOT_OBSERVED",
+          "available_metrics": [],
+          "metricDefinitions": [],
+          "model_load_state": "unloaded",
+          "evidence_id": "EV_DB_bd8a83e4875c4fc6903fba7463633af4",
+          "tool_name": "device.get_details",
+          "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+          "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+          "scenario_id": "LOW_DO",
+          "as_of": "2026-11-16T19:32:09.869Z",
+          "source": "SIMULATED",
+          "quality": "NOT_OBSERVED",
+          "data": {
+            "id": "SW_PRE_PUMP_001",
+            "name": "一号提升泵",
+            "metrics": [],
+            "unit_id": "SW_UNIT_PUMP_ROOM_001",
+            "limitation": "已建模和无告警均不代表设备健康；数据来源为独立模拟采集器",
+            "description": "已有三维模型，尚未定义流量、压力或效率指标。",
+            "modelStatus": "MODELLED",
+            "asset_root_node": "SW_PUMP_UNIT",
+            "mechanical_node": "SW_PRE_PUMP_001",
+            "operating_state": "NOT_OBSERVED",
+            "available_metrics": [],
+            "metricDefinitions": [],
+            "model_load_state": "unloaded"
+          },
+          "data_mode": "BUSINESS_API",
+          "device_id": "SW_PRE_PUMP_001"
+        },
+        {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号提升泵",
+          "metrics": [],
+          "source": "SIMULATED",
+          "evidence_id": "EV_DB_0407499d8f0040b292840771c645f661",
+          "tool_name": "device.get_metrics",
+          "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+          "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+          "scenario_id": "LOW_DO",
+          "as_of": "2026-11-16T19:32:09.869Z",
+          "quality": "NO_DATA",
+          "data": {
+            "outcome": "NO_DEFINED_METRICS",
+            "device_name": "一号提升泵",
+            "metrics": [],
+            "source": "SIMULATED"
+          },
+          "data_mode": "BUSINESS_API",
+          "device_id": "SW_PRE_PUMP_001"
+        }
+      ],
+      "action_ids": [
+        "23a3c0bc-4900-449a-b794-ec211bdc76c9:1",
+        "23a3c0bc-4900-449a-b794-ec211bdc76c9:2"
+      ],
+      "errors": [],
+      "model_receipts": [],
+      "model_feedback": [],
+      "explanation": "有模型和设备资料，但缺少运行指标，当前无法判断。依据 EV_DB_bd8a83e4875c4fc6903fba7463633af4、EV_DB_0407499d8f0040b292840771c645f661",
+      "scope": [
+        "SW_PRE_PUMP_001"
+      ],
+      "requirements": {
+        "version": 1,
+        "intent": "DEVICE_STATUS",
+        "outcomes": [
+          {
+            "kind": "details",
+            "device_id": "SW_PRE_PUMP_001"
+          },
+          {
+            "kind": "metrics",
+            "device_id": "SW_PRE_PUMP_001",
+            "metric_keys": []
+          }
+        ],
+        "time_origin": "NONE",
+        "issues": []
+      }
+    },
+    {
+      "task_id": "1a396787-bd45-4758-8028-27e2bba86c96",
+      "scenario_id": "LOW_DO",
+      "snapshot_id": "79339a7f-115f-4aae-9457-52c145342d04",
+      "as_of": "2026-11-16T19:32:09.950Z",
+      "started_at": "2026-11-16T19:32:10.582Z",
+      "finished_at": "2026-11-16T19:32:10.653Z",
+      "mode": "DEMO",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "data_mode": "BUSINESS_API",
+      "data_version": "smartwater-business-v02",
+      "rule_snapshot": {
+        "lowDo": {
+          "id": "DEMO_DO_LOW",
+          "unit": "mg/L",
+          "below": 2,
+          "label": "DO < 2.0 mg/L · 演示阈值",
+          "version": "demo-do-v1"
+        }
+      },
+      "status": "CANCELLED",
+      "tool_count": 1,
+      "model_requests": 0,
+      "evidence": [],
+      "action_ids": [
+        "1a396787-bd45-4758-8028-27e2bba86c96:1"
+      ],
+      "errors": [
+        {
+          "code": "PAGE_HIDDEN",
+          "message": "页面隐藏，镜头动作已取消"
+        }
+      ],
+      "model_receipts": [],
+      "model_feedback": [],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ],
+      "requirements": {
+        "version": 1,
+        "intent": "BLOWER_TREND",
+        "outcomes": [
+          {
+            "kind": "metrics",
+            "device_id": "SW_AIR_BLOWER_001",
+            "metric_keys": [
+              "blower_power"
+            ],
+            "hours": 6
+          },
+          {
+            "kind": "trend",
+            "device_id": "SW_AIR_BLOWER_001",
+            "metric_keys": [
+              "blower_power"
+            ],
+            "hours": 6
+          },
+          {
+            "kind": "focus",
+            "device_id": "SW_AIR_BLOWER_001"
+          }
+        ],
+        "time_origin": "EXPLICIT",
+        "issues": []
+      }
+    }
+  ],
+  "scene": {
+    "status": "ready",
+    "error": "",
+    "selectedId": null,
+    "waterVisible": true,
+    "loadMs": 170.5,
+    "firstRenderMs": 289.9000000357628,
+    "triangles": 33536,
+    "assetTriangles": 16768,
+    "calls": 114,
+    "textures": 22,
+    "frameMs": 29.263999999999896,
+    "renderMode": "interactive",
+    "viewMode": "unit",
+    "loadedIds": [
+      "SW_AIR_BLOWER_001"
+    ],
+    "deviceStates": {
+      "SW_AIR_BLOWER_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 168,
+        "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+      }
+    },
+    "waterStates": {
+      "SW_BIO_AERATION_001": true
+    },
+    "roofStates": {
+      "SW_AIR_BLOWER_001": true
+    },
+    "deviceId": "SW_AIR_BLOWER_001",
+    "camera": [
+      6.320839449329722,
+      10.177578916126473,
+      13.780893245217314
+    ],
+    "target": [
+      -0.025806783683138827,
+      -1.598975755998693,
+      1.5183194426382207
+    ],
+    "defaultCamera": [
+      6.40970733133643,
+      10.23042510117342,
+      13.915249177479838
+    ],
+    "defaultTarget": [
+      -0.02555482485829891,
+      -1.6500588794937696,
+      1.5397450309515144
+    ],
+    "zoom": 1,
+    "fov": 40,
+    "frame": 16,
+    "cameraBusy": false,
+    "visible": "visible",
+    "activeRenderLoops": 0,
+    "loadGeneration": 2,
+    "assetRequests": {
+      "/models/aeration-tank.glb": 1,
+      "/models/blower-unit.glb": 1
+    },
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "drawingBuffer": {
+      "width": 1088,
+      "height": 413
+    },
+    "canvas": {
+      "width": 1088,
+      "height": 413
+    },
+    "loadedModelUrl": "http://127.0.0.1:4173/models/blower-unit.glb",
+    "loadedModelSha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+    "waterPhaseMs": null,
+    "roofPresentation": {
+      "inspectionDevice": null,
+      "manual": {}
+    },
+    "registrations": [
+      {
+        "id": "SW_AIR_BLOWER_001",
+        "unitId": "SW_UNIT_BLOWER_ROOM_001",
+        "name": "一号鼓风机",
+        "url": "/models/blower-unit.glb",
+        "dimensions": "12 × 9 m 机房 · 设备独立选择",
+        "assetRootNode": "SW_BLOWER_UNIT",
+        "mechanicalNode": "SW_AIR_BLOWER_001",
+        "metrics": [
+          "blower_power"
+        ],
+        "water": false,
+        "roof": true,
+        "modelKey": "blower",
+        "modelState": "ready"
+      }
+    ],
+    "lighting": {
+      "exposure": 1.05,
+      "sunIntensity": 2.6,
+      "sunPosition": [
+        -28,
+        50,
+        20
+      ],
+      "environmentIntensity": 0.48,
+      "shadowMapSize": [
+        2048,
+        2048
+      ]
+    },
+    "selectionEffects": 0,
+    "sceneGeometryCount": 107,
+    "siteFraming": {
+      "left": -0.5450250310132957,
+      "right": 0.5421168922058593,
+      "bottom": -0.8929017821844671,
+      "top": 0.8702069819795079
+    },
+    "bounds": {
+      "min": [
+        -2.700000047683716,
+        0.17999999225139618,
+        -1.2999999523162842
+      ],
+      "max": [
+        2.700000047683716,
+        3.299999952316284,
+        1.5
+      ]
+    }
+  },
+  "chart": null,
+  "native_cancel_attempt": {
+    "result": "NOT_VERIFIED",
+    "reason": "该次场景动作记录 PAGE_HIDDEN 并取消，之后取消按钮已禁用，未强制点击，未将此计作原生取消通过。后续使用 CDP 浏览器输入通道单独验证，见 browser-input-confirmation.json。"
+  }
+}

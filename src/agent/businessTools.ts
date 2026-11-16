@@ -20,17 +20,23 @@ export function queryMetrics(snapshot:Snapshot,id:string,requested?:string[],hou
   return {metric_key:metric,label:METRICS[metric].label,unit:latest.unit,latest:{...latest},history:hours?{hours,...statistics(points,hours)}:null}
  })}
 }
-function quality(data:Record<string,any>){if(data.available_metrics)return 'NOT_OBSERVED';if(data.current_quality)return String(data.current_quality);if(data.alarms)return data.alarms.length?'EVENT_QUALITY_NOT_RECORDED':'NO_ALARM_RECORDS';const metrics=data.metrics as any[]|undefined;if(!metrics)return 'NOT_APPLICABLE';if(!metrics.length)return 'NO_DATA';return metrics.every(m=>m.latest.quality==='GOOD')?'GOOD':metrics.some(m=>m.latest.quality==='MISSING')?'MISSING':'STALE'}
+function quality(data:Record<string,any>){if(data.available_metrics)return 'NOT_OBSERVED';if(data.current_quality)return String(data.current_quality);if(data.alarms)return data.alarms.length?(data.alarms.every((a:any)=>a.eventQuality==='GOOD')?'GOOD_EVENT':'EVENT_QUALITY_NOT_RECORDED'):'NO_ALARM_RECORDS';const metrics=data.metrics as any[]|undefined;if(!metrics)return 'NOT_APPLICABLE';if(!metrics.length)return 'NO_DATA';return metrics.every(m=>m.latest.quality==='GOOD')?'GOOD':metrics.some(m=>m.latest.quality==='MISSING')?'MISSING':'STALE'}
 export type ToolPresentation={focus:(id:string,signal:AbortSignal)=>Promise<unknown>;reset:(signal:AbortSignal)=>Promise<unknown>;modelState:(id:string)=>string;showTrend:(value:{device_id:string;metric_key:'do'|'blower_power';hours:1|6|24;context:QueryContext;evidence_id:string},signal:AbortSignal)=>Promise<unknown>}
-export function createBusinessTools(context:()=>QueryContext,presentation:ToolPresentation):Record<AgentToolName,ToolHandler>{
+export type QueryToolName='device.get_details'|'device.get_metrics'|'alarm.list'|'alarm.inspect'
+export type BusinessToolSource=(name:QueryToolName,args:Record<string,unknown>,context:QueryContext,signal:AbortSignal)=>Promise<{evidence_id:string;snapshot_id:string;as_of:string;source:'SIMULATED';data:Record<string,any>}>
+export function createBusinessTools(context:()=>QueryContext,presentation:ToolPresentation,source?:BusinessToolSource):Record<AgentToolName,ToolHandler>{
  return Object.fromEntries(TOOL_DEFINITIONS.map(def=>[def.name,async(args:Record<string,unknown>,external:AbortSignal)=>{
   validateTool(def.name,args);const ctx=context();ctx.assertActive();const linked=new AbortController(),abort=()=>linked.abort(external.reason);if(external.aborted)abort();else external.addEventListener('abort',abort,{once:true})
-  const signal=linked.signal,evidenceId=ctx.nextEvidence();let timer:ReturnType<typeof setTimeout>|undefined
+  const signal=linked.signal;let evidenceId=ctx.nextEvidence(),backendEvidence:string|undefined;let timer:ReturnType<typeof setTimeout>|undefined
   const work=async()=>{
    if(signal.aborted)throw new AgentError('CANCELLED','操作已取消')
    const id=args.device_id as string|undefined;if(id)requireDevice(id)
    let data:Record<string,any>={}
-   switch(def.name){
+   const queryNames:readonly string[]=['device.get_details','device.get_metrics','alarm.list','alarm.inspect']
+   if(source&&queryNames.includes(def.name)){
+    const reply=await source(def.name as QueryToolName,args,ctx,signal);data=reply.data;evidenceId=reply.evidence_id
+    if(def.name==='device.get_details')data={...data,model_load_state:presentation.modelState(id!)}
+   }else switch(def.name){
     case 'device.get_details':{const {unit,entity}=requireDevice(id!);data={...entity,unit_id:unit.unitId,asset_root_node:unit.assetRootNode,mechanical_node:unit.mechanicalNode,available_metrics:entity.metrics,model_load_state:presentation.modelState(id!),operating_state:'NOT_OBSERVED',limitation:'模型和加载状态不是实时运行或健康证据'};break}
     case 'device.get_metrics':data=queryMetrics(ctx.snapshot,id!,args.metric_keys as string[]|undefined,args.hours as number|undefined);break
     case 'alarm.list':data={alarms:ctx.snapshot.alarms.filter(a=>!id||a.deviceId===id).slice(0,32),scope:id?[id]:UNITS.map(u=>u.id),limitation:'无告警不等于设备正常；未配置指标不等于零'};break
@@ -40,7 +46,9 @@ export function createBusinessTools(context:()=>QueryContext,presentation:ToolPr
      data={alarm:{...alarm},metric_key:alarm.metricKey,unit:ctx.snapshot.readings.do.unit,threshold:RULES.lowDo.below,operator:'<',rule_id:RULES.lowDo.id,rule_label:RULES.lowDo.label,trigger_comparison:alarm.valueAtEvent<RULES.lowDo.below,event_quality:historical?.quality??'NOT_RECORDED',event_quality_basis:historical?'EXACT_HISTORY_MATCH':'原告警未单独存储事件质量，当前快照无精确匹配',current_quality:ctx.snapshot.readings.do.quality,current_value:ctx.snapshot.readings.do.value,limitation:'仅解释已有演示规则触发依据，不推断故障因果或提出设备控制建议'};break}
     case 'chart.show_trend':{
      const metric=args.metric_key as 'do'|'blower_power',hours=args.hours as 1|6|24
-     const query=queryMetrics(ctx.snapshot,id!,[metric],hours)
+     const reply=source?await source('device.get_metrics',{device_id:id,metric_keys:[metric],hours},ctx,signal):undefined
+     const query=reply?.data??queryMetrics(ctx.snapshot,id!,[metric],hours)
+     backendEvidence=reply?.evidence_id
      let reference_kind='TASK_SNAPSHOT'
      if(args.evidence_id){
       const original=ctx.findEvidence(String(args.evidence_id)),m=original?.data.metrics?.find((m:any)=>m.metric_key===metric)
@@ -56,7 +64,7 @@ export function createBusinessTools(context:()=>QueryContext,presentation:ToolPr
     case 'scene.reset_view':data=await presentation.reset(signal) as Record<string,unknown>;break
    }
    if(signal.aborted)throw new AgentError('CANCELLED','操作已取消');ctx.assertActive()
-   const result:Evidence={...data,evidence_id:evidenceId,tool_name:def.name,task_id:ctx.task_id,snapshot_id:ctx.snapshot.snapshotId,scenario_id:ctx.snapshot.scenario,as_of:ctx.snapshot.demoTime,source:'SIMULATED',quality:quality(data),data}
+   const result:Evidence={...data,evidence_id:evidenceId,tool_name:def.name,task_id:ctx.task_id,snapshot_id:ctx.snapshot.snapshotId,scenario_id:ctx.snapshot.scenario,as_of:ctx.snapshot.demoTime,source:'SIMULATED',quality:quality(data),data,...(backendEvidence?{backend_query_evidence_id:backendEvidence}:{}),...(source?{data_mode:'BUSINESS_API'}:{})}
    if(id)result.device_id=id;if(data.alarm){result.device_id=data.alarm.deviceId;result.metric_key=data.alarm.metricKey;result.unit=data.unit}if(args.metric_key)result.metric_key=String(args.metric_key);if(data.metrics?.length===1){result.metric_key=data.metrics[0].metric_key;result.unit=data.metrics[0].unit}
    return result
   }

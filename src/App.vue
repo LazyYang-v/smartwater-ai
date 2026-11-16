@@ -11,19 +11,20 @@ import AgentWorkspace from './components/dashboard/AgentWorkspace.vue'
 import SceneViewport from './components/dashboard/SceneViewport.vue'
 import {useBusinessAgent} from './composables/useBusinessAgent'
 import { useSceneWorkspace } from './composables/useSceneWorkspace'
-import { useMockData } from './composables/useMockData'
+import { useDashboardData } from './composables/useDashboardData'
+import BusinessControls from './components/dashboard/BusinessControls.vue'
 import { useDashboardContext } from './composables/useDashboardContext'
 import { SCENARIOS,ENTITIES,BASIN_ID,CLARIFIER_ID,type Scenario } from './data/mockDataProvider'
 import {UNITS,findUnit} from './scene/units'
 import { exposeDashboardQA } from './qa/exposeDashboardQA'
-const scene=useSceneWorkspace(),data=useMockData(),context=useDashboardContext(scene.runtime,data.snapshot)
+const scene=useSceneWorkspace(),data=useDashboardData(),context=useDashboardContext(scene.runtime,data.snapshot,data.entities)
 const agent=useBusinessAgent(scene,data,context)
 const {runtime,records}=scene
 const {mode,gateway,current:currentTask,resultFindings,taskState,message:agentMessage}=agent
 const {snapshot,paused,hidden,systemTime}=data
 const {contextId,entity,activeAlarmId,hours,activeTrend,leftCollapsed,processCollapsed,trendsExpanded}=context
 function locate(id:string,trigger='对象信息定位') {
-  if(ENTITIES.find(e=>e.id===id)?.modelStatus!=='MODELLED')return {status:'UNAVAILABLE',error:{code:'NO_3D_MODEL',message:'暂无三维模型，无法定位'}}
+  if(data.entities.value.find(e=>e.id===id)?.modelStatus!=='MODELLED')return {status:'UNAVAILABLE',error:{code:'NO_3D_MODEL',message:'暂无三维模型，无法定位'}}
   if(!runtime.value?.state.loadedIds.includes(id))return {status:'UNAVAILABLE',error:{code:'UNIT_NOT_LOADED',message:'请先切换当前模型单元'}}
   return scene.dispatchUser({tool_name:'scene.focus_device',arguments:{device_id:id}},trigger)
 }
@@ -37,9 +38,9 @@ onMounted(()=>{disposeQA=exposeDashboardQA(scene,data,context,locate);if(new URL
 onBeforeUnmount(()=>disposeQA?.())
 </script>
 <template>
-  <DashboardShell :left-collapsed="leftCollapsed" :trends-expanded="trendsExpanded">
-    <template #header><DashboardHeader :snapshot="snapshot" :system-time="systemTime"/></template>
-    <template #controls><section class="demo-controls" aria-label="演示数据控制"><div><span class="eyebrow">BIOLOGICAL TREATMENT / 01</span><span class="demo-time">演示时间 <time>{{time(snapshot.demoTime)}}</time></span></div><div class="demo-control-actions"><label for="scenario">演示场景</label><select id="scenario" :value="snapshot.scenario" @change="data.switchScenario(($event.target as HTMLSelectElement).value as Scenario)"><option v-for="(label,key) in SCENARIOS" :key="key" :value="key">{{label}}</option></select><button class="secondary-button pause-demo" @click="data.setPaused(!paused)">{{paused?'恢复演示':'暂停演示'}}</button><span class="clock-status">{{hidden?'页面隐藏 · 已暂停':paused?'演示已暂停':'每 5 秒更新'}}</span><button class="secondary-button sidebar-toggle" @click="leftCollapsed=!leftCollapsed" :aria-expanded="!leftCollapsed">{{leftCollapsed?'展开信息':'收起信息'}}</button></div></section></template>
+  <DashboardShell :left-collapsed="leftCollapsed" :trends-expanded="trendsExpanded" :business="data.mode==='BUSINESS_API'">
+    <template #header><DashboardHeader :snapshot="snapshot" :system-time="systemTime" :business="data.mode==='BUSINESS_API'"/></template>
+    <template #controls><BusinessControls v-if="data.mode==='BUSINESS_API'" :data="data" @toggle="leftCollapsed=!leftCollapsed"/><section v-else class="demo-controls" aria-label="演示数据控制"><div><span class="eyebrow">BIOLOGICAL TREATMENT / 01</span><span class="demo-time">离线演示时间 <time>{{time(snapshot.demoTime)}}</time></span></div><div class="demo-control-actions"><label for="scenario">演示场景</label><select id="scenario" :value="snapshot.scenario" @change="data.switchScenario(($event.target as HTMLSelectElement).value as Scenario)"><option v-for="(label,key) in SCENARIOS" :key="key" :value="key">{{label}}</option></select><button class="secondary-button pause-demo" @click="data.setPaused(!paused)">{{paused?'恢复演示':'暂停演示'}}</button><span class="clock-status">{{hidden?'页面隐藏 · 已暂停':paused?'演示已暂停':'每 5 秒更新'}}</span><button class="secondary-button sidebar-toggle" @click="leftCollapsed=!leftCollapsed" :aria-expanded="!leftCollapsed">{{leftCollapsed?'展开信息':'收起信息'}}</button></div></section></template>
     <template #kpis><KpiOverview :snapshot="snapshot"/></template>
     <template #information><ProcessFlowPanel :context-id="contextId" :collapsed="processCollapsed" @context="context.context" @toggle="processCollapsed=!processCollapsed"/><AlarmPanel :snapshot="snapshot" :active-alarm-id="activeAlarmId" :context-id="contextId" :has-data="entity.metrics.length>0" :ready="runtime?.state.loadedIds.includes(BASIN_ID)??false" @select="context.selectAlarm" @locate="id=>locate(id,'告警定位')"/><DeviceSummary :snapshot="snapshot" :entity="entity" :selected-id="runtime?.state.selectedId??null" :loaded-ids="runtime?.state.loadedIds??[]" :ready="runtime?.state.status==='ready'" @locate="locate" @context="context.context"/></template>
     <template #scene><SceneViewport :runtime="runtime" @attach="scene.attach" @unit="switchUnit" @mode="switchMode" @reset="scene.dispatchUser({tool_name:'scene.reset_view',arguments:{}},'场景工具栏')"/></template>

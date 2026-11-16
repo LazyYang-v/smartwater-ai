@@ -1,14 +1,15 @@
 import {ref,shallowRef,computed,watch,onMounted,onBeforeUnmount,nextTick} from 'vue'
 import type {useSceneWorkspace} from './useSceneWorkspace'
-import type {useMockData} from './useMockData'
+import type {DashboardData} from './useDashboardData'
 import type {useDashboardContext} from './useDashboardContext'
 import {useTaskHistory} from './useTaskHistory'
 import {AgentTaskRunner,TASK_TEMPLATES,type AgentTask,findings} from '../agent/taskRunner'
 import {createBusinessTools,type QueryContext,type Evidence} from '../agent/businessTools'
+import {businessToolSource} from '../api/businessToolSource'
 import {AgentError} from '../agent/contracts'
 import type {Snapshot} from '../data/mockDataProvider'
 const frame=(signal:AbortSignal)=>new Promise<void>((resolve,reject)=>{if(signal.aborted){reject(new AgentError('CANCELLED','展示已取消'));return}const abort=()=>{cancelAnimationFrame(id);reject(new AgentError('CANCELLED','展示已取消'))},id=requestAnimationFrame(()=>{signal.removeEventListener('abort',abort);resolve()});signal.addEventListener('abort',abort,{once:true})})
-export function useBusinessAgent(scene:ReturnType<typeof useSceneWorkspace>,data:ReturnType<typeof useMockData>,context:ReturnType<typeof useDashboardContext>){
+export function useBusinessAgent(scene:ReturnType<typeof useSceneWorkspace>,data:DashboardData,context:ReturnType<typeof useDashboardContext>){
  const history=useTaskHistory()
  const tasks=shallowRef<AgentTask[]>([]),mode=ref<'DEMO'|'LLM'>('DEMO'),gateway=shallowRef({ready:false,reason:'尚未连接模型网关'}),message=ref('只读业务演示；支持四个任务模板与已有定位/复位口令。')
  const pinned=shallowRef<{snapshot:Snapshot;device_id:string;metric_key:'do'|'blower_power';hours:1|6|24;evidence_id:string;task_id:string}|null>(null)
@@ -28,12 +29,13 @@ export function useBusinessAgent(scene:ReturnType<typeof useSceneWorkspace>,data
   const {requestModel}=await import('../agent/llmClient');return requestModel(messages,task,signal)
  }})
  const detachHistory=scene.dispatcher.subscribe(record=>history.action(record,runner.tasks.find(task=>task.task_id===record.task_id)))
- scene.configureTools(createBusinessTools(()=>replayContext??runner.context(),{focus:async(id,signal)=>{if(!scene.runtime.value)throw new AgentError('SCENE_NOT_READY','三维尚未初始化');return scene.runtime.value.focusDevice(id,signal)},reset:async signal=>{if(!scene.runtime.value)throw new AgentError('SCENE_NOT_READY','三维尚未初始化');return scene.runtime.value.resetView(signal)},modelState:id=>scene.runtime.value?.state.deviceStates[id]?.status??'unloaded',showTrend}))
+ scene.configureTools(createBusinessTools(()=>replayContext??runner.context(),{focus:async(id,signal)=>{if(!scene.runtime.value)throw new AgentError('SCENE_NOT_READY','三维尚未初始化');return scene.runtime.value.focusDevice(id,signal)},reset:async signal=>{if(!scene.runtime.value)throw new AgentError('SCENE_NOT_READY','三维尚未初始化');return scene.runtime.value.resetView(signal)},modelState:id=>scene.runtime.value?.state.deviceStates[id]?.status??'unloaded',showTrend},data.mode==='BUSINESS_API'?businessToolSource:undefined))
  const cancel=(code='CANCELLED',reason='用户取消任务')=>{replayContext=undefined;runner.cancel(code,reason)}
  scene.onExternalAction(()=>{cancel('CANCELLED','用户切换展示操作');clearTrend()})
- async function execute(text:string,executionMode=mode.value,parentTaskId?:string){if(!history.owner.value){message.value=history.ownerMessage.value;return null}replayContext=undefined;clearTrend();message.value='正在执行只读任务…';const task=await runner.start(text,executionMode,parentTaskId);if(runner.active?.task_id===task.task_id)message.value=task.status==='SUCCEEDED'?'任务步骤已完成；结果仅代表固定演示快照。':task.status==='PARTIAL'?'部分完成，请检查未满足要求、失败步骤和限制。':task.status==='CANCELLED'?'任务已取消，未继续调度。':'任务失败，未伪造成功或切换执行模式。';return task}
+ async function execute(text:string,executionMode=mode.value,parentTaskId?:string){if(!data.ready.value){message.value='业务 API 尚未就绪，请先登录并取得数据快照；未调用模型或工具。';return null}if(!history.owner.value){message.value=history.ownerMessage.value;return null}replayContext=undefined;clearTrend();message.value='正在执行只读任务…';const task=await runner.start(text,executionMode,parentTaskId);if(runner.active?.task_id===task.task_id)message.value=task.status==='SUCCEEDED'?'任务步骤已完成；结果仅代表固定演示快照。':task.status==='PARTIAL'?'部分完成，请检查未满足要求、失败步骤和限制。':task.status==='CANCELLED'?'任务已取消，未继续调度。':'任务失败，未伪造成功或切换执行模式。';return task}
  const current=computed(()=>tasks.value.at(-1)),resultFindings=computed(()=>current.value?findings(current.value):[])
  const taskState=computed(()=>{const task=current.value,record=scene.records.value.at(-1);if(task?.status==='RUNNING')return 'RUNNING';if(record&&(!task||record.started_at>=(task.finished_at??task.started_at)))return record.status;return task?.status??scene.taskState.value})
+ watch(data.ready,ready=>{if(!ready){cancel('BUSINESS_DATA_UNAVAILABLE','业务数据连接中断');clearTrend()}})
  watch(mode,()=>{cancel('CANCELLED','用户切换Agent模式');clearTrend()},{flush:'sync'})
  watch(()=>data.snapshot.value.scenario,()=>{cancel('SCENARIO_CHANGED','演示场景已切换，旧任务取消');clearTrend()},{flush:'sync'})
  watch(context.contextId,id=>{if(pinned.value&&pinned.value.device_id!==id)clearTrend()})

@@ -1,0 +1,148 @@
+{
+  "recorded_at": "2026-11-16T19:39:15.174402+00:00",
+  "baseline": "160645dde186119785f1368de95d3c749acf34ac",
+  "web_url": "http://127.0.0.1:4173/?qa=1",
+  "backend_url": "http://127.0.0.1:8080/api/business",
+  "backend_execution": "python3 scripts/business.py serve; actual java -jar backend/target/smartwater-business-0.2.0.jar",
+  "files": [
+    {
+      "path": "dist/index.html",
+      "bytes": 591,
+      "sha256": "5a14176a49853146c63b55886627f4e0a526a44138bfd0ce78d8524703e8f5b1"
+    },
+    {
+      "path": "dist/assets/dashboard-Byil8HG3.css",
+      "bytes": 29553,
+      "sha256": "16269733c7efeafe2c47662fb83075298edabcc10d22d880e57de84599ff5034"
+    },
+    {
+      "path": "dist/assets/dashboard-FMXV2AMa.js",
+      "bytes": 702205,
+      "sha256": "13f591f0e1483730c6baf7625701c1fc5807dc086ea09d7460a8b8214725048d"
+    },
+    {
+      "path": "dist/assets/llmClient-CWEMchtQ.js",
+      "bytes": 884,
+      "sha256": "126b744ca9157efbac567fc97e28d00e921c4c1f3d5cf83752d4110ee3b02bb9"
+    },
+    {
+      "path": "dist/assets/useSceneWorkspace-DfbdJJgx.js",
+      "bytes": 780504,
+      "sha256": "d2cb872427a205d120f7713eda141f3f3abeb6809b6af20f0d88f1f62d638fac"
+    },
+    {
+      "path": "dist/assets/viewer-BVbOzP96.css",
+      "bytes": 1635,
+      "sha256": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e"
+    },
+    {
+      "path": "dist/assets/viewer-DjKtuSTV.js",
+      "bytes": 3783,
+      "sha256": "925507dce426fdecf8dedd1380cc77b9c432b6a8d40517a2681e97e339776c02"
+    },
+    {
+      "path": "backend/target/smartwater-business-0.2.0.jar",
+      "bytes": 29189872,
+      "sha256": "160dd632d530abc294eb7c5ed219b391f9a19171a29486b6a71774a34800db04"
+    },
+    {
+      "path": "public/models/aeration-tank.glb",
+      "bytes": 31254844,
+      "sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+    },
+    {
+      "path": "public/models/blower-unit.glb",
+      "bytes": 14022120,
+      "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+    },
+    {
+      "path": "public/models/clarifier-tank.glb",
+      "bytes": 29034200,
+      "sha256": "4a8249541d1ae8bd95b18ef5af5be6f83b26f76b25ed568f3e4e10ca02082daa"
+    },
+    {
+      "path": "public/models/pump-unit.glb",
+      "bytes": 14024164,
+      "sha256": "d9c2bc969153c78377dd07c71ef5da61cf86ba9b680073401f3e46c96694f28e"
+    }
+  ],
+  "backend_sources": [
+    {
+      "path": "backend/src/main/java/com/smartwater/AlarmService.java",
+      "bytes": 2452,
+      "sha256": "7cc33596bf29f5090cb76996686fe53a8e3ba660a5951b600845970193f489f3"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/ApiController.java",
+      "bytes": 4248,
+      "sha256": "ee7176c13e4e8b9c219ab558e48bde189a43725a41baa1ce0099a06614b1941c"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/ApiErrors.java",
+      "bytes": 1644,
+      "sha256": "7067c050097e066092ede309aa7043b4730e77a2571a5b60eddccc77989c668a"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/ApiFailure.java",
+      "bytes": 338,
+      "sha256": "20e82343aba647ee8e346b0787120bc7c9fb927e2ec3eb4437329dbb703fefd6"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/BootstrapUsers.java",
+      "bytes": 1097,
+      "sha256": "0c4b6abb1256933cfd922f9f87047abb5ea2b25b520269e54d107775ff1c067b"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/BusinessQueries.java",
+      "bytes": 11467,
+      "sha256": "8fdcd0ad34ff47e67c0c604c49bb5c58f30b8c9fcd04c0f004946b5990b91af9"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/SecurityConfig.java",
+      "bytes": 5131,
+      "sha256": "1629f1b1bab16907dbe353c6fee4307a16d2b40206ebf0b05dc2b3e2b86f414e"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/SmartWaterApplication.java",
+      "bytes": 305,
+      "sha256": "3c53b78947710a11c7be9b55c8868ab9c0bf8e2d053c9ef4208f90db2635c441"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/Store.java",
+      "bytes": 3098,
+      "sha256": "5916d00a907333d4bfed40ef036b576cd8c8e642d0464b9cd078938e199eafdb"
+    },
+    {
+      "path": "backend/src/main/java/com/smartwater/TelemetryService.java",
+      "bytes": 7019,
+      "sha256": "6e7f97c4c1f0c379f03fdc0f518ad8930d2564685c2c9fcce908665210843d04"
+    },
+    {
+      "path": "backend/src/main/resources/application.properties",
+      "bytes": 708,
+      "sha256": "956cd57d3a71b4a0527329ba942e0f56dcd67768db396356d40208193202e217"
+    },
+    {
+      "path": "backend/src/main/resources/db/migration/V1__business.sql",
+      "bytes": 5342,
+      "sha256": "000660e462e8485d983e82b7680597367a16b27e4665474cfe6173953f59d5e2"
+    },
+    {
+      "path": "backend/src/main/resources/db/migration/V2__query_evidence.sql",
+      "bytes": 333,
+      "sha256": "16f8b3d9b24b4cc6a5a151e3dde31ea33ca3a72b6c2bbf7589e94edb2db6b2e0"
+    },
+    {
+      "path": "backend/src/main/resources/db/migration/V3__snapshot_context.sql",
+      "bytes": 151,
+      "sha256": "a90ec997280e3bff9e72ff001f6343a8ece3c32df4977e607c1619e250c6eeb5"
+    },
+    {
+      "path": "backend/pom.xml",
+      "bytes": 1770,
+      "sha256": "c78e9143b8b43194b46dead6e38860bcbbfb3778713b82c513c57262d2b0a6e0"
+    }
+  ],
+  "postgres_image": "[\"postgres@sha256:a77aa70e641402a21411b92b721c58d10f23b50ae5fdd2333efd22d166e1e5f7\"]",
+  "models_modified": false
+}

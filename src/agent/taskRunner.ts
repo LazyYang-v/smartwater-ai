@@ -8,7 +8,7 @@ import {BASIN_ID,BLOWER_ID,PUMP_ID,RULES,type Snapshot} from '../data/mockDataPr
 export const TASK_LIMITS={modelRequests:6,toolCalls:20,deadlineMs:120000,snapshots:10} as const
 export const TASK_TEMPLATES=['定位一号鼓风机，查看最近六小时功率。','查看一号曝气池的低溶解氧告警，告诉我触发依据。','巡检当前四个单元，列出异常和缺少的数据。','检查提升泵运行是否正常。']
 export type TaskStatus='RUNNING'|'SUCCEEDED'|'PARTIAL'|'FAILED'|'CANCELLED'
-export type AgentTask={task_id:string;parent_task_id?:string;scenario_id:string;snapshot_id:string;as_of:string;started_at:string;finished_at:string|null;mode:'DEMO'|'LLM';input:string;status:TaskStatus;tool_count:number;model_requests:number;evidence:Evidence[];action_ids:string[];errors:{code:string;message:string;tool?:string;device_id?:string;details?:Record<string,unknown>}[];model_receipts:ModelReceipt[];model_feedback:{request:number;missing_outcomes:string[]}[];explanation:string;scope:string[];requirements?:TaskRequirements}
+export type AgentTask={task_id:string;parent_task_id?:string;scenario_id:string;snapshot_id:string;as_of:string;started_at:string;finished_at:string|null;mode:'DEMO'|'LLM';input:string;status:TaskStatus;tool_count:number;model_requests:number;evidence:Evidence[];action_ids:string[];errors:{code:string;message:string;tool?:string;device_id?:string;details?:Record<string,unknown>}[];model_receipts:ModelReceipt[];model_feedback:{request:number;missing_outcomes:string[]}[];explanation:string;scope:string[];requirements?:TaskRequirements;data_mode?:'BUSINESS_API';data_version?:string;rule_snapshot?:{lowDo:{id:string;below:number;unit:string;label:string;version?:string}}}
 export type ModelMessage={role:'user'|'assistant'|'tool';content:string|null;tool_calls?:{id:string;type:'function';function:{name:string;arguments:string}}[];tool_call_id?:string}
 export type ModelReceipt={provider:string;model:string;request_id:string|null;response_id:string|null;http_status:number;elapsed_ms:number;usage:Record<string,number|undefined>|'UNKNOWN'}
 export type ModelReply={receipt?:ModelReceipt;message:ModelMessage;calls:{id:string;call:ToolCall}[];explanation?:string;evidence_ids?:string[]}
@@ -16,7 +16,7 @@ export type ModelTransport=(messages:ModelMessage[],task:Pick<AgentTask,'task_id
 export type Finding={device_id:string;name:string;verdict:string;metrics:any[];alarms:any[];evidence_ids:string[];limitations:string[]}
 export function findings(task:AgentTask):Finding[]{
  return UNITS.filter(u=>evidenceScope(task).includes(u.id)).map(unit=>{
-  const summary=summarizeDevice(task,unit.id,RULES,task.errors.some(e=>e.tool==='device.get_metrics'&&e.device_id===unit.id))
+  const summary=summarizeDevice(task,unit.id,task.rule_snapshot??RULES,task.errors.some(e=>e.tool==='device.get_metrics'&&e.device_id===unit.id))
   return {...summary,device_id:unit.id,name:unit.name,verdict:summary.conclusion}
  })
 }
@@ -52,7 +52,7 @@ export class AgentTaskRunner{
  }
  async start(input:string,mode:'DEMO'|'LLM'='DEMO',parentTaskId?:string){
   this.cancel('CANCELLED','新任务接管前台');const snapshot=frozen(this.options.snapshot()),controller=new AbortController();this.controller=controller;this.evidenceSequence=0
-  const task:AgentTask={task_id:crypto.randomUUID(),...(parentTaskId?{parent_task_id:parentTaskId}:{}),scenario_id:snapshot.scenario,snapshot_id:snapshot.snapshotId,as_of:snapshot.demoTime,started_at:new Date().toISOString(),finished_at:null,mode,input,status:'RUNNING',tool_count:0,model_requests:0,evidence:[],action_ids:[],errors:[],model_receipts:[],model_feedback:[],explanation:'',scope:[],requirements:frozen(resolveRequirements(typeof input==='string'?input:''))};this.current=task;this.tasks.push(task);this.snapshots.set(task.task_id,snapshot);while(this.snapshots.size>this.limits.snapshots)this.snapshots.delete(this.snapshots.keys().next().value!)
+  const task:AgentTask={task_id:crypto.randomUUID(),...(parentTaskId?{parent_task_id:parentTaskId}:{}),scenario_id:snapshot.scenario,snapshot_id:snapshot.snapshotId,as_of:snapshot.demoTime,started_at:new Date().toISOString(),finished_at:null,mode,input,...(snapshot.backend?{data_mode:'BUSINESS_API' as const,data_version:snapshot.version,rule_snapshot:snapshot.backend.rules}:{}),status:'RUNNING',tool_count:0,model_requests:0,evidence:[],action_ids:[],errors:[],model_receipts:[],model_feedback:[],explanation:'',scope:[],requirements:frozen(resolveRequirements(typeof input==='string'?input:''))};this.current=task;this.tasks.push(task);this.snapshots.set(task.task_id,snapshot);while(this.snapshots.size>this.limits.snapshots)this.snapshots.delete(this.snapshots.keys().next().value!)
   this.notify('created',task);this.options.changed();const deadline=setTimeout(()=>this.current===task&&this.cancel('TIMEOUT','任务超过总时限'),this.limits.deadlineMs)
   try{
    if(typeof input!=='string'||!input.trim()||input.length>1000)throw new AgentError('INVALID_INPUT','任务文本需为1–1000字符')

@@ -1,0 +1,1497 @@
+{
+  "at": "2026-11-16T19:33:52.944Z",
+  "task": {
+    "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+    "scenario_id": "LOW_DO",
+    "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+    "as_of": "2026-11-16T19:33:51.692Z",
+    "started_at": "2026-11-16T19:33:51.902Z",
+    "finished_at": "2026-11-16T19:33:52.932Z",
+    "mode": "DEMO",
+    "input": "定位一号鼓风机，查看最近六小时功率。",
+    "data_mode": "BUSINESS_API",
+    "data_version": "smartwater-business-v02",
+    "rule_snapshot": {
+      "lowDo": {
+        "id": "DEMO_DO_LOW",
+        "unit": "mg/L",
+        "below": 2,
+        "label": "DO < 2.0 mg/L · 演示阈值",
+        "version": "demo-do-v1"
+      }
+    },
+    "status": "SUCCEEDED",
+    "tool_count": 3,
+    "model_requests": 0,
+    "evidence": [
+      {
+        "camera": {
+          "position": [
+            0.5492111575865852,
+            6.745421765080371,
+            5.054990452222081
+          ],
+          "target": [
+            -0.042170543558620065,
+            1.7186773053461215,
+            0.12680960934536478
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 83,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001",
+        "evidence_id": "EV_214e9145db5a_1",
+        "tool_name": "scene.focus_device",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "source": "SIMULATED",
+        "quality": "NOT_APPLICABLE",
+        "data": {
+          "camera": {
+            "position": [
+              0.5492111575865852,
+              6.745421765080371,
+              5.054990452222081
+            ],
+            "target": [
+              -0.042170543558620065,
+              1.7186773053461215,
+              0.12680960934536478
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 83,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false
+          },
+          "inspection_device": "SW_AIR_BLOWER_001"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+              "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 353,
+              "valid_samples": 353,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 8,
+              "coverage": 0.9778393351800554,
+              "min": 76.4482005886718,
+              "max": 87.40582561614927,
+              "mean": 81.92367445355067,
+              "start": "2026-11-16T13:33:51.692Z",
+              "end": "2026-11-16T19:33:51.692Z",
+              "sample_start": "2026-11-16T13:34:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+        "tool_name": "device.get_metrics",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+                "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 353,
+                "valid_samples": 353,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 8,
+                "coverage": 0.9778393351800554,
+                "min": 76.4482005886718,
+                "max": 87.40582561614927,
+                "mean": 81.92367445355067,
+                "start": "2026-11-16T13:33:51.692Z",
+                "end": "2026-11-16T19:33:51.692Z",
+                "sample_start": "2026-11-16T13:34:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+              "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 353,
+              "valid_samples": 353,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 8,
+              "coverage": 0.9778393351800554,
+              "min": 76.4482005886718,
+              "max": 87.40582561614927,
+              "mean": 81.92367445355067,
+              "start": "2026-11-16T13:33:51.692Z",
+              "end": "2026-11-16T19:33:51.692Z",
+              "sample_start": "2026-11-16T13:34:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "shown": {
+          "displayed": true,
+          "metric_key": "blower_power",
+          "hours": 6,
+          "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+          "evidence_id": "EV_214e9145db5a_3"
+        },
+        "query_evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+        "reference_kind": "MATCHED_HISTORY_QUERY",
+        "hours": 6,
+        "evidence_id": "EV_214e9145db5a_3",
+        "tool_name": "chart.show_trend",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+                "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 353,
+                "valid_samples": 353,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 8,
+                "coverage": 0.9778393351800554,
+                "min": 76.4482005886718,
+                "max": 87.40582561614927,
+                "mean": 81.92367445355067,
+                "start": "2026-11-16T13:33:51.692Z",
+                "end": "2026-11-16T19:33:51.692Z",
+                "sample_start": "2026-11-16T13:34:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED",
+          "shown": {
+            "displayed": true,
+            "metric_key": "blower_power",
+            "hours": 6,
+            "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+            "evidence_id": "EV_214e9145db5a_3"
+          },
+          "query_evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+          "reference_kind": "MATCHED_HISTORY_QUERY",
+          "hours": 6
+        },
+        "backend_query_evidence_id": "EV_DB_05c950dae259474ba20759ed4c27a0f9",
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      }
+    ],
+    "action_ids": [
+      "214e9145-db5a-400c-8468-dc1218623db9:1",
+      "214e9145-db5a-400c-8468-dc1218623db9:2",
+      "214e9145-db5a-400c-8468-dc1218623db9:3"
+    ],
+    "errors": [],
+    "model_receipts": [],
+    "model_feedback": [],
+    "explanation": "以下结论仅引用实际工具证据，不代表现场巡检或设备健康认证。",
+    "scope": [
+      "SW_AIR_BLOWER_001"
+    ],
+    "requirements": {
+      "version": 1,
+      "intent": "BLOWER_TREND",
+      "outcomes": [
+        {
+          "kind": "metrics",
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        {
+          "kind": "trend",
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        {
+          "kind": "focus",
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      ],
+      "time_origin": "EXPLICIT",
+      "issues": []
+    }
+  },
+  "scene": {
+    "status": "ready",
+    "error": "",
+    "selectedId": "SW_AIR_BLOWER_001",
+    "waterVisible": true,
+    "loadMs": 18.100000023841858,
+    "firstRenderMs": 27.100000023841858,
+    "triangles": 14364,
+    "assetTriangles": 16768,
+    "calls": 54,
+    "textures": 22,
+    "frameMs": 17.5,
+    "renderMode": "interactive",
+    "viewMode": "unit",
+    "loadedIds": [
+      "SW_AIR_BLOWER_001"
+    ],
+    "deviceStates": {
+      "SW_AIR_BLOWER_001": {
+        "status": "ready",
+        "error": "",
+        "loadMs": 168,
+        "sha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90"
+      }
+    },
+    "waterStates": {
+      "SW_BIO_AERATION_001": true
+    },
+    "roofStates": {
+      "SW_AIR_BLOWER_001": false
+    },
+    "deviceId": "SW_AIR_BLOWER_001",
+    "camera": [
+      0.5492111575865852,
+      6.745421765080371,
+      5.054990452222081
+    ],
+    "target": [
+      -0.042170543558620065,
+      1.7186773053461215,
+      0.12680960934536478
+    ],
+    "defaultCamera": [
+      6.40970733133643,
+      10.23042510117342,
+      13.915249177479838
+    ],
+    "defaultTarget": [
+      -0.02555482485829891,
+      -1.6500588794937696,
+      1.5397450309515144
+    ],
+    "zoom": 1,
+    "fov": 40,
+    "frame": 83,
+    "cameraBusy": false,
+    "visible": "visible",
+    "activeRenderLoops": 0,
+    "loadGeneration": 4,
+    "assetRequests": {
+      "/models/aeration-tank.glb": 1,
+      "/models/blower-unit.glb": 1
+    },
+    "rendererDpr": 1,
+    "nativeDpr": 2,
+    "drawingBuffer": {
+      "width": 1088,
+      "height": 413
+    },
+    "canvas": {
+      "width": 1088,
+      "height": 413
+    },
+    "loadedModelUrl": "http://127.0.0.1:4173/models/blower-unit.glb",
+    "loadedModelSha256": "dd6926b0960a6b7190b227c4987b32cc87ec773e7d20a5a2fa1eaee58dd33b90",
+    "waterPhaseMs": null,
+    "roofPresentation": {
+      "inspectionDevice": "SW_AIR_BLOWER_001",
+      "manual": {}
+    },
+    "registrations": [
+      {
+        "id": "SW_AIR_BLOWER_001",
+        "unitId": "SW_UNIT_BLOWER_ROOM_001",
+        "name": "一号鼓风机",
+        "url": "/models/blower-unit.glb",
+        "dimensions": "12 × 9 m 机房 · 设备独立选择",
+        "assetRootNode": "SW_BLOWER_UNIT",
+        "mechanicalNode": "SW_AIR_BLOWER_001",
+        "metrics": [
+          "blower_power"
+        ],
+        "water": false,
+        "roof": true,
+        "modelKey": "blower",
+        "modelState": "ready"
+      }
+    ],
+    "lighting": {
+      "exposure": 1.05,
+      "sunIntensity": 2.6,
+      "sunPosition": [
+        -28,
+        50,
+        20
+      ],
+      "environmentIntensity": 0.48,
+      "shadowMapSize": [
+        2048,
+        2048
+      ]
+    },
+    "selectionEffects": 1,
+    "sceneGeometryCount": 108,
+    "siteFraming": {
+      "left": -1.776658910579324,
+      "right": 2.021874956252849,
+      "bottom": -4.660660717459933,
+      "top": 0.7972124922757489
+    },
+    "bounds": {
+      "min": [
+        -2.700000047683716,
+        0.17999999225139618,
+        -1.2999999523162842
+      ],
+      "max": [
+        2.700000047683716,
+        3.299999952316284,
+        1.5
+      ]
+    }
+  },
+  "chart": {
+    "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+    "device_id": "SW_AIR_BLOWER_001",
+    "metric": "blower_power",
+    "hours": 6,
+    "evidence_id": "EV_214e9145db5a_3"
+  },
+  "records": [
+    {
+      "tool_name": "device.get_details",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+      "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+      "as_of": "2026-11-16T19:32:09.869Z",
+      "action_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9:1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:32:09.988Z",
+      "finished_at": "2026-11-16T19:32:10.010Z",
+      "result": {
+        "id": "SW_PRE_PUMP_001",
+        "name": "一号提升泵",
+        "metrics": [],
+        "unit_id": "SW_UNIT_PUMP_ROOM_001",
+        "limitation": "已建模和无告警均不代表设备健康；数据来源为独立模拟采集器",
+        "description": "已有三维模型，尚未定义流量、压力或效率指标。",
+        "modelStatus": "MODELLED",
+        "asset_root_node": "SW_PUMP_UNIT",
+        "mechanical_node": "SW_PRE_PUMP_001",
+        "operating_state": "NOT_OBSERVED",
+        "available_metrics": [],
+        "metricDefinitions": [],
+        "model_load_state": "unloaded",
+        "evidence_id": "EV_DB_bd8a83e4875c4fc6903fba7463633af4",
+        "tool_name": "device.get_details",
+        "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+        "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:32:09.869Z",
+        "source": "SIMULATED",
+        "quality": "NOT_OBSERVED",
+        "data": {
+          "id": "SW_PRE_PUMP_001",
+          "name": "一号提升泵",
+          "metrics": [],
+          "unit_id": "SW_UNIT_PUMP_ROOM_001",
+          "limitation": "已建模和无告警均不代表设备健康；数据来源为独立模拟采集器",
+          "description": "已有三维模型，尚未定义流量、压力或效率指标。",
+          "modelStatus": "MODELLED",
+          "asset_root_node": "SW_PUMP_UNIT",
+          "mechanical_node": "SW_PRE_PUMP_001",
+          "operating_state": "NOT_OBSERVED",
+          "available_metrics": [],
+          "metricDefinitions": [],
+          "model_load_state": "unloaded"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "device.get_metrics",
+      "arguments": {
+        "device_id": "SW_PRE_PUMP_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+      "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+      "as_of": "2026-11-16T19:32:09.869Z",
+      "action_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9:2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:32:10.012Z",
+      "finished_at": "2026-11-16T19:32:10.029Z",
+      "result": {
+        "outcome": "NO_DEFINED_METRICS",
+        "device_name": "一号提升泵",
+        "metrics": [],
+        "source": "SIMULATED",
+        "evidence_id": "EV_DB_0407499d8f0040b292840771c645f661",
+        "tool_name": "device.get_metrics",
+        "task_id": "23a3c0bc-4900-449a-b794-ec211bdc76c9",
+        "snapshot_id": "7997b047-d2f0-40a2-86e7-b515de20d5dd",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:32:09.869Z",
+        "quality": "NO_DATA",
+        "data": {
+          "outcome": "NO_DEFINED_METRICS",
+          "device_name": "一号提升泵",
+          "metrics": [],
+          "source": "SIMULATED"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_PRE_PUMP_001"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "1a396787-bd45-4758-8028-27e2bba86c96",
+      "snapshot_id": "79339a7f-115f-4aae-9457-52c145342d04",
+      "as_of": "2026-11-16T19:32:09.950Z",
+      "action_id": "1a396787-bd45-4758-8028-27e2bba86c96:1",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T19:32:10.582Z",
+      "finished_at": "2026-11-16T19:32:10.652Z",
+      "error": {
+        "code": "PAGE_HIDDEN",
+        "message": "页面隐藏，镜头动作已取消"
+      }
+    },
+    {
+      "tool_name": "alarm.list",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+      "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+      "as_of": "2026-11-16T19:33:05.671Z",
+      "action_id": "39de048b-e837-4cc7-becc-7f3ea5a44466:1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:06.763Z",
+      "finished_at": "2026-11-16T19:33:06.790Z",
+      "result": {
+        "alarms": [
+          {
+            "rule": "DO < 2.0 mg/L · 演示阈值",
+            "level": "WARNING",
+            "ruleId": "DEMO_DO_LOW",
+            "source": "SIMULATED",
+            "status": "ACKNOWLEDGED",
+            "alarmId": "45601aca-df35-4fed-8779-828b9639ad46",
+            "quality": "GOOD",
+            "closedAt": null,
+            "closedBy": null,
+            "deviceId": "SW_BIO_AERATION_001",
+            "metricKey": "do",
+            "threshold": 2,
+            "occurredAt": "2026-11-16T19:20:58.666Z",
+            "recoveredAt": null,
+            "ruleVersion": "demo-do-v1",
+            "eventQuality": "GOOD",
+            "valueAtEvent": 1.62,
+            "lastReadingId": "76108bac-c959-4641-991a-6dc8bf54a9a7",
+            "acknowledgedAt": "2026-11-16T19:30:25.177969Z",
+            "acknowledgedBy": "operator",
+            "lifecycleStatus": "ACTIVE",
+            "occurrenceCount": 13,
+            "triggerReadingId": "cd02715d-3077-49cf-a62e-0b03a448d701",
+            "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf"
+          }
+        ],
+        "scope": [
+          "SW_BIO_AERATION_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_DB_740b1fa559474c96b616d9f93c0517a2",
+        "tool_name": "alarm.list",
+        "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+        "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:05.671Z",
+        "source": "SIMULATED",
+        "quality": "GOOD_EVENT",
+        "data": {
+          "alarms": [
+            {
+              "rule": "DO < 2.0 mg/L · 演示阈值",
+              "level": "WARNING",
+              "ruleId": "DEMO_DO_LOW",
+              "source": "SIMULATED",
+              "status": "ACKNOWLEDGED",
+              "alarmId": "45601aca-df35-4fed-8779-828b9639ad46",
+              "quality": "GOOD",
+              "closedAt": null,
+              "closedBy": null,
+              "deviceId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "threshold": 2,
+              "occurredAt": "2026-11-16T19:20:58.666Z",
+              "recoveredAt": null,
+              "ruleVersion": "demo-do-v1",
+              "eventQuality": "GOOD",
+              "valueAtEvent": 1.62,
+              "lastReadingId": "76108bac-c959-4641-991a-6dc8bf54a9a7",
+              "acknowledgedAt": "2026-11-16T19:30:25.177969Z",
+              "acknowledgedBy": "operator",
+              "lifecycleStatus": "ACTIVE",
+              "occurrenceCount": 13,
+              "triggerReadingId": "cd02715d-3077-49cf-a62e-0b03a448d701",
+              "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf"
+            }
+          ],
+          "scope": [
+            "SW_BIO_AERATION_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_BIO_AERATION_001"
+      }
+    },
+    {
+      "tool_name": "alarm.inspect",
+      "arguments": {
+        "alarm_id": "45601aca-df35-4fed-8779-828b9639ad46"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+      "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+      "as_of": "2026-11-16T19:33:05.671Z",
+      "action_id": "39de048b-e837-4cc7-becc-7f3ea5a44466:2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:06.792Z",
+      "finished_at": "2026-11-16T19:33:06.811Z",
+      "result": {
+        "alarm": {
+          "rule": "DO < 2.0 mg/L · 演示阈值",
+          "level": "WARNING",
+          "ruleId": "DEMO_DO_LOW",
+          "source": "SIMULATED",
+          "status": "ACKNOWLEDGED",
+          "alarmId": "45601aca-df35-4fed-8779-828b9639ad46",
+          "quality": "GOOD",
+          "closedAt": null,
+          "closedBy": null,
+          "deviceId": "SW_BIO_AERATION_001",
+          "metricKey": "do",
+          "threshold": 2,
+          "occurredAt": "2026-11-16T19:20:58.666Z",
+          "recoveredAt": null,
+          "ruleVersion": "demo-do-v1",
+          "eventQuality": "GOOD",
+          "valueAtEvent": 1.62,
+          "lastReadingId": "76108bac-c959-4641-991a-6dc8bf54a9a7",
+          "acknowledgedAt": "2026-11-16T19:30:25.177969Z",
+          "acknowledgedBy": "operator",
+          "lifecycleStatus": "ACTIVE",
+          "occurrenceCount": 13,
+          "triggerReadingId": "cd02715d-3077-49cf-a62e-0b03a448d701",
+          "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf"
+        },
+        "metric_key": "do",
+        "unit": "mg/L",
+        "threshold": 2,
+        "operator": "<",
+        "rule_id": "DEMO_DO_LOW",
+        "rule_label": "DO < 2.0 mg/L · 演示阈值",
+        "rule_version": "demo-do-v1",
+        "trigger_comparison": true,
+        "event_quality": "GOOD",
+        "event_quality_basis": "PERSISTED_TRIGGER_READING",
+        "current_quality": "GOOD",
+        "current_value": 1.62,
+        "limitation": "演示阈值，仅解释记录依据，不是设备故障因果或控制建议",
+        "evidence_id": "EV_DB_417348ef6c6f42cab5dcdbad25139416",
+        "tool_name": "alarm.inspect",
+        "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+        "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:05.671Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "alarm": {
+            "rule": "DO < 2.0 mg/L · 演示阈值",
+            "level": "WARNING",
+            "ruleId": "DEMO_DO_LOW",
+            "source": "SIMULATED",
+            "status": "ACKNOWLEDGED",
+            "alarmId": "45601aca-df35-4fed-8779-828b9639ad46",
+            "quality": "GOOD",
+            "closedAt": null,
+            "closedBy": null,
+            "deviceId": "SW_BIO_AERATION_001",
+            "metricKey": "do",
+            "threshold": 2,
+            "occurredAt": "2026-11-16T19:20:58.666Z",
+            "recoveredAt": null,
+            "ruleVersion": "demo-do-v1",
+            "eventQuality": "GOOD",
+            "valueAtEvent": 1.62,
+            "lastReadingId": "76108bac-c959-4641-991a-6dc8bf54a9a7",
+            "acknowledgedAt": "2026-11-16T19:30:25.177969Z",
+            "acknowledgedBy": "operator",
+            "lifecycleStatus": "ACTIVE",
+            "occurrenceCount": 13,
+            "triggerReadingId": "cd02715d-3077-49cf-a62e-0b03a448d701",
+            "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf"
+          },
+          "metric_key": "do",
+          "unit": "mg/L",
+          "threshold": 2,
+          "operator": "<",
+          "rule_id": "DEMO_DO_LOW",
+          "rule_label": "DO < 2.0 mg/L · 演示阈值",
+          "rule_version": "demo-do-v1",
+          "trigger_comparison": true,
+          "event_quality": "GOOD",
+          "event_quality_basis": "PERSISTED_TRIGGER_READING",
+          "current_quality": "GOOD",
+          "current_value": 1.62,
+          "limitation": "演示阈值，仅解释记录依据，不是设备故障因果或控制建议"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_BIO_AERATION_001"
+      }
+    },
+    {
+      "tool_name": "device.get_metrics",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_keys": [
+          "do"
+        ],
+        "hours": 6
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+      "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+      "as_of": "2026-11-16T19:33:05.671Z",
+      "action_id": "39de048b-e837-4cc7-becc-7f3ea5a44466:3",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:06.814Z",
+      "finished_at": "2026-11-16T19:33:06.824Z",
+      "result": {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+              "recordId": "76108bac-c959-4641-991a-6dc8bf54a9a7"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 356,
+              "valid_samples": 356,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 5,
+              "coverage": 0.9861495844875346,
+              "min": 1.62,
+              "max": 2.8822348768922477,
+              "mean": 2.6020788387373734,
+              "start": "2026-11-16T13:33:05.671Z",
+              "end": "2026-11-16T19:33:05.671Z",
+              "sample_start": "2026-11-16T13:33:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "evidence_id": "EV_DB_2d7447f1f9154d129b985773af28772b",
+        "tool_name": "device.get_metrics",
+        "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+        "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:05.671Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+                "recordId": "76108bac-c959-4641-991a-6dc8bf54a9a7"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 356,
+                "valid_samples": 356,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 5,
+                "coverage": 0.9861495844875346,
+                "min": 1.62,
+                "max": 2.8822348768922477,
+                "mean": 2.6020788387373734,
+                "start": "2026-11-16T13:33:05.671Z",
+                "end": "2026-11-16T19:33:05.671Z",
+                "sample_start": "2026-11-16T13:33:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "unit": "mg/L"
+      }
+    },
+    {
+      "tool_name": "chart.show_trend",
+      "arguments": {
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "hours": 6,
+        "evidence_id": "EV_DB_2d7447f1f9154d129b985773af28772b"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+      "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+      "as_of": "2026-11-16T19:33:05.671Z",
+      "action_id": "39de048b-e837-4cc7-becc-7f3ea5a44466:4",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:06.826Z",
+      "finished_at": "2026-11-16T19:33:06.932Z",
+      "result": {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+              "recordId": "76108bac-c959-4641-991a-6dc8bf54a9a7"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 356,
+              "valid_samples": 356,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 5,
+              "coverage": 0.9861495844875346,
+              "min": 1.62,
+              "max": 2.8822348768922477,
+              "mean": 2.6020788387373734,
+              "start": "2026-11-16T13:33:05.671Z",
+              "end": "2026-11-16T19:33:05.671Z",
+              "sample_start": "2026-11-16T13:33:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "shown": {
+          "displayed": true,
+          "metric_key": "do",
+          "hours": 6,
+          "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+          "evidence_id": "EV_39de048be837_4"
+        },
+        "query_evidence_id": "EV_DB_2d7447f1f9154d129b985773af28772b",
+        "reference_kind": "MATCHED_HISTORY_QUERY",
+        "hours": 6,
+        "evidence_id": "EV_39de048be837_4",
+        "tool_name": "chart.show_trend",
+        "task_id": "39de048b-e837-4cc7-becc-7f3ea5a44466",
+        "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:05.671Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+                "recordId": "76108bac-c959-4641-991a-6dc8bf54a9a7"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 356,
+                "valid_samples": 356,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 5,
+                "coverage": 0.9861495844875346,
+                "min": 1.62,
+                "max": 2.8822348768922477,
+                "mean": 2.6020788387373734,
+                "start": "2026-11-16T13:33:05.671Z",
+                "end": "2026-11-16T19:33:05.671Z",
+                "sample_start": "2026-11-16T13:33:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED",
+          "shown": {
+            "displayed": true,
+            "metric_key": "do",
+            "hours": 6,
+            "snapshot_id": "cbe4b3c9-bf46-462a-93e2-57c9e7f26bbf",
+            "evidence_id": "EV_39de048be837_4"
+          },
+          "query_evidence_id": "EV_DB_2d7447f1f9154d129b985773af28772b",
+          "reference_kind": "MATCHED_HISTORY_QUERY",
+          "hours": 6
+        },
+        "backend_query_evidence_id": "EV_DB_87f13e88b4764d299ae6a8331158878c",
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "unit": "mg/L"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "17282119-498c-457d-b795-e4f9191f3198",
+      "snapshot_id": "0836b23c-2737-4097-9609-d13f1ae5dffe",
+      "as_of": "2026-11-16T19:33:46.749Z",
+      "action_id": "17282119-498c-457d-b795-e4f9191f3198:1",
+      "status": "CANCELLED",
+      "started_at": "2026-11-16T19:33:51.730Z",
+      "finished_at": "2026-11-16T19:33:51.786Z",
+      "error": {
+        "code": "CANCELLED",
+        "message": "用户取消任务"
+      }
+    },
+    {
+      "tool_name": "scene.focus_device",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+      "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+      "as_of": "2026-11-16T19:33:51.692Z",
+      "action_id": "214e9145-db5a-400c-8468-dc1218623db9:1",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:51.903Z",
+      "finished_at": "2026-11-16T19:33:52.817Z",
+      "result": {
+        "camera": {
+          "position": [
+            0.5492111575865852,
+            6.745421765080371,
+            5.054990452222081
+          ],
+          "target": [
+            -0.042170543558620065,
+            1.7186773053461215,
+            0.12680960934536478
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 83,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_AIR_BLOWER_001": false
+        },
+        "inspection_device": "SW_AIR_BLOWER_001",
+        "evidence_id": "EV_214e9145db5a_1",
+        "tool_name": "scene.focus_device",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "source": "SIMULATED",
+        "quality": "NOT_APPLICABLE",
+        "data": {
+          "camera": {
+            "position": [
+              0.5492111575865852,
+              6.745421765080371,
+              5.054990452222081
+            ],
+            "target": [
+              -0.042170543558620065,
+              1.7186773053461215,
+              0.12680960934536478
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 83,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false
+          },
+          "inspection_device": "SW_AIR_BLOWER_001"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001"
+      }
+    },
+    {
+      "tool_name": "device.get_metrics",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_keys": [
+          "blower_power"
+        ],
+        "hours": 6
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+      "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+      "as_of": "2026-11-16T19:33:51.692Z",
+      "action_id": "214e9145-db5a-400c-8468-dc1218623db9:2",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:52.821Z",
+      "finished_at": "2026-11-16T19:33:52.861Z",
+      "result": {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+              "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 353,
+              "valid_samples": 353,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 8,
+              "coverage": 0.9778393351800554,
+              "min": 76.4482005886718,
+              "max": 87.40582561614927,
+              "mean": 81.92367445355067,
+              "start": "2026-11-16T13:33:51.692Z",
+              "end": "2026-11-16T19:33:51.692Z",
+              "sample_start": "2026-11-16T13:34:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+        "tool_name": "device.get_metrics",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+                "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 353,
+                "valid_samples": 353,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 8,
+                "coverage": 0.9778393351800554,
+                "min": 76.4482005886718,
+                "max": 87.40582561614927,
+                "mean": 81.92367445355067,
+                "start": "2026-11-16T13:33:51.692Z",
+                "end": "2026-11-16T19:33:51.692Z",
+                "sample_start": "2026-11-16T13:34:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED"
+        },
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      }
+    },
+    {
+      "tool_name": "chart.show_trend",
+      "arguments": {
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "hours": 6,
+        "evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423"
+      },
+      "source": "DEMO_AGENT",
+      "trigger": "确定性任务模板",
+      "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+      "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+      "as_of": "2026-11-16T19:33:51.692Z",
+      "action_id": "214e9145-db5a-400c-8468-dc1218623db9:3",
+      "status": "SUCCEEDED",
+      "started_at": "2026-11-16T19:33:52.865Z",
+      "finished_at": "2026-11-16T19:33:52.927Z",
+      "result": {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-11-16T19:32:59.587Z",
+              "sampleAt": "2026-11-16T19:32:59.587Z",
+              "quality": "GOOD",
+              "rawQuality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+              "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 353,
+              "valid_samples": 353,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "unreported_samples": 8,
+              "coverage": 0.9778393351800554,
+              "min": 76.4482005886718,
+              "max": 87.40582561614927,
+              "mean": 81.92367445355067,
+              "start": "2026-11-16T13:33:51.692Z",
+              "end": "2026-11-16T19:33:51.692Z",
+              "sample_start": "2026-11-16T13:34:16.375Z",
+              "sample_end": "2026-11-16T19:32:59.587Z",
+              "cadence_ms": 60000,
+              "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+            }
+          }
+        ],
+        "source": "SIMULATED",
+        "shown": {
+          "displayed": true,
+          "metric_key": "blower_power",
+          "hours": 6,
+          "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+          "evidence_id": "EV_214e9145db5a_3"
+        },
+        "query_evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+        "reference_kind": "MATCHED_HISTORY_QUERY",
+        "hours": 6,
+        "evidence_id": "EV_214e9145db5a_3",
+        "tool_name": "chart.show_trend",
+        "task_id": "214e9145-db5a-400c-8468-dc1218623db9",
+        "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-11-16T19:33:51.692Z",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-11-16T19:32:59.587Z",
+                "sampleAt": "2026-11-16T19:32:59.587Z",
+                "quality": "GOOD",
+                "rawQuality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "11146e0b-f8ce-4279-8707-6c305054413e",
+                "recordId": "ff3b416e-865b-49ca-abc4-386e1eb90914"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 353,
+                "valid_samples": 353,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "unreported_samples": 8,
+                "coverage": 0.9778393351800554,
+                "min": 76.4482005886718,
+                "max": 87.40582561614927,
+                "mean": 81.92367445355067,
+                "start": "2026-11-16T13:33:51.692Z",
+                "end": "2026-11-16T19:33:51.692Z",
+                "sample_start": "2026-11-16T13:34:16.375Z",
+                "sample_end": "2026-11-16T19:32:59.587Z",
+                "cadence_ms": 60000,
+                "window_semantics": "start/end为请求时窗，sample_start/sample_end为实际覆盖；按分钟取最后一条样本"
+              }
+            }
+          ],
+          "source": "SIMULATED",
+          "shown": {
+            "displayed": true,
+            "metric_key": "blower_power",
+            "hours": 6,
+            "snapshot_id": "11146e0b-f8ce-4279-8707-6c305054413e",
+            "evidence_id": "EV_214e9145db5a_3"
+          },
+          "query_evidence_id": "EV_DB_de563c25eec3440d8fb0a6c1ca27d423",
+          "reference_kind": "MATCHED_HISTORY_QUERY",
+          "hours": 6
+        },
+        "backend_query_evidence_id": "EV_DB_05c950dae259474ba20759ed4c27a0f9",
+        "data_mode": "BUSINESS_API",
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      }
+    }
+  ],
+  "native_cancel": {
+    "precondition": {
+      "running": true,
+      "enabled": true,
+      "visible": "visible",
+      "x": 1406,
+      "y": 541.796875,
+      "unobstructed": true
+    },
+    "task": {
+      "task_id": "17282119-498c-457d-b795-e4f9191f3198",
+      "scenario_id": "LOW_DO",
+      "snapshot_id": "0836b23c-2737-4097-9609-d13f1ae5dffe",
+      "as_of": "2026-11-16T19:33:46.749Z",
+      "started_at": "2026-11-16T19:33:51.728Z",
+      "finished_at": "2026-11-16T19:33:51.784Z",
+      "mode": "DEMO",
+      "input": "定位一号鼓风机，查看最近六小时功率。",
+      "data_mode": "BUSINESS_API",
+      "data_version": "smartwater-business-v02",
+      "rule_snapshot": {
+        "lowDo": {
+          "id": "DEMO_DO_LOW",
+          "unit": "mg/L",
+          "below": 2,
+          "label": "DO < 2.0 mg/L · 演示阈值",
+          "version": "demo-do-v1"
+        }
+      },
+      "status": "CANCELLED",
+      "tool_count": 1,
+      "model_requests": 0,
+      "evidence": [],
+      "action_ids": [
+        "17282119-498c-457d-b795-e4f9191f3198:1"
+      ],
+      "errors": [
+        {
+          "code": "CANCELLED",
+          "message": "用户取消任务"
+        }
+      ],
+      "model_receipts": [],
+      "model_feedback": [],
+      "explanation": "",
+      "scope": [
+        "SW_AIR_BLOWER_001"
+      ],
+      "requirements": {
+        "version": 1,
+        "intent": "BLOWER_TREND",
+        "outcomes": [
+          {
+            "kind": "metrics",
+            "device_id": "SW_AIR_BLOWER_001",
+            "metric_keys": [
+              "blower_power"
+            ],
+            "hours": 6
+          },
+          {
+            "kind": "trend",
+            "device_id": "SW_AIR_BLOWER_001",
+            "metric_keys": [
+              "blower_power"
+            ],
+            "hours": 6
+          },
+          {
+            "kind": "focus",
+            "device_id": "SW_AIR_BLOWER_001"
+          }
+        ],
+        "time_origin": "EXPLICIT",
+        "issues": []
+      }
+    },
+    "method": "CDP browser key/mouse input; actual visible enabled cancel button, no DOM click/forced input"
+  }
+}

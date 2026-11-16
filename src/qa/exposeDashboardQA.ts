@@ -1,10 +1,10 @@
 import type { useSceneWorkspace } from '../composables/useSceneWorkspace'
-import type { useMockData } from '../composables/useMockData'
+import type { DashboardData } from '../composables/useDashboardData'
 import type { useDashboardContext } from '../composables/useDashboardContext'
 import { ownership,diagnosticControls,inputEvents,enableDiagnostics } from '../diagnostics/stability'
 import { chartStats } from '../charts/runtime'
 import type { ToolCall } from '../agent/types'
-export function exposeDashboardQA(scene:ReturnType<typeof useSceneWorkspace>,data:ReturnType<typeof useMockData>,context:ReturnType<typeof useDashboardContext>,locate:(id:string,trigger?:string)=>unknown) {
+export function exposeDashboardQA(scene:ReturnType<typeof useSceneWorkspace>,data:DashboardData,context:ReturnType<typeof useDashboardContext>,locate:(id:string,trigger?:string)=>unknown) {
   if(!import.meta.env.DEV&&!new URLSearchParams(location.search).has('qa'))return
   const r=()=>scene.runtime.value!
   let diagnosticTimer:ReturnType<typeof setInterval>|undefined

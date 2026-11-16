@@ -1,0 +1,24 @@
+name: smartwater-v02
+services:
+  db:
+    image: postgres:17.12-alpine
+    environment:
+      POSTGRES_DB: smartwater
+      POSTGRES_USER: smartwater
+      POSTGRES_PASSWORD: ${SW_DB_PASSWORD:?Run python3 scripts/business.py init}
+    ports:
+      - "127.0.0.1:${SW_DB_PORT:-55439}:5432"
+    volumes:
+      - business-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartwater -d smartwater"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+volumes:
+  business-data:
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${SW_DOCKER_SUBNET:-10.231.0.0/24}

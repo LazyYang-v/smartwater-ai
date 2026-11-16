@@ -1,10 +1,10 @@
-# SmartWater v0.1
+# SmartWater v0.2 business development
 
 ## Current scope and sources
 
-- Four-unit, read-only Agent demonstration: aeration basin, clarifier, blower and lift pump. Vue/TypeScript/Three.js dashboard, unified simulated data, Demo/LLM execution, local Node model gateway, IndexedDB task history and Markdown/JSON reports.
-- Use `src/scene/units.ts` for device identities and model mappings, `src/data/mockDataProvider.ts` for data/ownership/rules, and `src/agent/contracts.ts` for the seven permitted tools. Extend these sources rather than creating another registry, data source or tool executor.
-- Current correctness work covers structured task completion requirements, evidence aggregation, preview routing and their regression tests. Java/database/work-order work is a later, separately scoped stage. Add no industrial control or new Agent tools under this scope.
+- Preserve the existing four-unit assets and read-only Agent while replacing browser-generated business data with authenticated backend records. Existing foundation: aeration basin, clarifier, blower and lift pump. Vue/TypeScript/Three.js dashboard, unified simulated data, Demo/LLM execution, local Node model gateway, IndexedDB task history and Markdown/JSON reports.
+- Use `src/scene/units.ts` for model identities and `src/agent/contracts.ts` for the seven existing tools. Business devices, metrics, telemetry and alarm rules live in PostgreSQL; `src/data/mockDataProvider.ts` remains an explicitly selected offline-demo source. Extend these sources rather than creating another registry, data source or tool executor.
+- Current authorized work is the v0.2 business system. Implement the first vertical slice with Spring Boot, PostgreSQL, an independent simulated collector, device/telemetry/alarm APIs and API-backed dashboard data. Add server-side authentication, permissions, transaction/idempotency and audit where this flow needs them. Work orders and server-side Agent task orchestration follow this usable slice; never describe the slice as the completed six-module business system. Industrial control remains outside scope.
 - Keep the default unit view, interaction-priority rendering and four-unit trial label. Existing evidence does not establish full-plant production performance.
 
 ## Execution and evidence

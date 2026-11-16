@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-16T19:39:51.655Z",
+  "scripts": [
+    {
+      "url": "http://127.0.0.1:4173/assets/dashboard-FMXV2AMa.js",
+      "bytes": 702205,
+      "sha256": "13f591f0e1483730c6baf7625701c1fc5807dc086ea09d7460a8b8214725048d"
+    }
+  ],
+  "loaded_model_url": "http://127.0.0.1:4173/models/aeration-tank.glb",
+  "loaded_model_sha256": "5fed509ce0989a1bfd321ec6be8c445643892a1ed2a5dfad990123b3f1468d1f"
+}

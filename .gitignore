@@ -28,3 +28,7 @@ __pycache__/
 *.zip
 docs/acceptance/**/baseline/site/
 docs/acceptance/**/baseline-site/
+
+# Java builds and local business configuration
+backend/target/
+!.env.business.example

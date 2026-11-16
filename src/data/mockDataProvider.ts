@@ -5,6 +5,7 @@ export const BLOWER_ID = 'SW_AIR_BLOWER_001'
 export const DATA_VERSION = 'smartwater-m1.2'
 export const DEMO_START = Date.parse('2026-01-15T08:00:00Z')
 export const CLOCK = { publishMs: 5000, sampleMs: 60_000, historyHours: 24, seed: 4107 } as const
+export type RuleSnapshot={lowDo:{id:string;below:number;unit:string;label:string;version?:string}}
 export const RULES = { lowDo: { id: 'DEMO_DO_LOW', below: 2, unit: 'mg/L', label: 'DO < 2.0 mg/L · 演示阈值' } } as const
 export type Scenario = 'NORMAL' | 'LOW_DO' | 'MISSING_DATA'
 export type Quality = 'GOOD' | 'MISSING' | 'STALE'
@@ -15,11 +16,12 @@ export type Reading = {
 }
 export type Alarm = {
   alarmId: string; deviceId: string; metricKey: MetricKey; occurredAt: string; level: 'WARNING'
-  ruleId: string; rule: string; status: 'ACTIVE' | 'AWAITING_DATA'; source: 'SIMULATED'
-  valueAtEvent: number; snapshotId: string
+  ruleId: string; rule: string; status: 'ACTIVE' | 'AWAITING_DATA' | 'ACKNOWLEDGED' | 'RECOVERED' | 'CLOSED'; source: 'SIMULATED'
+  valueAtEvent: number; snapshotId: string; lifecycleStatus?:'ACTIVE'|'RECOVERED'|'CLOSED'; acknowledgedAt?:string|null; acknowledgedBy?:string|null; recoveredAt?:string|null; closedAt?:string|null; ruleVersion?:string; occurrenceCount?:number; quality?:Quality
 }
 export type Snapshot = {
   snapshotId: string; version: string; scenario: Scenario; tick: number; demoTime: string; updatedAt: string
+  backend?: {snapshotId:string;revision:number;dataMode:'BUSINESS_API';source:'SIMULATED';devices:DataEntity[];rules?:RuleSnapshot};
   readings: Record<MetricKey, Reading>; alarms: Alarm[]; history: Record<'do' | 'blower_power', Reading[]>
 }
 export type DataEntity = { id: string; name: string; modelStatus: 'MODELLED' | 'DATA_ONLY' | 'SCHEMATIC'; description: string; metrics: MetricKey[] }
