@@ -4,13 +4,31 @@ import {evidenceForTask} from './evidenceSummary.ts'
 import type {Evidence} from './businessTools.ts'
 export type RequiredOutcome={kind:'focus'|'overview'|'details'|'metrics'|'trend'|'alarms';device_id?:string;metric_keys?:string[];hours?:number;scope?:string[]}
 export type TaskRequirements={version:1;intent:'BLOWER_TREND'|'DO_ALARM'|'INSPECTION'|'DEVICE_STATUS'|'READ_METRICS'|'FOCUS'|'OVERVIEW'|'UNCLASSIFIED';outcomes:RequiredOutcome[];time_origin:'EXPLICIT'|'DEMO_DEFAULT'|'NONE';issues:string[]}
+// Capture whole numeric expressions before validating the finite supported windows.
+// Unsupported Chinese compounds must never backtrack into a valid suffix such as 六.
+function timeRequirements(input:string){
+ const original=input.normalize('NFKC').toLowerCase(),compact=original.replace(/\s/g,''),issues:string[]=[],values:number[]=[]
+ const expressions=[...compact.matchAll(/([+\-−负]?[0-9零〇一二两三四五六七八九十百千万亿壹贰叁肆伍陆柒捌玖拾佰仟萬億廿卅卌几半][0-9零〇一二两三四五六七八九十百千万亿壹贰叁肆伍陆柒捌玖拾佰仟萬億廿卅卌几点半多余又个a-z.\/分之~至到-]*)(?:个)?(?:小时|h(?:ours?)?(?![a-z]))/g)]
+ const units=[...original.matchAll(/小时|\bh(?:ours?)?\b|(?<=[0-9零〇一二两三四五六七八九十百千万亿])h(?:ours?)?(?![a-z])/g)]
+ const digits:Record<string,number>={'零':0,'〇':0,'一':1,'二':2,'两':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9}
+ for(const expression of expressions){
+  const token=expression[1]!.replace(/个$/,''),tens=token.match(/^([一二两三四五六七八九])?十([一二三四五六七八九])?$/)
+  const value=/^\d+(?:\.\d+)?$/.test(token)?Number(token):Object.hasOwn(digits,token)?digits[token]:tens?(tens[1]?digits[tens[1]]!:1)*10+(tens[2]?digits[tens[2]]!:0):undefined
+  if(value===undefined||!Number.isFinite(value))issues.push('无法完整解析时间表达式：'+expression[0]+'；仅支持 1h、6h、24h')
+  else values.push(value)
+ }
+ if(units.length>expressions.length)issues.push('存在无法完整解析的时间表达式；请使用 1h、6h 或 24h')
+ const distinct=[...new Set(values)]
+ if(distinct.length>1)issues.push('时间窗有多个不同值，当前单任务模板无法确认要求')
+ if(distinct.some(h=>![1,6,24].includes(h)))issues.push('仅支持 1h、6h、24h 历史时间窗')
+ return {present:expressions.length>0||units.length>0,hours:values[0],issues}
+}
 const normalized=(s:string)=>s.normalize('NFKC').toLowerCase().replace(/[\s，,。！？!?、-]/g,'')
 export function resolveRequirements(input:string):TaskRequirements{
  const text=normalized(input),outcomes:RequiredOutcome[]=[],issues:string[]=[],result:TaskRequirements={version:1,intent:'UNCLASSIFIED',outcomes,time_origin:'NONE',issues}
  const devices=UNITS.filter(u=>[u.id,u.name,u.name.replace(/^一号/,''),...(ENTITIES.find(e=>e.id===u.id)?.name.match(/[A-Z]+-?\d+/g)??[])].some(alias=>text.includes(normalized(alias))))
- const times=[...text.matchAll(/(\d+|二十四|十二|六|一|两|二|三|四|五|七|八|九|十)(?:个)?(?:小时|h(?:ours?)?)/g)].map(m=>Number(m[1])||({'二十四':24,'十二':12,'六':6,'一':1,'两':2,'二':2,'三':3,'四':4,'五':5,'七':7,'八':8,'九':9,'十':10} as Record<string,number>)[m[1]!]!)
- const explicit=[...new Set(times)];if(explicit.length>1)issues.push('时间窗有多个不同值，当前单任务模板无法确认要求');if(explicit.some(h=>![1,6,24].includes(h)))issues.push('仅支持 1h、6h、24h 历史时间窗')
- const hours=explicit[0]??6;result.time_origin=explicit.length?'EXPLICIT':'NONE'
+ const time=timeRequirements(input);issues.push(...time.issues)
+ const hours=time.present?time.hours:6;result.time_origin=time.present?'EXPLICIT':'NONE'
  const focus=/定位|聚焦|找到|带我.*看|画面带到|镜头/.test(text),trend=/趋势|曲线|历史|最近|过去|近[一六\d]|小时/.test(text)
  const keys:string[]=[];if(/溶解氧|do/.test(text.replace(/sw_[a-z_0-9]+/g,'')))keys.push('do');if(/ph/.test(text))keys.push('ph');if(/水深/.test(text))keys.push('depth');if(/功率/.test(text))keys.push('blower_power')
  if(/巡检/.test(text)||(/(?:四|全部|所有).*(?:单元|设备)/.test(text)&&/检查|查.*遍|异常|缺失|缺少/.test(text))){
@@ -18,16 +36,26 @@ export function resolveRequirements(input:string):TaskRequirements{
   for(const unit of scope)outcomes.push({kind:'details',device_id:unit.id},{kind:'metrics',device_id:unit.id,metric_keys:[...unit.metrics]})
   outcomes.push({kind:'alarms',scope:scope.map(u=>u.id)})
  }else if(/告警/.test(text)&&(/溶解氧|低do|曝气池/.test(text))){
-  result.intent='DO_ALARM';if(!explicit.length)result.time_origin='DEMO_DEFAULT';outcomes.push({kind:'alarms',scope:[BASIN_ID]},{kind:'trend',device_id:BASIN_ID,metric_keys:['do'],hours});if(focus)outcomes.push({kind:'focus',device_id:BASIN_ID})
+  result.intent='DO_ALARM';if(!time.present)result.time_origin='DEMO_DEFAULT';outcomes.push({kind:'alarms',scope:[BASIN_ID]},{kind:'trend',device_id:BASIN_ID,metric_keys:['do'],hours});if(focus)outcomes.push({kind:'focus',device_id:BASIN_ID})
  }else if(devices.some(u=>u.id===BLOWER_ID)&&keys.includes('blower_power')&&trend){
-  result.intent='BLOWER_TREND';if(!explicit.length)result.time_origin='DEMO_DEFAULT';outcomes.push({kind:'metrics',device_id:BLOWER_ID,metric_keys:['blower_power'],hours},{kind:'trend',device_id:BLOWER_ID,metric_keys:['blower_power'],hours});if(focus)outcomes.push({kind:'focus',device_id:BLOWER_ID})
+  result.intent='BLOWER_TREND';if(!time.present)result.time_origin='DEMO_DEFAULT';outcomes.push({kind:'metrics',device_id:BLOWER_ID,metric_keys:['blower_power'],hours},{kind:'trend',device_id:BLOWER_ID,metric_keys:['blower_power'],hours});if(focus)outcomes.push({kind:'focus',device_id:BLOWER_ID})
  }else if(devices.length&&keys.length){
-  result.intent='READ_METRICS';for(const unit of devices){const owned=keys.filter(k=>unit.metrics.includes(k));if(owned.length!==keys.length)issues.push(unit.id+' 的指定指标不属于该设备');outcomes.push({kind:'metrics',device_id:unit.id,metric_keys:owned,...(explicit.length?{hours}: {})})}
+  result.intent='READ_METRICS';const showTrend=/趋势|曲线/.test(text)
+  if(showTrend&&!time.present)result.time_origin='DEMO_DEFAULT'
+  for(const unit of devices){
+   const owned=keys.filter(k=>unit.metrics.includes(k));if(owned.length!==keys.length)issues.push(unit.id+' 的指定指标不属于该设备')
+   outcomes.push({kind:'metrics',device_id:unit.id,metric_keys:owned,...((time.present||showTrend)?{hours}: {})})
+   if(focus)outcomes.push({kind:'focus',device_id:unit.id})
+   if(showTrend){
+    if(owned.length!==1||!['do','blower_power'].includes(owned[0]!))issues.push('该指标组合的趋势展示无法完整验收，请指定单个支持历史的指标')
+    else outcomes.push({kind:'trend',device_id:unit.id,metric_keys:owned,hours})
+   }
+  }
  }else if(devices.length&&/正常|运行|状态|检查/.test(text)){
   result.intent='DEVICE_STATUS';for(const unit of devices)outcomes.push({kind:'details',device_id:unit.id},{kind:'metrics',device_id:unit.id,metric_keys:[...unit.metrics]})
  }else if(devices.length===1&&focus){result.intent='FOCUS';outcomes.push({kind:'focus',device_id:devices[0]!.id})}
  else if(/^(?:请)?(?:回到|返回|恢复)(?:厂区)?总览$/.test(text)){result.intent='OVERVIEW';outcomes.push({kind:'overview'})}
- if(explicit.length&&['INSPECTION','DEVICE_STATUS'].includes(result.intent))issues.push('当前巡检 / 状态任务验收当前快照；历史时窗请使用明确的指标趋势任务')
+ if(time.present&&['INSPECTION','DEVICE_STATUS'].includes(result.intent))issues.push('当前巡检 / 状态任务验收当前快照；历史时窗请使用明确的指标趋势任务')
  if(result.intent!=='INSPECTION'&&devices.length>1)issues.push('该复合请求涉及多个设备，超出当前单设备验收模板，不能确认全部要求')
  if(result.intent!=='INSPECTION'&&devices.length===1&&keys.some(key=>!devices[0]!.metrics.includes(key)))issues.push('指定指标不属于目标设备')
  return result

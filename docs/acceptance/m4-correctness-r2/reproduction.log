@@ -1,0 +1,93 @@
+✖ aeration focus and six-hour DO trend: query_only must satisfy every requested action (21.671292ms)
+✖ aeration focus and six-hour DO trend: query_and_focus must satisfy every requested action (7.415958ms)
+✖ aeration focus and six-hour DO trend: complete must satisfy every requested action (7.462458ms)
+✖ twenty-six hours is rejected before model invocation, never truncated to six hours (6.834791ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.617708
+
+✖ failing tests:
+
+test at tests/taskCorrectness.test.ts:52:75
+✖ aeration focus and six-hour DO trend: query_only must satisfy every requested action (21.671292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'SUCCEEDED'
+  - 'PARTIAL'
+  
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:54:69)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'SUCCEEDED',
+    expected: 'PARTIAL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/taskCorrectness.test.ts:52:75
+✖ aeration focus and six-hour DO trend: query_and_focus must satisfy every requested action (7.415958ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'SUCCEEDED'
+  - 'PARTIAL'
+  
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:54:69)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'SUCCEEDED',
+    expected: 'PARTIAL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/taskCorrectness.test.ts:52:75
+✖ aeration focus and six-hour DO trend: complete must satisfy every requested action (7.462458ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  -   'focus',
+      'metrics',
+  -   'trend'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:54:135)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'metrics' ],
+    expected: [ 'focus', 'metrics', 'trend' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/taskCorrectness.test.ts:56:1
+✖ twenty-six hours is rejected before model invocation, never truncated to six hours (6.834791ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'SUCCEEDED'
+  - 'FAILED'
+  
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:58:68)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'SUCCEEDED',
+    expected: 'FAILED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -49,3 +49,21 @@ test('unsupported or ambiguous time windows fail explicitly before consuming a m
 test('four-unit inspection mentioning one priority device still requires all four units',async()=>{
  let n=0;const s=fixture(async messages=>++n===1?reply([proposal('device_get_metrics',{device_id:BASIN_ID},'priority_only')]):done(messages)),t=await s.runner.start('巡检当前四个单元，重点关注一号曝气池。','LLM');assert.notEqual(t.status,'SUCCEEDED');assert.equal(t.requirements?.outcomes.filter(o=>o.kind==='details').length,4)
 })
+for(const variant of ['query_only','query_and_focus','complete'] as const)test(`aeration focus and six-hour DO trend: ${variant} must satisfy every requested action`,async()=>{
+ let n=0;const s=fixture(async messages=>{if(++n!==1)return done(messages);const calls=[proposal('device_get_metrics',{device_id:BASIN_ID,metric_keys:['do'],hours:6},'query')];if(variant!=='query_only')calls.push(proposal('scene_focus_device',{device_id:BASIN_ID},'focus'));if(variant==='complete')calls.push(proposal('chart_show_trend',{device_id:BASIN_ID,metric_key:'do',hours:6},'chart'));return reply(calls)});
+ const t=await s.runner.start('定位一号曝气池，查看最近六小时溶解氧趋势。','LLM');assert.equal(t.status,variant==='complete'?'SUCCEEDED':'PARTIAL');assert.deepEqual(t.requirements?.outcomes.map(o=>o.kind).sort(),['focus','metrics','trend']);assert.ok(t.requirements?.outcomes.filter(o=>o.kind==='metrics'||o.kind==='trend').every(o=>o.hours===6&&o.device_id===BASIN_ID&&o.metric_keys?.[0]==='do'));if(variant!=='complete')assert.ok(t.model_feedback.some(f=>f.missing_outcomes.some(o=>o.includes('趋势'))))
+})
+test('twenty-six hours is rejected before model invocation, never truncated to six hours',async()=>{
+ let n=0;const s=fixture(async messages=>++n===1?reply([proposal('scene_focus_device',{device_id:BLOWER_ID},'focus'),proposal('device_get_metrics',{device_id:BLOWER_ID,metric_keys:['blower_power'],hours:6},'query'),proposal('chart_show_trend',{device_id:BLOWER_ID,metric_key:'blower_power',hours:6},'chart')]):done(messages));
+ const t=await s.runner.start('定位一号鼓风机，查看最近二十六小时功率。','LLM');assert.equal(t.status,'FAILED');assert.equal(n,0);assert.equal(t.model_requests,0);assert.equal(t.tool_count,0);assert.ok(t.requirements?.issues.length);assert.ok(t.errors.some(e=>e.code==='UNVERIFIABLE_TASK_REQUIREMENTS'))
+})
+test('unsupported whole time tokens cannot fall back to a supported numeric suffix',async()=>{
+ let requests=0;const s=fixture(async()=>{requests++;throw new Error('must not call model')});
+ for(const expression of ['三十六小时','贰拾六小时','一百零六小时','二十又六小时','1.6小时','2e6h','1/6小时','-6小时','若干小时']){const t=await s.runner.start('定位一号鼓风机，查看最近'+expression+'功率。','LLM');assert.equal(t.status,'FAILED',expression);assert.ok(t.requirements?.issues.length,expression);assert.equal(t.model_requests,0,expression)}assert.equal(requests,0)
+})
+test('supported complete time expressions retain their exact requested window',async()=>{
+ for(const [expression,hours] of [['一小时',1],['六个小时',6],['二十四小时',24],['1h',1],['6 hours',6],['24小时',24]] as const){let n=0;const s=fixture(async messages=>++n===1?reply([proposal('scene_focus_device',{device_id:BLOWER_ID},'focus'),proposal('device_get_metrics',{device_id:BLOWER_ID,metric_keys:['blower_power'],hours},'query'),proposal('chart_show_trend',{device_id:BLOWER_ID,metric_key:'blower_power',hours},'chart')]):done(messages));const t=await s.runner.start('定位一号鼓风机，查看最近'+expression+'功率。','LLM');assert.equal(t.status,'SUCCEEDED',expression);assert.equal(t.requirements?.time_origin,'EXPLICIT');assert.equal(t.requirements?.outcomes.find(o=>o.kind==='trend')?.hours,hours,expression)}
+})
+test('unsupported metric trend combinations are rejected rather than dropping the display request',async()=>{
+ let requests=0;const s=fixture(async()=>{requests++;throw new Error('must not call model')});for(const input of ['定位一号曝气池，查看最近六小时pH趋势。','定位一号曝气池，查看最近六小时pH和DO趋势。']){const t=await s.runner.start(input,'LLM');assert.equal(t.status,'FAILED');assert.equal(t.model_requests,0);assert.ok(t.requirements?.issues.some(issue=>issue.includes('趋势')))}assert.equal(requests,0)
+})
