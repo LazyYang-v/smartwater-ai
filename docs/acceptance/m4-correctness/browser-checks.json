@@ -1,0 +1,122 @@
+{
+  "at": "2026-11-16T16:49:26.746Z",
+  "source": "TEST_INJECTED_NO_NETWORK; actual browser tools, scene and chart; NOT real model validation",
+  "checks": [
+    {
+      "name": "blower link follows selected unit",
+      "passed": true
+    },
+    {
+      "name": "actual blower preview opened and loaded",
+      "passed": true
+    },
+    {
+      "name": "pump link follows current unit",
+      "passed": true
+    },
+    {
+      "name": "no selection disables independent preview rather than opening an unrelated unit",
+      "passed": true
+    },
+    {
+      "name": "actual one-hour query/render never completes six-hour task",
+      "passed": true,
+      "details": {
+        "status": "PARTIAL",
+        "requirements": {
+          "version": 1,
+          "intent": "BLOWER_TREND",
+          "outcomes": [
+            {
+              "kind": "metrics",
+              "device_id": "SW_AIR_BLOWER_001",
+              "metric_keys": [
+                "blower_power"
+              ],
+              "hours": 6
+            },
+            {
+              "kind": "trend",
+              "device_id": "SW_AIR_BLOWER_001",
+              "metric_keys": [
+                "blower_power"
+              ],
+              "hours": 6
+            },
+            {
+              "kind": "focus",
+              "device_id": "SW_AIR_BLOWER_001"
+            }
+          ],
+          "time_origin": "EXPLICIT",
+          "issues": []
+        },
+        "feedback": [
+          {
+            "request": 2,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 3,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 4,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 5,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 6,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "plant preview follows Agent-selected blower",
+      "passed": true
+    },
+    {
+      "name": "split metric task completes through real tools",
+      "passed": true
+    },
+    {
+      "name": "rendered result card includes both metrics, low-DO verdict and separate time windows",
+      "passed": true,
+      "details": {
+        "keys": [
+          "do",
+          "ph"
+        ],
+        "verdict": "有效 DO 触发低溶解氧演示规则",
+        "stats": "溶解氧：1.62 mg/L质量 GOOD · 2026/1/15 16:00:001h：有效 61 / 61，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.65 / 2.04 mg/L6h：有效 361 / 361，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.88 / 2.57 mg/L"
+      }
+    },
+    {
+      "name": "frozen report retains both metrics and both histories",
+      "passed": true
+    },
+    {
+      "name": "merged report survives reload without tool replay",
+      "passed": true
+    }
+  ]
+}

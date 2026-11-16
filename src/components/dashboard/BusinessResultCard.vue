@@ -4,13 +4,13 @@ const props=defineProps<{task:AgentTask;findings:Finding[];scenarioId:string}>()
 defineEmits<{trend:[evidenceId:string]}>()
 const value=(v:unknown)=>typeof v==='number'&&Number.isFinite(v)?v.toFixed(2):'—'
 const time=(v:string)=>new Date(v).toLocaleString('zh-CN',{hour12:false,timeZone:'Asia/Shanghai'})
-const label=(status:string)=>({RUNNING:'任务进行中',SUCCEEDED:'步骤完成 · 仅限演示快照',PARTIAL:'部分完成 · 有失败步骤',FAILED:'任务失败',CANCELLED:'任务已取消'}[status]??status)
+const label=(status:string)=>({RUNNING:'任务进行中',SUCCEEDED:'步骤完成 · 仅限演示快照',PARTIAL:'部分完成 · 有未满足要求或失败步骤',FAILED:'任务失败',CANCELLED:'任务已取消'}[status]??status)
 </script>
 <template>
  <section class="business-result" :data-task-id="task.task_id" :data-task-status="task.status" :data-snapshot-id="task.snapshot_id">
   <h3>结论 · {{label(task.status)}}</h3><p v-if="task.scenario_id!==scenarioId" class="quality-warning">历史场景结果，不能代表当前场景。</p><p class="task-asof">SIMULATED · 截至 {{time(task.as_of)}}</p><code>{{task.snapshot_id}}</code><p>检查范围：{{findings.length}} / 4 个设备 · {{task.tool_count}} 个实际工具步骤</p>
   <article v-for="item in findings" :key="item.device_id" class="finding" :data-finding-device="item.device_id"><strong>{{item.name}}</strong><code>{{item.device_id}}</code><p class="finding-verdict">{{item.verdict}}</p>
-   <div v-for="metric in item.metrics" :key="metric.metric_key" class="metric-fact" :data-metric="metric.metric_key" :data-value="metric.latest.value"><span>{{metric.label}}：{{metric.latest.quality==='GOOD'?value(metric.latest.value):'—'}} {{metric.unit}}</span><span>质量 {{metric.latest.quality}} · {{time(metric.latest.observedAt)}}</span><p v-if="metric.history">{{metric.history.hours}}h：有效 {{metric.history.valid_samples}} / {{metric.history.expected_samples}}，缺测 {{metric.history.missing_samples}}，过期 {{metric.history.stale_samples}}；覆盖 {{(metric.history.coverage*100).toFixed(1)}}%<br/>有效样本最小 / 最大 / 均值：{{value(metric.history.min)}} / {{value(metric.history.max)}} / {{value(metric.history.mean)}} {{metric.unit}}</p></div>
+   <div v-for="metric in item.metrics" :key="metric.metric_key" class="metric-fact" :data-metric="metric.metric_key" :data-value="metric.latest.value"><span>{{metric.label}}：{{metric.latest.quality==='GOOD'&&!metric.conflict?value(metric.latest.value):'—'}} {{metric.unit}}</span><span>质量 {{metric.latest.quality}} · {{time(metric.latest.observedAt)}}</span><p v-if="metric.conflict">同指标证据冲突，无法判断</p><p v-for="history in metric.histories??(metric.history?[metric.history]:[])" :key="JSON.stringify(history)">{{history.hours}}h：有效 {{history.valid_samples}} / {{history.expected_samples}}，缺测 {{history.missing_samples}}，过期 {{history.stale_samples}}；覆盖 {{(history.coverage*100).toFixed(1)}}%<br/>有效样本最小 / 最大 / 均值：{{value(history.min)}} / {{value(history.max)}} / {{value(history.mean)}} {{metric.unit}}</p></div>
    <p v-for="alarm in item.alarms" :key="alarm.alarmId">演示告警 {{alarm.status}} · {{time(alarm.occurredAt)}}</p><small v-for="limitation in item.limitations" :key="limitation">{{limitation}}</small>
    <div class="evidence-refs">依据：<code v-for="id in item.evidence_ids" :key="id">{{id}}</code></div>
   </article>

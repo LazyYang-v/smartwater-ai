@@ -1,0 +1,904 @@
+{
+  "at": "2026-11-16T16:49:25.858Z",
+  "source": "TEST_INJECTED_NO_NETWORK; actual browser tools, scene and chart; NOT real model validation",
+  "test_database": "smartwater-m4-test-correctness-r1",
+  "wrong": {
+    "task_id": "cb5208ca-2a96-486c-9c03-dfebfbe30f44",
+    "scenario_id": "LOW_DO",
+    "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T16:49:24.309Z",
+    "finished_at": "2026-11-16T16:49:25.351Z",
+    "mode": "LLM",
+    "input": "定位一号鼓风机，查看最近六小时功率。（协议测试注入）",
+    "status": "PARTIAL",
+    "tool_count": 3,
+    "model_requests": 6,
+    "evidence": [
+      {
+        "camera": {
+          "position": [
+            -22.450788842413413,
+            6.745421765080366,
+            -17.94500954777791
+          ],
+          "target": [
+            -23.04217054355862,
+            1.7186773053461186,
+            -22.873190390654628
+          ],
+          "zoom": 1
+        },
+        "selected_id": "SW_AIR_BLOWER_001",
+        "rendered_frame": 46,
+        "arrival_verified": true,
+        "roof_presentation": {
+          "SW_AIR_BLOWER_001": false,
+          "SW_PRE_PUMP_001": true
+        },
+        "inspection_device": "SW_AIR_BLOWER_001",
+        "evidence_id": "EV_cb5208ca2a96_1",
+        "tool_name": "scene.focus_device",
+        "task_id": "cb5208ca-2a96-486c-9c03-dfebfbe30f44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "NOT_APPLICABLE",
+        "data": {
+          "camera": {
+            "position": [
+              -22.450788842413413,
+              6.745421765080366,
+              -17.94500954777791
+            ],
+            "target": [
+              -23.04217054355862,
+              1.7186773053461186,
+              -22.873190390654628
+            ],
+            "zoom": 1
+          },
+          "selected_id": "SW_AIR_BLOWER_001",
+          "rendered_frame": 46,
+          "arrival_verified": true,
+          "roof_presentation": {
+            "SW_AIR_BLOWER_001": false,
+            "SW_PRE_PUMP_001": true
+          },
+          "inspection_device": "SW_AIR_BLOWER_001"
+        },
+        "device_id": "SW_AIR_BLOWER_001"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": {
+              "hours": 1,
+              "total_samples": 61,
+              "valid_samples": 61,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 61,
+              "coverage": 1,
+              "min": 77.20879317015228,
+              "max": 82.2194112725066,
+              "mean": 79.5927892061079,
+              "start": "2026-01-15T07:00:00.000Z",
+              "end": "2026-01-15T08:00:00.000Z",
+              "cadence_ms": 60000
+            }
+          }
+        ],
+        "evidence_id": "EV_cb5208ca2a96_2",
+        "tool_name": "device.get_metrics",
+        "task_id": "cb5208ca-2a96-486c-9c03-dfebfbe30f44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": {
+                "hours": 1,
+                "total_samples": 61,
+                "valid_samples": 61,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 61,
+                "coverage": 1,
+                "min": 77.20879317015228,
+                "max": 82.2194112725066,
+                "mean": 79.5927892061079,
+                "start": "2026-01-15T07:00:00.000Z",
+                "end": "2026-01-15T08:00:00.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ]
+        },
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号鼓风机 B-01",
+        "metrics": [
+          {
+            "metric_key": "blower_power",
+            "label": "关联鼓风机功率",
+            "unit": "kW",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_AIR_BLOWER_001",
+              "metricKey": "blower_power",
+              "value": 81.92164507632182,
+              "unit": "kW",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": {
+              "hours": 1,
+              "total_samples": 61,
+              "valid_samples": 61,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 61,
+              "coverage": 1,
+              "min": 77.20879317015228,
+              "max": 82.2194112725066,
+              "mean": 79.5927892061079,
+              "start": "2026-01-15T07:00:00.000Z",
+              "end": "2026-01-15T08:00:00.000Z",
+              "cadence_ms": 60000
+            }
+          }
+        ],
+        "shown": {
+          "displayed": true,
+          "metric_key": "blower_power",
+          "hours": 1,
+          "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+          "evidence_id": "EV_cb5208ca2a96_3"
+        },
+        "query_evidence_id": null,
+        "reference_kind": "TASK_SNAPSHOT",
+        "hours": 1,
+        "evidence_id": "EV_cb5208ca2a96_3",
+        "tool_name": "chart.show_trend",
+        "task_id": "cb5208ca-2a96-486c-9c03-dfebfbe30f44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号鼓风机 B-01",
+          "metrics": [
+            {
+              "metric_key": "blower_power",
+              "label": "关联鼓风机功率",
+              "unit": "kW",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_AIR_BLOWER_001",
+                "metricKey": "blower_power",
+                "value": 81.92164507632182,
+                "unit": "kW",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": {
+                "hours": 1,
+                "total_samples": 61,
+                "valid_samples": 61,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 61,
+                "coverage": 1,
+                "min": 77.20879317015228,
+                "max": 82.2194112725066,
+                "mean": 79.5927892061079,
+                "start": "2026-01-15T07:00:00.000Z",
+                "end": "2026-01-15T08:00:00.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ],
+          "shown": {
+            "displayed": true,
+            "metric_key": "blower_power",
+            "hours": 1,
+            "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+            "evidence_id": "EV_cb5208ca2a96_3"
+          },
+          "query_evidence_id": null,
+          "reference_kind": "TASK_SNAPSHOT",
+          "hours": 1
+        },
+        "device_id": "SW_AIR_BLOWER_001",
+        "metric_key": "blower_power",
+        "unit": "kW"
+      }
+    ],
+    "action_ids": [
+      "cb5208ca-2a96-486c-9c03-dfebfbe30f44:1",
+      "cb5208ca-2a96-486c-9c03-dfebfbe30f44:2",
+      "cb5208ca-2a96-486c-9c03-dfebfbe30f44:3"
+    ],
+    "errors": [
+      {
+        "code": "BUDGET_EXCEEDED",
+        "message": "达到模型请求上限"
+      },
+      {
+        "code": "INCOMPLETE_TASK",
+        "message": "尚未确认要求：SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）；SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+      }
+    ],
+    "model_receipts": [
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_1",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_2",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_3",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_4",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_5",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_cb5208ca-2a96-486c-9c03-dfebfbe30f44_6",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      }
+    ],
+    "model_feedback": [
+      {
+        "request": 2,
+        "missing_outcomes": [
+          "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+          "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+        ]
+      },
+      {
+        "request": 3,
+        "missing_outcomes": [
+          "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+          "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+        ]
+      },
+      {
+        "request": 4,
+        "missing_outcomes": [
+          "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+          "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+        ]
+      },
+      {
+        "request": 5,
+        "missing_outcomes": [
+          "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+          "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+        ]
+      },
+      {
+        "request": 6,
+        "missing_outcomes": [
+          "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+          "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+        ]
+      }
+    ],
+    "explanation": "",
+    "scope": [
+      "SW_AIR_BLOWER_001"
+    ],
+    "requirements": {
+      "version": 1,
+      "intent": "BLOWER_TREND",
+      "outcomes": [
+        {
+          "kind": "metrics",
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        {
+          "kind": "trend",
+          "device_id": "SW_AIR_BLOWER_001",
+          "metric_keys": [
+            "blower_power"
+          ],
+          "hours": 6
+        },
+        {
+          "kind": "focus",
+          "device_id": "SW_AIR_BLOWER_001"
+        }
+      ],
+      "time_origin": "EXPLICIT",
+      "issues": []
+    }
+  },
+  "split": {
+    "task_id": "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44",
+    "scenario_id": "LOW_DO",
+    "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+    "as_of": "2026-01-15T08:00:00.000Z",
+    "started_at": "2026-11-16T16:49:25.460Z",
+    "finished_at": "2026-11-16T16:49:25.478Z",
+    "mode": "LLM",
+    "input": "读取一号曝气池的pH和DO（协议测试注入）",
+    "status": "SUCCEEDED",
+    "tool_count": 4,
+    "model_requests": 2,
+    "evidence": [
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "ph",
+            "label": "pH",
+            "unit": "无量纲",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "ph",
+              "value": 7.21408933565465,
+              "unit": "无量纲",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": null
+          }
+        ],
+        "evidence_id": "EV_8e0af6263ea6_1",
+        "tool_name": "device.get_metrics",
+        "task_id": "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "ph",
+              "label": "pH",
+              "unit": "无量纲",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "ph",
+                "value": 7.21408933565465,
+                "unit": "无量纲",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": null
+            }
+          ]
+        },
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "ph",
+        "unit": "无量纲"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": {
+              "hours": 1,
+              "total_samples": 61,
+              "valid_samples": 61,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 61,
+              "coverage": 1,
+              "min": 1.550008129681413,
+              "max": 2.65,
+              "mean": 2.0385673246250815,
+              "start": "2026-01-15T07:00:00.000Z",
+              "end": "2026-01-15T08:00:00.000Z",
+              "cadence_ms": 60000
+            }
+          }
+        ],
+        "evidence_id": "EV_8e0af6263ea6_2",
+        "tool_name": "device.get_metrics",
+        "task_id": "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": {
+                "hours": 1,
+                "total_samples": 61,
+                "valid_samples": 61,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 61,
+                "coverage": 1,
+                "min": 1.550008129681413,
+                "max": 2.65,
+                "mean": 2.0385673246250815,
+                "start": "2026-01-15T07:00:00.000Z",
+                "end": "2026-01-15T08:00:00.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ]
+        },
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "unit": "mg/L"
+      },
+      {
+        "outcome": "DATA_AVAILABLE",
+        "device_name": "一号曝气池",
+        "metrics": [
+          {
+            "metric_key": "do",
+            "label": "溶解氧",
+            "unit": "mg/L",
+            "latest": {
+              "scopeType": "DEVICE",
+              "scopeId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "value": 1.62,
+              "unit": "mg/L",
+              "observedAt": "2026-01-15T08:00:00.000Z",
+              "sampleAt": "2026-01-15T08:00:00.000Z",
+              "quality": "GOOD",
+              "source": "SIMULATED",
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            },
+            "history": {
+              "hours": 6,
+              "total_samples": 361,
+              "valid_samples": 361,
+              "missing_samples": 0,
+              "stale_samples": 0,
+              "invalid_samples": 0,
+              "expected_samples": 361,
+              "coverage": 1,
+              "min": 1.550008129681413,
+              "max": 2.8822348768922477,
+              "mean": 2.569689232460915,
+              "start": "2026-01-15T02:00:00.000Z",
+              "end": "2026-01-15T08:00:00.000Z",
+              "cadence_ms": 60000
+            }
+          }
+        ],
+        "evidence_id": "EV_8e0af6263ea6_3",
+        "tool_name": "device.get_metrics",
+        "task_id": "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "GOOD",
+        "data": {
+          "outcome": "DATA_AVAILABLE",
+          "device_name": "一号曝气池",
+          "metrics": [
+            {
+              "metric_key": "do",
+              "label": "溶解氧",
+              "unit": "mg/L",
+              "latest": {
+                "scopeType": "DEVICE",
+                "scopeId": "SW_BIO_AERATION_001",
+                "metricKey": "do",
+                "value": 1.62,
+                "unit": "mg/L",
+                "observedAt": "2026-01-15T08:00:00.000Z",
+                "sampleAt": "2026-01-15T08:00:00.000Z",
+                "quality": "GOOD",
+                "source": "SIMULATED",
+                "snapshotId": "smartwater-m1.2:LOW_DO:0"
+              },
+              "history": {
+                "hours": 6,
+                "total_samples": 361,
+                "valid_samples": 361,
+                "missing_samples": 0,
+                "stale_samples": 0,
+                "invalid_samples": 0,
+                "expected_samples": 361,
+                "coverage": 1,
+                "min": 1.550008129681413,
+                "max": 2.8822348768922477,
+                "mean": 2.569689232460915,
+                "start": "2026-01-15T02:00:00.000Z",
+                "end": "2026-01-15T08:00:00.000Z",
+                "cadence_ms": 60000
+              }
+            }
+          ]
+        },
+        "device_id": "SW_BIO_AERATION_001",
+        "metric_key": "do",
+        "unit": "mg/L"
+      },
+      {
+        "alarms": [
+          {
+            "alarmId": "scenario:LOW_DO:DO:001",
+            "deviceId": "SW_BIO_AERATION_001",
+            "metricKey": "do",
+            "occurredAt": "2026-01-15T07:32:00.000Z",
+            "level": "WARNING",
+            "ruleId": "DEMO_DO_LOW",
+            "rule": "DO < 2.0 mg/L · 演示阈值",
+            "status": "ACTIVE",
+            "source": "SIMULATED",
+            "valueAtEvent": 1.9633333333333334,
+            "snapshotId": "smartwater-m1.2:LOW_DO:0"
+          }
+        ],
+        "scope": [
+          "SW_BIO_AERATION_001"
+        ],
+        "limitation": "无告警不等于设备正常；未配置指标不等于零",
+        "evidence_id": "EV_8e0af6263ea6_4",
+        "tool_name": "alarm.list",
+        "task_id": "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44",
+        "snapshot_id": "smartwater-m1.2:LOW_DO:0",
+        "scenario_id": "LOW_DO",
+        "as_of": "2026-01-15T08:00:00.000Z",
+        "source": "SIMULATED",
+        "quality": "EVENT_QUALITY_NOT_RECORDED",
+        "data": {
+          "alarms": [
+            {
+              "alarmId": "scenario:LOW_DO:DO:001",
+              "deviceId": "SW_BIO_AERATION_001",
+              "metricKey": "do",
+              "occurredAt": "2026-01-15T07:32:00.000Z",
+              "level": "WARNING",
+              "ruleId": "DEMO_DO_LOW",
+              "rule": "DO < 2.0 mg/L · 演示阈值",
+              "status": "ACTIVE",
+              "source": "SIMULATED",
+              "valueAtEvent": 1.9633333333333334,
+              "snapshotId": "smartwater-m1.2:LOW_DO:0"
+            }
+          ],
+          "scope": [
+            "SW_BIO_AERATION_001"
+          ],
+          "limitation": "无告警不等于设备正常；未配置指标不等于零"
+        },
+        "device_id": "SW_BIO_AERATION_001"
+      }
+    ],
+    "action_ids": [
+      "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44:1",
+      "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44:2",
+      "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44:3",
+      "8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44:4"
+    ],
+    "errors": [],
+    "model_receipts": [
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44_1",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      },
+      {
+        "provider": "TEST_INJECTED_NO_NETWORK",
+        "model": "offline-protocol-fixture",
+        "request_id": "TEST_8e0af626-3ea6-4c8e-a5b2-11a7cf9efd44_2",
+        "response_id": null,
+        "http_status": 200,
+        "elapsed_ms": 0,
+        "usage": "UNKNOWN"
+      }
+    ],
+    "model_feedback": [],
+    "explanation": "协议测试注入；具体事实依据实际工具结果。 依据 EV_8e0af6263ea6_1、EV_8e0af6263ea6_2、EV_8e0af6263ea6_3、EV_8e0af6263ea6_4",
+    "scope": [
+      "SW_BIO_AERATION_001"
+    ],
+    "requirements": {
+      "version": 1,
+      "intent": "READ_METRICS",
+      "outcomes": [
+        {
+          "kind": "metrics",
+          "device_id": "SW_BIO_AERATION_001",
+          "metric_keys": [
+            "do",
+            "ph"
+          ]
+        }
+      ],
+      "time_origin": "NONE",
+      "issues": []
+    }
+  },
+  "card": {
+    "keys": [
+      "do",
+      "ph"
+    ],
+    "verdict": "有效 DO 触发低溶解氧演示规则",
+    "stats": "溶解氧：1.62 mg/L质量 GOOD · 2026/1/15 16:00:001h：有效 61 / 61，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.65 / 2.04 mg/L6h：有效 361 / 361，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.88 / 2.57 mg/L"
+  },
+  "checks": [
+    {
+      "name": "blower link follows selected unit",
+      "passed": true
+    },
+    {
+      "name": "actual blower preview opened and loaded",
+      "passed": true
+    },
+    {
+      "name": "pump link follows current unit",
+      "passed": true
+    },
+    {
+      "name": "no selection disables independent preview rather than opening an unrelated unit",
+      "passed": true
+    },
+    {
+      "name": "actual one-hour query/render never completes six-hour task",
+      "passed": true,
+      "details": {
+        "status": "PARTIAL",
+        "requirements": {
+          "version": 1,
+          "intent": "BLOWER_TREND",
+          "outcomes": [
+            {
+              "kind": "metrics",
+              "device_id": "SW_AIR_BLOWER_001",
+              "metric_keys": [
+                "blower_power"
+              ],
+              "hours": 6
+            },
+            {
+              "kind": "trend",
+              "device_id": "SW_AIR_BLOWER_001",
+              "metric_keys": [
+                "blower_power"
+              ],
+              "hours": 6
+            },
+            {
+              "kind": "focus",
+              "device_id": "SW_AIR_BLOWER_001"
+            }
+          ],
+          "time_origin": "EXPLICIT",
+          "issues": []
+        },
+        "feedback": [
+          {
+            "request": 2,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 3,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 4,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 5,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          },
+          {
+            "request": 6,
+            "missing_outcomes": [
+              "SW_AIR_BLOWER_001 · 指标查询结果 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）",
+              "SW_AIR_BLOWER_001 · 趋势的实际展示回执 · blower_power · 6h（截至 2026-01-15T08:00:00.000Z）"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "plant preview follows Agent-selected blower",
+      "passed": true
+    },
+    {
+      "name": "split metric task completes through real tools",
+      "passed": true
+    },
+    {
+      "name": "rendered result card includes both metrics, low-DO verdict and separate time windows",
+      "passed": true,
+      "details": {
+        "keys": [
+          "do",
+          "ph"
+        ],
+        "verdict": "有效 DO 触发低溶解氧演示规则",
+        "stats": "溶解氧：1.62 mg/L质量 GOOD · 2026/1/15 16:00:001h：有效 61 / 61，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.65 / 2.04 mg/L6h：有效 361 / 361，缺测 0，过期 0；覆盖 100.0%有效样本最小 / 最大 / 均值：1.55 / 2.88 / 2.57 mg/L"
+      }
+    },
+    {
+      "name": "frozen report retains both metrics and both histories",
+      "passed": true
+    }
+  ],
+  "diagnostics": {
+    "sceneInstances": 1,
+    "renderLoops": 0,
+    "chartStats": {
+      "created": 2,
+      "disposed": 0,
+      "updates": 13,
+      "resizes": 6,
+      "active": 2
+    },
+    "contextId": "SW_BIO_AERATION_001",
+    "hours": 1,
+    "activeTrend": "blower_power",
+    "paused": true,
+    "hidden": false,
+    "running": false,
+    "snapshotId": "smartwater-m1.2:LOW_DO:0"
+  }
+}

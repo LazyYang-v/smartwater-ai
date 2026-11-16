@@ -1,0 +1,49 @@
+✖ six-hour request cannot succeed when the model only queried and displayed one hour (22.19725ms)
+✖ separate pH then DO queries both reach current card and frozen report, including low-DO conclusion (9.641875ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 138.098583
+
+✖ failing tests:
+
+test at tests/taskCorrectness.test.ts:14:1
+✖ six-hour request cannot succeed when the model only queried and displayed one hour (22.19725ms)
+  AssertionError [ERR_ASSERTION]: Expected "actual" to be strictly unequal to:
+  
+  'SUCCEEDED'
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:16:67)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'SUCCEEDED',
+    expected: 'SUCCEEDED',
+    operator: 'notStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/taskCorrectness.test.ts:18:1
+✖ separate pH then DO queries both reach current card and frozen report, including low-DO conclusion (9.641875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+  -   'do',
+      'ph'
+    ]
+  
+      at TestContext.<anonymous> (file:///Users/leizhenyang/projects/smartwater-ai/tests/taskCorrectness.test.ts:21:9)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'ph' ],
+    expected: [ 'do', 'ph' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

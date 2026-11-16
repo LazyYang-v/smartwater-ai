@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-16T16:53:47.010979+00:00",
+  "base_commit": "e57b69ed7fdfff1899090d708b0e6254e6bed177",
+  "build_id": "fe8aee60f3682d8bec6d33f2c7991dc26d110b6f8c89dc523323280050c119cf",
+  "frontend_sha256": {
+    "dist/index.html": "9cbe900838d913c0ff8f8653dd9fc7978a42d3d0dcf3c768c6b49853c58c9713",
+    "dist/assets/dashboard-BzODS20D.js": "0c6b837a8acf474f126d6b9984cacdd8438a8d045aeb108deb987f25c0a85d2a",
+    "dist/assets/dashboard-giz8jd70.css": "d4f9dbfd68c36fa24feaaf1fc83decbfc37aa6376461a7ca2885b6d3167bd17f",
+    "dist/assets/llmClient-Dg5TZ-pK.js": "c12a2bcbbb315e5dae00b926f4700a13f6e68e09ea5a217e0995ae2afa8e54ca",
+    "dist/assets/useSceneWorkspace-CYjfrTap.js": "2ede794c677904574897fb6ce4eeadd1736056fe420b68cc4999606f228532f0",
+    "dist/assets/viewer-BVbOzP96.css": "3151eed201166c6c9ea64129350269e8ddbdb6f608685f0d4849f92ecf49e32e",
+    "dist/assets/viewer-gNGs9phB.js": "97eb127dc1b9da254553f5672a18f8d512b8f101b6c396e1c4678a4ad16ee5c3"
+  },
+  "models": "Unmodified; no asset size/cache optimizations included in this correctness patch.",
+  "validation": "Node protocol fixtures and actual browser, zero real model requests"
+}

@@ -6,3 +6,4 @@ export const UNITS:readonly UnitDescriptor[]=[
  {id:'SW_PRE_PUMP_001',unitId:'SW_UNIT_PUMP_ROOM_001',name:'一号提升泵',url:'/models/pump-unit.glb',dimensions:'10 × 8 m 泵房 · 演示设备',assetRootNode:'SW_PUMP_UNIT',mechanicalNode:'SW_PRE_PUMP_001',metrics:[],water:false,roof:true,modelKey:'pump'},
 ]
 export const findUnit=(id:string)=>UNITS.find(unit=>unit.id===id)
+export function unitPreviewUrl(id:string|null|undefined){const unit=id?findUnit(id):undefined;return unit?'/viewer.html?model='+encodeURIComponent(unit.modelKey):null}

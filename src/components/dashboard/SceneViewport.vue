@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import {onMounted,ref,computed} from 'vue'
 import {PhCube,PhCrosshair,PhEye,PhEyeSlash,PhArrowCounterClockwise} from '@phosphor-icons/vue'
-import {UNITS,findUnit} from '../../scene/units'
+import {UNITS,findUnit,unitPreviewUrl} from '../../scene/units'
 import type {SceneRuntime} from '../../scene/runtime'
 const props=defineProps<{runtime:SceneRuntime|undefined}>()
 const emit=defineEmits<{attach:[host:HTMLElement];reset:[];unit:[id:string];mode:[mode:'unit'|'plant'|'plant4']}>()
 const host=ref<HTMLElement>(),plant=computed(()=>!!props.runtime&&props.runtime.state.viewMode!=='unit')
 const four=computed(()=>props.runtime?.state.viewMode==='plant4')
 const activeId=computed(()=>plant.value?props.runtime?.state.selectedId:props.runtime?.state.deviceId)
+const previewHref=computed(()=>unitPreviewUrl(activeId.value))
 const activeUnit=computed(()=>findUnit(activeId.value??''))
 const currentName=computed(()=>findUnit(props.runtime?.state.selectedId??props.runtime?.state.deviceId??'')?.name)
 const waterDisabled=computed(()=>props.runtime?.state.status!=='ready'||!activeUnit.value?.water)
@@ -17,7 +18,7 @@ onMounted(()=>emit('attach',host.value!))
  <section class="scene-panel" aria-label="三维场景"><div class="scene-toolbar"><div class="scene-title"><span class="live-dot"/><strong>{{four?'四单元演示厂区':plant?'双单元厂区':'三维现场'}}</strong><small>{{plant?'演示厂区 · 试运行':currentName+'样板'}}</small></div><div class="scene-actions">
  <select class="view-mode-select" aria-label="视图模式" :value="runtime?.state.viewMode" @change="$emit('mode',($event.target as HTMLSelectElement).value as 'unit'|'plant'|'plant4')"><option value="unit">单元查看</option><option value="plant">双单元总览</option><option value="plant4">四单元总览 · 试运行</option></select>
  <select v-if="!plant" class="unit-select" aria-label="当前模型单元" :value="runtime?.state.deviceId" @change="$emit('unit',($event.target as HTMLSelectElement).value)"><option v-for="unit in UNITS" :key="unit.id" :value="unit.id">{{unit.name}}</option></select>
- <a class="asset-preview-link" href="/viewer.html?model=clarifier" target="_blank" rel="noopener">独立预览 ↗</a>
+ <a v-if="previewHref" class="asset-preview-link" :href="previewHref" target="_blank" rel="noopener">独立预览 ↗</a><span v-else class="asset-preview-link" aria-disabled="true" title="请先选择要独立预览的设备">独立预览 · 先选择设备</span>
  <label class="render-mode">绘制模式 <select :value="runtime?.state.renderMode" :disabled="plant" @change="runtime?.setRenderMode(($event.target as HTMLSelectElement).value as 'interactive'|'full')"><option value="interactive">交互优先</option><option value="full">完整效果 · 未验证稳定</option></select></label>
  <button data-action="water" :disabled="waterDisabled" :title="plant?'仅作用于当前选中设备；未选择时禁用':'作用于当前单元'" @click="runtime?.setWater(!runtime.state.waterVisible)" :aria-pressed="runtime?.state.waterVisible"><PhEye v-if="runtime?.state.waterVisible" :size="16"/><PhEyeSlash v-else :size="16"/>{{!activeUnit?.water?'仅池体水面':runtime?.state.waterVisible?'隐藏水面':'显示水面'}}</button><button v-if="activeUnit?.roof" data-action="roof" :disabled="runtime?.state.status!=='ready'" :aria-pressed="runtime?.state.roofStates[activeId!]" @click="runtime?.setRoof(!runtime.state.roofStates[activeId!],activeId!)">{{runtime?.state.roofStates[activeId!]?'隐藏屋顶':'显示屋顶'}}</button><button @click="emit('reset')" :disabled="runtime?.state.status!=='ready'"><PhArrowCounterClockwise :size="16"/>恢复总览</button></div></div>
  <div class="viewport"><div ref="host" class="canvas-host"/><div class="view-corner"><span>N</span><i/><small>局部坐标 · 米制</small></div>

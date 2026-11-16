@@ -1,0 +1,7 @@
+{
+  "at": "2026-11-16T16:44:19.871Z",
+  "device": "SW_AIR_BLOWER_001",
+  "href": "/viewer.html?model=clarifier",
+  "expected": "/viewer.html?model=blower",
+  "passed": false
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-16T16:57:51.437Z",
+  "original_task": "8cabc68a-b175-490f-83d3-c07f4dd5cc7c",
+  "historical_json_unchanged": true,
+  "historical_markdown_unchanged": true,
+  "no_replayed_tasks": true,
+  "no_replayed_tools": true,
+  "served_candidate_matches": true,
+  "resources": [
+    {
+      "path": "/assets/dashboard-BzODS20D.js",
+      "sha256": "0c6b837a8acf474f126d6b9984cacdd8438a8d045aeb108deb987f25c0a85d2a"
+    },
+    {
+      "path": "/assets/dashboard-giz8jd70.css",
+      "sha256": "d4f9dbfd68c36fa24feaaf1fc83decbfc37aa6376461a7ca2885b6d3167bd17f"
+    }
+  ],
+  "source": "Read existing persisted real M4 report after code update; no new real model request"
+}
